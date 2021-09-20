@@ -11,5 +11,8 @@ blog: on
 # pagination of posts
 paginate: 4
 per_page: 4
+
+plugins:
+- jekyll-paginate
 paginate_path: "/blog/page/:num/"
 
