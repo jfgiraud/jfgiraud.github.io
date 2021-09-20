@@ -1,0 +1,5 @@
+---
+layout: post
+title: 
+---
+$ for b in 2 8 10 16; do echo $b $(bc <<< "obase=$b;170"); done<br />2 10101010<br />8 252<br />10 170<br />16 AA<br /><br /><br /># vers la base 10 on peut utiliser du bash pur (base 16 vers base 10)<br />$(( 16#123FA ))<br />74746<br /><br /># base 10 vers base 16 (obase)<br />$ bc <<< "obase=16;74746"<br />123FA<br /><br /># base 16 (ibase) vers base 8 (obase)<br />$ bc <<< "obase=8;ibase=16;123FA"<br />221772

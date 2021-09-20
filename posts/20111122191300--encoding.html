@@ -1,0 +1,5 @@
+---
+layout: post
+title: encoding
+---
+Hudson crie !<br /><br /><code><pre><small><br />[line 4: the character at position 51 is not allowed <br />[Demande(0,0,affichage);INCOMPLET;;OUI;pour un probl&Atilde;&uml;me d'affichage.;;], ...<br /></small></pre></code><br /><br />C'est dû à l'encoding qui n'est pas le bon lors de la lecture du fichier.<br /><br />Il ouvre en ISO-8859-1 alors que c'est de l'UTF-8.<br /><br />Solution : <br /><br /><code><pre><small><br />BufferedReader reader = new BufferedReader(new InputStreamReader(<br />new FileInputStream(f.getAbsolutePath()), "UTF-8"));<br /></small></pre></code><br /><br /><br />Référence : <a href="http://www.jmdoudoux.fr/java/dej/chap-encodage.htm">http://www.jmdoudoux.fr/java/dej/chap-encodage.htm</a>
