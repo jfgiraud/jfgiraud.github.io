@@ -1,3 +1,5 @@
+lsi: false
+safe: true
 theme: jekyll-theme-hacker
 markdown: kramdown
 highlighter: rouge
