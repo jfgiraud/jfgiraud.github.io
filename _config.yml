@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
 markdown: kramdown
 highlighter: rouge
+title: mezalor$ ls -lt
+description: J'entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté...
