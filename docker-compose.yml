@@ -12,6 +12,7 @@ version: '3'
 services:
 
     python_app:
+        user: $DOCKER_USER
         build:
             context: .
             dockerfile: Dockerfile

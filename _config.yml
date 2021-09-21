@@ -8,11 +8,13 @@ title: mezalor$ ls -lt
 description: J'entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté...
 author: "Jean-François Giraud"
 blog: on
-# pagination of posts
-paginate: 4
-per_page: 4
 
+paginate: 5
+per_page: 40
+
+permalink: /:year/:month/:day/:title/
 plugins:
 - jekyll-paginate
+- jekyll-feed
+- jekyll-sitemap
 paginate_path: "/blog/page/:num/"
-
