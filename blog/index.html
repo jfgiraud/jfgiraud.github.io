@@ -12,12 +12,14 @@ title: Blog
                 {{ post.date | date: "%Y-%m-%d" }} // <a href="{{ post.external-url }}">{{ post.title }}</a>
                 <a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
             </h2>
+            {{ post.excerpt }}
         </li>
     {% else %}
         <li>
             <h2>
-                {{ post.date | date: "%Y-%m-%d" }} // <a href="{{ post.url }}">{{ post.title }}</a></h2>
+                {{ post.date | date: "%Y-%m-%d" }} // <a href="{{ post.url }}">{{ post.title }}</a>
             </h2>
+            {{ post.excerpt }}
         </li>
     {% endif %}
 </ul>
@@ -30,22 +32,46 @@ title: Blog
 <div class="postnavigation">
 
     {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-    <a class="prev left" href="/">&larr; Newer</a>
+        {% if paginator.page == 2 %}
+            <a class="prev left" href="/">&larr; Newer</a>
+        {% else %}
+            <a class="prev left" href="/page{{paginator.previous_page}}/">&larr; Newer</a>
+        {% endif %}
     {% else %}
-    <a class="prev left" href="/page{{paginator.previous_page}}/">&larr; Newer</a>
-    {% endif %}
-    {% else %}
-    <span class="nope left">&larr; Newer</span>
+        <span class="nope left">&larr; Newer</span>
     {% endif %}
 
     <span class="pages">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-
     {% if paginator.next_page %}
-    <a class="next right" href="/page{{paginator.next_page}}/">Older &rarr;</a>
+        <a class="next right" href="/page{{paginator.next_page}}/">Older &rarr;</a>
     {% else %}
-    <span class="nope right">Older &rarr;</span>
+        <span class="nope right">Older &rarr;</span>
     {% endif %}
 
 </div>
+{% endif %}
+
+
+{% if paginator.total_pages > 1 %}
+<div class="paginator" id="paginatorId"></div>
+<script type="text/javascript">
+	    paginatorId = new Paginator(
+	        "paginatorId",
+		    {{ paginator.total_pages }},
+		    10,
+		    {{ paginator.page }},
+            function(page) {
+                return page;
+            },
+            function() {
+                $('#paginatorId a').click(function () {
+                    var p = $(this).attr('href');
+                    alert("cal " + p);
+                    return false;
+                });
+            }
+	      );
+</script>
+
+
 {% endif %}

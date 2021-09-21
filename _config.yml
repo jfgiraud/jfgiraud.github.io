@@ -9,8 +9,7 @@ description: J'entrepose ici mes découvertes linux, bash, python et java que je
 author: "Jean-François Giraud"
 blog: on
 
-paginate: 5
-per_page: 40
+paginate: 10
 
 permalink: /:year/:month/:day/:title/
 plugins:
