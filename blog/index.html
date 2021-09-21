@@ -7,7 +7,7 @@ title: Blog
 <ul>
   {% for post in site.posts %}
     <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a>({{ post.date | date: "%Y-%m-%d" }})y</h2>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</h2>
       {{ post.excerpt }}
     </li>
   {% endfor %}
