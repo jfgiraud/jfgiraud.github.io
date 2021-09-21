@@ -1,0 +1,6 @@
+---
+layout: post
+title: "Envoi mail avec attachement en python"
+date: "2010-07-13 14:28:00"
+---
+<pre><br />#!/usr/bin/env python<br /><br />import smtplib<br />import os<br />from email.MIMEMultipart import MIMEMultipart<br />from email.MIMEBase import MIMEBase<br />from email.MIMEText import MIMEText<br />from email.Utils import COMMASPACE, formatdate<br />from email import Encoders<br /><br />def send_mail(send_from, send_to, subject, text, files=[], server="localhost"):<br />  assert type(send_to)==list<br />  assert type(files)==list<br /><br />  msg = MIMEMultipart()<br />  msg['From'] = send_from<br />  msg['To'] = COMMASPACE.join(send_to)<br />  msg['Date'] = formatdate(localtime=True)<br />  msg['Subject'] = subject<br /><br />  msg.attach( MIMEText(text) )<br /><br />  for f in files:<br />    part = MIMEBase('application', "octet-stream")<br />    part.set_payload( ''.join(open(f,'rb').readlines()) )<br />    Encoders.encode_base64(part)<br />    part.add_header('Content-Disposition', 'attachment; filename="%s"' % os.path.basename(f))<br />    msg.attach(part)<br /><br />  smtp = smtplib.SMTP(server)<br />  smtp.sendmail(send_from, send_to, msg.as_string())<br />  smtp.close()<br /><br />send_mail('me@example.com', ['me@example.com'], 'envoi mail avec attachements', 'bises a toi', [ '/the/path/to/the/file' ], 'smtp.example.com')<br /></pre>
