@@ -55,21 +55,13 @@ title: Blog
 {% if paginator.total_pages > 1 %}
 <div class="paginator" id="paginatorId"></div>
 <script type="text/javascript">
-	    paginatorId = new Paginator(
-	        "paginatorId",
-		    {{ paginator.total_pages }},
-		    10,
-		    {{ paginator.page }},
-            function(page) {
-                return page;
-            },
-            function() {
-                $('#paginatorId a').click(function () {
-                    var p = $(this).attr('href');
-                    alert("cal " + p);
-                    return false;
-                });
-            }
+	    $(document).bind('ready', function () {
+            $("#paginatorId").paginator({
+		    pagesTotal: {{ paginator.total_pages }},
+		    pagesSpan: 10,
+		    currentPage: {{ paginator.page }},
+            baseUrl:  'index.html?page=%number%'
+                         }
 	      );
 </script>
 
