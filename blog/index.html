@@ -27,43 +27,18 @@ title: Blog
 {% endfor %}
 
 
-
 {% if paginator.total_pages > 1 %}
 <div class="postnavigation">
-
-    {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-            <a class="prev left" href="/">&larr; Newer</a>
-        {% else %}
-            <a class="prev left" href="/page{{paginator.previous_page}}/">&larr; Newer</a>
-        {% endif %}
-    {% else %}
-        <span class="nope left">&larr; Newer</span>
-    {% endif %}
-
-    <span class="pages">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-        <a class="next right" href="/page{{paginator.next_page}}/">Older &rarr;</a>
-    {% else %}
-        <span class="nope right">Older &rarr;</span>
-    {% endif %}
-
+    <div class="paginator" id="paginatorId"></div>
+        <script type="text/javascript">
+            $(document).bind('ready', function () {
+                $("#paginatorId").paginator({
+                    pagesTotal: {{ paginator.total_pages }},
+                    pagesSpan: 10,
+                    pageCurrent: '{{paginator.page}}',
+                    baseUrl: '/blog/page/%number%/'
+                });
+            });
+        </script>
 </div>
-{% endif %}
-
-
-{% if paginator.total_pages > 1 %}
-<div class="paginator" id="paginatorId"></div>
-<script type="text/javascript">
-	    $(document).bind('ready', function () {
-            $("#paginatorId").paginator({
-		    pagesTotal: {{ paginator.total_pages }},
-		    pagesSpan: 10,
-		    currentPage: {{ paginator.page }},
-            baseUrl:  'index.html?page=%number%'
-                         }
-	      );});
-</script>
-
-
 {% endif %}

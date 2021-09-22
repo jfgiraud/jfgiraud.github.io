@@ -20,3 +20,11 @@ services:
             - ./:/app
         command:
             tail -f /dev/null
+
+    jekyll:
+        image: jekyll/jekyll
+        command: jekyll serve --watch --incremental
+        ports:
+            - 4000:4000
+        volumes:
+            - .:/srv/jekyll

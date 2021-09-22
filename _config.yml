@@ -11,7 +11,7 @@ blog: on
 
 paginate: 10
 
-permalink: /:year/:month/:day/:title/
+permalink: "/blog/article/:year/:month/:day/:title/"
 plugins:
 - jekyll-paginate
 - jekyll-feed

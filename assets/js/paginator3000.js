@@ -79,14 +79,28 @@
             html.scrollThumb.xPos = html.scrollThumb.xPos < 0 ? 0 : html.scrollThumb.xPos; 	
             // calculate page
             xPos = options.returnOrder ? html.table.maxWidth - html.scrollThumb.xPos : html.scrollThumb.xPos;
+
 			percentFromLeft = xPos / html.table.workWidth;
-			cellFirstValue = Math.ceil(percentFromLeft * options.pagesTotal);				
+			cellFirstValue = Math.ceil(percentFromLeft * options.pagesTotal)
+			if (xPos == html.table.maxWidth) {
+			    //patch
+			    if (cellFirstValue + options.pagesSpan <= options.pagesTotal) {
+			        cellFirstValue += 1
+			    }
+			}
+
+			console.log("maxWidth="+html.table.maxWidth)
+			console.log("pagesSpan="+options.pagesSpan)
+			console.log("xPos="+html.scrollThumb.xPos)
+			console.log("percentFromLeft="+percentFromLeft)
+			console.log("pagesTotal="+options.pagesTotal)
 			// check page number
             cellFirstValue = cellFirstValue < 1 ? 1 : cellFirstValue;
-			// move scroll thumb	
+			console.log("cellFirstValue="+cellFirstValue)
+			// move scroll thumb
 			moveScrollThumb();
 			// draw pages	
-			for(i=0; i < html.tdsPages.length; i++){	
+			for(i=0; i < html.tdsPages.length; i++){
 				cellCurrentValue = cellFirstValue + i;
 				data = cellCurrentValue == options.pageCurrent
                     ? '<strong>' + cellCurrentValue + '</strong>'
@@ -141,16 +155,16 @@
 			pagesTotal   : 1,	  // total number pages
 			pagesSpan    : 10,    // number displayed pages
 			pageCurrent  : 1,  	  // current page
-			baseUrl      : document.location.href+'&page=%number%', // link template
+			baseUrl      : '/blog/page/%number%/', // link template
 			buildCounter : buildCounter, // function builder page number
 			pageScroll 	 : 3, 	  // turnover number of pages with scrolling
 			clickHandler : null,  // callback - performed by selecting a page
 			returnOrder  : false, // page in return order
 			lang         : { 
-				next  : "Next",
-				last  : "Last",
-				prior : "Prior",
-				first : "First",
+				next  : "Suivant",
+				last  : "Fin",
+				prior : "Précédent",
+				first : "Début",
 				arrowRight : String.fromCharCode(8594),
 				arrowLeft  : String.fromCharCode(8592)
 			},

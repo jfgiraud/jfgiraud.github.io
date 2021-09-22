@@ -6,14 +6,10 @@ SHELL=bash
 usage:
 	@cat - <<EOF
 		Targets:
-		* run: run server
+		* up: start services
+		* down: stop services
+		* pyterm: open term on python_app
 	EOF
-
-.PHONY: run
-run:
-	YIP=$(shell ip a | grep 'inet 192' | awk '{ print $$2 }' | sed -e 's#/.*##')
-	echo "http://$$YIP:4000/blog/"
-	docker run --rm --volume="$$PWD:/srv/jekyll" --publish $$YIP:4000:4000 jekyll/jekyll jekyll serve
 
 up:
 	export DOCKER_USER="$(shell id -u):$(shell id -g)"
