@@ -9,17 +9,19 @@ title: Blog
     {% if post.external-url %}
         <li>
             <h2>
-                {{ post.date | date: "%Y-%m-%d" }} // <a href="{{ post.external-url }}">{{ post.title }}</a>
+                <span class="post-date">{{ post.date | date: "%Y-%m-%d" }} //</span> {{ post.title }}
                 <a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
             </h2>
             {{ post.excerpt }}
+            <a href="{{ post.external-url }}">Lire la suite</a>
         </li>
     {% else %}
         <li>
             <h2>
-                {{ post.date | date: "%Y-%m-%d" }} // <a href="{{ post.url }}">{{ post.title }}</a>
+                <span class="post-date">{{ post.date | date: "%Y-%m-%d" }} //</span> {{ post.title }}
             </h2>
             {{ post.excerpt }}
+            <a href="{{ post.url }}">Lire la suite</a>
         </li>
     {% endif %}
 </ul>
@@ -36,7 +38,8 @@ title: Blog
                     pagesTotal: {{ paginator.total_pages }},
                     pagesSpan: 10,
                     pageCurrent: '{{paginator.page}}',
-                    baseUrl: '/blog/page/%number%/'
+                    baseUrl: '/blog/page/%number%/',
+                    firstPage: '/blog/'
                 });
             });
         </script>

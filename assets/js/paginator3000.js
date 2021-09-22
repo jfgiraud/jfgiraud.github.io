@@ -5,6 +5,7 @@
  *
  * Copyright (C) 2014 Sergey Novichkov. All rights reserved.
  * Site http://www.cyberapp.ru/
+ * https://github.com/snovichkov/jquery-paginator-3000
  */
 ;(function($){
 	$.event.special.mousewheel = { // start mousewheel event
@@ -46,7 +47,13 @@
         function disableSelection (el){ document.onselectstart = function(){ return false; };  el.unselectable = "on"; el.css('-moz-user-select', 'none'); html.scrollThumb.focus(); };
         
         // get page link	
-		function getLink(page){ return options.baseUrl[0]+options.buildCounter(page)+options.baseUrl[1]; }
+		function getLink(page){
+		    if (page == 1) {
+		        return options.firstPage;
+		    } else {
+		        return options.baseUrl[0]+options.buildCounter(page)+options.baseUrl[1];
+            }
+		}
 		
         // scroll thumb functions	
 		function setScrollThumbWidth(){
@@ -89,14 +96,8 @@
 			    }
 			}
 
-			console.log("maxWidth="+html.table.maxWidth)
-			console.log("pagesSpan="+options.pagesSpan)
-			console.log("xPos="+html.scrollThumb.xPos)
-			console.log("percentFromLeft="+percentFromLeft)
-			console.log("pagesTotal="+options.pagesTotal)
 			// check page number
             cellFirstValue = cellFirstValue < 1 ? 1 : cellFirstValue;
-			console.log("cellFirstValue="+cellFirstValue)
 			// move scroll thumb
 			moveScrollThumb();
 			// draw pages	
@@ -156,6 +157,7 @@
 			pagesSpan    : 10,    // number displayed pages
 			pageCurrent  : 1,  	  // current page
 			baseUrl      : '/blog/page/%number%/', // link template
+			firstPage    : '/blog/',
 			buildCounter : buildCounter, // function builder page number
 			pageScroll 	 : 3, 	  // turnover number of pages with scrolling
 			clickHandler : null,  // callback - performed by selecting a page
