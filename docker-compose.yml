@@ -12,10 +12,16 @@ version: '3'
 services:
 
     python_app:
-        user: $DOCKER_USER
         build:
             context: .
             dockerfile: Dockerfile
+            args:
+              USER_UID: ${USER_UID}
+              USER_GID: ${USER_GID}
+              USER_NAME: ${USER_NAME}
+              USER_PASSWORD: ${USER_PASSWORD}
+              ROOT_PASSWORD: ${ROOT_PASSWORD}
+        user: ${USER_NAME}
         volumes:
             - ./:/app
         command:
@@ -24,7 +30,9 @@ services:
     jekyll:
         image: jekyll/jekyll
         command: jekyll serve --watch --incremental
+        user: root
         ports:
             - 4000:4000
         volumes:
             - .:/srv/jekyll
+
