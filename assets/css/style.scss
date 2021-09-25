@@ -11,6 +11,25 @@ a {
     text-shadow: none;
 }
 
+.see-more {
+    text-decoration: none;
+    color: #b5e853;
+    background-color: #293a27;
+    border-color: #363636;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
 body {
     font-size: 12px;
 }

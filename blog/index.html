@@ -21,7 +21,9 @@ title: Blog
                 <span class="post-date">{{ post.date | date: "%Y-%m-%d" }} //</span> {{ post.title }}
             </h2>
             {{ post.excerpt }}
-            <a href="{{ post.url }}">Lire la suite</a>
+            {% if post.content.size > post.excerpt.size %}
+                <a class="see-more" href="{{ post.url }}">Lire la suite &gt;&gt;</a>
+            {% endif %}
         </li>
     {% endif %}
 </ul>
