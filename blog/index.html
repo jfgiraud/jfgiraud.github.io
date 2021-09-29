@@ -6,26 +6,24 @@ title: Blog
 {% for post in paginator.posts %}
 
 <ul>
-    {% if post.external-url %}
-        <li>
+
+    {% if post.content contains site.excerpt_separator %}
+        <li class="article">
             <h2>
-                <span class="post-date">{{ post.date | date: "%Y-%m-%d" }} //</span> {{ post.title }}
-                <a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
+                <span class="listing-post-date">{{ post.date | date: "%Y-%m-%d" }} //</span> {{ post.title }}
             </h2>
             {{ post.excerpt }}
-            <a href="{{ post.external-url }}">Lire la suite</a>
+            <a class="see-more" href="{{ post.url }}">Lire l'article &gt;&gt;</a>
         </li>
     {% else %}
-        <li>
-            <h2>
-                <span class="post-date">{{ post.date | date: "%Y-%m-%d" }} //</span> {{ post.title }}
+        <li class="article">
+            <h2 class="listing-post">
+                <span>{{ post.date | date: "%Y-%m-%d" }} //</span> <a href="{{post.url}}">{{ post.title }}</a>
             </h2>
             {{ post.excerpt }}
-            {% if post.content.size > post.excerpt.size %}
-                <a class="see-more" href="{{ post.url }}">Lire la suite &gt;&gt;</a>
-            {% endif %}
         </li>
     {% endif %}
+
 </ul>
 
 {% endfor %}

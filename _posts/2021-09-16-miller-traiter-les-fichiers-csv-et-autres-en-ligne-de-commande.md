@@ -2,6 +2,7 @@
 layout: post
 title: "miller, traiter les fichiers CSV (et autres) en ligne de commande"
 date: "2021-09-16 10:07:00"
+tags: csv commande miller
 ---
 
 Hier, j'ai découvert le programme `mlr` ([https://github.com/johnkerl/miller](https://github.com/johnkerl/miller))
