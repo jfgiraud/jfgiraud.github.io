@@ -2,5 +2,14 @@
 layout: post
 title: "intellij, ctrl+shift u (toogle case) ne fonctionne pas"
 date: "2021-04-13 17:18:00"
+tags: intellij
 ---
-Le raccourci <kbd>ctrl+shift u</kbd> (toogle case) ne fonctionne pas, il propose de saisir un code unicode (Linux Ubuntu : Unity).<br/><br/> Ajouter après le shebang du fichier bin/idea.sh :<br/><br/> <script src="https://pastebin.com/embed_js/n20HNnJa"></script>   
+
+Le raccourci `ctrl` `shift` `u` (toogle case) ne fonctionne pas, il propose de saisir un code unicode (Linux Ubuntu : Unity).
+
+Ajouter après le shebang du fichier `bin/idea.sh` :
+
+```text
+export XMODIFIERS=""
+```
+   

@@ -1,6 +1,5 @@
 lsi: false
 safe: true
-theme: jekyll-theme-hacker
 markdown: kramdown
 highlighter: rouge
 
@@ -13,6 +12,7 @@ excerpt_separator: <!-- readmore -->
 paginate: 10
 
 permalink: "/blog/article/:year/:month/:day/:title/"
+theme: jekyll-theme-hacker
 plugins:
 - jekyll-paginate
 - jekyll-feed

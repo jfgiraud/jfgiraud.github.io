@@ -2,5 +2,17 @@
 layout: post
 title: "VirtualBox, connaitre l'IP de la machine hôte"
 date: "2021-05-21 12:12:00"
+tags: virtualbox ipconfig commandes
 ---
-Dans le terminal de la VM,    <kbd>ipconfig</kbd> donne l'information dans  <pre><br />   Passerelle par défaut. . . . . . . . . : xxx<br /></pre>  <kbd>netstat -rn</kbd> donne l'information dans "Adr. passerelle" <pre><br />Destination réseau    Masque réseau  Adr. passerelle   Adr. interface Métrique<br />0.0.0.0               0.0.0.0        xxx               yyy            10<br /></pre>  
+
+Dans le terminal de la VM, `ipconfig` donne l'information dans 
+```text
+Passerelle par défaut. . . . . . . . . : xxx
+```  
+
+`netstat -rn` donne l'information dans "Adr. passerelle"
+
+```text
+Destination réseau    Masque réseau  Adr. passerelle   Adr. interface Métrique
+0.0.0.0               0.0.0.0        xxx               yyy            10
+```  
