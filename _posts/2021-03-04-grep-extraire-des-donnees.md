@@ -2,6 +2,7 @@
 layout: post
 title: "grep, extraire des données"
 date: "2021-03-04 14:50:00"
+tags: grep sed awk
 ---
 
 Il est possible d'utiliser grep pour extraire des données. 

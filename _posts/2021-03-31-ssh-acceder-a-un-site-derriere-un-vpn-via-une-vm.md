@@ -2,6 +2,7 @@
 layout: post
 title: "ssh, accéder à un site derrière un VPN via une VM"
 date: "2021-03-31 17:16:00"
+tags: ssh vpn vm
 ---
 
 Un petit schéma pour expliquer comment j'accède à fitnesse depuis mon poste linux.
