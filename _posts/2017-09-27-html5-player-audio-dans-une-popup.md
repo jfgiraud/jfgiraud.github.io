@@ -1,0 +1,27 @@
+---
+layout: post
+title: "html5, player audio dans une popup"
+date: "2017-09-27 16:23:00"
+---
+Pour mon projet, je devais afficher un player audio HTML5 dans une popup lors d'un clic sur un span (fichier son)...
+
+Voici ce que cela donne sur un exemple allégé :
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-1MaXNndeqVo/WcuxhB4-FiI/AAAAAAAAD_Q/CDp5Y64RmgkWjb6eNjeqtmpzrkSCefOJwCLcBGAs/s1600/S%25C3%25A9lection_001.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="83" data-original-width="278" height="96" src="https://2.bp.blogspot.com/-1MaXNndeqVo/WcuxhB4-FiI/AAAAAAAAD_Q/CDp5Y64RmgkWjb6eNjeqtmpzrkSCefOJwCLcBGAs/s320/S%25C3%25A9lection_001.jpg" width="320" /></a></div>
+avec son code associé :
+
+<script src="https://pastebin.com/embed_js/iGzd3H5K"></script>
+<script src="https://pastebin.com/embed_js/pzFGP7Qi"></script>
+
+A noter :
+
+Parfois le temps total du morceau n'était pas affiché par le player. Cela était aléatoire et ce en utilisant le même logiciel (firefox) sous linux ou sous windows (via une machine virtuelle).
+
+Je suspecte que cela était dû au fait que le fichier son était renvoyé par une servlet...
+
+Dans l'exemple ci-dessus, ce n'est pas le cas mais j'ai laissé le patch pour information (la source m'ayant aidé à résoudre ce problème est la suivante : 
+
+[http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/](http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/))
+
+
+
