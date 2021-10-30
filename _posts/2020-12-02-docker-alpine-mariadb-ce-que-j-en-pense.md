@@ -34,4 +34,12 @@ Ran 110 tests in 178.103s
 OK
 ```
 
-Apparemment c'est connu... Je vais en rester là, peut-être aller voir du côté de <kbd>debian:buster-slim</kbd><br/><br/> Références additionnelles <ul>  <li><a href="https://andygrove.io/2020/05/why-musl-extremely-slow/">https://andygrove.io/2020/05/why-musl-extremely-slow/</a>  <li><a href="https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d">https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d</a></ul>
+Apparemment c'est connu... Je vais en rester là, peut-être aller voir du côté de `debian:buster-slim`
+
+ Références additionnelles 
+
+
+- [https://andygrove.io/2020/05/why-musl-extremely-slow/](https://andygrove.io/2020/05/why-musl-extremely-slow/)
+- [https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d](https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d)
+
+
