@@ -4,12 +4,12 @@
 @import "{{ site.theme }}";
 
 ul li {
-    list-style-image: unset;
+    list-style-image: unset
 }
 
-li.article {
-    list-style-image: url("../images/bullet.png");
-}
+// li.bullet {
+//     list-style-image: url("../images/bullet.png");
+// }
 
 time {
     color:#666666;
@@ -90,6 +90,18 @@ body {
   text-transform: lowercase;
   color: #999;
   margin: 0 0 5px 0;
+}
+
+.bullet {
+ background-image: url("../images/bullet.png");
+ background-repeat: no-repeat;
+ background-position: left 0px top 0px;
+ padding-left: 35px;
+ padding-top: 0;
+}
+
+div.excerpt {
+    margin-bottom: 50px;
 }
 
 pre {
