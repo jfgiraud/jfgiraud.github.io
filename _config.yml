@@ -3,11 +3,11 @@ safe: true
 markdown: kramdown
 highlighter: rouge
 
-title: mezalor$ ls -lt
+title: ls -lt
 description: J'entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté...
 author: "Jean-François Giraud"
 blog: on
-excerpt_separator: <!-- readmore -->
+#excerpt_separator: <!-- readmore -->
 
 paginate: 10
 

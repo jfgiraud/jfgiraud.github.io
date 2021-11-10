@@ -7,23 +7,15 @@ ul li {
     list-style-image: unset
 }
 
-// li.bullet {
-//     list-style-image: url("../images/bullet.png");
+// h2.listing-post>a {
+//     text-shadow: none;
+//     text-decoration: none;
+//     color: #b5e853;
 // }
-
-time {
-    color:#666666;
-}
-
-h2.listing-post>a {
-    text-shadow: none;
-    text-decoration: none;
-    color: #b5e853;
-}
-
-h2.listing-post>span {
-    color: #698b22;
-}
+//
+// h2.listing-post>span {
+//     color: #698b22;
+// }
 
 .see-more {
     text-decoration: none;
@@ -48,13 +40,13 @@ body {
     font-size: 12px;
 }
 
-#post-title>h1 {
-    margin-bottom: 0px;
-}
-
-#post-title {
-    margin-bottom: 30px;
-}
+// #post-title>h1 {
+//     margin-bottom: 0px;
+// }
+//
+// #post-title {
+//     margin-bottom: 30px;
+// }
 
 #main_content h1 {
   font-size: 16px;
@@ -92,12 +84,29 @@ body {
   margin: 0 0 5px 0;
 }
 
-.bullet {
- background-image: url("../images/bullet.png");
- background-repeat: no-repeat;
- background-position: left 0px top 0px;
- padding-left: 35px;
- padding-top: 0;
+header h1 {
+  font-size: 24px;
+}
+
+header h2 {
+  font-size: 16px;
+}
+
+header h1:before {
+  content: "mezalor$ ";
+}
+
+h1.bullet:before {
+  content: ">> " ;
+}
+
+h1.bullet {
+//     color: #63c0f5; // bleu
+//   color: #63c0f5; // vert
+}
+
+.time {
+   color: #b5e853;
 }
 
 div.excerpt {

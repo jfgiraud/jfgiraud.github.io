@@ -3,8 +3,7 @@ layout: default
 ---
 
 <div id="post-title">
-    <h1>{{ page.title }}</h1>
-    <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">publié le {% include date.html date=page.date %} à {% include heure.html date=page.date %}</time>
+    <h1 class="bullet"><span class="time">{{ page.date | date: "%Y-%m-%d" }} //</span> {{ page.title }}</h1>
 </div>
 <div id="post-content">
     {{ content }}

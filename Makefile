@@ -14,9 +14,10 @@ usage:
 	@cat - <<EOF
 		Targets:
 		* build: create .env file and build images
+		* logs: display jekyll service logs
 		* up: start containers
 		* down: stop containers
-		* tmux: open tmux on each container
+		* term: open tmux on each container
 	EOF
 
 .env:
@@ -41,6 +42,10 @@ up:
 .PHONY: down
 down:
 	docker-compose down
+
+.PHONY: logs
+logs:
+	docker-compose logs jekyll
 
 .PHONY: run
 term:
