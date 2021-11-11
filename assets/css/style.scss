@@ -109,8 +109,15 @@ h1.bullet {
    color: #b5e853;
 }
 
-div.excerpt {
-    margin-bottom: 50px;
+div.article {
+//     margin-bottom: 50px;
+//     border: 1px dashed #b5e853;
+    border-size: 1px;
+    border-color: #293a27;
+    border-style: solid double;
+    padding: 10px;
+    margin-bottom: 30px;
+//     color: #b5e853;
 }
 
 pre {

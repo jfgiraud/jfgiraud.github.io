@@ -7,22 +7,20 @@ title: Blog
 {% for post in paginator.posts %}
 
     {% if post.content contains site.excerpt_separator %}
-        <h1 class="bullet">
-           <span class="time">{{ post.date | date: "%Y-%m-%d" }} //</span> <a href="{{post.url}}">{{ post.title }}</a>
-        </h1>
-        <div class="excerpt">
+        <div class="article">
+            <h1 class="bullet">
+                <span class="time">{{ post.date | date: "%Y-%m-%d" }} //</span> <a href="{{post.url}}">{{ post.title }}</a>
+            </h1>
             {{ post.excerpt }}
-            <a class="see-more" href="{{ post.url }}">Lire l'article &gt;&gt;</a>
+            <a class="see-more" href="{{ post.url }}">Lire la suite &gt;&gt;</a>
         </div>
-        <hr/>
     {% else %}
-        <h1 class="bullet">
-           <span class="time">{{ post.date | date: "%Y-%m-%d" }} //</span> <a href="{{post.url}}">{{ post.title }}</a>
-        </h1>
-        <div class="excerpt">
+        <div class="article">
+            <h1 class="bullet">
+                <span class="time">{{ post.date | date: "%Y-%m-%d" }} //</span> <a href="{{post.url}}">{{ post.title }}</a>
+            </h1>
             {{ post.excerpt }}
         </div>
-        <hr/>
     {% endif %}
 
 
