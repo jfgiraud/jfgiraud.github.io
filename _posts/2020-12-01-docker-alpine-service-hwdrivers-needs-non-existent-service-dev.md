@@ -9,7 +9,7 @@ tags: docker alpine mariadb
 # Avoid Service hwdrivers needs non existent service dev
 #/ # rc-status
 # * Caching service dependencies ...
-#Service `hwdrivers' needs non existent service `dev' [ ok ]
+#Service hwdrivers needs non existent service dev [ ok ]
 #Runlevel: sysinit
 
 RUN apk add udev-init-scripts-openrc
