@@ -5,11 +5,13 @@ date: "2020-12-01 09:44:00"
 tags: docker alpine mariadb
 ---
 
+Voici comment résoudre `Avoid Service hwdrivers needs non existent service dev`
+
 ```
-# Avoid Service hwdrivers needs non existent service dev
+# Avoid Service `hwdrivers' needs non existent service `dev'
 #/ # rc-status
 # * Caching service dependencies ...
-#Service hwdrivers needs non existent service dev [ ok ]
+#Service `hwdrivers' needs non existent service `dev'               [ ok ]
 #Runlevel: sysinit
 
 RUN apk add udev-init-scripts-openrc
