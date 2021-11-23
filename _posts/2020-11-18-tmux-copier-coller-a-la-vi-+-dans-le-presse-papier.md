@@ -4,7 +4,7 @@ title: "tmux, copier/coller à la vi + dans le presse-papier"
 date: "2020-11-18 17:56:00"
 tags: presse-papier tmux xclip commande bash
 ---
-Commandes à ajouter au ~/.tmux.conf
+Commandes à ajouter au `~/.tmux.conf`
 
 Dans mon cas, il s'agit d'un tmux 1.8 :
 

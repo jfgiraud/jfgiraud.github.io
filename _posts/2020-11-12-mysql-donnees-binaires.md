@@ -4,13 +4,13 @@ title: "mysql, données binaires"
 date: "2020-11-12 15:47:00"
 tags: hexa binary binaire mysql
 ---
-Dans certains cas, la commande LOAD_FILE n'est pas utilisable (problèmes de droits, etc..) pour alimenter 
+Dans certains cas, la commande `LOAD_FILE` n'est pas utilisable (problèmes de droits, etc..) pour alimenter 
 un blob.
 
 Dans ce cas, il peut être intéressant de convertir un fichier binaire (ici un fichier texte) en séquence 
 hexadécimale...
 
-```
+```text
 $ cat lorem.txt 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at lorem pharetra, pulvinar quam nec, efficitur ligula. Donec imperdiet aliquam rutrum. Aenean metus est, cursus eget auctor sit amet, vehicula id lorem. Vivamus mollis sollicitudin mattis. Aenean volutpat velit tellus, et ullamcorper nisi aliquam ut. Nunc efficitur est ac tincidunt ultrices. Morbi ac quam magna. Vivamus egestas elit in bibendum fermentum. Nulla nunc felis, aliquet a lorem eleifend, mollis laoreet libero. Etiam sit amet justo bibendum, cursus lectus in, blandit ex. Nulla dolor est, pharetra eget nulla et, sodales dapibus diam.
 
@@ -21,7 +21,7 @@ et utiliser cette séquence hexadécimale pour faire sa requête mysql.
 
 On utilisera alors la commande UNHEX pour décoder la séquence hexadécimale et la remettre en binaire dans la requête SQL.
 
-```
+```text
 $ xxd -p lorem.txt | tr -d '\n' | xargs printf 'select unhex("%s");' | mysql -u root -ptest -s 2> /dev/null | xargs -0 printf $'%b'
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at lorem pharetra, pulvinar quam nec, efficitur ligula. Donec imperdiet aliquam rutrum. Aenean metus est, cursus eget auctor sit amet, vehicula id lorem. Vivamus mollis sollicitudin mattis. Aenean volutpat velit tellus, et ullamcorper nisi aliquam ut. Nunc efficitur est ac tincidunt ultrices. Morbi ac quam magna. Vivamus egestas elit in bibendum fermentum. Nulla nunc felis, aliquet a lorem eleifend, mollis laoreet libero. Etiam sit amet justo bibendum, cursus lectus in, blandit ex. Nulla dolor est, pharetra eget nulla et, sodales dapibus diam.
 
