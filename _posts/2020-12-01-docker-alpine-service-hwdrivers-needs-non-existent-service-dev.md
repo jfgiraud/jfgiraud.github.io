@@ -5,7 +5,7 @@ date: "2020-12-01 09:44:00"
 tags: docker alpine mariadb
 ---
 
-```text
+```
 # Avoid Service hwdrivers needs non existent service dev
 #/ # rc-status
 # * Caching service dependencies ...
