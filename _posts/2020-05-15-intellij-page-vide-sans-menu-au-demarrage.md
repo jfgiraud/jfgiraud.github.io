@@ -13,4 +13,4 @@ Attention, vous pouvez perdre d'autres configurations mais pour moi c'était acc
   457  | 14/05 16:38 |  rm -rf .config/JetBrains/ .java/ .local/share/JetBrains/ .cache/JetBrains/
 ```
 
-![2020-05-15-intellij-page-vide-sans-menu-au-demarrage.png](2020-05-15-intellij-page-vide-sans-menu-au-demarrage.png)
+![2020-05-15-intellij-page-vide-sans-menu-au-demarrage.png](assets/images/2020-05-15-intellij-page-vide-sans-menu-au-demarrage.png)

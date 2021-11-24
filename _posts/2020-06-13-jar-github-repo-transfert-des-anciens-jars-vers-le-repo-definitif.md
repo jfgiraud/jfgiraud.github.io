@@ -20,6 +20,6 @@ for v in 1.5.3 2.0.0 2.0.1 2.0.2 2.0.3 2.0.4 2.0.5 2.0.6 2.0.7; do
 done
 ```
 
-![2020-06-13-jar-github-repo-transfert-des-anciens-jars-vers-le-repo-definitif.png](2020-06-13-jar-github-repo-transfert-des-anciens-jars-vers-le-repo-definitif.png) 
+![2020-06-13-jar-github-repo-transfert-des-anciens-jars-vers-le-repo-definitif.png](assets/images/2020-06-13-jar-github-repo-transfert-des-anciens-jars-vers-le-repo-definitif.png) 
 
 **EDIT**: le système nécessite visiblement le paramétrage d'un token dans le settings.xml même pour télécharger le war. Ce cas d'usage me déçoit :(
