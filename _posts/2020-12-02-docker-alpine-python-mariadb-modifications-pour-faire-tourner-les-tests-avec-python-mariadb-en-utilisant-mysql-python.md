@@ -5,7 +5,9 @@ date: "2020-12-02 11:11:00"
 tags: docker alpine mariadb
 ---
 
-```text
+Erreurs vues et paquets installés : 
+
+```bash
 apk add python3 python3-dev py3-virtualenv
 apk add python2 python2-dev
 apk add mariadb-dev

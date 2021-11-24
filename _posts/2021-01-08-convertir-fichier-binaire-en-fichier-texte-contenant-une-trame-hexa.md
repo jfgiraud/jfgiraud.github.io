@@ -5,7 +5,9 @@ date: "2021-01-08 09:45:00"
 tags: hexdump wav hexa
 ---
 
-```text
+Voici comment convertir un fichier binaire en un simple fichier texte contenant une trame hexa :  
+
+```bash
 $ hexdump -C PREMIER.wav | head -n 10
 00000000  52 49 46 46 2c 17 00 00  57 41 56 45 66 6d 74 20  |RIFF,...WAVEfmt |
 00000010  12 00 00 00 06 00 01 00  40 1f 00 00 40 1f 00 00  |........@...@...|
