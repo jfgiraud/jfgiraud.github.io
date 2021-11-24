@@ -8,7 +8,7 @@ Il est possible en bash d'appeler des méthodes lorsque de la fin du script est 
 
 Ci-dessous, le script appellera `cleanup_err` puis `cleanup_ok` lorsque false sera atteint. 
 
-```
+```bash
 #!/bin/bash
 
 function cleanup_err {

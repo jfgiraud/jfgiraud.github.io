@@ -3,6 +3,7 @@ layout: post
 title: "ricoh, retour des toners usagés"
 date: "2020-11-03 14:39:00"
 ---
+
 Ricoh fournit un service pratique pour le recyclage des toners. UPS passe les chercher !
 
 Sur la page [https://www.ricoh-return.com/fr/eu](https://www.ricoh-return.com/fr/eu), cliquer sur : 

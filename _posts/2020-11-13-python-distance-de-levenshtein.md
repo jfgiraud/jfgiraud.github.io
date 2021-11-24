@@ -9,7 +9,7 @@ La distance de Levenshtein est une distance, au sens mathématique du terme, don
 entre deux chaînes de caractères. Elle est égale au nombre minimal de caractères qu'il faut supprimer, insérer ou 
 remplacer pour passer d'une chaîne à l'autre.
 
-```
+```python
 def levenshtein(a,b):
     "Calculates the Levenshtein distance between a and b."
     n, m = len(a), len(b)
@@ -33,7 +33,7 @@ def levenshtein(a,b):
 
 Exemple:
 
-```
+```python
 >>> levenshtein('toto', 'toto')
 0
 >>> levenshtein('toto', 'totos')

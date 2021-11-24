@@ -3,7 +3,10 @@ layout: post
 title: "java, regexp nommées"
 date: "2020-10-07 22:50:00"
 ---
-```
+
+Nommer un groupe et l'utiliser :
+
+```java
     @Test
     public void testFoo() {
         Pattern p = Pattern.compile("Voici le nombre : (?<nombre>\\d+)");

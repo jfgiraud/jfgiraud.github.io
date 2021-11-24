@@ -13,7 +13,7 @@ Ca ne se passait que dans gitlab ci/cd. En local, hors du container docker tout 
 
 
 
-```
+```text
 karma start /root/xxxx/xxxxx-webapp/karma.unit.conf.js --single-run
 22 06 2020 12:40:44.815:WARN [config]: "/" is proxied, you should probably change urlRoot to avoid conflicts 
 22 06 2020 12:40:44.940:INFO [karma]: Front-end scripts not present. Compiling... 
@@ -31,7 +31,7 @@ karma start /root/xxxx/xxxxx-webapp/karma.unit.conf.js --single-run
 
 Dans mon cas, il manquait simplement l'installation de firefox lors de la création de l'image docker...
 
-```
+```bash
 apt-get install -y firefox
 ```
 
