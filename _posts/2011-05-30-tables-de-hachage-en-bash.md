@@ -2,9 +2,22 @@
 layout: post
 title: "tables de hachage en bash"
 date: "2011-05-30 14:27:00"
+tags: hash declare animals key value hachage iterate
 ---
 Voici comment déclarer une table de hachage en bash et itérer sur ses clés pour récupérer les valeurs :
 
-<script src="https://pastebin.com/embed_js/0mNaiqsN"></script>
 
-<div style="height: 0; overflow: hidden;">hash declare animals key value hachage iterate</div>
+```bash
+declare -A animals
+animals=( ["moo"]="cow" ["miaou"]="cat" )
+
+animals['dog']='wouaf'
+
+for i in "${!animals[@]}"
+do
+  echo "key  : $i"
+  echo "value: ${animals[$i]}"
+done
+
+echo "There are ${#animals[@]} animals."
+```
