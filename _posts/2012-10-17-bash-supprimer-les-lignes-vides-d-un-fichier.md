@@ -2,18 +2,29 @@
 layout: post
 title: "bash, supprimer les lignes vides d'un fichier"
 date: "2012-10-17 10:06:00"
+tags: bash, supprimer lignes vides, sed, awk, remove empty lines
 ---
-<script src="https://pastebin.com/embed_js/UJkfppra"></script>
 
-<script src="https://pastebin.com/embed_js/TNSdp2gh"></script>
+Voici plusieurs solutions
+
+```bash
+$ cat ~/fichier |  sed -e 's/^[[:space:]]*$//;/^$/d'
+```
+
+
+```bash
+$ cat ~/fichier | awk NF
+```
 
 où NF indique le nombre de champs. Si ce n'est pas une ligne vide, le nombre de champs est positif et la commande par défaut de awk est d'afficher.
 Ce qui équivaut à : 
 
-<script src="https://pastebin.com/embed_js/LkzL0uxM"></script>
+
+```bash
+$ cat ~/fichier | awk 'NF!=0 { print }'
+```
 
 
 
 
 
-<div style="height: 0; overflow: hidden;">sed, awk, remove empty lines</div>

@@ -2,13 +2,41 @@
 layout: post
 title: "bash, lire ligne par ligne"
 date: "2012-10-16 11:36:00"
+tags: bash, read, line 
 ---
 Pour un fichier :
 
-<script src="https://pastebin.com/embed_js/25Ufep0t"></script>
+```bash
+$ while read line ; 
+do 
+  echo $line; 
+done < /etc/shells
+# /etc/shells: valid login shells
+/bin/csh
+/bin/sh
+/usr/bin/es
+/usr/bin/ksh
+/bin/ksh
+/usr/bin/rc
+/usr/bin/tcsh
+/bin/tcsh
+/usr/bin/esh
+/bin/dash
+/bin/bash
+/bin/rbash
+/usr/bin/screen
+```
 
 Et encore mieux, sur la sortie d'une commande :)
 
-<script src="https://pastebin.com/embed_js/4DiTstX2"></script>
 
-<div style="height: 0; overflow: hidden;">read, line</div>
+```bash
+$ while read line ; 
+do 
+  echo $line; 
+done < <(head -n 3 /etc/shells)
+# /etc/shells: valid login shells
+/bin/csh
+/bin/sh
+```
+

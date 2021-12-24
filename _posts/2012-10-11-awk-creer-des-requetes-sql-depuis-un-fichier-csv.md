@@ -2,9 +2,13 @@
 layout: post
 title: "awk, créer des requêtes SQL depuis un fichier csv"
 date: "2012-10-11 16:31:00"
+tags: awk, fs, insert into table
 ---
 Par exemple :
 
-<script src="https://pastebin.com/embed_js/gipCNe5p"></script>
+```
+$ cat masscomment.csv | tail -n +2 | awk 'BEGIN {FS=";" } ; { print "insert into descriptions (\""$1"\", \""$2"\", \""$3"\", \""$4"\");"}' | head
+insert into descriptions ("3900configb", "Parametres", "description", "Descriptif du paramètre");
+insert into descriptions ("3900configb", "Parametres", "valeur", "Valeur du paramètre");
+```
 
-<div style="height: 0; overflow: hidden;">awk, fs, insert into table</div>

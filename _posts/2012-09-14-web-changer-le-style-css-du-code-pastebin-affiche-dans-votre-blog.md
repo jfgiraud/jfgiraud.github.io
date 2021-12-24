@@ -7,8 +7,20 @@ Si vous affichez du code déposé sur pastebin et que les couleurs ne conviennen
 
 Dans mon cas, j'ai ajouté le code suivant 
 
-<script src="https://pastebin.com/embed_js/pMqWxh4K"></script>
 
-dans un gadget du blog que vous consultez actuellement (cf Conception&gt;Mise en page).
+```javascript
+<script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+<script language="javascript">
+  (function () {
+     $(".embedFooter").css("background", "#666666");
+     $(".embedFooter a").css({"color": "#ffffff"});
+     $(".embedPastebin").css("background", "#eeeeee");
+     $(".de1").css("background", "#eeeeee");
+     $(".de2").css("background", "#eeeeee");
+   })();
+</script>
+```
+
+dans un gadget du blog que vous consultez actuellement (cf Conception>Mise en page).
 
 Cela a pour effet de changer le css des éléments trouvés au chargement de la page.
