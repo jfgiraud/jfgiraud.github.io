@@ -2,23 +2,28 @@
 layout: post
 title: "Bash, templating..."
 date: "2012-08-08 14:37:00"
+tags: bash templating
 ---
-Pour faire un système de templating en bash (par exemple pour du mailing) on peut faire ainsi si l'on souhaite que le modèle soit dans un fichier à part :  <code><pre>
+
+Pour faire un système de templating en bash (par exemple pour du mailing) on peut faire ainsi si l'on souhaite que le modèle soit dans un fichier à part :  
+```
 $ cat template.txt 
-&lt;b&gt;Hello '"${firstname}"'&lt;/b&gt;
+<b>Hello '"${firstname}"</b>
 Bye '"${firstname}"'
 
 $ for firstname in luc jeff gwen
-&gt; do 
-&gt;   while read line 
-&gt;   do 
-&gt;      eval echo "'$line'"
-&gt;   done &lt;template.txt
-&gt; done
-&lt;b&gt;Hello luc&lt;/b&gt;
+> do 
+>   while read line 
+>   do 
+>      eval echo "'$line'"
+>   done < template.txt
+> done
+<b>Hello luc</b>
 Bye luc
-&lt;b&gt;Hello jeff&lt;/b&gt;
+<b>Hello jeff</b>
 Bye jeff
-&lt;b&gt;Hello gwen&lt;/b&gt;
+<b>Hello gwen</b>
 Bye gwen
-</pre></code> Avec les Here Documents, cela aurait été plus simple...
+``` 
+
+Avec les Here Documents, cela aurait été plus simple...
