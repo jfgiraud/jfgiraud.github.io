@@ -3,7 +3,7 @@ layout: post
 title: "bash, initialiser un tableau avec le retour d'une commande et itérer dessus"
 date: "2014-05-08 03:24:00"
 ---
-<script src="http://pastebin.com/embed_js.php?i=mLnYnRxj"></script>
+<script src="https://pastebin.com/embed_js/mLnYnRxj"></script>
 
 <div style="height: 0; overflow: hidden;">bash mapfile iterate loop array
 </div>

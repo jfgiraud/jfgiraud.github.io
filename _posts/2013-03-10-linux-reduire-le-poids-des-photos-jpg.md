@@ -9,4 +9,4 @@ Il s'agit du logiciel jpegoptim.
 
 C'est très pratique pour réduire le poids de scans afin de les envoyer par emails :)
 
-<script src="http://pastebin.com/embed_js.php?i=ZJkQYzki"></script>
+<script src="https://pastebin.com/embed_js/ZJkQYzki"></script>

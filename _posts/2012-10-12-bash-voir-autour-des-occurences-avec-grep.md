@@ -3,7 +3,7 @@ layout: post
 title: "bash, voir autour des occurences avec grep..."
 date: "2012-10-12 12:18:00"
 ---
-<script src="http://pastebin.com/embed_js.php?i=H0994gpt"></script>
+<script src="https://pastebin.com/embed_js/H0994gpt"></script>
 
 Avec l'option :
 

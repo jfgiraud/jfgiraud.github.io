@@ -8,7 +8,7 @@ La machine utilisait le DNS de ma livebox et comme par hasard, celui-ci résout 
 
 J'ai alors configuré de la manière suivante en spécifiant les DNS à utiliser et en forçant DHCP à ne pas écraser le fichier /etc/resolv.conf
 
-<script src="http://pastebin.com/embed_js.php?i=PV1FECQw"></script>
+<script src="https://pastebin.com/embed_js/PV1FECQw"></script>
 
 <div style="height: 0; overflow: hidden;">nameserver etc resolv.conf
 </div>

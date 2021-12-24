@@ -9,11 +9,11 @@ Cependant, dans le login manager SLIM, le texte frappé était en qwerty :/
 
 La ligne suivante insérée insérée dans le .xsession ou .xinitrc n'a d'effet qu'une fois identifié.
 
-<script src="http://pastebin.com/embed_js.php?i=63999Zwf"></script>
+<script src="https://pastebin.com/embed_js/63999Zwf"></script>
 
 Pour que X passe en azerty, j'ai ajouté le fichier suivant :
 
-<script src="http://pastebin.com/embed_js.php?i=cXFSCFpc"></script>
+<script src="https://pastebin.com/embed_js/cXFSCFpc"></script>
 
 Dès lors, X se retrouve en azerty :)
 

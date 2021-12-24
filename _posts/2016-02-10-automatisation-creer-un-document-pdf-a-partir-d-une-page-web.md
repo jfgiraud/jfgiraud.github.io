@@ -7,11 +7,11 @@ Il est facile de créer un document PDF à partir d'une page web.
 
 Pour cela on peut utiliser le programme wkhtmltopdf
 
-<script src="//pastebin.com/embed_js/CdSghvxB"></script>
+<script src="https://pastebin.com/embed_js/CdSghvxB"></script>
 
 ou bien phantomjs avec le script rasterize.js
 
-<script src="//pastebin.com/embed_js/v7tfRHHG"></script>
+<script src="https://pastebin.com/embed_js/v7tfRHHG"></script>
 
 A noter :
 

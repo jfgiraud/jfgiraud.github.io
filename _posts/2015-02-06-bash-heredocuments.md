@@ -7,8 +7,8 @@ Il est possible de désactiver les substitutions dans les heredocuments en bash.
 
 Pour se faire, il suffit de quoter son nom.
 
-<script src="http://pastebin.com/embed_js.php?i=tgC1EHRb"></script>
+<script src="https://pastebin.com/embed_js/tgC1EHRb"></script>
 
 Produit : 
 
-<script src="http://pastebin.com/embed_js.php?i=VD1trcPu"></script>
+<script src="https://pastebin.com/embed_js/VD1trcPu"></script>

@@ -3,7 +3,7 @@ layout: post
 title: "bash, supprimer les lignes vides d'un fichier"
 date: "2012-10-17 10:06:00"
 ---
-<script src="https://pastebin.com/embed_js.php?i=UJkfppra"></script>
+<script src="https://pastebin.com/embed_js/UJkfppra"></script>
 
 <script src="https://pastebin.com/embed_js/TNSdp2gh"></script>
 

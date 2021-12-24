@@ -5,7 +5,7 @@ date: "2012-10-12 15:53:00"
 ---
 Pour savoir si la sortie standard pointe sur un terminal, on peut utiliser l'opérateur "-t" en bash.
 
-<script src="http://pastebin.com/embed_js.php?i=3ZFV0srW"></script>
+<script src="https://pastebin.com/embed_js/3ZFV0srW"></script>
 
 Dans le cas présenté, on utilisera colordiff pour le rendu sinon diff.
 

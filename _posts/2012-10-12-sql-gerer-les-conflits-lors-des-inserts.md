@@ -5,7 +5,7 @@ date: "2012-10-12 13:28:00"
 ---
 Lors d'un insert, si la clé primaire existe déjà, il est possible de faire un traitement comme dans l'exemple ci-dessous.
 
-<script src="http://pastebin.com/embed_js.php?i=sR0pSAh8"></script>
+<script src="https://pastebin.com/embed_js/sR0pSAh8"></script>
 
 Ici, on tente de peupler la table enveloppesTTS avec des valeurs.
 

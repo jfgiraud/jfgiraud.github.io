@@ -5,7 +5,7 @@ date: "2013-03-06 12:38:00"
 ---
 Pour ignorer plusieurs fichiers lors des commits SVN
 
-<script src="http://pastebin.com/embed_js.php?i=1neQTcbc"></script>
+<script src="https://pastebin.com/embed_js/1neQTcbc"></script>
 
 Une page qui explique bien&nbsp;[http://www.math-linux.com/spip.php?article111](http://www.math-linux.com/spip.php?article111) 
 

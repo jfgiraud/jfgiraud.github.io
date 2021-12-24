@@ -7,4 +7,4 @@ J'ai eu un petit soucis dans un script de renommage qui tentait d'interprêter l
 
 La solution consiste à spécifier que la valeur est en base 10 comme dans l'exemple ci-dessous :
 
-<script src="http://pastebin.com/embed_js.php?i=EczZmbtz"></script> 
+<script src="https://pastebin.com/embed_js/EczZmbtz"></script> 

@@ -11,7 +11,7 @@ yaourt -S samsung-ml1860
 
 Dans cups (cf install de cups) sur 127.0.0.1, installer ensuite l'imprimante avec le fichier PPD suivant (connexion en USB)
 
-[http://pastebin.com/KeZFgAG1](http://pastebin.com/KeZFgAG1)
+[https://pastebin.com/KeZFgAG1](https://pastebin.com/KeZFgAG1)
 
 Imprimez ensuite votre page de test :)
 

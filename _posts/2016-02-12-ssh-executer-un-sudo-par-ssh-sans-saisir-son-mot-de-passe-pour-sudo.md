@@ -11,4 +11,4 @@ Nous avons mis en place un script qui lit dans un fichier de conf le mot de pass
 
 Cela donne un code comme ceci :
 
-<script src="//pastebin.com/embed_js/mLRT0FFd"></script>
+<script src="https://pastebin.com/embed_js/mLRT0FFd"></script>

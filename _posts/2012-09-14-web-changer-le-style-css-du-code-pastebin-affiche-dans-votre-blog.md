@@ -7,7 +7,7 @@ Si vous affichez du code déposé sur pastebin et que les couleurs ne conviennen
 
 Dans mon cas, j'ai ajouté le code suivant 
 
-<script src="http://pastebin.com/embed_js.php?i=pMqWxh4K"></script>
+<script src="https://pastebin.com/embed_js/pMqWxh4K"></script>
 
 dans un gadget du blog que vous consultez actuellement (cf Conception&gt;Mise en page).
 

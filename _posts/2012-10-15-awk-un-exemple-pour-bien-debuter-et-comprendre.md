@@ -3,9 +3,9 @@ layout: post
 title: "awk, un exemple pour bien débuter et comprendre..."
 date: "2012-10-15 17:05:00"
 ---
-<script src="http://pastebin.com/embed_js.php?i=msK3D2Pa"></script>
+<script src="https://pastebin.com/embed_js/msK3D2Pa"></script>
 
-<script src="http://pastebin.com/embed_js.php?i=7bd3x9Ra"></script>
+<script src="https://pastebin.com/embed_js/7bd3x9Ra"></script>
 
 awk n'est pas si compliqué que ça lorsque l'on comprend la philosophie...
 

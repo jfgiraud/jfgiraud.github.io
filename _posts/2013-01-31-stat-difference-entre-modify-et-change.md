@@ -5,7 +5,7 @@ date: "2013-01-31 12:11:00"
 ---
 Quelle est la différence entre modify et change dans le retour de la commande stat ?
 
-<script src="http://pastebin.com/embed_js.php?i=g5JQLfgr"></script>
+<script src="https://pastebin.com/embed_js/g5JQLfgr"></script>
 
 
 

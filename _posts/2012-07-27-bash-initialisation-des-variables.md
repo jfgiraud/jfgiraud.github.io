@@ -24,4 +24,4 @@ Pour résumer :
 - Le ":" indique que l'on remplace par l'expansion de WORD même si PARAMETER est vide (positionné mais vide)
 - Le "=" à la différence de ":" indique qu'en plus PARAMETER sera affecté par l'expansion de WORD si celle-ci est utilisée. 
 
- <script src="//pastebin.com/embed_js/9C4tY3dc"></script>
+ <script src="https://pastebin.com/embed_js/9C4tY3dc"></script>

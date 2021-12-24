@@ -9,4 +9,4 @@ Toutefois, dans certains cas, on peut souhaiter tester la présence de fichiers 
 
 On peut utiliser la commande ls couplée à if comme le montre l'exemple ci-dessous
 
-<script src="http://pastebin.com/embed_js.php?i=jzweDZNg"></script>
+<script src="https://pastebin.com/embed_js/jzweDZNg"></script>

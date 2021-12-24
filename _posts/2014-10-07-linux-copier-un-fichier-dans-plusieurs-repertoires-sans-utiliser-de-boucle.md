@@ -7,4 +7,4 @@ Un truc et astuce pour copier un fichier à plusieurs endroits dans utiliser une
 
 Il suffit d'utiliser la commande <code>xargs</code> avec le paramètre <code>-n 1</code> comme dans l'exemple ci-dessous : 
 
-<script src="http://pastebin.com/embed_js.php?i=C0QNrJD8"></script>
+<script src="https://pastebin.com/embed_js/C0QNrJD8"></script>

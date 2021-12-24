@@ -11,6 +11,6 @@ En python, la lecture se fait simplement en utilisant le module netrc.
 
 Aujourd'hui, je viens de découvrir que git peut l'utiliser afin d'éviter d'avoir à retaper son login et mot de passe à chaque push...
 
-<script src="http://pastebin.com/embed_js.php?i=d5K8xe60"></script>
+<script src="https://pastebin.com/embed_js/d5K8xe60"></script>
 
 Ce fichier me plaît bien : centralisation et simplicité :) 

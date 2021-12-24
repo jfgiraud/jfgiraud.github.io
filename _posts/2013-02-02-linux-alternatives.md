@@ -7,7 +7,7 @@ A chaque fois, on fait des bidouilles pour utiliser une version d'un exécutable
 
 Pourtant il existe les alternatives sous linux qui permettent de basculer vers une version particulière...
 
-<script src="http://pastebin.com/embed_js.php?i=07yFvBaM"></script>
+<script src="https://pastebin.com/embed_js/07yFvBaM"></script>
 
 <div style="height: 0; overflow: hidden;">update-alternatives config java install
 </div>

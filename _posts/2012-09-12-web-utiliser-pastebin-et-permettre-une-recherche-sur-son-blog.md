@@ -7,5 +7,5 @@ Inclure du code déposé sur pastebin c'est bien... Malheureusement, le moteur d
 
 Pour permettre une recherche, on peut positionner des mots clés "invisibles" dans sa page.
 
-<script src="http://pastebin.com/embed_js.php?i=x8gRJD3U"></script> <div style="overflow:hidden; height:0;">pastebin, mot clé, search engine, moteur de recherche</div>
+<script src="https://pastebin.com/embed_js/x8gRJD3U"></script> <div style="overflow:hidden; height:0;">pastebin, mot clé, search engine, moteur de recherche</div>
 Le moteur de recherche les verra et remontera l'article :)

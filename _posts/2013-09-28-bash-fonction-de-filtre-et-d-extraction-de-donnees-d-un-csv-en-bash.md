@@ -7,8 +7,8 @@ J'ai mis à disposition sur mon repository git un utilitaire [csv-functions.sh](
 
 Voici un exemple d'utilisation :
 
-<script src="http://pastebin.com/embed_js.php?i=awfhgJTL"></script>
+<script src="https://pastebin.com/embed_js/awfhgJTL"></script>
 
 avec son résultat :
 
-<script src="http://pastebin.com/embed_js.php?i=i05LsnRc"></script>
+<script src="https://pastebin.com/embed_js/i05LsnRc"></script>

@@ -7,4 +7,4 @@ Un petit post pour rappeler les raccourcis clavier dans les terminaux.
 
 Certains sont bien utiles comme le Esc + . que j'utilise constamment ;)
 
-<script src="http://pastebin.com/embed_js.php?i=K0EBnxVn"></script>
+<script src="https://pastebin.com/embed_js/K0EBnxVn"></script>

@@ -16,7 +16,7 @@ Par défaut, la sélection avec xterm se fait de la manière suivante
 
 Pour changer la définition du mot pour prendre plus de choses comme des urls, il faut modifier son fichier ~/.Xresources  
 
-<script src="http://pastebin.com/embed_js.php?i=1dz4MwTh"></script>  
+<script src="https://pastebin.com/embed_js/1dz4MwTh"></script>  
 
 Dès lors le double clic améliore le confort d'utilisation :) 
 

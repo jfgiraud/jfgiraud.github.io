@@ -8,11 +8,11 @@ de différentes manières.
 
 La première en comptabilisant le nombre de lignes retournées.
 
-<script src="http://pastebin.com/embed_js.php?i=zYiQWwVn"></script>
+<script src="https://pastebin.com/embed_js/zYiQWwVn"></script>
 
 La seconde en utilisant le code de retour de la commande.
 
-<script src="http://pastebin.com/embed_js.php?i=cU9AC5Qy"></script>
+<script src="https://pastebin.com/embed_js/cU9AC5Qy"></script>
 
 <div style="overflow:hidden; height:0;">which, apt-get install, sudo</div>
 La seconde est plus lisible, pas besoin de décrypter. 

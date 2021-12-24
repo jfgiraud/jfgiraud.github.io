@@ -11,15 +11,15 @@ En les connaissant et les utilisant, il doit être possible de minimiser les con
 
 Les commandes : 
 
-<script src="//pastebin.com/embed_js/24wdcf6P"></script>
+<script src="https://pastebin.com/embed_js/24wdcf6P"></script>
 
 Quelques cas d'usage simples :
 
-<script src="//pastebin.com/embed_js/S0pZbhfT"></script>
+<script src="https://pastebin.com/embed_js/S0pZbhfT"></script>
 
 D'autres cas d'usage avec modification des paramètres
 
-<script src="//pastebin.com/embed_js/V6Jz2gji"></script>
+<script src="https://pastebin.com/embed_js/V6Jz2gji"></script>
 
 Sources :
 

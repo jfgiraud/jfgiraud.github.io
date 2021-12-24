@@ -7,6 +7,6 @@ Il y a quelques années, j'avais écris un petit programme qui permettait de cha
 
 A cette époque, je ne connaissais pas la commande mmv (comprendre "mass"mv) :
 
-<script src="http://pastebin.com/embed_js.php?i=qqxsewue"></script>
+<script src="https://pastebin.com/embed_js/qqxsewue"></script>
 
 A noter : cette commande permet aussi de supprimer l'extension des fichiers...

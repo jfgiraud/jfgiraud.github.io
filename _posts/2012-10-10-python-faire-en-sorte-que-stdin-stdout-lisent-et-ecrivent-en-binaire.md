@@ -9,6 +9,6 @@ La lecture et l'écriture pouvant se faire sur l'entrée/sortie standard (source
 
 Pour y remédier, j'ai "transformé" les flux standard (mode texte) en flux binaires de la manière suivante :
 
-<script src="http://pastebin.com/embed_js.php?i=47Nkp7Yj"></script>
+<script src="https://pastebin.com/embed_js/47Nkp7Yj"></script>
 
 <div style="height: 0; overflow: hidden;">python, binary, os, fileno</div>

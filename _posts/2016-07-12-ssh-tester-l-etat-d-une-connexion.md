@@ -5,4 +5,4 @@ date: "2016-07-12 14:18:00"
 ---
 Voici un petit code qui permet de tester l'état d'une connexion ssh (avec un timeout de 10s) :
 
-<script src="//pastebin.com/embed_js/7uufy6tz"></script>
+<script src="https://pastebin.com/embed_js/7uufy6tz"></script>

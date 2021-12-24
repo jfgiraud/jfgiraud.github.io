@@ -20,4 +20,4 @@ $ echo ${v//+([[:upper:]])}
 temps vite
 $ echo ${v%%+([[:lower:]])} 
 LE temps PASSE
-</pre></code> <script src="http://pastebin.com/embed_js.php?i=KJjpzEHF"></script><div style="height: 0; overflow: hidden;">pattern</div>
+</pre></code> <script src="https://pastebin.com/embed_js/KJjpzEHF"></script><div style="height: 0; overflow: hidden;">pattern</div>

@@ -7,7 +7,7 @@ Si l'on a des fichiers Excel que l'on souhaite lire ou écrire, on peut utiliser
 
 Voici un petit exemple de ce que l'on peut faire :
 
-<script src="http://pastebin.com/embed_js.php?i=G7b8TfDf"></script>
+<script src="https://pastebin.com/embed_js/G7b8TfDf"></script>
 
 La page suivante propose des exemples clairs et rapides pour bien commencer :
 [http://www.dev-explorer.com/articles/excel-spreadsheets-and-python](http://www.dev-explorer.com/articles/excel-spreadsheets-and-python)

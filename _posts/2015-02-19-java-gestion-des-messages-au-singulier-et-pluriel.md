@@ -9,7 +9,7 @@ Vous trouverez ci-dessous un exemple au travers de tests unitaires.
 
 Maintenant, fini les rustines dans le code pour les libellés !
 
-<script src="http://pastebin.com/embed_js.php?i=BZK15Rd9"></script>
+<script src="https://pastebin.com/embed_js/BZK15Rd9"></script>
 
 <div style="height: 0; overflow: hidden;">java, messageformat, singulier, pluriel
 </div>

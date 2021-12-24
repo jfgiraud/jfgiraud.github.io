@@ -11,7 +11,7 @@ Il y a des solutions tierces telles que paragon-software.com et tuxera.com mais 
 
 J'ai quand même fait quelques explorations et il s'avère qu'on peut bien monter le disque en lecture/écriture sans passer par la caisse :
 
-<script src="http://pastebin.com/embed_js.php?i=bp9HPBpY"></script>
+<script src="https://pastebin.com/embed_js/bp9HPBpY"></script>
 
 J'ai lancé une copie de 200Go de données, je verai bien si tout passe.
 

@@ -7,7 +7,7 @@ Il est possible d'utiliser sed pour supprimer une ligne en fonction de son numé
 
 Voici un exemple :
 
-<script src="//pastebin.com/embed_js/kRDL4FZY"></script>
+<script src="https://pastebin.com/embed_js/kRDL4FZY"></script>
 
 Ceci permet d'éviter de jouer avec une succession de head/tail...
 

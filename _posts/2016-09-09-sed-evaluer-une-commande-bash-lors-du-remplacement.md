@@ -11,6 +11,6 @@ Ici c'est la commande bash qui affiche l'attribut suivi d'un ':' et de la valeur
 
 Comme vous le constatez, l'utilisation des valeurs capturées est possible.
 
-<script src="//pastebin.com/embed_js/mVyjBJUC"></script>
+<script src="https://pastebin.com/embed_js/mVyjBJUC"></script>
 
 Le code a été difficile à trouver, c'est pourquoi je le partage :)

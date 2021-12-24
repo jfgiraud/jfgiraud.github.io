@@ -7,7 +7,7 @@ Il est possible d'utiliser sed pour filter des lignes et garder/ne pas garder ce
 
 Dans l'exemple suivant, on garde ou ne garde pas les lignes contenant le terme *ou*
 
-<script src="//pastebin.com/embed_js/XVRHpUhh"></script>
+<script src="https://pastebin.com/embed_js/XVRHpUhh"></script>
 
 Il est tout à fait possible d'utiliser l'option in-place de sed pour travailler sur le fichier lui même.
 

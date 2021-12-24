@@ -9,4 +9,4 @@ Il suffit simplement de mettre à jour les clés de son trousseau comme dans l'e
 
 Ensuite, ça roule ma poule :) 
 
-<script src="http://pastebin.com/embed_js.php?i=r4gAmt8Z"></script>
+<script src="https://pastebin.com/embed_js/r4gAmt8Z"></script>

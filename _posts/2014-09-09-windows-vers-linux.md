@@ -7,6 +7,6 @@ Lors de récupération de données créées depuis office$, et exportées en CSV
 
 Cela n'est pas forcément très visible mais peut occasionner des problèmes d'affichage de page ou de vocalisation dans le cas de services vocaux...
 
-<script src="http://pastebin.com/embed_js.php?i=UcCuBqik"></script>
+<script src="https://pastebin.com/embed_js/UcCuBqik"></script>
 
 Il faut donc penser à convertir ce caractère en "vrai" apostrophe !

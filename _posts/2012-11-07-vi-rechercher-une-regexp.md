@@ -5,4 +5,4 @@ date: "2012-11-07 22:56:00"
 ---
 Par exemple pour rechercher les occurences say ou play lorsque l'on édite un fchier :
 
-<script src="http://pastebin.com/embed_js.php?i=zwBFhJhc"></script>
+<script src="https://pastebin.com/embed_js/zwBFhJhc"></script>

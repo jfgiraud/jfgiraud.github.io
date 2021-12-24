@@ -7,11 +7,11 @@ On peut facilement vérifier si une donnée contenue dans une variable est au bo
 
 Dans l'exemple ci-dessous, on vérifie si le numéro de version fourni est correct.
 
-<script src="http://pastebin.com/embed_js.php?i=zBdfhhNa"></script>
+<script src="https://pastebin.com/embed_js/zBdfhhNa"></script>
 
 Dans celui-ci si la valeur contient localhost ou itg
 
-<script src="http://pastebin.com/embed_js.php?i=ASS9hgZP"></script>
+<script src="https://pastebin.com/embed_js/ASS9hgZP"></script>
 
 Attention, la regexp n'est pas entre quote ni double-quote.
 

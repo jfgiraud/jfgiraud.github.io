@@ -7,10 +7,10 @@ Il est relativement simple de permettre à un site web de proposer un moteur de 
 
 Pour cela il faut proposer un fichier mysearch.xml
 
-<script src="http://pastebin.com/embed_js.php?i=94EW3twm"></script>
+<script src="https://pastebin.com/embed_js/94EW3twm"></script>
 
 Et le proposer dans votre page html via la balise link
 
-<script src="http://pastebin.com/embed_js.php?i=p5XXeyyg"></script>
+<script src="https://pastebin.com/embed_js/p5XXeyyg"></script>
 
 <div style="height: 0; overflow: hidden;">open search description moteur recherche navigateur</div>

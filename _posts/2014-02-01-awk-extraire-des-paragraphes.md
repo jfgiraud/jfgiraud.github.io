@@ -8,4 +8,4 @@ Avec awk, il est possible d'extraire des paragraphes spécifiques par leur ordre
 Il faut positionner le séparateur d'enregistrements RS et donner les numéros de paragraphe que
 l'on souhaite extraire via un if comme dans l'exemple ci-dessous.
 
-<script src="http://pastebin.com/embed_js.php?i=d9HyXLEH"></script>
+<script src="https://pastebin.com/embed_js/d9HyXLEH"></script>

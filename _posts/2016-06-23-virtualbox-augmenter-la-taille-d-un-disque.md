@@ -7,7 +7,7 @@ Voici la procédure pour augmenter la taille d'un disque :
 
 [http://blog.francis-fustier.fr/en/virtualbox-augmenter-la-taille-du-disque-virtuel/](http://blog.francis-fustier.fr/en/virtualbox-augmenter-la-taille-du-disque-virtuel/)
 
-<script src="//pastebin.com/embed_js/4iBWjeaq"></script>
+<script src="https://pastebin.com/embed_js/4iBWjeaq"></script>
 
 J'ai adapté la partie #2 de la procédure comme suit :
 
