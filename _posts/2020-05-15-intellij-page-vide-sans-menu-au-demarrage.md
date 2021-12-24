@@ -2,6 +2,7 @@
 layout: post
 title: "intellij, page vide sans menu au démarrage"
 date: "2020-05-15 14:26:00"
+tags: intellij
 ---
 Suite à la mise à jour d'un plugin (python), mon intellij 2020.1 ne démarrait plus correctement. Les versions antérieures oui, mais j'ai eu des difficultés pour rétablir un démarrage correct.
 

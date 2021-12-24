@@ -2,7 +2,11 @@
 layout: post
 title: "mysql, supprimer les mysql: [Warning] Using a password on the command line interface can be insecure."
 date: "2020-04-25 17:44:00"
+tags: mysql warning password insecure
 ---
+
+Comment supprimer ces messages :
+
 ```
 $ mysql -u test -ptest -h localhost MYdatabase
 mysql: [Warning] Using a password on the command line interface can be insecure.

@@ -2,6 +2,7 @@
 layout: post
 title: "bash, créer des requêtes sql depuis un csv"
 date: "2020-04-21 18:39:00"
+tags: bash sql csv
 ---
 Il y a quelques temps, j'avais utilisé la commande `awk` pour générer des requêtes sql depuis un fichier CSV.
 

@@ -2,6 +2,7 @@
 layout: post
 title: "docker, tests karma dans un container docker"
 date: "2020-06-22 16:13:00"
+tags: docker karma container
 ---
 Je suis novice en docker / gitlab ci/cd mais je m'y mets depuis la semaine dernière. 
 

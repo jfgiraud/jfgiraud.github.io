@@ -2,6 +2,7 @@
 layout: post
 title: "VirtualBox et erreurs à l'installation"
 date: "2019-05-29 11:43:00"
+tags: virtualbox
 ---
 Liens de rappel en vrac 
 
