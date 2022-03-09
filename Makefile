@@ -35,8 +35,13 @@ usage:
 build: .env
 	docker-compose build
 
+.PHONY: clean
+clean:
+	echo "Nettoyage"
+	sudo rm -rf .jekyll-metadata env _site
+
 .PHONY: up
-up:
+up: clean
 	docker-compose up -d
 
 .PHONY: down

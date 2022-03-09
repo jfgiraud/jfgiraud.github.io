@@ -2,12 +2,19 @@
 layout: post
 title: "virtualbox, augmenter la taille d'un disque"
 date: "2016-06-23 15:37:00"
+tags: virtualbox
 ---
 Voici la procédure pour augmenter la taille d'un disque :
 
 [http://blog.francis-fustier.fr/en/virtualbox-augmenter-la-taille-du-disque-virtuel/](http://blog.francis-fustier.fr/en/virtualbox-augmenter-la-taille-du-disque-virtuel/)
 
-<script src="https://pastebin.com/embed_js/4iBWjeaq"></script>
+
+```
+sudo vboxmanage modifyhd « path / volume name» –resize [size]
+
+
+Size : 15360 = 15 GB, 20480 = 20 GB, 30720 = 30 GB, etc..
+```
 
 J'ai adapté la partie #2 de la procédure comme suit :
 

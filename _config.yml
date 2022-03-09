@@ -9,7 +9,7 @@ author: "Jean-François Giraud"
 blog: on
 #excerpt_separator: <!-- readmore -->
 
-paginate: 10
+paginate: 25
 
 permalink: "/blog/article/:year/:month/:day/:title/"
 theme: jekyll-theme-hacker

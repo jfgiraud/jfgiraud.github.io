@@ -2,6 +2,7 @@
 layout: post
 title: "ssh, exécuter un sudo par ssh sans saisir son mot de passe (pour sudo)..."
 date: "2016-02-12 10:57:00"
+tags: ssh password
 ---
 Dans le cadre de mon projet, on souhaitait pouvoir exécuter des redémarrages de services depuis son poste local sur des machines accessibles par ssh mais dont on n'avait pas accès au compte root.
 
@@ -11,4 +12,7 @@ Nous avons mis en place un script qui lit dans un fichier de conf le mot de pass
 
 Cela donne un code comme ceci :
 
-<script src="https://pastebin.com/embed_js/mLRT0FFd"></script>
+
+```bash
+ssh user@host.example.com "sudo -S service sonar restart <<< '$passwd'"
+```
