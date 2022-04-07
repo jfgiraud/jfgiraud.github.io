@@ -2,11 +2,12 @@
 layout: post
 title: "bash, script seqdate"
 date: "2018-10-17 10:07:00"
+tags: commande date seq
 ---
 Script réutilisable pour générer des dates avec `date` et `seq`
 
 
-```
+```bash
 #!/bin/bash
 
 usage() {
@@ -38,7 +39,7 @@ done
 ```
 
 
-```
+```bash
 $ ./seqdate.sh 2018-08-01 2018-08-10
 2018-08-01
 2018-08-02

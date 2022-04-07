@@ -2,6 +2,7 @@
 layout: post
 title: "Java, convertir des wav en mp3"
 date: "2017-09-27 16:49:00"
+tags: java conversion wav mp3
 ---
 Je maintiens une IHM d'administration dans laquelle un petit player flash permet d'écouter des fichiers wav.
 
@@ -25,7 +26,7 @@ La bibliothèque est disponible sur le repository maven ([https://mvnrepository.
 L'utilisation est simple pour convertir un fichier wav en mp3. Voici ci-dessous un exemple :
 
 
-```
+```java
 import de.sciss.jump3r.Main;
 
 public void convertWavFileToMp3File(File source, File target) throws IOException {

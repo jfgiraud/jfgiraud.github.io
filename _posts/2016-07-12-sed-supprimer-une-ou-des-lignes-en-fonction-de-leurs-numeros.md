@@ -2,6 +2,7 @@
 layout: post
 title: "sed, supprimer une ou des lignes en fonction de leurs numéros"
 date: "2016-07-12 10:36:00"
+tags: sed ligne lignes supprimer entre
 ---
 Il est possible d'utiliser sed pour supprimer une ligne en fonction de son numéro ou un ensemble de lignes défini par le numéro de ligne de départ et de fin.
 
@@ -25,4 +26,3 @@ Swap:     12270588          0   12270588
 
 Ceci permet d'éviter de jouer avec une succession de head/tail...
 
-<div style="height: 0; overflow: hidden;">sed, ligne, lignes, supprimer , entre</div>

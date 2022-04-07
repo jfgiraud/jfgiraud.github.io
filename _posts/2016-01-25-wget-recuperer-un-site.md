@@ -2,6 +2,7 @@
 layout: post
 title: "wget, récupérer un site "
 date: "2016-01-25 10:58:00"
+tags: wget, fitnesse, web
 ---
 Petite commande utilisée dans le cadre de mon projet pour récupérer l'ensemble de tests fitnesse afin de les packager et les livrer au client.
 
@@ -31,4 +32,3 @@ This option causes Wget to download all the files that are necessary to properly
 Specify a regular expression to accept or reject the complete URL.
 ```
 
-<div style="height: 0; overflow: hidden;">wget, fitnesse, web</div>

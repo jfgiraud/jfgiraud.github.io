@@ -2,9 +2,10 @@
 layout: post
 title: "java, accéder à une méthode de même nom dans la classe encapsulande depuis une classe anonyme"
 date: "2016-08-27 06:18:00"
+tags: java compilation
 ---
 
-```
+```java
 public abstract class ParamTransform<Init,In,Out> implements Transform<Init,Transform<In,Out>> {
 
     public abstract Out apply(Init values, In value);

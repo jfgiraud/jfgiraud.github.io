@@ -2,11 +2,12 @@
 layout: post
 title: "Java, retirer les accents d'une chaîne"
 date: "2016-03-16 11:10:00"
+tags: java accents
 ---
 Voici le code qui permet de supprimer les accents d'une chaîne de caractères. 
 
 
-```
+```java
 public String removeAccents(String text) {
     String libelle = Normalizer.normalize(text, Normalizer.Form.NFD);
     return libelle.replaceAll("\\p{Mn}+", "");

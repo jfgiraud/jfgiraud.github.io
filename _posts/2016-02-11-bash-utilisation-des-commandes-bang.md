@@ -2,6 +2,7 @@
 layout: post
 title: "bash, utilisation des commandes bang !"
 date: "2016-02-11 16:44:00"
+tags: shebang
 ---
 Voici un gros post concernant les commandes bang de bash.
 
@@ -48,7 +49,7 @@ Modificateurs de mots
 Quelques cas d'usage simples :
 
 
-```
+```bash
 $ touch a b c d e
 $ !!
 touch a b c d e
@@ -104,7 +105,7 @@ $
 D'autres cas d'usage avec modification des paramètres
 
 
-```
+```bash
 $ ls /usr/local/lib/python3.4/dist-packages/aiohttp/client.py
 /usr/local/lib/python3.4/dist-packages/aiohttp/client.py
 $ !$:h:p
@@ -126,8 +127,6 @@ ls /usr/local/lib/python3.4/dist-packages/aiohttp/client.old
 ```
 
 Sources :
-
-
 - [http://ss64.com/bash/bang.html](http://ss64.com/bash/bang.html)
 - [http://samrowe.com/wordpress/advancing-in-the-bash-shell/](http://samrowe.com/wordpress/advancing-in-the-bash-shell/)
 - [http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/](http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/)

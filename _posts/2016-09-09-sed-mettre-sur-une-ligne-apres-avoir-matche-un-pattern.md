@@ -2,6 +2,7 @@
 layout: post
 title: "sed, mettre sur une ligne après avoir matché un pattern"
 date: "2016-09-09 14:57:00"
+tags: commande sed
 ---
 
 ```
@@ -22,7 +23,7 @@ En regardant du côté de sed, il est possible de le faire facilement.
 L'exemple ci-dessous montre la commande :
 
 
-```
+```bash
 $ cat /tmp/example.txt 
 ligne1: valeur1
 ligne2:: valeur2

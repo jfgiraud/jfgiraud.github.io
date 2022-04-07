@@ -2,6 +2,7 @@
 layout: post
 title: "html5, player audio dans une popup"
 date: "2017-09-27 16:23:00"
+tags: html player
 ---
 Pour mon projet, je devais afficher un player audio HTML5 dans une popup lors d'un clic sur un span (fichier son)...
 
@@ -11,7 +12,7 @@ Voici ce que cela donne sur un exemple allégé :
 avec son code associé :
 
 
-```
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html >
 <head>

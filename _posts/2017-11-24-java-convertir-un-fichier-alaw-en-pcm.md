@@ -2,6 +2,7 @@
 layout: post
 title: "Java, convertir un fichier alaw en pcm"
 date: "2017-11-24 15:09:00"
+tags: java conversion wav
 ---
 Dans un billet précédent, je parlais d'un petit player en html5 qui devait jouer des wav. Je convertissais les wav en mp3 pour la compatibilité des navigateurs.
 
@@ -22,7 +23,7 @@ RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz
 Avec sox, la conversion est simple :
 
 
-```
+```bash 
 sox -t AL ATACMOB_Message_3.alaw -r 8000 -e signed-integer -b 16 ATACMOB_Message_3.wav
 ```
 
@@ -31,7 +32,7 @@ Mais c'est en java que cette conversion doit être faite car embarquée dans tom
 Le code suivant permet de convertir en java un fichier ITU G.711 A-law en Microsoft PCM
 
 
-```
+```java
 protected boolean g711ToWav(File g711_wav, File pcm_wav) throws IOException, UnsupportedAudioFileException {
 	AudioInputStream inputStream = AudioSystem.getAudioInputStream(g711_wav);
 	try {

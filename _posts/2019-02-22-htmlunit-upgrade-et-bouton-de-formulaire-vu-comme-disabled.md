@@ -2,6 +2,7 @@
 layout: post
 title: "htmlunit, upgrade et bouton de formulaire vu comme disabled"
 date: "2019-02-22 11:53:00"
+tags: htmlunit
 ---
 Sur le projet, l'upgrade de la version de htmlunit de 2.21 à 2.33 a provoqué une régression.
 
