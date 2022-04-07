@@ -3,9 +3,28 @@ layout: post
 title: "Perl, retirer les accents d'une chaine"
 date: "2014-07-01 07:43:00"
 ---
-<script src="https://pastebin.com/embed_js/1aNsQmtZ"></script>
 
-<script src="https://pastebin.com/embed_js/CJaLSma2"></script>
+```
+#!/usr/bin/perl -CS -w
+
+use strict;
+use warnings;
+use utf8;
+use Unicode::Normalize;
+
+my $test = "Portez ce vieux whisky au juge blond qui fume sur son île intérieure, à côté de l'alcôve ovoïde, où les bûches se consument dans l'âtre, ce qui lui permet de penser à la cænogénèse de l'être dont il est question dans la cause ambiguë entendue à Moÿ, dans un capharnaüm qui, pense-t-il, diminue çà et là la qualité de son œuvre.";
+
+my $decomposed = NFD($test);
+$decomposed =~ s/\p{Mn}//g;
+print "$decomposed\n";
+```
+
+
+```
+$ chmod +x t.pl
+$ ./t.pl 
+Portez ce vieux whisky au juge blond qui fume sur son ile interieure, a cote de l'alcove ovoide, ou les buches se consument dans l'atre, ce qui lui permet de penser a la cænogenese de l'etre dont il est question dans la cause ambigue entendue a Moy, dans un capharnaum qui, pense-t-il, diminue ca et la la qualite de son œuvre.
+```
 
 <div style="height: 0; overflow: hidden;">perl accent accents retirer supprimer unicode unicodedata
 </div>

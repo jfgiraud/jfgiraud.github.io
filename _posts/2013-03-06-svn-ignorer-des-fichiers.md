@@ -5,7 +5,28 @@ date: "2013-03-06 12:38:00"
 ---
 Pour ignorer plusieurs fichiers lors des commits SVN
 
-<script src="https://pastebin.com/embed_js/1neQTcbc"></script>
+
+```
+#!/bin/bash
+
+cd $(dirname $(readlink -f $0))/..
+
+svnignorefile=$(mktemp)
+
+cat >> $svnignorefile <<EOF
+.classpath
+.project
+bin
+target
+*.tgz
+EOF
+
+svn propset svn:ignore -F $svnignorefile .
+
+rm -f $svnignorefile
+
+svn commit -m 'svn ignore'
+```
 
 Une page qui explique bien&nbsp;[http://www.math-linux.com/spip.php?article111](http://www.math-linux.com/spip.php?article111) 
 

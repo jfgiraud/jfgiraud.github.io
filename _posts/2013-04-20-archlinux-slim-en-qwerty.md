@@ -9,11 +9,30 @@ Cependant, dans le login manager SLIM, le texte frappé était en qwerty :/
 
 La ligne suivante insérée insérée dans le .xsession ou .xinitrc n'a d'effet qu'une fois identifié.
 
-<script src="https://pastebin.com/embed_js/63999Zwf"></script>
+
+```
+$ cat .xsession 
+xset dpms force on
+xset s off
+xset -b
+setxkbmap -option terminate:ctrl_alt_bksp
+export AWT_TOOLKIT=XToolkit
+xsetroot -solid "#333333"
+setxkbmap fr
+exec i3
+```
 
 Pour que X passe en azerty, j'ai ajouté le fichier suivant :
 
-<script src="https://pastebin.com/embed_js/cXFSCFpc"></script>
+
+```
+$ cat /etc/X11/xorg.conf.d/10-keyboard.conf 
+Section "InputClass"
+    Identifier             "Keyboard Defaults"
+    MatchIsKeyboard        "yes"
+    Option                 "XkbLayout" "fr"
+EndSection
+```
 
 Dès lors, X se retrouve en azerty :)
 

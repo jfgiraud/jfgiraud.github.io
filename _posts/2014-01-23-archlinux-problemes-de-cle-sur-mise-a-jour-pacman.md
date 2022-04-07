@@ -9,4 +9,14 @@ Il suffit simplement de mettre à jour les clés de son trousseau comme dans l'e
 
 Ensuite, ça roule ma poule :) 
 
-<script src="https://pastebin.com/embed_js/r4gAmt8Z"></script>
+
+```
+$ pacman -Syu
+...
+error: i3-wm: signature from "Thorsten Töpper <atsutane@freethoughts.de>" is unknown trust
+error: failed to commit transaction (invalid or corrupted package (PGP signature))
+...
+
+ $ pacman-key --refresh-keys
+ $ pacman -Syh
+```

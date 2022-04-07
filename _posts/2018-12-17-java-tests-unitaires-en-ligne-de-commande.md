@@ -4,4 +4,12 @@ title: "java, tests unitaires en ligne de commande"
 date: "2018-12-17 12:13:00"
 ---
 Rappel:
-<script src="https://pastebin.com/embed_js/Z7D5iV2U"></script>
+
+```
+$ mvn test
+$ mvn -Dtest=TestClass test
+$ mvn -Dtest=TestClass1,TestClass2 test
+$ mvn -Dtest=TestClass#methodName test
+$ mvn -Dtest=TestClass#methodPattern* test
+$ mvn -Dtest=TestClass#methodPattern1*+methodPattern2* test
+```

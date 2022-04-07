@@ -5,4 +5,7 @@ date: "2012-11-08 07:24:00"
 ---
 Il suffit simplement de remplacer le z par j dans la ligne de commande :
 
-<script src="https://pastebin.com/embed_js/Rka8uEJ3"></script>
+
+```
+$ tar jxvf worker-2.19.5.tar.bz2
+```

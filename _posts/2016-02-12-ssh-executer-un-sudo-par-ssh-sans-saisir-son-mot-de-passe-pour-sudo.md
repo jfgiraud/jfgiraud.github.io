@@ -11,4 +11,7 @@ Nous avons mis en place un script qui lit dans un fichier de conf le mot de pass
 
 Cela donne un code comme ceci :
 
-<script src="https://pastebin.com/embed_js/mLRT0FFd"></script>
+
+```
+ssh user@host.example.com "sudo -S service sonar restart <<< '$passwd'"
+```

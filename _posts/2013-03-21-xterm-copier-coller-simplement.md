@@ -16,7 +16,10 @@ Par défaut, la sélection avec xterm se fait de la manière suivante
 
 Pour changer la définition du mot pour prendre plus de choses comme des urls, il faut modifier son fichier ~/.Xresources  
 
-<script src="https://pastebin.com/embed_js/1dz4MwTh"></script>  
+
+```
+xterm*charClass: 33:48, 37:48, 42:48, 45-47:48, 58:48, 63-64:48, 126:48
+```  
 
 Dès lors le double clic améliore le confort d'utilisation :) 
 

@@ -7,8 +7,37 @@ J'ai mis à disposition sur mon repository git un utilitaire [csv-functions.sh](
 
 Voici un exemple d'utilisation :
 
-<script src="https://pastebin.com/embed_js/awfhgJTL"></script>
+
+```
+csvexample() {
+    (cat <<-EOF
+lastname;firstname;birth;number_of_child
+doe;john;1975;2
+doe;foo;1990;1
+doe;jane;1985;2
+EOF
+) > example.csv
+    declare -A persons
+    csvindexes persons example.csv
+    for tuple in $(csvvalues example.csv | csvfilter persons "lastname=doe" "birth=1985" "number_of_child=2")
+    do
+	eval $(csvextract persons $tuple "vara=lastname" "varb=firstname" "varc=birth" "vard=number_of_child")
+	echo "vara=$vara"
+	echo "varb=$varb"
+	echo "varc=$varc"
+	echo "vard=$vard"
+    done
+    rm -f example.csv
+}
+```
 
 avec son résultat :
 
-<script src="https://pastebin.com/embed_js/i05LsnRc"></script>
+
+```
+$ bash csv-functions.sh 
+vara=doe
+varb=jane
+varc=1985
+vard=2
+```

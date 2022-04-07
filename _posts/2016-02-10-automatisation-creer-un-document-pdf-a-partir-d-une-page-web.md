@@ -7,11 +7,20 @@ Il est facile de créer un document PDF à partir d'une page web.
 
 Pour cela on peut utiliser le programme wkhtmltopdf
 
-<script src="https://pastebin.com/embed_js/CdSghvxB"></script>
+
+```
+$ wkhtmltopdf "http://mezalor-sc.blogspot.com" mezalor-sc.pdf
+Loading page (1/2)
+Printing pages (2/2)                                               
+Done
+```
 
 ou bien phantomjs avec le script rasterize.js
 
-<script src="https://pastebin.com/embed_js/v7tfRHHG"></script>
+
+```
+phantomjs <( curl -s https://raw.githubusercontent.com/ariya/phantomjs/master/examples/rasterize.js ) http://mezalor-sc.blogspot.com mezalor-sc.pdf
+```
 
 A noter :
 

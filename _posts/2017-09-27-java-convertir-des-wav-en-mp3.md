@@ -24,7 +24,20 @@ La bibliothèque est disponible sur le repository maven ([https://mvnrepository.
 
 L'utilisation est simple pour convertir un fichier wav en mp3. Voici ci-dessous un exemple :
 
-<script src="https://pastebin.com/embed_js/J0pPPQpc"></script>
+
+```
+import de.sciss.jump3r.Main;
+
+public void convertWavFileToMp3File(File source, File target) throws IOException {
+    String[] mp3Args = { "--preset","standard",
+        "-q","0",
+        "-m","s",
+        source.getAbsolutePath(),
+        target.getAbsolutePath()
+    };
+    (new Main()).run(mp3Args);
+}
+```
 
 Dans celui-ci, la fonction *main* a été *inlinée* pour permettre d'attraper/relancer une éventuelle *IOException*.
 

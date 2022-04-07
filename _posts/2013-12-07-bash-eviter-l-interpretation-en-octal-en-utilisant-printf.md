@@ -7,4 +7,12 @@ J'ai eu un petit soucis dans un script de renommage qui tentait d'interprêter l
 
 La solution consiste à spécifier que la valeur est en base 10 comme dans l'exemple ci-dessous :
 
-<script src="https://pastebin.com/embed_js/EczZmbtz"></script> 
+
+```
+s="09"
+$ printf "%.02d" $s
+bash: printf: 09: Nombre octal non valable
+00
+$ printf "%.02d" $(( 10#$s))
+09
+``` 

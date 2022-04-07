@@ -9,4 +9,11 @@ Toutefois, dans certains cas, on peut souhaiter tester la présence de fichiers 
 
 On peut utiliser la commande ls couplée à if comme le montre l'exemple ci-dessous
 
-<script src="https://pastebin.com/embed_js/jzweDZNg"></script>
+
+```
+$ touch /tmp/{a,b}.done
+$ if ls /tmp/*.done &> /dev/null; then echo des fichiers done existent; fi 
+des fichiers done existent
+$ if ls /tmp/xxx*.done &> /dev/null; then echo des fichiers xxxdone existent; fi 
+$
+```

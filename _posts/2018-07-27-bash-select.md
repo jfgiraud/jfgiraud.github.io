@@ -7,4 +7,18 @@ Je viens de m'apercevoir que je n'ai jamais parlé de la commande select sous ba
 
 Exemple d'utilisation ci-dessous :
 
-<script src="https://pastebin.com/embed_js/5cjignUm"></script>
+
+```
+$ select n in item1 item2 item3 item4 item5; do if [[ -n "$n" ]]; then echo "You choose: $n"; break; else echo "Invalid choice"; fi; done
+1) item1
+2) item2
+3) item3
+4) item4
+5) item5
+#? 6
+Invalid choice
+#? z
+Invalid choice
+#? 2
+You choose: item2
+```

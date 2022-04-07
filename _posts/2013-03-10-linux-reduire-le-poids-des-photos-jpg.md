@@ -9,4 +9,10 @@ Il s'agit du logiciel jpegoptim.
 
 C'est très pratique pour réduire le poids de scans afin de les envoyer par emails :)
 
-<script src="https://pastebin.com/embed_js/ZJkQYzki"></script>
+
+```
+$ sudo apt-get install jpegoptim
+$ jpegoptim -m70 DemandeRemboursementRadioThorax-*
+DemandeRemboursementRadioThorax-1.jpg 2552x3508 24bit JFIF  [OK] 1021137 --> 363084 bytes (64.44%), optimized.
+DemandeRemboursementRadioThorax-2.jpg 2552x3508 24bit JFIF  [OK] 940214 --> 321868 bytes (65.77%), optimized.
+```
