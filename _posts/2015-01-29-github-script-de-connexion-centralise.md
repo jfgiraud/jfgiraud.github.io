@@ -2,6 +2,7 @@
 layout: post
 title: "Github, script de connexion centralisé"
 date: "2015-01-29 21:29:00"
+tags: connect
 ---
 Sur mon github ([ici](https://github.com/jfgiraud/gorc)), j'ai mis à disposition un script de connexion centralisé.
 

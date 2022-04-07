@@ -2,6 +2,7 @@
 layout: post
 title: "Spam vocal, Spam SMS comment lutter !!!"
 date: "2015-02-04 13:57:00"
+tags: spam sms vocal
 ---
 Le 0981662199 m'a appellé 3 fois en un quart d'heure.
 

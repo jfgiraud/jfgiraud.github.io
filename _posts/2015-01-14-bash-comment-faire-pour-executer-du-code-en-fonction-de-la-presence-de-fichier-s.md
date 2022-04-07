@@ -2,6 +2,7 @@
 layout: post
 title: "Bash, comment faire pour exécuter du code en fonction de la présence de fichier*s*"
 date: "2015-01-14 16:47:00"
+tags: bash if
 ---
 Bash met à disposition des opérateurs pour tester l'existence de fichiers, leur type, droits d'accès...
 

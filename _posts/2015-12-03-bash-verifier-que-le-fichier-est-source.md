@@ -2,6 +2,7 @@
 layout: post
 title: "bash, vérifier que le fichier est sourcé"
 date: "2015-12-03 14:59:00"
+tags: bash source
 ---
 Le code suivant permet de vérifier que le script est sourcé et non exécuté
 
