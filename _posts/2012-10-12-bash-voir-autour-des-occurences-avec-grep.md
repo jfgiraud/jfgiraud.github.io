@@ -5,6 +5,8 @@ date: "2012-10-12 12:18:00"
 tags: grep
 ---
 
+Voici comment on peut voir les lignes proches des occurences matchées par `grep`
+
 ```bash 
 $ grep -C 5 Msg_Motif_Reit etc/centralisation.yml 
       ref_db: desc

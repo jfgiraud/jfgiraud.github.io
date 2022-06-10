@@ -2,7 +2,7 @@
 layout: post
 title: "Github, script de remplacement de chaines de caractères"
 date: "2015-01-29 21:39:00"
-tags: sed awk sandr
+tags: commande sed awk sandr
 ---
 `sed` et `awk` sont très bien pour remplacer des chaines par d'autres. 
 

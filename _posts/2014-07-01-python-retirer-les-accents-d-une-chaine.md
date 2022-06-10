@@ -2,9 +2,10 @@
 layout: post
 title: "Python, retirer les accents d'une chaine"
 date: "2014-07-01 07:03:00"
+tags: python accent accents retirer supprimer unicode unicodedata
 ---
 
-```
+```python
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
@@ -22,5 +23,3 @@ def deaccent(some_unicode_string):
 'Des Noel ou un zephyr hai me vet de glacons wurmiens je dine d’exquis rotis de bœuf au kir a l’ay d’age mur & cætera !'
 ```
 
-<div style="height: 0; overflow: hidden;">python accent accents retirer supprimer unicode unicodedata
-</div>

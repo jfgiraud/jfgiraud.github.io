@@ -3,7 +3,7 @@ layout: post
 title: "Archlinux, imprimante samung ML-1865"
 date: "2013-04-21 14:15:00"
 ---
-Tout d'abord, il faut installer yaourt (cf http://archlinux.fr/yaourt)
+Tout d'abord, il faut installer yaourt (cf [http://archlinux.fr/yaourt](http://archlinux.fr/yaourt)
 
 Ensuite, utiliser yaourt pour installer les drivers :
 

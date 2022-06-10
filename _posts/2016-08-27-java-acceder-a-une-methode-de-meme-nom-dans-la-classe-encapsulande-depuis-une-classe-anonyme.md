@@ -5,6 +5,8 @@ date: "2016-08-27 06:18:00"
 tags: java compilation
 ---
 
+Pour ce faire, il faut utiliser ParamTransform.this pour que la compilation n'échoue pas.
+
 ```java
 public abstract class ParamTransform<Init,In,Out> implements Transform<Init,Transform<In,Out>> {
 
@@ -21,4 +23,3 @@ public abstract class ParamTransform<Init,In,Out> implements Transform<Init,Tran
 }
 ```
 
-Pour ce faire, il faut utiliser ParamTransform.this pour que la compilation n'échoue pas.

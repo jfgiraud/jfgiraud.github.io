@@ -4,6 +4,8 @@ title: "bash, augmenter sa productivité"
 date: "2013-04-23 11:19:00"
 ---
 
+Voici comment augmenter sa productivité en connaissant un peu mieux bash.
+
 ```
 Bash Bang (!) Commands
 

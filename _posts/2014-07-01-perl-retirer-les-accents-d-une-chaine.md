@@ -2,9 +2,12 @@
 layout: post
 title: "Perl, retirer les accents d'une chaine"
 date: "2014-07-01 07:43:00"
+tags: perl accent accents retirer supprimer unicode unicodedata
 ---
 
-```
+Code pour retirer les accents d'une chaîne de caractères :
+
+```perl
 #!/usr/bin/perl -CS -w
 
 use strict;
@@ -19,12 +22,9 @@ $decomposed =~ s/\p{Mn}//g;
 print "$decomposed\n";
 ```
 
-
-```
+```bash
 $ chmod +x t.pl
 $ ./t.pl 
 Portez ce vieux whisky au juge blond qui fume sur son ile interieure, a cote de l'alcove ovoide, ou les buches se consument dans l'atre, ce qui lui permet de penser a la cænogenese de l'etre dont il est question dans la cause ambigue entendue a Moy, dans un capharnaum qui, pense-t-il, diminue ca et la la qualite de son œuvre.
 ```
 
-<div style="height: 0; overflow: hidden;">perl accent accents retirer supprimer unicode unicodedata
-</div>
