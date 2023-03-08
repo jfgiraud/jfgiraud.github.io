@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "vi et les macros"
 date: "2012-09-27 10:31:00"
 ---

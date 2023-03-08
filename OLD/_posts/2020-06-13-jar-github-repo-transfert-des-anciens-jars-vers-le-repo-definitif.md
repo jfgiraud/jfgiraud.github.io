@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "jar, github, repo : transfert des anciens jars vers le repo définitif"
 date: "2020-06-13 11:27:00"
 tags: git repo jar

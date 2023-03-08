@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "XPath et recherche vide..."
 date: "2012-03-29 09:48:00"
 ---

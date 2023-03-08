@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Servlets et encoding..."
 date: "2012-07-17 12:42:00"
 ---

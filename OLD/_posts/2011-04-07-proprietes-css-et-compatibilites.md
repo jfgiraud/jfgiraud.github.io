@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Propriétés CSS et compatibilités"
 date: "2011-04-07 09:44:00"
 ---

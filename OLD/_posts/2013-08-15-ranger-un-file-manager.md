@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "ranger, un file manager"
 date: "2013-08-15 07:45:00"
 ---

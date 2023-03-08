@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "sed, mettre sur une ligne après avoir matché un pattern"
 date: "2016-09-09 14:57:00"
 tags: commande sed

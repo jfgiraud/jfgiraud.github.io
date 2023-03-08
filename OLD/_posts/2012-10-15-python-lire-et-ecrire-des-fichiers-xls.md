@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "python, lire et écrire des fichiers xls"
 date: "2012-10-15 11:36:00"
 tags: python, excel

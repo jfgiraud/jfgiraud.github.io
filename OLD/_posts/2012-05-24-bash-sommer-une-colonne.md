@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, sommer une colonne...."
 date: "2012-05-24 16:11:00"
 ---

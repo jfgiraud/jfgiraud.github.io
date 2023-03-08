@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "docker, tests karma dans un container docker"
 date: "2020-06-22 16:13:00"
 tags: docker karma container

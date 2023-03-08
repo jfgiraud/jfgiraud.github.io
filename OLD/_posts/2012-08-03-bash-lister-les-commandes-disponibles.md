@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, lister les commandes disponibles"
 date: "2012-08-03 10:41:00"
 ---

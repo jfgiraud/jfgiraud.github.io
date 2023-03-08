@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Casio SL-300.... et pourcentages"
 date: "2013-02-01 17:46:00"
 ---

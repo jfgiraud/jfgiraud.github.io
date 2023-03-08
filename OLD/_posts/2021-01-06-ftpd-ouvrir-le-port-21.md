@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "ftpd, ouvrir le port 21"
 date: "2021-01-06 10:56:00"
 tags: ftp firewall

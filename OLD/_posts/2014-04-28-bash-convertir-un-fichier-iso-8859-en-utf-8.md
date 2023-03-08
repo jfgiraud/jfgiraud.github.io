@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, convertir un fichier iso-8859 en utf-8"
 date: "2014-04-28 09:15:00"
 ---

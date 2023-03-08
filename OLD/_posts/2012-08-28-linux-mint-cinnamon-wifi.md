@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux Mint Cinnamon & wifi"
 date: "2012-08-28 08:18:00"
 tags: wifi

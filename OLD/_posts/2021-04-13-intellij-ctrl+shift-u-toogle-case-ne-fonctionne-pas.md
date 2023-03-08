@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "intellij, ctrl+shift u (toogle case) ne fonctionne pas"
 date: "2021-04-13 17:18:00"
 tags: intellij

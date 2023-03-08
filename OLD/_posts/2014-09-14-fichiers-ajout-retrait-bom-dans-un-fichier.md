@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Fichiers, ajout/retrait BOM dans un fichier"
 date: "2014-09-14 07:55:00"
 ---

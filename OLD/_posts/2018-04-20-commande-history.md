@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "commande, history"
 date: "2018-04-20 15:26:00"
 tags: commande history

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, initialiser un tableau avec le retour d'une commande et itérer dessus"
 date: "2014-05-08 03:24:00"
 tags: bash mapfile iterate loop array

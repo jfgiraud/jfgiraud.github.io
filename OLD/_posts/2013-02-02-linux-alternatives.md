@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux, alternatives"
 date: "2013-02-02 11:09:00"
 ---

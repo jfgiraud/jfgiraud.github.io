@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, mv en masse"
 date: "2012-09-25 13:36:00"
 tags: commande, mmv, renommage en masse

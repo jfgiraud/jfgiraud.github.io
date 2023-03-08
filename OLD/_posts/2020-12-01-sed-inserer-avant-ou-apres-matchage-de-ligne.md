@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "sed, insérer avant ou après matchage de ligne"
 date: "2020-12-01 11:15:00"
 tags: sed

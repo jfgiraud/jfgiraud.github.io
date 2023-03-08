@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "mysql, n'afficher que les vraies tables"
 date: "2012-08-07 11:49:00"
 ---

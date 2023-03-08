@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "html/java, input file sympa avec bootstrap"
 date: "2014-01-28 13:50:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Bash, templating..."
 date: "2012-08-08 14:37:00"
 tags: bash templating

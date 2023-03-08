@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "SVN, ignorer des fichiers"
 date: "2013-03-06 12:38:00"
 ---

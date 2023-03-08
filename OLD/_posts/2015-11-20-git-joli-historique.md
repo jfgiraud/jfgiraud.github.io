@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "git, joli historique "
 date: "2015-11-20 09:45:00"
 tags: git historique

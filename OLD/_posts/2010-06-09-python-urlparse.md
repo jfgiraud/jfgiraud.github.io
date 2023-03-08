@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Python - urlparse"
 date: "2010-06-09 14:27:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Java, renvoyer un fichier binaire via une servlet"
 date: "2013-01-08 17:22:00"
 tags: java, setContentType, addHeader, HttpServletRequest req, HttpServletResponse resp,Pragma,msword, getServletContext, getRealPath, FileInputStream, ServletOutputStream, IOUtils, copy

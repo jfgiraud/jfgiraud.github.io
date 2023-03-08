@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Bash, pattern substitution"
 date: "2012-08-08 16:21:00"
 tags: bash regexp pattern

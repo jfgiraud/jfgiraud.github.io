@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "article, Clé USB encryptée avec Ubuntu: utilisation simplifiée de LUKS"
 date: "2017-08-04 10:35:00"
 tags: usb cryptage

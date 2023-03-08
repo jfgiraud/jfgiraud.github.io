@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "mysql, LOAD_FILE renvoie NULL"
 date: "2020-05-20 10:47:00"
 tags: mysql load_file

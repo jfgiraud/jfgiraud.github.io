@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "firefox, supprimer les saisies individuelles de formulaire"
 date: "2016-06-29 06:35:00"
 tags: firefox formulaires

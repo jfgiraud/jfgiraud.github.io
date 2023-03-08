@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, chemin et nom de fichier sans dirname/basename (et sans sous-processus)"
 date: "2013-08-27 10:37:00"
 ---

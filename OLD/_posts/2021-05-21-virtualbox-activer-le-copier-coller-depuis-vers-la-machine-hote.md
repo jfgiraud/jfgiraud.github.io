@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "VirtualBox, activer le copier/coller depuis/vers la machine hôte"
 date: "2021-05-21 07:12:00"
 tags: virtualbox

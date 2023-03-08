@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Vi, rechercher une regexp"
 date: "2012-11-07 22:56:00"
 ---

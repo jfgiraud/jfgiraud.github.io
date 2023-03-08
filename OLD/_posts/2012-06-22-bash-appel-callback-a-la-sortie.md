@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, appel callback à la sortie..."
 date: "2012-06-22 09:42:00"
 ---

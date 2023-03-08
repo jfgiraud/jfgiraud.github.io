@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, ajouter du contenu en début de fichier"
 date: "2014-09-18 15:06:00"
 ---

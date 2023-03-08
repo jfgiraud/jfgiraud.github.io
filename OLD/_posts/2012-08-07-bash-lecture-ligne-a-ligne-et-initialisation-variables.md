@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, lecture ligne à ligne et initialisation variables..."
 date: "2012-08-07 14:55:00"
 ---

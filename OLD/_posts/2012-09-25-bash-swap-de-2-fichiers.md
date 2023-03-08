@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, swap de 2 fichiers"
 date: "2012-09-25 13:50:00"
 tags: bash, commande, mv, tempfile

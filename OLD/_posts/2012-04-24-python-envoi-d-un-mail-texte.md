@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "python, envoi d'un mail texte"
 date: "2012-04-24 11:18:00"
 ---

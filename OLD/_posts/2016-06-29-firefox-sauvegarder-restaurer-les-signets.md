@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "firefox, sauvegarder/restaurer les signets"
 date: "2016-06-29 06:33:00"
 tags: firefox signets

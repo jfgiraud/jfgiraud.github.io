@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "html5, player audio dans une popup"
 date: "2017-09-27 16:23:00"
 tags: html player

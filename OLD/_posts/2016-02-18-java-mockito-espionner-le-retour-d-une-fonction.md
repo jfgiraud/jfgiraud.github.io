@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "java, mockito espionner le retour d'une fonction"
 date: "2016-02-18 09:42:00"
 tags: java test tu

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Moteur de recherche dans navigateur"
 date: "2011-11-29 11:22:00"
 tags: open search description moteur recherche navigateur

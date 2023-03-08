@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, presse-papier"
 date: "2012-05-24 11:17:00"
 ---

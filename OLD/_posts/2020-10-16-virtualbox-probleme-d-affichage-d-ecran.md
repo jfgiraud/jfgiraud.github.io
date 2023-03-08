@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "VirtualBox, problème d'affichage d'écran "
 date: "2020-10-16 17:36:00"
 tags: virtualbox

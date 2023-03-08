@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Intellij, Makefile & tabulations"
 date: "2020-10-14 13:04:00"
 tags: Intellij makefile

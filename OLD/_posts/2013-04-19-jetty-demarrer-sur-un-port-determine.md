@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Jetty, démarrer sur un port déterminé"
 date: "2013-04-19 11:42:00"
 ---

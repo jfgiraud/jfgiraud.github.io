@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Xpath et dernier élément d'une liste..."
 date: "2012-03-29 12:37:00"
 ---

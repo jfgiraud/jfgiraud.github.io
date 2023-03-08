@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, mv bluffant..."
 date: "2012-09-13 10:12:00"
 tags: bash, mv, remove version 

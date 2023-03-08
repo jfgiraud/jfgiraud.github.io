@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Jetty 8 et paramètres d'initialisation"
 date: "2012-07-17 17:14:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "stat, différence entre modify et change"
 date: "2013-01-31 12:11:00"
 ---

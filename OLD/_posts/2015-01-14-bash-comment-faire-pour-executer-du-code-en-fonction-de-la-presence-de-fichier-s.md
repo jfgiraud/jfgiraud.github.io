@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Bash, comment faire pour exécuter du code en fonction de la présence de fichier*s*"
 date: "2015-01-14 16:47:00"
 tags: bash if

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "virtualbox, augmenter la taille d'un disque"
 date: "2016-06-23 15:37:00"
 tags: virtualbox

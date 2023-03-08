@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, lignes dupliquées"
 date: "2019-07-09 15:52:00"
 tags: bash commande uniq lignes dupliquées

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Calendrier"
 date: "2010-06-18 11:14:00"
 ---

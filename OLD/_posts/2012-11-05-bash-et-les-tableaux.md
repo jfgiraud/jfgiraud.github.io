@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash et les tableaux..."
 date: "2012-11-05 22:35:00"
 ---

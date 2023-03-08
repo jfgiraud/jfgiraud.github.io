@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Bash, récupérer les derniers caractères d'une chaine"
 date: "2014-09-03 14:33:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Copie de fichier en concervant l'arborescence"
 date: "2012-01-16 10:32:00"
 ---

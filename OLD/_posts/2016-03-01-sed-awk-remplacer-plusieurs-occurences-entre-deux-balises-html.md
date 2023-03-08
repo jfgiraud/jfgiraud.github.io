@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "sed/awk, remplacer plusieurs occurences entre deux balises html"
 date: "2016-03-01 11:27:00"
 tags: commande sed awk

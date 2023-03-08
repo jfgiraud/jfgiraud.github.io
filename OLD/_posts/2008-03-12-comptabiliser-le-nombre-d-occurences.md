@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Comptabiliser le nombre d'occurences"
 date: "2008-03-12 11:52:00"
 ---

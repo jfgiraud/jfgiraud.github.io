@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "python, unicode..."
 date: "2012-07-16 12:56:00"
 ---

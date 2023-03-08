@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Raccourcis claviers bien pratiques"
 date: "2008-03-12 11:59:00"
 ---

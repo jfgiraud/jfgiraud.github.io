@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Simuler un lien WAN sous Linux"
 date: "2020-10-07 23:02:00"
 tags: simuler wan

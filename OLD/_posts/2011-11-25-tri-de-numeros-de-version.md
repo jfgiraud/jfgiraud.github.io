@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Tri de numéros de version"
 date: "2011-11-25 14:20:00"
 ---

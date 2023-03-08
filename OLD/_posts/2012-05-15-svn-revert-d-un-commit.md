@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "svn, revert d'un commit"
 date: "2012-05-15 12:32:00"
 ---

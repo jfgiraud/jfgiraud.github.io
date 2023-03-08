@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Archlinux, slim en qwerty"
 date: "2013-04-20 09:17:00"
 ---

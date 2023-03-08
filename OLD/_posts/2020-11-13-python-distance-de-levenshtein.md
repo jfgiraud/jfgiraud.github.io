@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "python, distance de levenshtein"
 date: "2020-11-13 12:24:00"
 tags: distance levenshtein

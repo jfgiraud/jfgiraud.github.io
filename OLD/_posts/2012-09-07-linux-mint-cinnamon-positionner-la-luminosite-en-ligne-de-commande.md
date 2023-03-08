@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux Mint Cinnamon, positionner la luminosité en ligne de commande"
 date: "2012-09-07 12:26:00"
 ---

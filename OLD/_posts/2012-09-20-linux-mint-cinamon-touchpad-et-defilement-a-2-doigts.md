@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux Mint Cinamon, touchpad et défilement à 2 doigts"
 date: "2012-09-20 23:09:00"
 ---

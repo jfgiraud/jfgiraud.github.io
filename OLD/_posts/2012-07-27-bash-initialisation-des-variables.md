@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, initialisation des variables"
 date: "2012-07-27 14:42:00"
 tags: bash expansion parameter

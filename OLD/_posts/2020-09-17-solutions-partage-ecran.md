@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "solutions partage écran"
 date: "2020-09-17 11:06:00"
 tags: partage écran team équipe outil

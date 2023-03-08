@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, convertir la casse d'un flux"
 date: "2012-07-25 11:21:00"
 ---

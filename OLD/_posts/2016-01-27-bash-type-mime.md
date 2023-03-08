@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, type mime"
 date: "2016-01-27 11:55:00"
 tags: type mime

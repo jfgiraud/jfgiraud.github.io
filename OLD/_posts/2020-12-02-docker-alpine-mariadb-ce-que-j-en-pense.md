@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "docker / alpine / mariadb : ce que j'en pense...."
 date: "2020-12-02 11:02:00"
 tags: docker alpine mariadb

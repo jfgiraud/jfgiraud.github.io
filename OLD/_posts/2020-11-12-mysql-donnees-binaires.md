@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "mysql, données binaires"
 date: "2020-11-12 15:47:00"
 tags: hexa binary binaire mysql

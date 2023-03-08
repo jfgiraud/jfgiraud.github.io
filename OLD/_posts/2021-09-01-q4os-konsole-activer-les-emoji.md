@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "q4os, konsole, activer les emoji"
 date: "2021-09-01 10:47:00"
 tags: q4os konsole

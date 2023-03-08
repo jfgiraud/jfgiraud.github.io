@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Graver une image iso et vérifier le md5sum"
 date: "2014-07-10 20:39:00"
 ---

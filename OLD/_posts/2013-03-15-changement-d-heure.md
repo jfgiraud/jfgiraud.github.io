@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Changement d'heure"
 date: "2013-03-15 11:35:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "wget, récupérer un site "
 date: "2016-01-25 10:58:00"
 tags: wget, fitnesse, web

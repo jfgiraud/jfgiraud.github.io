@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Entités html"
 date: "2011-11-23 10:45:00"
 ---

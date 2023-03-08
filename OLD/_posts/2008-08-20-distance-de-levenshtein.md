@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Distance de Levenshtein"
 date: "2008-08-20 09:48:00"
 ---

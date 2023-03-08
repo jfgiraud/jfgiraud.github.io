@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Mise en colonnes en shell"
 date: "2011-12-17 08:16:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "changer d'ordinateur, calculer son amortissement..."
 date: "2012-08-06 14:38:00"
 ---

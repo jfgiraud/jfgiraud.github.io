@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "rxvt-unicode, problème de compilation"
 date: "2012-11-12 08:27:00"
 ---

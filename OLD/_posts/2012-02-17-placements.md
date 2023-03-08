@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Placements"
 date: "2012-02-17 14:50:00"
 ---

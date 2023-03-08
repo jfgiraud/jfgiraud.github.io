@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Réseau, simuler un wan sous linux"
 date: "2016-09-06 15:38:00"
 tags: linux réseau simuler wan

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Archivage tar et exclusions .svn"
 date: "2008-03-21 16:06:00"
 ---

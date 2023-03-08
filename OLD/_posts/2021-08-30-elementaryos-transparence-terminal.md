@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "elementaryos, transparence terminal"
 date: "2021-08-30 09:15:00"
 tags: gnome

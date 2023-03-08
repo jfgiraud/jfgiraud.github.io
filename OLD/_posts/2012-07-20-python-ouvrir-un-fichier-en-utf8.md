@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "python, ouvrir un fichier en utf8"
 date: "2012-07-20 15:23:00"
 ---

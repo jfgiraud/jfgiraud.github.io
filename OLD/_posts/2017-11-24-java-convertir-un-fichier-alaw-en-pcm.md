@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Java, convertir un fichier alaw en pcm"
 date: "2017-11-24 15:09:00"
 tags: java conversion wav

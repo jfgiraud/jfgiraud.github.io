@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, supprimer les espaces en début de ligne"
 date: "2012-09-06 10:33:00"
 tags: awk space espace trim strip

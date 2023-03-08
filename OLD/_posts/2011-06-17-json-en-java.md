@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Json en java"
 date: "2011-06-17 10:41:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, nombres en hexadécimal"
 date: "2012-07-20 14:53:00"
 ---

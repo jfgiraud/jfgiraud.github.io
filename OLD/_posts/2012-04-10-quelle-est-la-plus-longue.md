@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Quelle est la plus longue..."
 date: "2012-04-10 11:12:00"
 ---

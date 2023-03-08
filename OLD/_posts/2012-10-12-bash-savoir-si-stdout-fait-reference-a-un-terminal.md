@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, savoir si stdout fait référence à un terminal"
 date: "2012-10-12 15:53:00"
 tags: diff, colordiff

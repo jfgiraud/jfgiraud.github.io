@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux Mint et lettres ligaturées"
 date: "2013-02-27 07:40:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, récupérer la n-ième ligne ou les lignes x à y d'un fichier"
 date: "2012-10-17 11:05:00"
 tags: awk, sed

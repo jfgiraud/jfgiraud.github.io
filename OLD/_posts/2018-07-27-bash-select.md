@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, select"
 date: "2018-07-27 11:47:00"
 tags: bash commande select

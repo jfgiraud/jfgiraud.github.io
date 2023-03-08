@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, créer dynamiquement une liste de paramètres pour appeler une commande"
 date: "2015-01-07 15:17:00"
 tags: bash whiptail

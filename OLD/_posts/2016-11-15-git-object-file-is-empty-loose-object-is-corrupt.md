@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "git, object file is empty, loose object is corrupt"
 date: "2016-11-15 10:21:00"
 tags: git

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Reprise de son mobile"
 date: "2011-10-17 14:17:00"
 ---

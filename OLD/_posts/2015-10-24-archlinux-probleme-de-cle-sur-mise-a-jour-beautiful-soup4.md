@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "archlinux, problème de clé sur mise à jour beautiful-soup4"
 date: "2015-10-24 11:34:00"
 tags: archlinux gpg clés key

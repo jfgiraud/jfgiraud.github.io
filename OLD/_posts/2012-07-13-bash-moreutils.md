@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, moreutils"
 date: "2012-07-13 11:18:00"
 ---

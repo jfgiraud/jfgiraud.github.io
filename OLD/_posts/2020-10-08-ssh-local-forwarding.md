@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "ssh, local forwarding"
 date: "2020-10-08 09:24:00"
 tags: ssh forwarding

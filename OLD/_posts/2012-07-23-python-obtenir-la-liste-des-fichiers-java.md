@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "python, obtenir la liste des fichiers .java"
 date: "2012-07-23 11:56:00"
 ---

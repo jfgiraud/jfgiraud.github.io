@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Chemin absolu"
 date: "2011-06-03 12:44:00"
 ---

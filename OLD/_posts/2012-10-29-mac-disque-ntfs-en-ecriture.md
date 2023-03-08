@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "mac, disque ntfs en écriture"
 date: "2012-10-29 22:42:00"
 ---

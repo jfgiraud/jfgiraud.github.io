@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "mysql, regexp"
 date: "2012-11-22 12:21:00"
 ---

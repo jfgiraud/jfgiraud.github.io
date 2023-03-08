@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "web, changer le style css du code pastebin affiché dans votre blog"
 date: "2012-09-14 13:44:00"
 ---

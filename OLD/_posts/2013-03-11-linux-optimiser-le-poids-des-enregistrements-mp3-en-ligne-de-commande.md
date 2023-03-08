@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux, optimiser le poids des enregistrements MP3 en ligne de commande"
 date: "2013-03-11 08:48:00"
 ---

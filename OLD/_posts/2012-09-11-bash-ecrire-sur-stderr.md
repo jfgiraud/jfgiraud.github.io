@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, écrire sur stderr"
 date: "2012-09-11 13:11:00"
 tags: bash redirection

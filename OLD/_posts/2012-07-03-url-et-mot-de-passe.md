@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "url et mot de passe"
 date: "2012-07-03 18:24:00"
 ---

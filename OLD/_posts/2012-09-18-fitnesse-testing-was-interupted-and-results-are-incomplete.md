@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "fitnesse, Testing was interupted and results are incomplete"
 date: "2012-09-18 10:20:00"
 ---

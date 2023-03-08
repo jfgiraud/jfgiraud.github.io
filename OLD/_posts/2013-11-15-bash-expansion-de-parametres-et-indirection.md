@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, expansion de paramètres et indirection "
 date: "2013-11-15 09:40:00"
 ---

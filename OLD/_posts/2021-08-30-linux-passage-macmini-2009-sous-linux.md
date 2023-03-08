@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux, passage macmini 2009 sous linux"
 date: "2021-08-30 09:18:00"
 tags: macmini linux

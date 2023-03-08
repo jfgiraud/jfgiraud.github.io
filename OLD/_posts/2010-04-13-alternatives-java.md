@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Alternatives java"
 date: "2010-04-13 10:14:00"
 ---

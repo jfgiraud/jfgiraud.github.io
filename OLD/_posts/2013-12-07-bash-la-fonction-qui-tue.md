@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, la fonction qui tue..."
 date: "2013-12-07 10:01:00"
 ---

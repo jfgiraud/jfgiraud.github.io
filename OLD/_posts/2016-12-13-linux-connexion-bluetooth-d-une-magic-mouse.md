@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "linux, connexion bluetooth d'une magic mouse "
 date: "2016-12-13 09:31:00"
 tags: bluetooth linux mac souris

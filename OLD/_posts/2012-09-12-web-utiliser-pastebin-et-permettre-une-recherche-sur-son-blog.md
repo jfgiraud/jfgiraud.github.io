@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "web, utiliser pastebin et permettre une recherche sur son blog"
 date: "2012-09-12 17:48:00"
 tags: pastebin, mot clé, search engine, moteur de recherche

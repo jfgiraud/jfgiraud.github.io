@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, affichage en mode intéractif"
 date: "2012-08-08 13:17:00"
 tags: bash interactif

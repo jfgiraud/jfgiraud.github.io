@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, augmenter sa productivité"
 date: "2013-04-23 11:19:00"
 ---

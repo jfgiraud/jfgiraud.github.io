@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Petit serveur de pages statiques sur sa machine perso..."
 date: "2011-11-29 11:04:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Recompile with -Xlint:unchecked"
 date: "2011-11-15 10:31:00"
 ---

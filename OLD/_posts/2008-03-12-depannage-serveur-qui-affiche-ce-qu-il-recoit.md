@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Dépannage: serveur qui affiche ce qu'il reçoit"
 date: "2008-03-12 11:38:00"
 ---

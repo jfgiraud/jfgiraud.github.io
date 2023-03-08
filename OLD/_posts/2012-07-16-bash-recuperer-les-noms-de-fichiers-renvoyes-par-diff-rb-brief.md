@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, récupérer les noms de fichiers renvoyés par diff -rb --brief"
 date: "2012-07-16 14:05:00"
 ---

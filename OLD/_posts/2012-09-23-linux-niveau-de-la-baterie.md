@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux, niveau de la baterie"
 date: "2012-09-23 15:46:00"
 tags: acpi

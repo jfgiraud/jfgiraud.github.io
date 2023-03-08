@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "python, faire en sorte que stdin/stdout lisent et écrivent en binaire"
 date: "2012-10-10 13:34:00"
 tags: python, binary, os, fileno

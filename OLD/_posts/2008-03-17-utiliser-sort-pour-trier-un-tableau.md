@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Utiliser sort pour trier un tableau"
 date: "2008-03-17 10:53:00"
 ---

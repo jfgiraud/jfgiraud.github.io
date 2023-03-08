@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Archlinux, problèmes aléatoires de chargement de pages internet"
 date: "2013-04-20 09:47:00"
 ---

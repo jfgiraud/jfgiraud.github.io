@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "terminal, raccourcis effacement"
 date: "2016-01-20 11:23:00"
 tags: terminal console

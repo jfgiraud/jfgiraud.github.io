@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Tar, détarrer un bz2"
 date: "2012-11-08 07:24:00"
 ---

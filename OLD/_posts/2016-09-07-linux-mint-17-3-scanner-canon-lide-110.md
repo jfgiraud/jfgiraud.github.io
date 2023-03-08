@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux Mint 17.3, Scanner Canon LIDE 110"
 date: "2016-09-07 10:44:00"
 tags: linux scanner

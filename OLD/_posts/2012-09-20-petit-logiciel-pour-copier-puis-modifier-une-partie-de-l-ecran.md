@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Petit logiciel pour copier puis modifier une partie de l'écran"
 date: "2012-09-20 22:46:00"
 ---

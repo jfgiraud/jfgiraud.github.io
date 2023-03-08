@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "q4os, distribution linux"
 date: "2021-08-30 09:12:00"
 tags: q4os distribution linux elementaryOS

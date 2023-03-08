@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "csv, visualiser en ligne de commande"
 date: "2020-02-15 10:19:00"
 tags: linux bash csv visualiser

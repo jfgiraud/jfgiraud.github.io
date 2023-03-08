@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Python, retirer les accents d'une chaine"
 date: "2014-07-01 07:03:00"
 tags: python accent accents retirer supprimer unicode unicodedata

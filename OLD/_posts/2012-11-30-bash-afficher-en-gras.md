@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, afficher en gras"
 date: "2012-11-30 11:35:00"
 ---

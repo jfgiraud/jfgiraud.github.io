@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "intellij, page vide sans menu au démarrage"
 date: "2020-05-15 14:26:00"
 tags: intellij

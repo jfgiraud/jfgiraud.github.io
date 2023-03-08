@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, utilisation des commandes bang !"
 date: "2016-02-11 16:44:00"
 tags: shebang

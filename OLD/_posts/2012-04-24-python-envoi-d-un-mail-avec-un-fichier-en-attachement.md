@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "python, envoi d'un mail avec un fichier en attachement"
 date: "2012-04-24 12:53:00"
 ---

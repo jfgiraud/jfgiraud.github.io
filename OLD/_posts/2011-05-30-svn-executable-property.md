@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "svn executable property"
 date: "2011-05-30 17:22:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "java, regexp nommées"
 date: "2020-10-07 22:50:00"
 tags: java regexp

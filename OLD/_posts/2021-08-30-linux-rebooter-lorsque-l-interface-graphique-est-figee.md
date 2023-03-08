@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux, rebooter lorsque l'interface graphique est  figée"
 date: "2021-08-30 09:03:00"
 tags: reboot

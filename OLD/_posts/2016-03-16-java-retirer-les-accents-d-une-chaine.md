@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Java, retirer les accents d'une chaîne"
 date: "2016-03-16 11:10:00"
 tags: java accents

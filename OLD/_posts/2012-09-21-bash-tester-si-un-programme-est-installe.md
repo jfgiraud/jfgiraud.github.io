@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, tester si un programme est installé"
 date: "2012-09-21 10:03:00"
 tags: which, apt-get install, sudo, commande, sponge

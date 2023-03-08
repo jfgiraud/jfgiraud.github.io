@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "awk, afficher les 5 lignes après un pattern"
 date: "2013-02-19 16:18:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "CVS: suppression d'une branche"
 date: "2008-03-12 11:07:00"
 ---

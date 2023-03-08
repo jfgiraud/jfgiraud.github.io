@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, supprimer les tags html avec sed..."
 date: "2012-09-06 10:29:00"
 tags: sed tag html

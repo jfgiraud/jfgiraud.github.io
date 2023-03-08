@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Algorithme pour afficher un arbre"
 date: "2013-08-16 08:58:00"
 ---

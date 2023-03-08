@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Git, fichier .netrc"
 date: "2013-02-27 23:45:00"
 ---

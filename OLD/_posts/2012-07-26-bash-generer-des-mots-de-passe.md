@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, génerer des mots de passe"
 date: "2012-07-26 17:23:00"
 ---

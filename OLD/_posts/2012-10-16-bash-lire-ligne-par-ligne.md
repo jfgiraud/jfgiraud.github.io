@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, lire ligne par ligne"
 date: "2012-10-16 11:36:00"
 tags: bash, read, line 

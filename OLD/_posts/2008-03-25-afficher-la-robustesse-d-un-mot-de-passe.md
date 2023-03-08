@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Afficher la robustesse d'un mot de passe"
 date: "2008-03-25 14:18:00"
 ---

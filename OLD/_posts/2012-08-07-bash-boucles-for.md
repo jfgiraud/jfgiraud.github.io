@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, boucles for"
 date: "2012-08-07 12:24:00"
 ---

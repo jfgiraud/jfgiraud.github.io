@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "linux, copier un fichier dans plusieurs répertoires sans utiliser de boucle"
 date: "2014-10-07 15:55:00"
 ---

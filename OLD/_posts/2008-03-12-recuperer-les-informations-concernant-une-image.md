@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Récupérer les informations concernant une image"
 date: "2008-03-12 11:47:00"
 ---

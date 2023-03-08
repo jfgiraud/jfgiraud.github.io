@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "sed, supprimer une ou des lignes en fonction de leurs numéros"
 date: "2016-07-12 10:36:00"
 tags: sed ligne lignes supprimer entre

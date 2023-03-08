@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Apple: Patch pour utiliser télécommande avec VLC"
 date: "2011-02-22 11:35:00"
 ---

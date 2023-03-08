@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Droits sql..."
 date: "2011-12-01 11:39:00"
 tags: grant insert select on mysql user privileges flush

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, vérifier si une variable matche une regexp"
 date: "2012-10-10 10:09:00"
 tags: bash, regexp, re

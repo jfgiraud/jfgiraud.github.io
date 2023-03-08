@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "emacs : query replace avec retour chariot !"
 date: "2008-04-03 11:05:00"
 ---

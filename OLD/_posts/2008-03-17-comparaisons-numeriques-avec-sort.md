@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Comparaisons numériques avec sort"
 date: "2008-03-17 10:35:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, composer une url depuis une url de référence avec sed"
 date: "2016-09-21 17:08:00"
 tags: bash sed nom de domaine url

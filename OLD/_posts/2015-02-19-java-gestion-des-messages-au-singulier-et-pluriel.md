@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "java, gestion des messages au singulier et pluriel"
 date: "2015-02-19 15:15:00"
 tags: java singulier pluriel messages

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "python, marre des accents en java : remplacez les par de l'unicode !"
 date: "2012-05-24 11:13:00"
 ---

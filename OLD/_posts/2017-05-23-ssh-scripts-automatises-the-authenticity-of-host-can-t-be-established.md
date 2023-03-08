@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "ssh & scripts automatisés, The authenticity of host can't be established"
 date: "2017-05-23 10:15:00"
 tags: ssh

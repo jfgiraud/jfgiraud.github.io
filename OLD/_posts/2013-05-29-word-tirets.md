@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "word, tirets"
 date: "2013-05-29 15:09:00"
 ---

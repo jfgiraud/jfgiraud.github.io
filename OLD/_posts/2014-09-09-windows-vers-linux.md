@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Windows vers linux"
 date: "2014-09-09 12:11:00"
 ---

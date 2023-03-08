@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "sql, gérer les conflits lors des inserts"
 date: "2012-10-12 13:28:00"
 tags: mysql, on duplicate key, insert into, values, select, if, tts

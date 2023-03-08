@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, générer des dates avec les commandes seq et date"
 date: "2018-10-16 11:28:00"
 tags: commande seq date

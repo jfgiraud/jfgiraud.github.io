@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, timeout"
 date: "2012-07-31 12:30:00"
 ---

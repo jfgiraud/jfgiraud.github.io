@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "mysql, importer un fichier csv"
 date: "2012-07-16 17:30:00"
 ---

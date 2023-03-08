@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "C, compiler un projet avec autoconf, automake & consors"
 date: "2012-11-07 22:49:00"
 ---

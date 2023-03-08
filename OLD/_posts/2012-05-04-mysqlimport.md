@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "mysqlimport"
 date: "2012-05-04 15:41:00"
 ---

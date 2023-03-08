@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "automatisation, créer un document pdf à partir d'une page web"
 date: "2016-02-10 07:41:00"
 tags: wkhtmltopdf phantomjs rasterize.js pdf

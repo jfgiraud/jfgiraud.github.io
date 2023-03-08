@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "sniffage réseau"
 date: "2011-08-12 11:55:00"
 tags: sniffage réseau network ngrep

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Perl, retirer les accents d'une chaine"
 date: "2014-07-01 07:43:00"
 tags: perl accent accents retirer supprimer unicode unicodedata

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "awk, extraire des paragraphes"
 date: "2014-02-01 08:07:00"
 ---

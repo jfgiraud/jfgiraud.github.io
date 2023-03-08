@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "python, bash et encoding..."
 date: "2012-07-16 12:31:00"
 ---

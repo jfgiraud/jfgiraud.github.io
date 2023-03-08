@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "mysql, afficher les colonnes d'une table matchant un pattern"
 date: "2016-09-16 10:31:00"
 tags: mysql colonne

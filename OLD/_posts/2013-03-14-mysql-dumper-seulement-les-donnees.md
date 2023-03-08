@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "mysql, dumper seulement les données"
 date: "2013-03-14 16:15:00"
 ---

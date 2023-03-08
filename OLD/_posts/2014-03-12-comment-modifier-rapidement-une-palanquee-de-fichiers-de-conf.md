@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Comment modifier rapidement une palanquée de fichiers de conf..."
 date: "2014-03-12 17:42:00"
 ---

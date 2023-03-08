@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Maven, connaître la version du pom.xml"
 date: "2014-03-25 13:42:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, heredocuments"
 date: "2015-02-06 11:01:00"
 tags: bash heredocuments

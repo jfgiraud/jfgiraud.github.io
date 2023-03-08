@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "tables de hachage en bash"
 date: "2011-05-30 14:27:00"
 tags: hash declare animals key value hachage iterate

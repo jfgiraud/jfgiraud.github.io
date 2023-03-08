@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux, réduire le poids des photos jpg"
 date: "2013-03-10 18:59:00"
 ---

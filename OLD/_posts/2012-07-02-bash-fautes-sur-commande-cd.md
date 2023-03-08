@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, fautes sur commande cd..."
 date: "2012-07-02 12:06:00"
 tags: bash, cdspell

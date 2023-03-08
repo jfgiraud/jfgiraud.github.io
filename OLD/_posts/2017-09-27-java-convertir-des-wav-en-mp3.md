@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Java, convertir des wav en mp3"
 date: "2017-09-27 16:49:00"
 tags: java conversion wav mp3

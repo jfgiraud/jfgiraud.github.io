@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, créer des requêtes sql depuis un csv"
 date: "2020-04-21 18:39:00"
 tags: bash sql csv

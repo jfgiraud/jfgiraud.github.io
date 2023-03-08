@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Scanner Brother ADS1600W, problème linux lors de l'envoi en FTP"
 date: "2021-08-30 09:06:00"
 tags: scanner ftp

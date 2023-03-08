@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, appel callback à la sortie..."
 date: "2020-11-20 17:20:00"
 tags: bash commande trap

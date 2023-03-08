@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Google et la CNIL"
 date: "2014-02-08 08:00:00"
 ---

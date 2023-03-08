@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "java, forcer l'ordre d'exécution des tests unitaires"
 date: "2018-12-18 11:59:00"
 tags: java test tu

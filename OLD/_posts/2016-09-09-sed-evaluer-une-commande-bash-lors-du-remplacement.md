@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "sed, évaluer une commande bash lors du remplacement"
 date: "2016-09-09 16:53:00"
 tags: commande sed evaluation

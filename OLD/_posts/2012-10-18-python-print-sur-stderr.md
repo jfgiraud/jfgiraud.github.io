@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "python, print sur stderr"
 date: "2012-10-18 10:33:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux Mint Cinnamon & Samsung ML-1865 (2)"
 date: "2012-09-04 22:26:00"
 ---

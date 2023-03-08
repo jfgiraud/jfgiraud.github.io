@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Archlinux, imprimante samung ML-1865"
 date: "2013-04-21 14:15:00"
 ---

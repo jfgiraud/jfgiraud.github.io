@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Mysql: afficher requête en ligne"
 date: "2011-08-31 16:21:00"
 ---

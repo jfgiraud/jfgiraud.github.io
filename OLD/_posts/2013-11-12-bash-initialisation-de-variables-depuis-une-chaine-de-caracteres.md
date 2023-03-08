@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, initialisation de variables depuis une chaine de caractères"
 date: "2013-11-12 22:31:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Python, parseur XML"
 date: "2012-04-03 10:51:00"
 ---

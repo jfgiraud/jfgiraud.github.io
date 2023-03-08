@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "awk, un exemple pour bien débuter et comprendre..."
 date: "2012-10-15 17:05:00"
 tags: awk, base, for

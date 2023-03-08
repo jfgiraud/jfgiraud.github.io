@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, uniformisation de numéros de version"
 date: "2020-04-23 19:21:00"
 tags: linux bash numéros versions version numéro

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, éviter l'interprétation en octal en utilisant printf"
 date: "2013-12-07 08:25:00"
 ---

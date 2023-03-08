@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "awk, trimer des colonnes"
 date: "2013-05-03 03:20:00"
 ---

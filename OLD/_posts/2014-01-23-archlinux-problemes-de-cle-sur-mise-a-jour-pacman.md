@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "archlinux, problèmes de clé sur mise à jour pacman"
 date: "2014-01-23 08:56:00"
 ---

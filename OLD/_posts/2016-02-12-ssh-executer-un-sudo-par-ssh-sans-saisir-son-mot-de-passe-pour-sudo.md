@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "ssh, exécuter un sudo par ssh sans saisir son mot de passe (pour sudo)..."
 date: "2016-02-12 10:57:00"
 tags: ssh password

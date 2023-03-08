@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Manipulation de dates"
 date: "2008-03-17 10:20:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, tri par longueur de ligne"
 date: "2012-07-20 11:32:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "sed, garder les lignes qui matchent un pattern tout en faisant un remplacement"
 date: "2019-01-15 16:38:00"
 tags: commande cpuinfo

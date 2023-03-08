@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "xterm, copier/coller simplement"
 date: "2013-03-21 12:33:00"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, variables modifiées au sein d'une boucle"
 date: "2014-09-16 06:07:00"
 ---

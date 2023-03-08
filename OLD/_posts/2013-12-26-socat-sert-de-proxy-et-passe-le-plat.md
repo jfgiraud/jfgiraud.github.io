@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "socat, sert de proxy et passe le plat..."
 date: "2013-12-26 14:59:00"
 ---

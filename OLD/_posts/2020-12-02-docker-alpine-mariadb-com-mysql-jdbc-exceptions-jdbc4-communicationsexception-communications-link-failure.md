@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "docker, alpine, mariadb: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure"
 date: "2020-12-02 10:09:00"
 tags: docker alpine mariadb

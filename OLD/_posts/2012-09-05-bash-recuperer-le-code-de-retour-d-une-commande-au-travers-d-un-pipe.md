@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, récupérer le code de retour d'une commande au travers d'un pipe"
 date: "2012-09-05 17:20:00"
 tags: bash pipe code erreur

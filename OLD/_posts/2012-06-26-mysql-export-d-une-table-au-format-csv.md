@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "mysql, export d'une table au format csv"
 date: "2012-06-26 14:20:00"
 ---

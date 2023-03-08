@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "awk, utiliser les intervalles {x,y}"
 date: "2012-11-09 11:46:00"
 ---

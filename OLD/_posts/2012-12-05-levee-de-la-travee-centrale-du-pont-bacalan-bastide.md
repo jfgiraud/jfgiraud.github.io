@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Levée de la travée centrale du pont Bacalan-Bastide"
 date: "2012-12-05 13:47:00"
 ---

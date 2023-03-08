@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "sed, garder ou retirer des lignes matchant un pattern spécifié"
 date: "2016-01-20 11:36:00"
 tags: commande sed delete

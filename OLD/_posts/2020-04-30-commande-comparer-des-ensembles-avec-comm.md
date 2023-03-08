@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "commande, comparer des ensembles avec comm"
 date: "2020-04-30 15:54:00"
 tags: linux commande comparer ensemble

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Linux, déterminer la police utilisée par xterm"
 date: "2013-02-12 15:23:00"
 ---

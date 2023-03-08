@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "mysql, supprimer une base/table même lorsque des clés étrangères sont positionnées"
 date: "2013-12-06 14:23:00"
 ---

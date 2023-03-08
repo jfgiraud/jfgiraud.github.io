@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Listes de mots..."
 date: "2012-03-21 14:33:00"
 ---

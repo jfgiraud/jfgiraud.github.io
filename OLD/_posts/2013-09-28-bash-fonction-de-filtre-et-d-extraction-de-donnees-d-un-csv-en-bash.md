@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "bash, fonction de filtre et d'extraction de données d'un csv en bash"
 date: "2013-09-28 09:56:00"
 ---

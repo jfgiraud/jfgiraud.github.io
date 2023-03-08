@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Rendre attrayant des formulaires et tableaux html"
 date: "2008-03-21 11:24:00"
 ---
