@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>templating on Mezalor</title>
+    <link>http://example.org/tags/templating/</link>
+    <description>Recent content in templating on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 08 Aug 2012 14:37:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/templating/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash, templating...</title>
+      <link>http://example.org/posts/2012-08-08-bash-templating/</link>
+      <pubDate>Wed, 08 Aug 2012 14:37:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-08-08-bash-templating/</guid>
+      <description>Pour faire un système de templating en bash (par exemple pour du mailing) on peut faire ainsi si l&amp;rsquo;on souhaite que le modèle soit dans un fichier à part :
+$ cat template.txt &amp;lt;b&amp;gt;Hello &amp;#39;&amp;#34;${firstname}&amp;#34;&amp;lt;/b&amp;gt; Bye &amp;#39;&amp;#34;${firstname}&amp;#34;&amp;#39; $ for firstname in luc jeff gwen &amp;gt; do &amp;gt; while read line &amp;gt; do &amp;gt; eval echo &amp;#34;&amp;#39;$line&amp;#39;&amp;#34; &amp;gt; done &amp;lt; template.txt &amp;gt; done &amp;lt;b&amp;gt;Hello luc&amp;lt;/b&amp;gt; Bye luc &amp;lt;b&amp;gt;Hello jeff&amp;lt;/b&amp;gt; Bye jeff &amp;lt;b&amp;gt;Hello gwen&amp;lt;/b&amp;gt; Bye gwen Avec les Here Documents, cela aurait été plus simple&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>encode on Mezalor</title>
+    <link>http://example.org/tags/encode/</link>
+    <description>Recent content in encode on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 11 Jul 2016 15:00:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/encode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>recode, outil de conversion de jeux de caractères</title>
+      <link>http://example.org/posts/2016-07-11-recode-outil-de-conversion-de-jeux-de-caracteres/</link>
+      <pubDate>Mon, 11 Jul 2016 15:00:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-07-11-recode-outil-de-conversion-de-jeux-de-caracteres/</guid>
+      <description>$ echo &amp;#39;a&amp;amp;lt;b&amp;amp;amp;&amp;amp;nbsp;c&amp;amp;eacute;&amp;#39; | recode html a&amp;lt;b&amp;amp; cé </description>
+    </item>
+    
+  </channel>
+</rss>

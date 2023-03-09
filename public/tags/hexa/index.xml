@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hexa on Mezalor</title>
+    <link>http://example.org/tags/hexa/</link>
+    <description>Recent content in hexa on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 08 Jan 2021 09:45:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/hexa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>convertir fichier binaire en fichier texte contenant une trame hexa</title>
+      <link>http://example.org/posts/2021-01-08-convertir-fichier-binaire-en-fichier-texte-contenant-une-trame-hexa/</link>
+      <pubDate>Fri, 08 Jan 2021 09:45:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-01-08-convertir-fichier-binaire-en-fichier-texte-contenant-une-trame-hexa/</guid>
+      <description>Voici comment convertir un fichier binaire en un simple fichier texte contenant une trame hexa :
+$ hexdump -C PREMIER.wav | head -n 10 00000000 52 49 46 46 2c 17 00 00 57 41 56 45 66 6d 74 20 |RIFF,...WAVEfmt | 00000010 12 00 00 00 06 00 01 00 40 1f 00 00 40 1f 00 00 |........@...@...| 00000020 01 00 08 00 00 00 66 61 63 74 04 00 00 00 fa 16 |.</description>
+    </item>
+    
+    <item>
+      <title>mysql, données binaires</title>
+      <link>http://example.org/posts/2020-11-12-mysql-donnees-binaires/</link>
+      <pubDate>Thu, 12 Nov 2020 15:47:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-11-12-mysql-donnees-binaires/</guid>
+      <description>Dans certains cas, la commande LOAD_FILE n&amp;rsquo;est pas utilisable (problèmes de droits, etc..) pour alimenter un blob.
+Dans ce cas, il peut être intéressant de convertir un fichier binaire (ici un fichier texte) en séquence hexadécimale&amp;hellip;
+$ cat lorem.txt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at lorem pharetra, pulvinar quam nec, efficitur ligula. Donec imperdiet aliquam rutrum. Aenean metus est, cursus eget auctor sit amet, vehicula id lorem.</description>
+    </item>
+    
+  </channel>
+</rss>

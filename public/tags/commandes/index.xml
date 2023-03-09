@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>commandes on Mezalor</title>
+    <link>http://example.org/tags/commandes/</link>
+    <description>Recent content in commandes on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 21 May 2021 12:12:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/commandes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VirtualBox, connaitre l&#39;IP de la machine hôte</title>
+      <link>http://example.org/posts/2021-05-21-virtualbox-connaitre-l-ip-de-la-machine-hote/</link>
+      <pubDate>Fri, 21 May 2021 12:12:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-05-21-virtualbox-connaitre-l-ip-de-la-machine-hote/</guid>
+      <description>Dans le terminal de la VM, ipconfig donne l&amp;rsquo;information dans
+Passerelle par défaut. . . . . . . . . : xxx netstat -rn donne l&amp;rsquo;information dans &amp;ldquo;Adr. passerelle&amp;rdquo;
+Destination réseau Masque réseau Adr. passerelle Adr. interface Métrique 0.0.0.0 0.0.0.0 xxx yyy 10 </description>
+    </item>
+    
+  </channel>
+</rss>

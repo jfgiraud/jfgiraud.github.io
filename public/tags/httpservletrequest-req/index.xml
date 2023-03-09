@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HttpServletRequest req on Mezalor</title>
+    <link>http://example.org/tags/httpservletrequest-req/</link>
+    <description>Recent content in HttpServletRequest req on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 08 Jan 2013 17:22:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/httpservletrequest-req/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java, renvoyer un fichier binaire via une servlet</title>
+      <link>http://example.org/posts/2013-01-08-java-renvoyer-un-fichier-binaire-via-une-servlet/</link>
+      <pubDate>Tue, 08 Jan 2013 17:22:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2013-01-08-java-renvoyer-un-fichier-binaire-via-une-servlet/</guid>
+      <description>package xxxx; import java.io.FileInputStream; import java.io.IOException; import javax.servlet.ServletException; import javax.servlet.ServletOutputStream; import javax.servlet.http.HttpServlet; import javax.servlet.http.HttpServletRequest; import javax.servlet.http.HttpServletResponse; import org.apache.commons.io.IOUtils; public class GetManualServlet extends HttpServlet { @Override protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException { resp.setContentType(&amp;#34;application/msword&amp;#34;); resp.addHeader( &amp;#34;Content-Transfer-Encoding&amp;#34;, &amp;#34;binary&amp;#34; ); resp.addHeader(&amp;#34;Pragma&amp;#34;, &amp;#34;no-cache&amp;#34;); resp.addHeader(&amp;#34;Cache-Control&amp;#34;, &amp;#34;no-cache, max-age=0, must-revalidate&amp;#34;); resp.addHeader(&amp;#34;Content-Disposition&amp;#34;, &amp;#34;attachment; fileName=\&amp;#34;ManuelUtilisateur.docx\&amp;#34;;&amp;#34;); String path = getServletContext().getRealPath(&amp;#34;doc/ManuelUtilisateur.docx&amp;#34;); FileInputStream in = new FileInputStream(path); try { ServletOutputStream out = resp.getOutputStream(); IOUtils.copy(in, out); out.flush(); } finally { in.</description>
+    </item>
+    
+  </channel>
+</rss>

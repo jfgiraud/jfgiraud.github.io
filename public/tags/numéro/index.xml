@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>numéro on Mezalor</title>
+    <link>http://example.org/tags/num%C3%A9ro/</link>
+    <description>Recent content in numéro on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 23 Apr 2020 19:21:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/num%C3%A9ro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, uniformisation de numéros de version</title>
+      <link>http://example.org/posts/2020-04-23-bash-uniformisation-de-numeros-de-version/</link>
+      <pubDate>Thu, 23 Apr 2020 19:21:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-04-23-bash-uniformisation-de-numeros-de-version/</guid>
+      <description>Sur notre projet, les numéros de version des lots s&amp;rsquo;appellent des GOROCO.
+Ils regroupent tout un tas d&amp;rsquo;applicatifs ayant chacun leur propres numéros de version (format x.y.z).
+Ils peuvent être saisis de différentes manières, avec des 0, sans 0&amp;hellip; du coup pour uniformiser les valeurs, j&amp;rsquo;ai réussi à trouver les commandes bash pour les avoir sur 1 caractère si possible (GOROCO) ou bien sur 2 (GOOROOCOO).
+#!/bin/bash function uniformize() { local GOROCO=&amp;#34;$1&amp;#34; BEFORE=&amp;#34;$GOROCO&amp;#34; GOROCO=$(echo $GOROCO | sed -E &amp;#39;s/(G|R|C|P)0([0-9])/\1\2/g&amp;#39;) GOOROOCOO=$(echo $GOROCO | sed -e &amp;#39;s/\([RCP]\)/\n\1/g&amp;#39; -e &amp;#39;s/\&amp;lt;\(.</description>
+    </item>
+    
+  </channel>
+</rss>

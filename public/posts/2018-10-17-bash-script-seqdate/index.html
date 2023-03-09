@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            bash, script seqdate  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="keywords" content='commande, date, seq' />
+    
+    
+        <meta name="description" content="pour générer des dates avec date et seq
+#!/bin/bash usage() { local msg=&amp;#34;$1&amp;#34; if [[ -n &amp;#34;$msg&amp;#34; ]]; then echo $msg fi echo &amp;#34;usage: $0 &amp;lt;FROM=YYYY-MM-DD&amp;gt; &amp;lt;TO=YYYY-MM-DD&amp;gt;&amp;#34; &amp;gt;&amp;amp;2 exit 1 } if [[ &amp;#34;$#&amp;#34; -ne 2 ]]; then usage fi FORMAT=&amp;#34;%Y-%m-%d&amp;#34; FROM=$(date --d &amp;#34;$1&amp;#34; &#43;&amp;#34;$FORMAT&amp;#34;) TO=$(date --d &amp;#34;$2&amp;#34; &#43;&amp;#34;$FORMAT&amp;#34;) if [[ &amp;#34;$FROM&amp;#34; &amp;gt; &amp;#34;$TO&amp;#34; ]]; then read FROM TO &amp;lt;&amp;lt;&amp;lt; &amp;#34;$TO $FROM&amp;#34; fi echo $FROM while [[ &amp;#34;$FROM&amp;#34; !" />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="bash, script seqdate" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2018-10-17T10:07:00Z&#43;0100' />
+    
+        
+            <meta property="article:tag" content="commande" />
+        
+            <meta property="article:tag" content="date" />
+        
+            <meta property="article:tag" content="seq" />
+        
+    
+    <meta property="og:url" content="http://example.org/posts/2018-10-17-bash-script-seqdate/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="Script réutilisable pour générer des dates avec date et seq
+#!/bin/bash usage() { local msg=&amp;#34;$1&amp;#34; if [[ -n &amp;#34;$msg&amp;#34; ]]; then echo $msg fi echo &amp;#34" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2018-10-17-bash-script-seqdate/" />
+
+
+    <meta name="twitter:title" content="bash, script seqdate" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="Script réutilisable pour générer des dates avec date et seq
+#!/bin/bash usage() { local msg=&amp;#34;$1&amp;#34; if [[ -n &amp;#34;$msg&amp;#34; ]]; then echo $msg fi echo &amp;#34" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>bash, script seqdate</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2018-10-17
+
+</p>
+    
+    
+    
+    
+    <div><p>Script réutilisable pour générer des dates avec <code>date</code> et <code>seq</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>usage<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    local msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -n <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo $msg
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;usage: </span>$0<span style="color:#e6db74"> &lt;FROM=YYYY-MM-DD&gt; &lt;TO=YYYY-MM-DD&gt;&#34;</span> &gt;&amp;<span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$#<span style="color:#e6db74">&#34;</span> -ne <span style="color:#ae81ff">2</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    usage 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>FORMAT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;%Y-%m-%d&#34;</span>
+</span></span><span style="display:flex;"><span>FROM<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>date --d <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> +<span style="color:#e6db74">&#34;</span>$FORMAT<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>TO<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>date --d <span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span> +<span style="color:#e6db74">&#34;</span>$FORMAT<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$FROM<span style="color:#e6db74">&#34;</span> &gt; <span style="color:#e6db74">&#34;</span>$TO<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    read FROM TO <span style="color:#f92672">&lt;&lt;&lt;</span> <span style="color:#e6db74">&#34;</span>$TO<span style="color:#e6db74"> </span>$FROM<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo $FROM
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$FROM<span style="color:#e6db74">&#34;</span> !<span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span>$TO<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    FROM<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>date -d <span style="color:#e6db74">&#34;</span>$FROM<span style="color:#e6db74"> 1 day&#34;</span> +<span style="color:#e6db74">&#34;</span>$FORMAT<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>    echo $FROM
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./seqdate.sh 2018-08-01 2018-08-10
+</span></span><span style="display:flex;"><span>2018-08-01
+</span></span><span style="display:flex;"><span>2018-08-02
+</span></span><span style="display:flex;"><span>2018-08-03
+</span></span><span style="display:flex;"><span>2018-08-04
+</span></span><span style="display:flex;"><span>2018-08-05
+</span></span><span style="display:flex;"><span>2018-08-06
+</span></span><span style="display:flex;"><span>2018-08-07
+</span></span><span style="display:flex;"><span>2018-08-08
+</span></span><span style="display:flex;"><span>2018-08-09
+</span></span><span style="display:flex;"><span>2018-08-10
+</span></span></code></pre></div></div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/commande">#commande</a>
+        
+            <a
+                
+                href="/tags/date">#date</a>
+        
+            <a
+                
+                href="/tags/seq">#seq</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

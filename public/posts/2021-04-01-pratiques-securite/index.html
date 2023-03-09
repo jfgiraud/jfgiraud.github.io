@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            pratiques sécurité  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="keywords" content='sécurité' />
+    
+    
+        <meta name="description" content="tes les pages délivrées resp.addHeader(&amp;#34;X-Frame-Options&amp;#34;, &amp;#34;DENY&amp;#34;); resp.addHeader(&amp;#34;X-XSS-Protection&amp;#34;, &amp;#34;1; mode=block&amp;#34;); resp.addHeader(&amp;#34;X-Content-Type-Options&amp;#34;, &amp;#34;nosniff&amp;#34;); Header Http positionné lors de la création d&amp;rsquo;un HttpSession response.setHeader(&amp;#34;Set-Cookie&amp;#34;, &amp;#34;JSESSIONID=&amp;#34; &#43; session.getId() &#43; &amp;#34;; Path=/; HttpOnly&amp;#34;); Injection SQL Ne pas créer les requêtes SQL par concaténation / formatage de chaîne (%s)
+=&amp;gt; N&amp;rsquo;utiliser que des PreparedStatement (les paramètres sont échappés automatiquement)
+Sortie page HTML Ne pas renvoyer de code HTML : si une donnée de la BDD contient un code JS injecté, il peut se retrouver exécuté lors de l&amp;rsquo;affichage" />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="pratiques sécurité" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2021-04-01T10:36:00Z&#43;0100' />
+    
+        
+            <meta property="article:tag" content="sécurité" />
+        
+    
+    <meta property="og:url" content="http://example.org/posts/2021-04-01-pratiques-securite/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="Headers Http sur toutes les pages délivrées resp.addHeader(&amp;#34;X-Frame-Options&amp;#34;, &amp;#34;DENY&amp;#34;); resp.addHeader(&amp;#34;X-XSS-Protection&amp;#34;, &amp;#34;1; mode=b" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2021-04-01-pratiques-securite/" />
+
+
+    <meta name="twitter:title" content="pratiques sécurité" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="Headers Http sur toutes les pages délivrées resp.addHeader(&amp;#34;X-Frame-Options&amp;#34;, &amp;#34;DENY&amp;#34;); resp.addHeader(&amp;#34;X-XSS-Protection&amp;#34;, &amp;#34;1; mode=b" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>pratiques sécurité</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2021-04-01
+
+</p>
+    
+    
+    
+    
+    <div><h2 id="headers-http-sur-toutes-les-pages-délivrées">Headers Http sur toutes les pages délivrées</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>resp.addHeader(&#34;X-Frame-Options&#34;, &#34;DENY&#34;);
+</span></span><span style="display:flex;"><span>resp.addHeader(&#34;X-XSS-Protection&#34;, &#34;1; mode=block&#34;);
+</span></span><span style="display:flex;"><span>resp.addHeader(&#34;X-Content-Type-Options&#34;, &#34;nosniff&#34;);
+</span></span></code></pre></div><h2 id="header-http-positionné-lors-de-la-création-dun-httpsession">Header Http positionné lors de la création d&rsquo;un HttpSession</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>response.setHeader(&#34;Set-Cookie&#34;, &#34;JSESSIONID=&#34; + session.getId() + &#34;; Path=/; HttpOnly&#34;);
+</span></span></code></pre></div><h2 id="injection-sql">Injection SQL</h2>
+<p>Ne pas créer les requêtes SQL par concaténation / formatage de chaîne (%s)</p>
+<p>=&gt; N&rsquo;utiliser que des PreparedStatement (les paramètres sont échappés automatiquement)</p>
+<h2 id="sortie-page-html">Sortie page HTML</h2>
+<p>Ne pas renvoyer de code HTML : si une donnée de la BDD contient un code JS injecté, il peut se retrouver exécuté lors de l&rsquo;affichage</p>
+<p>Remplacer les caractères &lt; &gt; &amp; &rsquo; par leur entités html en sortie</p>
+<h2 id="entrée-formulaire-html">Entrée formulaire HTML</h2>
+<p>Vérifier les paramètres, formats&hellip; côté serveur (en plus du côté client)</p>
+<p>Un Filtre (implements javax.servlet.Filter) peut être mis en place par exemple pour vérifier si les paramètres contiennent du code HTML, etc.
+=&gt; permet de centraliser les vérifications, mais peut-être complexe (exemple : post avec body en json contenant une valeur avec du code html)
+Si stocké en BDD, le code peut-être joué (si pas échappé en sortie)</p>
+<h2 id="jeton-anti-csrf">Jeton Anti CSRF</h2>
+<p>Ajouter dans les formulaires du site A un jeton (champ caché) qui sera vérifié lors de la soumission.
+Ca permet d&rsquo;éviter qu&rsquo;un site tiers B formate une url (incluse dans sa page) qui sera jouée par le navigateur de l&rsquo;utilisateur sur le site A.</p>
+<h2 id="exceptions">Exceptions</h2>
+<p>Rattraper les exceptions et ne pas afficher la stack (pourrait indiquer une ip, nom de machine, chemin disque&hellip;)</p>
+<p>Mettre dans la page HTML un UUID et dans le local7 l&rsquo;UUID avec la pile d&rsquo;exception.</p>
+<p>Utiliser une page d&rsquo;erreur spécifique (il me semble que de base, la page d&rsquo;exception affiche la version tomcat)</p>
+<h2 id="côté-système-">Côté système :</h2>
+<p>Ne pas donner les versions Apache / Tomcat dans les headers de réponse.</p>
+</div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/s%C3%A9curit%C3%A9">#sécurité</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

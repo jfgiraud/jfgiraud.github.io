@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html class="home" lang="fr"><head>
+	<meta name="generator" content="Hugo 0.111.2">
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    
+        
+          <link href="http://example.org/index.xml" rel="alternate" type="application/rss+xml" title="Mezalor" />
+          <link href="http://example.org/index.xml" rel="feed" type="application/rss+xml" title="Mezalor" />
+        
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title"
+        content='Mezalor' />
+    
+        <meta property="og:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta property="og:type" content="blog" />
+    <meta property="og:image"
+        content='http://example.org/img/icon.svg' />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/" />
+
+
+    <meta name="twitter:title"
+        content='Mezalor' />
+    
+        <meta name="twitter:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta name="twitter:image"
+        content='http://example.org/img/icon.svg' />
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+    
+    
+    
+
+<body>
+        <div id="baseContainer"><header class="jumbotronContainer">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+
+    
+    
+    
+
+
+
+
+
+    
+
+
+
+<div class="postlist " id="postlist">
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2020-04-21-bash-creer-des-requetes-sql-depuis-un-csv/">bash, créer des requêtes sql depuis un csv</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2020-04-21
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/bash">#bash</a>
+                
+                    <a href="/tags/csv">#csv</a>
+                
+                    <a href="/tags/sql">#sql</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Il y a quelques temps, j&rsquo;avais utilisé la commande awk pour générer des requêtes sql depuis un fichier CSV.
+Dans le cas présent, j&rsquo;utilise simplement un script bash.
+Au final, la solution bash -bien que plus verbeuse- me semble plus lisible à lire et modifier.
+#!/bin/bash fichier=~/Téléchargements/groupmotifs.csv tail -n +2 $fichier | tr -d $&#39;\r&#39; | while IFS=$&#39;\n&#39; read line || [[ $line ]] do IFS=&#39;;&#39; read id name type_group nas &lt;&lt;&lt; &#34;$line&#34; cat &lt;&lt;EOF insert into group_motifs (id, name, type_group, nas) values ($id, &#34;$name&#34;, &#34;$type_group&#34;, &#34;$nas&#34;) on duplicate key update nas=&#34;$nas&#34;, type_group=&#34;$type_group&#34;, name=&#34;$name&#34;; EOF done &gt; requetes.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2020-04-21-bash-creer-des-requetes-sql-depuis-un-csv/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2020-02-15-csv-visualiser-en-ligne-de-commande/">csv, visualiser en ligne de commande</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2020-02-15
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/bash">#bash</a>
+                
+                    <a href="/tags/csv">#csv</a>
+                
+                    <a href="/tags/linux">#linux</a>
+                
+                    <a href="/tags/visualiser">#visualiser</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Voici une commande à ajouter dans son .bashrc afin de visualiser le contenu d&rsquo;un fichier CSV sans avoir à ouvrir une application spécifique.
+function lesscsv() { local file=&#34;$1&#34; local sep=&#34;${2:-;}&#34; column -s$sep -nt &#34;$file&#34; | less -#2 -N -S } lesscsv /usr/share/distro-info/ubuntu.csv , 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2020-02-15-csv-visualiser-en-ligne-de-commande/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2019-07-09-bash-lignes-dupliquees/">bash, lignes dupliquées</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2019-07-09
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/bash">#bash</a>
+                
+                    <a href="/tags/commande">#commande</a>
+                
+                    <a href="/tags/dupliqu%C3%A9es">#dupliquées</a>
+                
+                    <a href="/tags/lignes">#lignes</a>
+                
+                    <a href="/tags/uniq">#uniq</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Dans d&rsquo;anciens post, j&rsquo;avais parlé de la commande uniq
+Il est possible de ne garder que les lignes dupliquées. Il faut utiliser l&rsquo;option -d
+$ for A in 1 3 4 2 3 1 1 1 3; do echo $A; done | sort | uniq -dc 4 1 3 3 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2019-07-09-bash-lignes-dupliquees/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2019-07-09-awk/">awk</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2019-07-09
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/awk">#awk</a>
+                
+                    <a href="/tags/commande">#commande</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Sur la version du DCG G3 (DCG : Dialog Code Generator)
+/* &lt;DCG_EXCEPTION id=&#34;644&#34; label=&#34;idMenu = id du Choix Svi&#34; type=&#34;Action&#34;&gt; */ idMenu = getIdChoix(getSessionSvi(request), choixSvi); /* &lt;/DCG_EXCEPTION&gt; */ this.setReferenceInCtxSession( request, &#34;idMenu&#34;, idMenu ); addLog(request, &#34;CONFIRM DDSLG_objId { Si537a2ba562f88b0ed24e8fab80913509366c055c }&#34;); En migrant sur le DCG G4 on a :
+/* &lt;DCG_EXCEPTION id=&#34;644&#34; label=&#34;idMenu = id du Choix Svi&#34; type=&#34;Action&#34;&gt; */ idMenu = getIdChoix(getSessionSvi(request), choixSvi); /* &lt;/DCG_EXCEPTION&gt; */ addLog(request, &#34;CONFIRM DDSLG_objId { Si537a2ba562f88b0ed24e8fab80913509366c055c }&#34;); La mise en session est donc perdue, ce qui provoque des erreurs dans le parcours client.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2019-07-09-awk/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2019-07-04-socat-lien-exemples/">socat, lien exemples</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2019-07-04
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/commande">#commande</a>
+                
+                    <a href="/tags/socat">#socat</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        http://technostuff.blogspot.com/2008/10/some-useful-socat-commands.html
+                    
+                </p>
+                <p><a href="http://example.org/posts/2019-07-04-socat-lien-exemples/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2019-05-29-virtualbox-et-erreurs-a-l-installation/">VirtualBox et erreurs à l&#39;installation</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2019-05-29
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/virtualbox">#virtualbox</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Liens de rappel en vrac
+https://askubuntu.com/questions/802668/virtualbox-installation-gives-message-modprobe-vboxdrv-failed
+https://askubuntu.com/questions/920689/how-to-fix-modprobe-vboxdrv-error-in-virtualbox
+https://askubuntu.com/questions/760671/could-not-load-vboxdrv-after-upgrade-to-ubuntu-16-04-and-i-want-to-keep-secur
+                    
+                </p>
+                <p><a href="http://example.org/posts/2019-05-29-virtualbox-et-erreurs-a-l-installation/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2019-02-22-htmlunit-upgrade-et-bouton-de-formulaire-vu-comme-disabled/">htmlunit, upgrade et bouton de formulaire vu comme disabled</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2019-02-22
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/htmlunit">#htmlunit</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Sur le projet, l&rsquo;upgrade de la version de htmlunit de 2.21 à 2.33 a provoqué une régression.
+Le bouton de validation des formulaires est vu comme disabled.
+Sur la version 2.21, le code pour saisir le texte dans les HtmlTextInput utilise la méthode setValueAttribute.
+Entre la version 2.24 et 2.25, setValueAttribute n&rsquo;émet plus l&rsquo;événement qui permet au formulaire de se valider et activer/désactiver le bouton de soumission.
+A partir de la version 2.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2019-02-22-htmlunit-upgrade-et-bouton-de-formulaire-vu-comme-disabled/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2019-01-15-sed-garder-les-lignes-qui-matchent-un-pattern-tout-en-faisant-un-remplacement/">sed, garder les lignes qui matchent un pattern tout en faisant un remplacement</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2019-01-15
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/commande">#commande</a>
+                
+                    <a href="/tags/cpuinfo">#cpuinfo</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        $ cat /proc/cpuinfo | sed -rn &#39;s/(fpu.*): (\w+)/\1 \2/gp&#39; fpu	yes fpu_exception	yes fpu	yes fpu_exception	yes fpu	yes fpu_exception	yes fpu	yes fpu_exception	yes L&rsquo;option -n permet de ne pas afficher les lignes tandis que l&rsquo;ajout de /p indique d&rsquo;afficher lors d&rsquo;un matchage.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2019-01-15-sed-garder-les-lignes-qui-matchent-un-pattern-tout-en-faisant-un-remplacement/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2018-12-18-java-forcer-l-ordre-d-execution-des-tests-unitaires/">java, forcer l&#39;ordre d&#39;exécution des tests unitaires</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2018-12-18
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/java">#java</a>
+                
+                    <a href="/tags/test">#test</a>
+                
+                    <a href="/tags/tu">#tu</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Parfois, des tests unitaires plantent lorsqu&rsquo;ils sont exécutés dans un certain ordre.
+Aujourd&rsquo;hui, c&rsquo;est le cas et pour reproduire le problème, j&rsquo;ai utilisé cette annotation qui permet de spécifier l&rsquo;ordre que l&rsquo;on souhaite utiliser lors de l&rsquo;exécution de tous les tests de la classe.
+import org.junit.FixMethodOrder; import org.junit.Test; import org.junit.runners.MethodSorters; @FixMethodOrder(MethodSorters.NAME_ASCENDING) public class TestMethodOrder { @Test public void testA() { System.out.println(&#34;first&#34;); } @Test public void testB() { System.out.println(&#34;second&#34;); } @Test public void testC() { System.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2018-12-18-java-forcer-l-ordre-d-execution-des-tests-unitaires/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2018-12-17-java-tests-unitaires-en-ligne-de-commande/">java, tests unitaires en ligne de commande</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2018-12-17
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/maven">#maven</a>
+                
+                    <a href="/tags/test">#test</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Rappel:
+$ mvn test $ mvn -Dtest=TestClass test $ mvn -Dtest=TestClass1,TestClass2 test $ mvn -Dtest=TestClass#methodName test $ mvn -Dtest=TestClass#methodPattern* test $ mvn -Dtest=TestClass#methodPattern1*+methodPattern2* test 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2018-12-17-java-tests-unitaires-en-ligne-de-commande/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+
+</div>
+<div id="getNextBtnContainer"></div>
+
+
+    
+    <div id="pageNavigation" class='
+            
+    '>
+        
+            <a href="/page/5/" title='Page précédente'>
+                
+                    &lt;&lt;&lt;
+                
+            </a>
+        
+        
+        
+            
+                <a href="/">1</a>
+            
+        
+            
+                <a href="/page/2/">2</a>
+            
+        
+            
+                <a href="/page/3/">3</a>
+            
+        
+            
+                <a href="/page/4/">4</a>
+            
+        
+            
+                <a href="/page/5/">5</a>
+            
+        
+            
+            <span>
+                [6]
+            </span>
+            
+        
+            
+                <a href="/page/7/">7</a>
+            
+        
+            
+                <a href="/page/8/">8</a>
+            
+        
+            
+                <a href="/page/9/">9</a>
+            
+        
+            
+                <a href="/page/10/">10</a>
+            
+        
+            
+                <a href="/page/11/">11</a>
+            
+        
+            
+                <a href="/page/12/">12</a>
+            
+        
+            
+                <a href="/page/13/">13</a>
+            
+        
+            
+                <a href="/page/14/">14</a>
+            
+        
+            
+                <a href="/page/15/">15</a>
+            
+        
+            
+                <a href="/page/16/">16</a>
+            
+        
+            
+                <a href="/page/17/">17</a>
+            
+        
+            
+                <a href="/page/18/">18</a>
+            
+        
+            
+                <a href="/page/19/">19</a>
+            
+        
+            
+                <a href="/page/20/">20</a>
+            
+        
+            
+                <a href="/page/21/">21</a>
+            
+        
+            
+                <a href="/page/22/">22</a>
+            
+        
+            
+                <a href="/page/23/">23</a>
+            
+        
+            
+                <a href="/page/24/">24</a>
+            
+        
+            
+                <a href="/page/25/">25</a>
+            
+        
+            
+                <a href="/page/26/">26</a>
+            
+        
+            
+                <a href="/page/27/">27</a>
+            
+        
+            
+                <a href="/page/28/">28</a>
+            
+        
+            
+                <a href="/page/29/">29</a>
+            
+        
+            
+                <a href="/page/30/">30</a>
+            
+        
+            
+                <a href="/page/31/">31</a>
+            
+        
+            
+                <a href="/page/32/">32</a>
+            
+        
+            
+                <a href="/page/33/">33</a>
+            
+        
+        
+            <a href="/page/7/" title='Page suivante'>
+                
+                    &gt;&gt;&gt;
+                
+            </a>
+        
+    </div>
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

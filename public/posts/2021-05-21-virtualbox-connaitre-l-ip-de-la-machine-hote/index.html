@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            VirtualBox, connaitre l&#39;IP de la machine hôte  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="keywords" content='commandes, ipconfig, virtualbox' />
+    
+    
+        <meta name="description" content="la VM, ipconfig donne l&amp;rsquo;information dans
+Passerelle par défaut. . . . . . . . . : xxx netstat -rn donne l&amp;rsquo;information dans &amp;ldquo;Adr. passerelle&amp;rdquo;
+Destination réseau Masque réseau Adr. passerelle Adr. interface Métrique 0.0.0.0 0.0.0.0 xxx yyy 10 " />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="VirtualBox, connaitre l&#39;IP de la machine hôte" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2021-05-21T12:12:00Z&#43;0100' />
+    
+        
+            <meta property="article:tag" content="commandes" />
+        
+            <meta property="article:tag" content="ipconfig" />
+        
+            <meta property="article:tag" content="virtualbox" />
+        
+    
+    <meta property="og:url" content="http://example.org/posts/2021-05-21-virtualbox-connaitre-l-ip-de-la-machine-hote/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="Dans le terminal de la VM, ipconfig donne l&amp;rsquo;information dans
+Passerelle par défaut. . . . . . . . . : xxx netstat -rn donne l&amp;rsquo;information dans &amp;ldqu" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2021-05-21-virtualbox-connaitre-l-ip-de-la-machine-hote/" />
+
+
+    <meta name="twitter:title" content="VirtualBox, connaitre l&#39;IP de la machine hôte" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="Dans le terminal de la VM, ipconfig donne l&amp;rsquo;information dans
+Passerelle par défaut. . . . . . . . . : xxx netstat -rn donne l&amp;rsquo;information dans &amp;ldqu" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>VirtualBox, connaitre l&#39;IP de la machine hôte</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2021-05-21
+
+</p>
+    
+    
+    
+    
+    <div><p>Dans le terminal de la VM, <code>ipconfig</code> donne l&rsquo;information dans</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Passerelle par défaut. . . . . . . . . : xxx
+</span></span></code></pre></div><p><code>netstat -rn</code> donne l&rsquo;information dans &ldquo;Adr. passerelle&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Destination réseau    Masque réseau  Adr. passerelle   Adr. interface Métrique
+</span></span><span style="display:flex;"><span>0.0.0.0               0.0.0.0        xxx               yyy            10
+</span></span></code></pre></div></div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/commandes">#commandes</a>
+        
+            <a
+                
+                href="/tags/ipconfig">#ipconfig</a>
+        
+            <a
+                
+                href="/tags/virtualbox">#virtualbox</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

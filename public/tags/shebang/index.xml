@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shebang on Mezalor</title>
+    <link>http://example.org/tags/shebang/</link>
+    <description>Recent content in shebang on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 11 Feb 2016 16:44:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/shebang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, utilisation des commandes bang !</title>
+      <link>http://example.org/posts/2016-02-11-bash-utilisation-des-commandes-bang/</link>
+      <pubDate>Thu, 11 Feb 2016 16:44:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-02-11-bash-utilisation-des-commandes-bang/</guid>
+      <description>Voici un gros post concernant les commandes bang de bash.
+Je connaissais &amp;ldquo;!!&amp;rdquo;, &amp;ldquo;!ligne&amp;rdquo; et &amp;ldquo;!commande&amp;rdquo; ce qui est déjà pas mal. Mais il y en a bien d&amp;rsquo;autres !!!
+En les connaissant et les utilisant, il doit être possible de minimiser les contacts avec la souris ;)
+Les commandes :
+Syntaxe !! Exécute la dernière commande !509 Exécute la commande 509 de l&amp;#39;historique !-2 Exécute l&amp;#39;avant dernière commande !foo Exécute la dernière commande qui commance par &amp;#39;foo&amp;#39; (cad.</description>
+    </item>
+    
+  </channel>
+</rss>

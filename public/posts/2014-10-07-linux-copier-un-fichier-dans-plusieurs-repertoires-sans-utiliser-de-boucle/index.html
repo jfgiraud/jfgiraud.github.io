@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            linux, copier un fichier dans plusieurs répertoires sans utiliser de boucle  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+    
+        <meta name="description" content="ur copier un fichier à plusieurs endroits dans utiliser une boucle for&amp;hellip;
+Il suffit d&amp;rsquo;utiliser la commande xargs avec le paramètre -n 1 comme dans l&amp;rsquo;exemple ci-dessous :
+$ ls $ mkdir a b c $ echo hello &amp;gt; test.txt $ tree . ├── a ├── b ├── c └── test.txt 3 directories, 1 file $ echo a b c | xargs -n 1 cp test.txt $ tree ." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="linux, copier un fichier dans plusieurs répertoires sans utiliser de boucle" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2014-10-07T15:55:00Z&#43;0100' />
+    
+    <meta property="og:url" content="http://example.org/posts/2014-10-07-linux-copier-un-fichier-dans-plusieurs-repertoires-sans-utiliser-de-boucle/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="Un truc et astuce pour copier un fichier à plusieurs endroits dans utiliser une boucle for&amp;hellip;
+Il suffit d&amp;rsquo;utiliser la commande xargs avec le paramètr" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2014-10-07-linux-copier-un-fichier-dans-plusieurs-repertoires-sans-utiliser-de-boucle/" />
+
+
+    <meta name="twitter:title" content="linux, copier un fichier dans plusieurs répertoires sans utiliser de boucle" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="Un truc et astuce pour copier un fichier à plusieurs endroits dans utiliser une boucle for&amp;hellip;
+Il suffit d&amp;rsquo;utiliser la commande xargs avec le paramètr" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>linux, copier un fichier dans plusieurs répertoires sans utiliser de boucle</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2014-10-07
+
+</p>
+    
+    
+    
+    
+    <div><p>Un truc et astuce pour copier un fichier à plusieurs endroits dans utiliser une boucle for&hellip;</p>
+<p>Il suffit d&rsquo;utiliser la commande <!-- raw HTML omitted -->xargs<!-- raw HTML omitted --> avec le paramètre <!-- raw HTML omitted -->-n 1<!-- raw HTML omitted --> comme dans l&rsquo;exemple ci-dessous :</p>
+<pre tabindex="0"><code>$ ls
+$ mkdir a b c
+$ echo hello &gt; test.txt
+$ tree 
+.
+├── a
+├── b
+├── c
+└── test.txt
+
+3 directories, 1 file
+$ echo a b c | xargs -n 1 cp test.txt 
+$ tree 
+.
+├── a
+│   └── test.txt
+├── b
+│   └── test.txt
+├── c
+│   └── test.txt
+└── test.txt
+
+3 directories, 4 files
+</code></pre></div>
+</article>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

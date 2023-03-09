@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>miller on Mezalor</title>
+    <link>http://example.org/tags/miller/</link>
+    <description>Recent content in miller on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 16 Sep 2021 10:07:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/miller/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>miller, traiter les fichiers CSV (et autres) en ligne de commande</title>
+      <link>http://example.org/posts/2021-09-16-miller-traiter-les-fichiers-csv-et-autres-en-ligne-de-commande/</link>
+      <pubDate>Thu, 16 Sep 2021 10:07:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-09-16-miller-traiter-les-fichiers-csv-et-autres-en-ligne-de-commande/</guid>
+      <description>Hier, j&amp;rsquo;ai découvert le programme mlr (https://github.com/johnkerl/miller)
+Il est installable par apt sous ubuntu.
+Il permet d&amp;rsquo;effectuer des traitements sur les fichiers dont les données sont indexées par nom
+name-indexed data such as CSV, TSV, and tabular JSON
+La documentation semble bien étoffée: https://miller.readthedocs.io/en/latest/index.html
+$ wget https://www.data.gouv.fr/fr/datasets/r/de7d0863-13e8-4010-9c75-487269f5d7ac -O depts.csv ... depts.csv 100%[=====================================================================================================================&amp;gt;] 3,25K --.-KB/s ds 0,01s ... $ cat depts.csv | head -n 2 code_departement,nom_departement,code_region,nom_region 1,Ain,84,Auvergne-Rhône-Alpes $ cat depts.csv | tail -n 2 974,La Réunion,4,La Réunion 976,Mayotte,6,Mayotte $ mlr --icsv --from depts.</description>
+    </item>
+    
+  </channel>
+</rss>

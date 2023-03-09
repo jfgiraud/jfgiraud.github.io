@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html on Mezalor</title>
+    <link>http://example.org/tags/html/</link>
+    <description>Recent content in html on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 04 Jun 2020 10:47:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>html, liste des balises html</title>
+      <link>http://example.org/posts/2020-06-04-html-liste-des-balises-html/</link>
+      <pubDate>Thu, 04 Jun 2020 10:47:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-06-04-html-liste-des-balises-html/</guid>
+      <description>Liste des balises HTML pouvant être utilisées pour vérifier que des entrées de formulaires ne contiennent pas de code HTML.
+A ABBR ACRONYM ADDRESS AREA B BASE BDO BIG BLOCKQUOTE BODY BR BUTTON CAPTION CITE CODE COL COLGROUP DD DEL DFN DIV DL DT EM FIELDSET FORM H1 H2 H3 H4 H5 H6 HEAD HR HTML I IMG INPUT INS KBD LABEL LEGEND LI LINK MAP META NOSCRIPT OBJECT OL OPTGROUP OPTION P PARAM PRE Q SAMP SCRIPT SELECT SMALL SPAN STRONG STYLE SUB SUP TABLE TBODY TD TEXTAREA TFOOT TH THEAD TITLE TR TT UL VAR Sous forme de liste (avec quote and join disponible ici)</description>
+    </item>
+    
+    <item>
+      <title>http, headers sur la gestion du cache et de la sécurité</title>
+      <link>http://example.org/posts/2018-07-26-http-headers-sur-la-gestion-du-cache-et-de-la-securite/</link>
+      <pubDate>Thu, 26 Jul 2018 11:41:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2018-07-26-http-headers-sur-la-gestion-du-cache-et-de-la-securite/</guid>
+      <description>public static void addNoCacheHeaders(HttpServletResponse resp) { resp.addHeader(HttpHeaders.CACHE_CONTROL, &amp;#34;max-age=0, no-store, no-cache, must-revalidate, proxy-revalidate, private&amp;#34;); resp.addHeader(HttpHeaders.PRAGMA, &amp;#34;no-cache&amp;#34;); resp.addHeader(HttpHeaders.EXPIRES, &amp;#34;-1&amp;#34;); } public static void addSecurityHeaders(HttpServletResponse resp) { resp.addHeader(HttpHeaders.X_FRAME_OPTIONS, &amp;#34;DENY&amp;#34;); resp.addHeader(HttpHeaders.X_XSS_PROTECTION, &amp;#34;1; mode=block&amp;#34;); resp.addHeader(HttpHeaders.X_CONTENT_TYPE_OPTIONS, &amp;#34;nosniff&amp;#34;); } </description>
+    </item>
+    
+    <item>
+      <title>html5, player audio dans une popup</title>
+      <link>http://example.org/posts/2017-09-27-html5-player-audio-dans-une-popup/</link>
+      <pubDate>Wed, 27 Sep 2017 16:23:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2017-09-27-html5-player-audio-dans-une-popup/</guid>
+      <description>Pour mon projet, je devais afficher un player audio HTML5 dans une popup lors d&amp;rsquo;un clic sur un span (fichier son)&amp;hellip;
+Voici ce que cela donne sur un exemple allégé :
+&amp;lt;!DOCTYPE html PUBLIC &amp;#34;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;#34; &amp;#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;#34;&amp;gt; &amp;lt;html &amp;gt; &amp;lt;head&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;/css/ihmadm.css&amp;#34;/&amp;gt; &amp;lt;title&amp;gt;Player HTML5 popup&amp;lt;/title&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;/js/app/lib/jquery/jquery-1.10.1.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; $(document).ready(function() { var playable = function(event, currentTarget) { var sound = $.trim(currentTarget.text()); $(&amp;#34;body&amp;#34;).append(&amp;#39;&amp;lt;div id=&amp;#34;divPlayer&amp;#34; style=&amp;#34;display:none&amp;#34;&amp;gt;&amp;lt;audio id=&amp;#34;player&amp;#34; controls=&amp;#34;controls&amp;#34;&amp;gt;&amp;lt;source id=&amp;#34;sourceAudio&amp;#34; src=&amp;#34;&amp;#34;&amp;gt;Your browser does not support the audio element.</description>
+    </item>
+    
+    <item>
+      <title>recode, outil de conversion de jeux de caractères</title>
+      <link>http://example.org/posts/2016-07-11-recode-outil-de-conversion-de-jeux-de-caracteres/</link>
+      <pubDate>Mon, 11 Jul 2016 15:00:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-07-11-recode-outil-de-conversion-de-jeux-de-caracteres/</guid>
+      <description>$ echo &amp;#39;a&amp;amp;lt;b&amp;amp;amp;&amp;amp;nbsp;c&amp;amp;eacute;&amp;#39; | recode html a&amp;lt;b&amp;amp; cé </description>
+    </item>
+    
+    <item>
+      <title>bash, supprimer les tags html avec sed...</title>
+      <link>http://example.org/posts/2012-09-06-bash-supprimer-les-tags-html-avec-sed/</link>
+      <pubDate>Thu, 06 Sep 2012 10:29:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-06-bash-supprimer-les-tags-html-avec-sed/</guid>
+      <description>Dans certains scripts bash, on peut souhaiter supprimer les tags html d&amp;rsquo;un flux ou d&amp;rsquo;un fichier. Pour cela on peut utiliser la commande sed.
+$ echo $texte &amp;lt;div class=&amp;#39;descriptionwrapper&amp;#39;&amp;gt; &amp;lt;p class=&amp;#39;description&amp;#39;&amp;gt;&amp;lt;span&amp;gt;J&amp;#39;entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté...&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; $ texte | sed -e &amp;#39;s/&amp;lt;[^&amp;gt;]*&amp;gt;//g&amp;#39; J&amp;#39;entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté.</description>
+    </item>
+    
+  </channel>
+</rss>

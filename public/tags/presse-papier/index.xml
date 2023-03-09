@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>presse-papier on Mezalor</title>
+    <link>http://example.org/tags/presse-papier/</link>
+    <description>Recent content in presse-papier on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 18 Nov 2020 17:56:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/presse-papier/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tmux, copier/coller à la vi &#43; dans le presse-papier</title>
+      <link>http://example.org/posts/2020-11-18-tmux-copier-coller-a-la-vi-&#43;-dans-le-presse-papier/</link>
+      <pubDate>Wed, 18 Nov 2020 17:56:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-11-18-tmux-copier-coller-a-la-vi-&#43;-dans-le-presse-papier/</guid>
+      <description>Commandes à ajouter au ~/.tmux.conf
+Dans mon cas, il s&amp;rsquo;agit d&amp;rsquo;un tmux 1.8 :
+bind-key P run-shell &amp;#34;xclip -o | tmux load-buffer - ; tmux paste-buffer&amp;#34; bind-key -t vi-copy &amp;#39;v&amp;#39; begin-selection bind-key -t vi-copy &amp;#39;y&amp;#39; copy-pipe &amp;#34;tmux save-buffer - | xclip -sel clip -i&amp;#34; bind-key -t vi-copy &amp;#39;r&amp;#39; rectangle-toggle Cela nécessite d&amp;rsquo;ajouter la commande xclip
+Attention, l&amp;rsquo;exécution est très très lente&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

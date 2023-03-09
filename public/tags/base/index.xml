@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>base on Mezalor</title>
+    <link>http://example.org/tags/base/</link>
+    <description>Recent content in base on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 15 Oct 2012 17:05:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/base/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>awk, un exemple pour bien débuter et comprendre...</title>
+      <link>http://example.org/posts/2012-10-15-awk-un-exemple-pour-bien-debuter-et-comprendre/</link>
+      <pubDate>Mon, 15 Oct 2012 17:05:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-15-awk-un-exemple-pour-bien-debuter-et-comprendre/</guid>
+      <description>$ cat file.txt Firstname;Lastname John;Doe Jane;Doe Paul;Smith #end of file with a ; character $ for b in b b1 b2; do awk -F &amp;#39;;&amp;#39; -v base=$b -v fmt=&amp;#39;use %s; insert into Users values (&amp;#34;%s&amp;#34;, &amp;#34;%s&amp;#34;);\n&amp;#39; &amp;#39;NR&amp;gt;=2 &amp;amp;&amp;amp; /;/ &amp;amp;&amp;amp; !/^#/ {printf fmt, base, $1, $2}&amp;#39; file.txt done use b; insert into Users values (&amp;#34;John&amp;#34;, &amp;#34;Doe&amp;#34;); use b; insert into Users values (&amp;#34;Jane&amp;#34;, &amp;#34;Doe&amp;#34;); use b; insert into Users values (&amp;#34;Paul&amp;#34;, &amp;#34;Smith&amp;#34;); use b1; insert into Users values (&amp;#34;John&amp;#34;, &amp;#34;Doe&amp;#34;); use b1; insert into Users values (&amp;#34;Jane&amp;#34;, &amp;#34;Doe&amp;#34;); use b1; insert into Users values (&amp;#34;Paul&amp;#34;, &amp;#34;Smith&amp;#34;); use b2; insert into Users values (&amp;#34;John&amp;#34;, &amp;#34;Doe&amp;#34;); use b2; insert into Users values (&amp;#34;Jane&amp;#34;, &amp;#34;Doe&amp;#34;); use b2; insert into Users values (&amp;#34;Paul&amp;#34;, &amp;#34;Smith&amp;#34;); awk n&amp;rsquo;est pas si compliqué que ça lorsque l&amp;rsquo;on comprend la philosophie&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Mezalor</title>
+    <link>http://example.org/tags/python/</link>
+    <description>Recent content in python on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 05 Mar 2015 22:09:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python, connaitre le dernier jour d&#39;un mois...</title>
+      <link>http://example.org/posts/2015-03-05-python-connaitre-le-dernier-jour-d-un-mois/</link>
+      <pubDate>Thu, 05 Mar 2015 22:09:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-03-05-python-connaitre-le-dernier-jour-d-un-mois/</guid>
+      <description>Il est possible de déterminer facilement le dernier jour d&amp;rsquo;un mois.
+Pour cela on peut utiliser le module calendar (bibliothèque standard) qui est assez méconnu.
+&amp;gt;&amp;gt;&amp;gt; import calendar &amp;gt;&amp;gt;&amp;gt; calendar.monthrange(2015,2) (6, 28) Le résultat indique pour Février 2015:
+que le mois comporte 28 jours que le premier jour du mois est un dimanche (0=Lundi, 1=Mardi, &amp;hellip; 6=Dimanche) </description>
+    </item>
+    
+    <item>
+      <title>Python, envoyer des pièces attachées par mail</title>
+      <link>http://example.org/posts/2015-02-19-python-envoyer-des-pieces-attachees-par-mail/</link>
+      <pubDate>Thu, 19 Feb 2015 14:23:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-02-19-python-envoyer-des-pieces-attachees-par-mail/</guid>
+      <description>#!/usr/bin/python3 import smtplib import os import mimetypes from email.mime.text import MIMEText from email.mime.multipart import MIMEMultipart from email.mime.base import MIMEBase from email import Encoders from email.Utils import COMMASPACE, formatdate def send_mail(send_from, send_to, subject, text, files=[], smtp_server=&amp;#39;smtp.example.com&amp;#39;): assert type(send_to)==list assert type(files)==list msg = MIMEMultipart() msg[&amp;#39;From&amp;#39;] = send_from msg[&amp;#39;To&amp;#39;] = COMMASPACE.join(send_to) msg[&amp;#39;Date&amp;#39;] = formatdate(localtime=True) msg[&amp;#39;Subject&amp;#39;] = subject msg.attach( MIMEText(text) ) for f in files: (mimetype, encoding) = mimetypes.guess_type(f) if mimetype is not None: part = MIMEBase(*mimetype.</description>
+    </item>
+    
+    <item>
+      <title>Python, retirer les accents d&#39;une chaine</title>
+      <link>http://example.org/posts/2014-07-01-python-retirer-les-accents-d-une-chaine/</link>
+      <pubDate>Tue, 01 Jul 2014 07:03:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2014-07-01-python-retirer-les-accents-d-une-chaine/</guid>
+      <description>#!/usr/bin/python # -*- coding: utf-8 -*- import re import unicodedata def deaccent(some_unicode_string): return &amp;#39;&amp;#39;.join(c for c in unicodedata.normalize(&amp;#39;NFD&amp;#39;, some_unicode_string) if unicodedata.category(c) != &amp;#39;Mn&amp;#39;) &amp;gt;&amp;gt;&amp;gt; s=&amp;#34;Dès Noël où un zéphyr haï me vêt de glaçons würmiens je dîne d’exquis rôtis de bœuf au kir à l’aÿ d’âge mûr &amp;amp; cætera !&amp;#34; &amp;gt;&amp;gt;&amp;gt; deaccent(s) &amp;#39;Des Noel ou un zephyr hai me vet de glacons wurmiens je dine d’exquis rotis de bœuf au kir a l’ay d’age mur &amp;amp; cætera !</description>
+    </item>
+    
+    <item>
+      <title>python, lire et écrire des fichiers xls</title>
+      <link>http://example.org/posts/2012-10-15-python-lire-et-ecrire-des-fichiers-xls/</link>
+      <pubDate>Mon, 15 Oct 2012 11:36:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-15-python-lire-et-ecrire-des-fichiers-xls/</guid>
+      <description>Si l&amp;rsquo;on a des fichiers Excel que l&amp;rsquo;on souhaite lire ou écrire, on peut utiliser les paquets xlrd (reader) et xlwt (writer).
+Voici un petit exemple de ce que l&amp;rsquo;on peut faire :
+#!/usr/bin/env python # -*- coding: utf-8 -*- import sys import xlrd import codecs import os files = [u&amp;#34;FormatBDD_XXX_backend.xls&amp;#34;, u&amp;#34;FormatBDD_XXXdata.xls&amp;#34;, u&amp;#34;FormatBDD_XXX_desc.xls&amp;#34;, u&amp;#34;FormatBDD_XXX_dm.xls&amp;#34;, u&amp;#34;FormatBDD_dimension.xls&amp;#34;] for f in files: book = xlrd.open_workbook(f) for sheet_name in book.sheet_names(): base = f.replace(&amp;#39;FormatBDD_&amp;#39;, &amp;#39;&amp;#39;) base = base.</description>
+    </item>
+    
+    <item>
+      <title>python, faire en sorte que stdin/stdout lisent et écrivent en binaire</title>
+      <link>http://example.org/posts/2012-10-10-python-faire-en-sorte-que-stdin-stdout-lisent-et-ecrivent-en-binaire/</link>
+      <pubDate>Wed, 10 Oct 2012 13:34:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-10-python-faire-en-sorte-que-stdin-stdout-lisent-et-ecrivent-en-binaire/</guid>
+      <description>J&amp;rsquo;ai écrit un petit programme qui s&amp;rsquo;inspire de cut en python.
+La lecture et l&amp;rsquo;écriture pouvant se faire sur l&amp;rsquo;entrée/sortie standard (sources ucut), j&amp;rsquo;avais des problèmes de &amp;ldquo;&amp;lsquo;ascii&amp;rsquo; codec can&amp;rsquo;t decode byte&amp;rdquo;&amp;hellip;
+Pour y remédier, j&amp;rsquo;ai &amp;ldquo;transformé&amp;rdquo; les flux standard (mode texte) en flux binaires de la manière suivante :
+import sys import os sys.stdin = os.fdopen(sys.stdin.fileno(), &amp;#39;rb&amp;#39;, 0) sys.stdout = os.fdopen(sys.stdout.fileno(), &amp;#39;wb&amp;#39;, 0) </description>
+    </item>
+    
+  </channel>
+</rss>

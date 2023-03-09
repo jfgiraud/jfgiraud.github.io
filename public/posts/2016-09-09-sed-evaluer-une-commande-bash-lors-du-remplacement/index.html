@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            sed, évaluer une commande bash lors du remplacement  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="keywords" content='commande, evaluation, sed' />
+    
+    
+        <meta name="description" content=" des valeurs encodées en base64 via sed.
+Le paramètre final &amp;ldquo;/e&amp;rdquo; de sed permet d&amp;rsquo;évaluer l&amp;rsquo;expression remplacée.
+Ici c&amp;rsquo;est la commande bash qui affiche l&amp;rsquo;attribut suivi d&amp;rsquo;un &amp;lsquo;:&amp;rsquo; et de la valeur décodée.
+Comme vous le constatez, l&amp;rsquo;utilisation des valeurs capturées est possible.
+$ cat /tmp/example.txt cn: John Doe @ Home displayName:: Sm9obiBEb2UK mail: johndoe@home.com $ cat /tmp/example.txt | sed -re &amp;#34;s/([^:]&#43;):: (.*)$/echo \\1: \$(echo \\2 | base64 -d)/e&amp;#34; cn: John Doe @ Home displayName: John Doe mail: johndoe@home." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="sed, évaluer une commande bash lors du remplacement" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2016-09-09T16:53:00Z&#43;0100' />
+    
+        
+            <meta property="article:tag" content="commande" />
+        
+            <meta property="article:tag" content="evaluation" />
+        
+            <meta property="article:tag" content="sed" />
+        
+    
+    <meta property="og:url" content="http://example.org/posts/2016-09-09-sed-evaluer-une-commande-bash-lors-du-remplacement/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="Je souhaitai décoder des valeurs encodées en base64 via sed.
+Le paramètre final &amp;ldquo;/e&amp;rdquo; de sed permet d&amp;rsquo;évaluer l&amp;rsquo;expression remplacée.
+Ici" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2016-09-09-sed-evaluer-une-commande-bash-lors-du-remplacement/" />
+
+
+    <meta name="twitter:title" content="sed, évaluer une commande bash lors du remplacement" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="Je souhaitai décoder des valeurs encodées en base64 via sed.
+Le paramètre final &amp;ldquo;/e&amp;rdquo; de sed permet d&amp;rsquo;évaluer l&amp;rsquo;expression remplacée.
+Ici" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>sed, évaluer une commande bash lors du remplacement</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2016-09-09
+
+</p>
+    
+    
+    
+    
+    <div><p>Je souhaitai décoder des valeurs encodées en base64 via sed.</p>
+<p>Le paramètre final &ldquo;/e&rdquo; de sed permet d&rsquo;évaluer l&rsquo;expression remplacée.</p>
+<p>Ici c&rsquo;est la commande bash qui affiche l&rsquo;attribut suivi d&rsquo;un &lsquo;:&rsquo; et de la valeur décodée.</p>
+<p>Comme vous le constatez, l&rsquo;utilisation des valeurs capturées est possible.</p>
+<pre tabindex="0"><code>$ cat /tmp/example.txt 
+cn: John Doe @ Home
+displayName:: Sm9obiBEb2UK
+mail: johndoe@home.com
+$ cat /tmp/example.txt | sed -re &#34;s/([^:]+):: (.*)$/echo \\1: \$(echo \\2 | base64 -d)/e&#34;
+cn: John Doe @ Home
+displayName: John Doe
+mail: johndoe@home.com
+</code></pre><p>Le code a été difficile à trouver, c&rsquo;est pourquoi je le partage :)</p>
+</div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/commande">#commande</a>
+        
+            <a
+                
+                href="/tags/evaluation">#evaluation</a>
+        
+            <a
+                
+                href="/tags/sed">#sed</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

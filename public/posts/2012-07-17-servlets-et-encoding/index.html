@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            Servlets et encoding...  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+    
+        <meta name="description" content="tit soucis avec le charset&amp;hellip;
+Un svi envoyait bien &amp;ldquo;text/csv; charset=utf-8&amp;rdquo; (curl) mais pour une raison x ou y, mon ihm qui l&amp;rsquo;appelait voyait &amp;ldquo;text/plain;charset=ISO-8859-1&amp;rdquo; ce qui faisait que le fichier était mal affiché.
+Dans le code ci-dessous, j&amp;rsquo;ouvre une connection et récupère le charset afin d&amp;rsquo;initialiser l&amp;rsquo;InputStreamReader et commencer les lectures&amp;hellip; URL url = new URL(sviUrl); URLConnection conn = url.openConnection();
+conn.connect(); InputStream in = null; try { String charset = &amp;ldquo;ISO-8859-1&amp;rdquo;; String contentType = conn." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="Servlets et encoding..." />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2012-07-17T12:42:00Z&#43;0100' />
+    
+    <meta property="og:url" content="http://example.org/posts/2012-07-17-servlets-et-encoding/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="J&amp;rsquo;ai eu des petit soucis avec le charset&amp;hellip;
+Un svi envoyait bien &amp;ldquo;text/csv; charset=utf-8&amp;rdquo; (curl) mais pour une raison x ou y, mon ihm qu" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2012-07-17-servlets-et-encoding/" />
+
+
+    <meta name="twitter:title" content="Servlets et encoding..." />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="J&amp;rsquo;ai eu des petit soucis avec le charset&amp;hellip;
+Un svi envoyait bien &amp;ldquo;text/csv; charset=utf-8&amp;rdquo; (curl) mais pour une raison x ou y, mon ihm qu" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>Servlets et encoding...</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2012-07-17
+
+</p>
+    
+    
+    
+    
+    <div><p>J&rsquo;ai eu des petit soucis avec le charset&hellip;</p>
+<p>Un svi envoyait bien &ldquo;text/csv; charset=utf-8&rdquo; (curl) mais pour une raison x ou y, mon ihm qui l&rsquo;appelait voyait &ldquo;text/plain;charset=ISO-8859-1&rdquo; ce qui faisait que le fichier était mal affiché.</p>
+<p>Dans le code ci-dessous, j&rsquo;ouvre une connection et récupère le charset afin d&rsquo;initialiser l&rsquo;InputStreamReader et commencer les lectures&hellip;  <!-- raw HTML omitted --><!-- raw HTML omitted -->
+URL url = new URL(sviUrl);
+URLConnection conn = url.openConnection();<br>
+conn.connect();
+InputStream in = null;
+try {
+String charset = &ldquo;ISO-8859-1&rdquo;;
+String contentType = conn.getContentType();
+if (contentType != null &amp;&amp; contentType.indexOf(&quot;;charset=&quot;) &gt;= 0) {
+contentType = contentType.substring(contentType.indexOf(&quot;;charset=&quot;)+9);
+charset = contentType.trim();
+}
+in = conn.getInputStream();
+InputStreamReader inr = new InputStreamReader(url.openStream(), charset);
+Writer out = resp.getWriter();
+try {
+IOUtils.copy(inr, out);
+} finally {
+inr.close();
+}
+} finally {
+if (in != null) {
+in.close();
+}
+}
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+</div>
+</article>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>heredocuments on Mezalor</title>
+    <link>http://example.org/tags/heredocuments/</link>
+    <description>Recent content in heredocuments on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 06 Feb 2015 11:01:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/heredocuments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, heredocuments</title>
+      <link>http://example.org/posts/2015-02-06-bash-heredocuments/</link>
+      <pubDate>Fri, 06 Feb 2015 11:01:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-02-06-bash-heredocuments/</guid>
+      <description>Il est possible de désactiver les substitutions dans les heredocuments en bash.
+Pour se faire, il suffit de quoter son nom.
+#!/bin/bash text=&amp;#34;hello the world!&amp;#34; cat&amp;lt;&amp;lt;EOF $text `date` $((3+1)) EOF cat&amp;lt;&amp;lt;&amp;#34;EOF&amp;#34; $text `date` $((3+1)) EOF Produit :
+hello the world! vendredi 6 février 2015, 10:56:26 (UTC+0100) 4 $text `date` $((3+1)) </description>
+    </item>
+    
+  </channel>
+</rss>

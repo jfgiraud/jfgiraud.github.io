@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>history on Mezalor</title>
+    <link>http://example.org/tags/history/</link>
+    <description>Recent content in history on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 20 Apr 2018 15:26:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/history/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>commande, history</title>
+      <link>http://example.org/posts/2018-04-20-commande-history/</link>
+      <pubDate>Fri, 20 Apr 2018 15:26:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2018-04-20-commande-history/</guid>
+      <description>Parfois, on ne sait plus si on a relancé une commande dans le terminal&amp;hellip;
+Pour avoir un historique daté, voici une petite configuration à ajouter à son .bashrc
+export HISTTIMEFORMAT=&amp;#34;%d/%m %H:%M &amp;#34; Désormais, l&amp;rsquo;appel à l&amp;rsquo;historique produit des lignes avec les informations jour/mois heure/minute
+$ history 492 19/04 16:15 cat ko | sed -e &amp;#39;s/.*(//&amp;#39; -e &amp;#39;s/ seconds.*//&amp;#39; -e &amp;#39;s/^[[:space:]]*$//;/^$/d&amp;#39; | awk &amp;#39;{SUM += $1} END {print &amp;#34;Total : &amp;#34;SUM}&amp;#39; 493 19/04 16:15 connect jenk </description>
+    </item>
+    
+    <item>
+      <title>git alias pour historique</title>
+      <link>http://example.org/posts/2016-08-22-git-alias-pour-historique/</link>
+      <pubDate>Mon, 22 Aug 2016 11:52:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-08-22-git-alias-pour-historique/</guid>
+      <description>git config --global alias.lg &amp;#34;log --color --graph --pretty=format:&amp;#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&amp;lt;%an&amp;gt;%Creset&amp;#39; --abbrev-commit&amp;#34; </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>comparer on Mezalor</title>
+    <link>http://example.org/tags/comparer/</link>
+    <description>Recent content in comparer on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 30 Apr 2020 15:54:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/comparer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>commande, comparer des ensembles avec comm</title>
+      <link>http://example.org/posts/2020-04-30-commande-comparer-des-ensembles-avec-comm/</link>
+      <pubDate>Thu, 30 Apr 2020 15:54:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-04-30-commande-comparer-des-ensembles-avec-comm/</guid>
+      <description>Parfois, on a besoin de comparer des ensembles. La commande comm permet de faire ressortir :
+les valeurs qui n&amp;rsquo;appartiennent qu&amp;rsquo;au fichier f1 (colonne 1)
+les valeurs qui n&amp;rsquo;appartiennent qu&amp;rsquo;au fichier f2 (colonne 2)
+les valeurs qui appartiennent aux fichiers f1 et f2 (colonne 3)
+1 pour faire disparaître la colonne 1 2 pour faire disparaître la colonne 2 3 pour faire disparaître la colonne 3 Attention, les fichiers doivent être au préalable triés.</description>
+    </item>
+    
+  </channel>
+</rss>

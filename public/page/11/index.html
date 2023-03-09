@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html class="home" lang="fr"><head>
+	<meta name="generator" content="Hugo 0.111.2">
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    
+        
+          <link href="http://example.org/index.xml" rel="alternate" type="application/rss+xml" title="Mezalor" />
+          <link href="http://example.org/index.xml" rel="feed" type="application/rss+xml" title="Mezalor" />
+        
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title"
+        content='Mezalor' />
+    
+        <meta property="og:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta property="og:type" content="blog" />
+    <meta property="og:image"
+        content='http://example.org/img/icon.svg' />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/" />
+
+
+    <meta name="twitter:title"
+        content='Mezalor' />
+    
+        <meta name="twitter:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta name="twitter:image"
+        content='http://example.org/img/icon.svg' />
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+    
+    
+    
+
+<body>
+        <div id="baseContainer"><header class="jumbotronContainer">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+
+    
+    
+    
+
+
+
+
+
+    
+
+
+
+<div class="postlist " id="postlist">
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2016-01-25-wget-recuperer-un-site/">wget, récupérer un site </a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2016-01-25
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/fitnesse">#fitnesse</a>
+                
+                    <a href="/tags/web">#web</a>
+                
+                    <a href="/tags/wget">#wget</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Petite commande utilisée dans le cadre de mon projet pour récupérer l&rsquo;ensemble de tests fitnesse afin de les packager et les livrer au client.
+wget -k -p -r -l inf http://localhost:7575/MonSvi --reject-regex &#39;.*(/FitNesse|/files/|[?]).*&#39; -r --recursive Turn on recursive retrieving. The default maximum depth is 5. -l depth --level=depth Specify recursion maximum depth level depth. -k --convert-links After the download is complete, convert the links in the document to make them suitable for local viewing.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2016-01-25-wget-recuperer-un-site/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2016-01-20-sed-garder-ou-retirer-des-lignes-matchant-un-pattern-specifie/">sed, garder ou retirer des lignes matchant un pattern spécifié</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2016-01-20
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/commande">#commande</a>
+                
+                    <a href="/tags/delete">#delete</a>
+                
+                    <a href="/tags/sed">#sed</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Il est possible d&rsquo;utiliser sed pour filter des lignes et garder/ne pas garder celles qui matchent un pattern spécifié
+Dans l&rsquo;exemple suivant, on garde ou ne garde pas les lignes contenant le terme ou
+$ cat content.txt Ceci est un texte avec une tabulation avant ou bien deux espaces ou encore un mix des deux $ cat content.txt | sed &#39;/ou/d&#39; Ceci est un texte avec une tabulation avant $ cat content.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2016-01-20-sed-garder-ou-retirer-des-lignes-matchant-un-pattern-specifie/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2016-01-20-terminal-raccourcis-effacement/">terminal, raccourcis effacement</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2016-01-20
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/console">#console</a>
+                
+                    <a href="/tags/terminal">#terminal</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Dans le terminal :
+ctrl-w : efface le texte avant le curseur jusqu&rsquo;au premier blanc
+alt-backspace : efface le texte avant le curseur jusqu&rsquo;au premier point, deux points, slash ou blanc
+                    
+                </p>
+                <p><a href="http://example.org/posts/2016-01-20-terminal-raccourcis-effacement/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2015-12-03-bash-verifier-que-le-fichier-est-source/">bash, vérifier que le fichier est sourcé</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2015-12-03
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/bash">#bash</a>
+                
+                    <a href="/tags/source">#source</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Le code suivant permet de vérifier que le script est sourcé et non exécuté
+#!/bin/bash if [[ ${BASH_SOURCE[0]} == $0 ]]; then echo &#34;Le script doit être sourcé (commande : source $0)&#34; exit 1 fi $ ../tools/stats.sh Le script doit être sourcé (commande : source ../tools/stats.sh) $ source ../tools/stats.sh Using /home/user/.rvm/gems/ruby-1.8.7-head (env)$ 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2015-12-03-bash-verifier-que-le-fichier-est-source/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2015-11-20-git-joli-historique/">git, joli historique </a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2015-11-20
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/git">#git</a>
+                
+                    <a href="/tags/historique">#historique</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        git log --all --graph --color --name-status --format=&#34;%C(yellow)%h%C(reset) %C(auto)%d%C(reset) %s&#34; http://blog.xebia.fr/2015/11/13/git-essentials-1-log/
+                    
+                </p>
+                <p><a href="http://example.org/posts/2015-11-20-git-joli-historique/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2015-10-24-archlinux-probleme-de-cle-sur-mise-a-jour-beautiful-soup4/">archlinux, problème de clé sur mise à jour beautiful-soup4</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2015-10-24
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/archlinux">#archlinux</a>
+                
+                    <a href="/tags/cl%C3%A9s">#clés</a>
+                
+                    <a href="/tags/gpg">#gpg</a>
+                
+                    <a href="/tags/key">#key</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        erreur: python-beautifulsoup4: key &#34;Daniel Wallace &lt;danielwallace@gtmanfred.com&gt;&#34; is disabled :: Le fichier /var/cache/pacman/pkg/python-beautifulsoup4-4.4.1-1-any.pkg.tar.xz est corrompu (paquet invalide ou corrompu (signature PGP)). # pacman-key --edit-key &#39;danielwallace@gtmanfred.com&#39; pub rsa2048/4F010D48 créé: 2012-03-02 expire: jamais utilisation: SC confiance: inconnu validité: totale *** Cette clef a été désactivée sub rsa2048/182ADEA0 créé: 2012-03-02 expire: jamais utilisation: E [ totale ] (1). Daniel Wallace &lt;danielwallace@gtmanfred.com&gt; [ totale ] (2) Daniel Wallace &lt;daniel.wallace12@gmail.com&gt; [ totale ] (3) Daniel Wallace (gtmanfred) &lt;daniel.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2015-10-24-archlinux-probleme-de-cle-sur-mise-a-jour-beautiful-soup4/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2015-03-05-python-connaitre-le-dernier-jour-d-un-mois/">python, connaitre le dernier jour d&#39;un mois...</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2015-03-05
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/agenda">#agenda</a>
+                
+                    <a href="/tags/calendrier">#calendrier</a>
+                
+                    <a href="/tags/day">#day</a>
+                
+                    <a href="/tags/dernier">#dernier</a>
+                
+                    <a href="/tags/jour">#jour</a>
+                
+                    <a href="/tags/python">#python</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Il est possible de déterminer facilement le dernier jour d&rsquo;un mois.
+Pour cela on peut utiliser le module calendar (bibliothèque standard) qui est assez méconnu.
+&gt;&gt;&gt; import calendar &gt;&gt;&gt; calendar.monthrange(2015,2) (6, 28) Le résultat indique pour Février 2015:
+que le mois comporte 28 jours que le premier jour du mois est un dimanche (0=Lundi, 1=Mardi, &hellip; 6=Dimanche) 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2015-03-05-python-connaitre-le-dernier-jour-d-un-mois/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2015-02-19-java-gestion-des-messages-au-singulier-et-pluriel/">java, gestion des messages au singulier et pluriel</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2015-02-19
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/java">#java</a>
+                
+                    <a href="/tags/messages">#messages</a>
+                
+                    <a href="/tags/pluriel">#pluriel</a>
+                
+                    <a href="/tags/singulier">#singulier</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Java propose depuis longtemps la possibilité de gérer les singuliers/pluriels via MessageFormat.
+Vous trouverez ci-dessous un exemple au travers de tests unitaires.
+Maintenant, fini les rustines dans le code pour les libellés !
+import junit.framework.TestCase; import java.text.MessageFormat; public class FooTest extends TestCase { public void testPlural() { String formatPattern = &#34;The directory {0} contains {1,choice,0#no file|1#one file|1&lt;{1,number,integer} files}.&#34;; assertEquals(&#34;The directory XYZ contains no file.&#34;, MessageFormat.format(formatPattern, &#34;XYZ&#34;, 0)); assertEquals(&#34;The directory XYZ contains one file.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2015-02-19-java-gestion-des-messages-au-singulier-et-pluriel/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2015-02-19-python-envoyer-des-pieces-attachees-par-mail/">Python, envoyer des pièces attachées par mail</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2015-02-19
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/mail">#mail</a>
+                
+                    <a href="/tags/python">#python</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        #!/usr/bin/python3 import smtplib import os import mimetypes from email.mime.text import MIMEText from email.mime.multipart import MIMEMultipart from email.mime.base import MIMEBase from email import Encoders from email.Utils import COMMASPACE, formatdate def send_mail(send_from, send_to, subject, text, files=[], smtp_server=&#39;smtp.example.com&#39;): assert type(send_to)==list assert type(files)==list msg = MIMEMultipart() msg[&#39;From&#39;] = send_from msg[&#39;To&#39;] = COMMASPACE.join(send_to) msg[&#39;Date&#39;] = formatdate(localtime=True) msg[&#39;Subject&#39;] = subject msg.attach( MIMEText(text) ) for f in files: (mimetype, encoding) = mimetypes.guess_type(f) if mimetype is not None: part = MIMEBase(*mimetype.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2015-02-19-python-envoyer-des-pieces-attachees-par-mail/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2015-02-06-bash-heredocuments/">bash, heredocuments</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2015-02-06
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/bash">#bash</a>
+                
+                    <a href="/tags/heredocuments">#heredocuments</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Il est possible de désactiver les substitutions dans les heredocuments en bash.
+Pour se faire, il suffit de quoter son nom.
+#!/bin/bash text=&#34;hello the world!&#34; cat&lt;&lt;EOF $text `date` $((3+1)) EOF cat&lt;&lt;&#34;EOF&#34; $text `date` $((3+1)) EOF Produit :
+hello the world! vendredi 6 février 2015, 10:56:26 (UTC+0100) 4 $text `date` $((3+1)) 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2015-02-06-bash-heredocuments/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+
+</div>
+<div id="getNextBtnContainer"></div>
+
+
+    
+    <div id="pageNavigation" class='
+            
+    '>
+        
+            <a href="/page/10/" title='Page précédente'>
+                
+                    &lt;&lt;&lt;
+                
+            </a>
+        
+        
+        
+            
+                <a href="/">1</a>
+            
+        
+            
+                <a href="/page/2/">2</a>
+            
+        
+            
+                <a href="/page/3/">3</a>
+            
+        
+            
+                <a href="/page/4/">4</a>
+            
+        
+            
+                <a href="/page/5/">5</a>
+            
+        
+            
+                <a href="/page/6/">6</a>
+            
+        
+            
+                <a href="/page/7/">7</a>
+            
+        
+            
+                <a href="/page/8/">8</a>
+            
+        
+            
+                <a href="/page/9/">9</a>
+            
+        
+            
+                <a href="/page/10/">10</a>
+            
+        
+            
+            <span>
+                [11]
+            </span>
+            
+        
+            
+                <a href="/page/12/">12</a>
+            
+        
+            
+                <a href="/page/13/">13</a>
+            
+        
+            
+                <a href="/page/14/">14</a>
+            
+        
+            
+                <a href="/page/15/">15</a>
+            
+        
+            
+                <a href="/page/16/">16</a>
+            
+        
+            
+                <a href="/page/17/">17</a>
+            
+        
+            
+                <a href="/page/18/">18</a>
+            
+        
+            
+                <a href="/page/19/">19</a>
+            
+        
+            
+                <a href="/page/20/">20</a>
+            
+        
+            
+                <a href="/page/21/">21</a>
+            
+        
+            
+                <a href="/page/22/">22</a>
+            
+        
+            
+                <a href="/page/23/">23</a>
+            
+        
+            
+                <a href="/page/24/">24</a>
+            
+        
+            
+                <a href="/page/25/">25</a>
+            
+        
+            
+                <a href="/page/26/">26</a>
+            
+        
+            
+                <a href="/page/27/">27</a>
+            
+        
+            
+                <a href="/page/28/">28</a>
+            
+        
+            
+                <a href="/page/29/">29</a>
+            
+        
+            
+                <a href="/page/30/">30</a>
+            
+        
+            
+                <a href="/page/31/">31</a>
+            
+        
+            
+                <a href="/page/32/">32</a>
+            
+        
+            
+                <a href="/page/33/">33</a>
+            
+        
+        
+            <a href="/page/12/" title='Page suivante'>
+                
+                    &gt;&gt;&gt;
+                
+            </a>
+        
+    </div>
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            python, lire et écrire des fichiers xls  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="keywords" content='excel, python' />
+    
+    
+        <meta name="description" content="fichiers Excel que l&amp;rsquo;on souhaite lire ou écrire, on peut utiliser les paquets xlrd (reader) et xlwt (writer).
+Voici un petit exemple de ce que l&amp;rsquo;on peut faire :
+#!/usr/bin/env python # -*- coding: utf-8 -*- import sys import xlrd import codecs import os files = [u&amp;#34;FormatBDD_XXX_backend.xls&amp;#34;, u&amp;#34;FormatBDD_XXXdata.xls&amp;#34;, u&amp;#34;FormatBDD_XXX_desc.xls&amp;#34;, u&amp;#34;FormatBDD_XXX_dm.xls&amp;#34;, u&amp;#34;FormatBDD_dimension.xls&amp;#34;] for f in files: book = xlrd.open_workbook(f) for sheet_name in book.sheet_names(): base = f.replace(&amp;#39;FormatBDD_&amp;#39;, &amp;#39;&amp;#39;) base = base." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="python, lire et écrire des fichiers xls" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2012-10-15T11:36:00Z&#43;0100' />
+    
+        
+            <meta property="article:tag" content="excel" />
+        
+            <meta property="article:tag" content="python" />
+        
+    
+    <meta property="og:url" content="http://example.org/posts/2012-10-15-python-lire-et-ecrire-des-fichiers-xls/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="Si l&amp;rsquo;on a des fichiers Excel que l&amp;rsquo;on souhaite lire ou écrire, on peut utiliser les paquets xlrd (reader) et xlwt (writer).
+Voici un petit exemple d" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2012-10-15-python-lire-et-ecrire-des-fichiers-xls/" />
+
+
+    <meta name="twitter:title" content="python, lire et écrire des fichiers xls" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="Si l&amp;rsquo;on a des fichiers Excel que l&amp;rsquo;on souhaite lire ou écrire, on peut utiliser les paquets xlrd (reader) et xlwt (writer).
+Voici un petit exemple d" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>python, lire et écrire des fichiers xls</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2012-10-15
+
+</p>
+    
+    
+    
+    
+    <div><p>Si l&rsquo;on a des fichiers Excel que l&rsquo;on souhaite lire ou écrire, on peut utiliser les paquets xlrd (reader) et xlwt (writer).</p>
+<p>Voici un petit exemple de ce que l&rsquo;on peut faire :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -*- coding: utf-8 -*-</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> xlrd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> codecs
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>files <span style="color:#f92672">=</span> [<span style="color:#e6db74">u</span><span style="color:#e6db74">&#34;FormatBDD_XXX_backend.xls&#34;</span>, <span style="color:#e6db74">u</span><span style="color:#e6db74">&#34;FormatBDD_XXXdata.xls&#34;</span>, <span style="color:#e6db74">u</span><span style="color:#e6db74">&#34;FormatBDD_XXX_desc.xls&#34;</span>, <span style="color:#e6db74">u</span><span style="color:#e6db74">&#34;FormatBDD_XXX_dm.xls&#34;</span>, <span style="color:#e6db74">u</span><span style="color:#e6db74">&#34;FormatBDD_dimension.xls&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> f <span style="color:#f92672">in</span> files:
+</span></span><span style="display:flex;"><span>    book <span style="color:#f92672">=</span> xlrd<span style="color:#f92672">.</span>open_workbook(f)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> sheet_name <span style="color:#f92672">in</span> book<span style="color:#f92672">.</span>sheet_names():
+</span></span><span style="display:flex;"><span>        base <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;FormatBDD_&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>        base <span style="color:#f92672">=</span> base<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;.xls&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>        sheet <span style="color:#f92672">=</span> book<span style="color:#f92672">.</span>sheet_by_name(sheet_name) 
+</span></span><span style="display:flex;"><span>        headers <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span>row_values(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> rownum <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, sheet<span style="color:#f92672">.</span>nrows):
+</span></span><span style="display:flex;"><span>            row <span style="color:#f92672">=</span> sheet<span style="color:#f92672">.</span>row_values(rownum)
+</span></span><span style="display:flex;"><span>            nom <span style="color:#f92672">=</span> row[headers<span style="color:#f92672">.</span>index(<span style="color:#e6db74">u</span><span style="color:#e6db74">&#39;Nom&#39;</span>)]
+</span></span><span style="display:flex;"><span>            description <span style="color:#f92672">=</span> row[headers<span style="color:#f92672">.</span>index(<span style="color:#e6db74">u</span><span style="color:#e6db74">&#39;Description&#39;</span>)]
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>                commentaire <span style="color:#f92672">=</span> <span style="color:#e6db74">u</span><span style="color:#e6db74">&#34; Commentaires: &#34;</span> <span style="color:#f92672">+</span> row[headers<span style="color:#f92672">.</span>index(<span style="color:#e6db74">u</span><span style="color:#e6db74">&#39;Commentaires&#39;</span>)]<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;&#34;&#39;</span>, <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ValueError</span>:
+</span></span><span style="display:flex;"><span>                commentaire <span style="color:#f92672">=</span> <span style="color:#e6db74">u</span><span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>            description <span style="color:#f92672">=</span> description <span style="color:#f92672">+</span> commentaire
+</span></span><span style="display:flex;"><span>            print <span style="color:#e6db74">u</span><span style="color:#e6db74">&#39;replace into descriptions (b, t, c, d) values (&#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;, &#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;, &#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;, &#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;);&#39;</span> <span style="color:#f92672">%</span> (base, sheet_name, nom<span style="color:#f92672">.</span>strip(), description<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;&#34;&#39;</span>, <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">&#34;&#39;</span>))
+</span></span></code></pre></div><p>La page suivante propose des exemples clairs et rapides pour bien commencer :
+<a href="http://www.dev-explorer.com/articles/excel-spreadsheets-and-python">http://www.dev-explorer.com/articles/excel-spreadsheets-and-python</a></p>
+</div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/excel">#excel</a>
+        
+            <a
+                
+                href="/tags/python">#python</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

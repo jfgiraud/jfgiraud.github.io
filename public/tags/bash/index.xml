@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash on Mezalor</title>
+    <link>http://example.org/tags/bash/</link>
+    <description>Recent content in bash on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 04 May 2021 17:29:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, copier les fichiers d&#39;une sortie standard vers un répertoire en utilisant xargs et cp</title>
+      <link>http://example.org/posts/2021-05-04-bash-copier-les-fichiers-d-une-sortie-standard-vers-un-repertoire-en-utilisant-xargs-et-cp/</link>
+      <pubDate>Tue, 04 May 2021 17:29:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-05-04-bash-copier-les-fichiers-d-une-sortie-standard-vers-un-repertoire-en-utilisant-xargs-et-cp/</guid>
+      <description>find . -name *.tgz | xargs cp -t ~/OLD/ </description>
+    </item>
+    
+    <item>
+      <title>bash, appel callback à la sortie...</title>
+      <link>http://example.org/posts/2020-11-20-bash-appel-callback-a-la-sortie/</link>
+      <pubDate>Fri, 20 Nov 2020 17:20:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-11-20-bash-appel-callback-a-la-sortie/</guid>
+      <description>Il est possible en bash d&amp;rsquo;appeler des méthodes lorsque de la fin du script est atteinte et ce même s&amp;rsquo;il y a une erreur.
+Ci-dessous, le script appellera cleanup_err puis cleanup_ok lorsque false sera atteint.
+#!/bin/bash function cleanup_err { echo cleanup_err } function cleanup_ok { echo cleanup_ok } trap cleanup_ok EXIT trap cleanup_err ERR C&amp;rsquo;est bien pratique pour nettoyer les fichiers et répertoires temporaires :)</description>
+    </item>
+    
+    <item>
+      <title>tmux, copier/coller à la vi &#43; dans le presse-papier</title>
+      <link>http://example.org/posts/2020-11-18-tmux-copier-coller-a-la-vi-&#43;-dans-le-presse-papier/</link>
+      <pubDate>Wed, 18 Nov 2020 17:56:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-11-18-tmux-copier-coller-a-la-vi-&#43;-dans-le-presse-papier/</guid>
+      <description>Commandes à ajouter au ~/.tmux.conf
+Dans mon cas, il s&amp;rsquo;agit d&amp;rsquo;un tmux 1.8 :
+bind-key P run-shell &amp;#34;xclip -o | tmux load-buffer - ; tmux paste-buffer&amp;#34; bind-key -t vi-copy &amp;#39;v&amp;#39; begin-selection bind-key -t vi-copy &amp;#39;y&amp;#39; copy-pipe &amp;#34;tmux save-buffer - | xclip -sel clip -i&amp;#34; bind-key -t vi-copy &amp;#39;r&amp;#39; rectangle-toggle Cela nécessite d&amp;rsquo;ajouter la commande xclip
+Attention, l&amp;rsquo;exécution est très très lente&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>bash, uniformisation de numéros de version</title>
+      <link>http://example.org/posts/2020-04-23-bash-uniformisation-de-numeros-de-version/</link>
+      <pubDate>Thu, 23 Apr 2020 19:21:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-04-23-bash-uniformisation-de-numeros-de-version/</guid>
+      <description>Sur notre projet, les numéros de version des lots s&amp;rsquo;appellent des GOROCO.
+Ils regroupent tout un tas d&amp;rsquo;applicatifs ayant chacun leur propres numéros de version (format x.y.z).
+Ils peuvent être saisis de différentes manières, avec des 0, sans 0&amp;hellip; du coup pour uniformiser les valeurs, j&amp;rsquo;ai réussi à trouver les commandes bash pour les avoir sur 1 caractère si possible (GOROCO) ou bien sur 2 (GOOROOCOO).
+#!/bin/bash function uniformize() { local GOROCO=&amp;#34;$1&amp;#34; BEFORE=&amp;#34;$GOROCO&amp;#34; GOROCO=$(echo $GOROCO | sed -E &amp;#39;s/(G|R|C|P)0([0-9])/\1\2/g&amp;#39;) GOOROOCOO=$(echo $GOROCO | sed -e &amp;#39;s/\([RCP]\)/\n\1/g&amp;#39; -e &amp;#39;s/\&amp;lt;\(.</description>
+    </item>
+    
+    <item>
+      <title>bash, créer des requêtes sql depuis un csv</title>
+      <link>http://example.org/posts/2020-04-21-bash-creer-des-requetes-sql-depuis-un-csv/</link>
+      <pubDate>Tue, 21 Apr 2020 18:39:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-04-21-bash-creer-des-requetes-sql-depuis-un-csv/</guid>
+      <description>Il y a quelques temps, j&amp;rsquo;avais utilisé la commande awk pour générer des requêtes sql depuis un fichier CSV.
+Dans le cas présent, j&amp;rsquo;utilise simplement un script bash.
+Au final, la solution bash -bien que plus verbeuse- me semble plus lisible à lire et modifier.
+#!/bin/bash fichier=~/Téléchargements/groupmotifs.csv tail -n +2 $fichier | tr -d $&amp;#39;\r&amp;#39; | while IFS=$&amp;#39;\n&amp;#39; read line || [[ $line ]] do IFS=&amp;#39;;&amp;#39; read id name type_group nas &amp;lt;&amp;lt;&amp;lt; &amp;#34;$line&amp;#34; cat &amp;lt;&amp;lt;EOF insert into group_motifs (id, name, type_group, nas) values ($id, &amp;#34;$name&amp;#34;, &amp;#34;$type_group&amp;#34;, &amp;#34;$nas&amp;#34;) on duplicate key update nas=&amp;#34;$nas&amp;#34;, type_group=&amp;#34;$type_group&amp;#34;, name=&amp;#34;$name&amp;#34;; EOF done &amp;gt; requetes.</description>
+    </item>
+    
+    <item>
+      <title>csv, visualiser en ligne de commande</title>
+      <link>http://example.org/posts/2020-02-15-csv-visualiser-en-ligne-de-commande/</link>
+      <pubDate>Sat, 15 Feb 2020 10:19:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-02-15-csv-visualiser-en-ligne-de-commande/</guid>
+      <description>Voici une commande à ajouter dans son .bashrc afin de visualiser le contenu d&amp;rsquo;un fichier CSV sans avoir à ouvrir une application spécifique.
+function lesscsv() { local file=&amp;#34;$1&amp;#34; local sep=&amp;#34;${2:-;}&amp;#34; column -s$sep -nt &amp;#34;$file&amp;#34; | less -#2 -N -S } lesscsv /usr/share/distro-info/ubuntu.csv , </description>
+    </item>
+    
+    <item>
+      <title>bash, lignes dupliquées</title>
+      <link>http://example.org/posts/2019-07-09-bash-lignes-dupliquees/</link>
+      <pubDate>Tue, 09 Jul 2019 15:52:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2019-07-09-bash-lignes-dupliquees/</guid>
+      <description>Dans d&amp;rsquo;anciens post, j&amp;rsquo;avais parlé de la commande uniq
+Il est possible de ne garder que les lignes dupliquées. Il faut utiliser l&amp;rsquo;option -d
+$ for A in 1 3 4 2 3 1 1 1 3; do echo $A; done | sort | uniq -dc 4 1 3 3 </description>
+    </item>
+    
+    <item>
+      <title>bash, select</title>
+      <link>http://example.org/posts/2018-07-27-bash-select/</link>
+      <pubDate>Fri, 27 Jul 2018 11:47:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2018-07-27-bash-select/</guid>
+      <description>Je viens de m&amp;rsquo;apercevoir que je n&amp;rsquo;ai jamais parlé de la commande select sous bash. Celle-ci est très pratique car elle permet de faire un choix en précisant un numéro et non sa valeur.
+Exemple d&amp;rsquo;utilisation ci-dessous :
+$ select n in item1 item2 item3 item4 item5; do if [[ -n &amp;#34;$n&amp;#34; ]]; then echo &amp;#34;You choose: $n&amp;#34;; break; else echo &amp;#34;Invalid choice&amp;#34;; fi; done 1) item1 2) item2 3) item3 4) item4 5) item5 #?</description>
+    </item>
+    
+    <item>
+      <title>bash, composer une url depuis une url de référence avec sed</title>
+      <link>http://example.org/posts/2016-09-21-bash-composer-une-url-depuis-une-url-de-reference-avec-sed/</link>
+      <pubDate>Wed, 21 Sep 2016 17:08:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-09-21-bash-composer-une-url-depuis-une-url-de-reference-avec-sed/</guid>
+      <description>$ link=&amp;#34;https://www.example.com/path/to/somewhere?q=xxx&amp;#34; $ new_link=&amp;#34;$(echo $link | sed -rn &amp;#39;s#([^:]*://[^/]*)/.*#\1#p&amp;#39;)/another/path/to/somewhere?qq=yyy&amp;#34; $ echo $new_link https://www.example.com/another/path/to/somewhere?qq=yyy </description>
+    </item>
+    
+    <item>
+      <title>bash, vérifier que le fichier est sourcé</title>
+      <link>http://example.org/posts/2015-12-03-bash-verifier-que-le-fichier-est-source/</link>
+      <pubDate>Thu, 03 Dec 2015 14:59:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-12-03-bash-verifier-que-le-fichier-est-source/</guid>
+      <description>Le code suivant permet de vérifier que le script est sourcé et non exécuté
+#!/bin/bash if [[ ${BASH_SOURCE[0]} == $0 ]]; then echo &amp;#34;Le script doit être sourcé (commande : source $0)&amp;#34; exit 1 fi $ ../tools/stats.sh Le script doit être sourcé (commande : source ../tools/stats.sh) $ source ../tools/stats.sh Using /home/user/.rvm/gems/ruby-1.8.7-head (env)$ </description>
+    </item>
+    
+    <item>
+      <title>bash, heredocuments</title>
+      <link>http://example.org/posts/2015-02-06-bash-heredocuments/</link>
+      <pubDate>Fri, 06 Feb 2015 11:01:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-02-06-bash-heredocuments/</guid>
+      <description>Il est possible de désactiver les substitutions dans les heredocuments en bash.
+Pour se faire, il suffit de quoter son nom.
+#!/bin/bash text=&amp;#34;hello the world!&amp;#34; cat&amp;lt;&amp;lt;EOF $text `date` $((3+1)) EOF cat&amp;lt;&amp;lt;&amp;#34;EOF&amp;#34; $text `date` $((3+1)) EOF Produit :
+hello the world! vendredi 6 février 2015, 10:56:26 (UTC+0100) 4 $text `date` $((3+1)) </description>
+    </item>
+    
+    <item>
+      <title>Bash, ajout d&#39;un répertoire au PATH</title>
+      <link>http://example.org/posts/2015-01-16-bash-ajout-d-un-repertoire-au-path/</link>
+      <pubDate>Fri, 16 Jan 2015 10:47:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-01-16-bash-ajout-d-un-repertoire-au-path/</guid>
+      <description>Pour tester et ajouter un répertoire au PATH, on peut faire comme ceci dans son ~/.bashrc
+if [[ ! &amp;#34;$PATH&amp;#34; =~ (^|:)&amp;#34;/path/to/the/directory/bin&amp;#34;(:|$) ]]; then export PATH=&amp;#34;$PATH:/path/to/the/directory/bin&amp;#34; fi L&amp;rsquo;utilisation d&amp;rsquo;un test avec regexp permet de garder une variable avec un contenu &amp;ldquo;propre&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Bash, comment faire pour exécuter du code en fonction de la présence de fichier*s*</title>
+      <link>http://example.org/posts/2015-01-14-bash-comment-faire-pour-executer-du-code-en-fonction-de-la-presence-de-fichier-s/</link>
+      <pubDate>Wed, 14 Jan 2015 16:47:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-01-14-bash-comment-faire-pour-executer-du-code-en-fonction-de-la-presence-de-fichier-s/</guid>
+      <description>Bash met à disposition des opérateurs pour tester l&amp;rsquo;existence de fichiers, leur type, droits d&amp;rsquo;accès&amp;hellip;
+Toutefois, dans certains cas, on peut souhaiter tester la présence de fichiers et appliquer un traitement si l&amp;rsquo;un d&amp;rsquo;entre eux existe.
+On peut utiliser la commande ls couplée à if comme le montre l&amp;rsquo;exemple ci-dessous
+$ touch /tmp/{a,b}.done $ if ls /tmp/*.done &amp;amp;&amp;gt; /dev/null; then echo des fichiers done existent; fi des fichiers done existent $ if ls /tmp/xxx*.</description>
+    </item>
+    
+    <item>
+      <title>bash, créer dynamiquement une liste de paramètres pour appeler une commande</title>
+      <link>http://example.org/posts/2015-01-07-bash-creer-dynamiquement-une-liste-de-parametres-pour-appeler-une-commande/</link>
+      <pubDate>Wed, 07 Jan 2015 15:17:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-01-07-bash-creer-dynamiquement-une-liste-de-parametres-pour-appeler-une-commande/</guid>
+      <description>Voici comment créer dynamiquement une liste de paramètres et l&amp;rsquo;utiliser dans des appels de commande. Le cas des espaces dans les options est bien géré.
+Dans le cas présent, cela sert à afficher une boite de dialogue (utilitaire whiptail livré d&amp;rsquo;office sous debian) pour que l&amp;rsquo;utilisateur puisse choisir les actions à effectuer
+$ opts=(&amp;#34;Redémarrer fitnesse&amp;#34; &amp;#34;&amp;#34; off) $ [[ $available -eq 1 ]] &amp;amp;&amp;amp; opts+=(&amp;#34;Redémarrer tomcat&amp;#34; &amp;#34;&amp;#34; off) $ retour=$(whiptail --title &amp;#34;Fitnesse&amp;#34; --checklist &amp;#34;Sélectionner les options&amp;#34; 15 60 8 &amp;#34;${opts[@]}&amp;#34; 3&amp;gt;&amp;amp;1 1&amp;gt;&amp;amp;2 2&amp;gt;&amp;amp;3) $ echo $retour &amp;#34;Redémarrer fitnesse&amp;#34; &amp;#34;Redémarrer tomcat&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>bash, initialiser un tableau avec le retour d&#39;une commande et itérer dessus</title>
+      <link>http://example.org/posts/2014-05-08-bash-initialiser-un-tableau-avec-le-retour-d-une-commande-et-iterer-dessus/</link>
+      <pubDate>Thu, 08 May 2014 03:24:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2014-05-08-bash-initialiser-un-tableau-avec-le-retour-d-une-commande-et-iterer-dessus/</guid>
+      <description>Cette méthode est sûre concernant les espaces contenus dans les lignes renvoyées par la commande :)
+$ tree . ├── a │ ├── a 1 │ └── a 2 ├── b │ ├── b 1 │ └── b 2 └── c ├── c 1 └── c 2 3 directories, 6 files $ mapfile -t files &amp;lt; &amp;lt;(find -type f) $ for file in &amp;#34;${files[@]}&amp;#34;; do &amp;gt; echo &amp;#34;file: $file&amp;#34; &amp;gt; done file: .</description>
+    </item>
+    
+    <item>
+      <title>bash, supprimer les lignes vides d&#39;un fichier</title>
+      <link>http://example.org/posts/2012-10-17-bash-supprimer-les-lignes-vides-d-un-fichier/</link>
+      <pubDate>Wed, 17 Oct 2012 10:06:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-17-bash-supprimer-les-lignes-vides-d-un-fichier/</guid>
+      <description>Voici plusieurs solutions
+$ cat ~/fichier | sed -e &amp;#39;s/^[[:space:]]*$//;/^$/d&amp;#39; $ cat ~/fichier | awk NF où NF indique le nombre de champs. Si ce n&amp;rsquo;est pas une ligne vide, le nombre de champs est positif et la commande par défaut de awk est d&amp;rsquo;afficher. Ce qui équivaut à :
+$ cat ~/fichier | awk &amp;#39;NF!=0 { print }&amp;#39; </description>
+    </item>
+    
+    <item>
+      <title>bash, lire ligne par ligne</title>
+      <link>http://example.org/posts/2012-10-16-bash-lire-ligne-par-ligne/</link>
+      <pubDate>Tue, 16 Oct 2012 11:36:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-16-bash-lire-ligne-par-ligne/</guid>
+      <description>Pour un fichier :
+$ while read line ; do echo $line; done &amp;lt; /etc/shells # /etc/shells: valid login shells /bin/csh /bin/sh /usr/bin/es /usr/bin/ksh /bin/ksh /usr/bin/rc /usr/bin/tcsh /bin/tcsh /usr/bin/esh /bin/dash /bin/bash /bin/rbash /usr/bin/screen Et encore mieux, sur la sortie d&amp;rsquo;une commande :)
+$ while read line ; do echo $line; done &amp;lt; &amp;lt;(head -n 3 /etc/shells) # /etc/shells: valid login shells /bin/csh /bin/sh </description>
+    </item>
+    
+    <item>
+      <title>bash, vérifier si une variable matche une regexp</title>
+      <link>http://example.org/posts/2012-10-10-bash-verifier-si-une-variable-matche-une-regexp/</link>
+      <pubDate>Wed, 10 Oct 2012 10:09:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-10-bash-verifier-si-une-variable-matche-une-regexp/</guid>
+      <description>On peut facilement vérifier si une donnée contenue dans une variable est au bon format.
+Dans l&amp;rsquo;exemple ci-dessous, on vérifie si le numéro de version fourni est correct.
+if [[ ! &amp;#34;$version&amp;#34; =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then echo &amp;#34;Le numéro de version donné &amp;#39;$version&amp;#39; n&amp;#39;a pas le bon format.&amp;#34; exit 1 fi Dans celui-ci si la valeur contient localhost ou itg
+[[ $environnement =~ localhost|itg ]] &amp;amp;&amp;amp; echo 1 Attention, la regexp n&amp;rsquo;est pas entre quote ni double-quote.</description>
+    </item>
+    
+    <item>
+      <title>bash, swap de 2 fichiers</title>
+      <link>http://example.org/posts/2012-09-25-bash-swap-de-2-fichiers/</link>
+      <pubDate>Tue, 25 Sep 2012 13:50:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-25-bash-swap-de-2-fichiers/</guid>
+      <description>Le code suivant à ajouter au bashrc permet de swapper ou plutôt échanger 2 fichiers rapidement.
+function swap() { if [[ -e &amp;#34;$1&amp;#34; &amp;amp;&amp;amp; -e &amp;#34;$2&amp;#34; ]] # if files exist then local TMPFILE=$(tempfile) mv &amp;#34;$1&amp;#34; $TMPFILE mv &amp;#34;$2&amp;#34; &amp;#34;$1&amp;#34; mv $TMPFILE &amp;#34;$2&amp;#34; else echo &amp;#34;Error: Make sure the files exist.&amp;#34; fi } Et son exemple :
+$ echo x&amp;gt;x $ echo y&amp;gt;y $ swap x e Error: Make sure the files exist.</description>
+    </item>
+    
+    <item>
+      <title>bash, stdin et stdout</title>
+      <link>http://example.org/posts/2012-09-17-bash-stdin-et-stdout/</link>
+      <pubDate>Mon, 17 Sep 2012 10:33:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-17-bash-stdin-et-stdout/</guid>
+      <description>Un petit rappel sur les redirections.
+Le document http://tldp.org/LDP/abs/html/io-redirection.html#IOREDIRREF est très bien aussi.
+$ ( echo quelque chose sur stderr &amp;gt;&amp;amp;2; echo autre chose sur stdout ) &amp;gt; /dev/null quelque chose sur stderr $ ( echo quelque chose sur stderr &amp;gt;&amp;amp;2; echo autre chose sur stdout ) 2&amp;gt; /dev/null autre chose sur stdout $ ( echo quelque chose sur stderr &amp;gt;&amp;amp;2; echo autre chose sur stdout ) &amp;amp;&amp;gt; /dev/null $ </description>
+    </item>
+    
+    <item>
+      <title>bash, mv bluffant...</title>
+      <link>http://example.org/posts/2012-09-13-bash-mv-bluffant/</link>
+      <pubDate>Thu, 13 Sep 2012 10:12:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-13-bash-mv-bluffant/</guid>
+      <description>Lors d&amp;rsquo;une formation, j&amp;rsquo;ai vu cela&amp;hellip; Ca m&amp;rsquo;a bluffé :)
+$ bash $ touch malib-x.y.z.jar $ mv malib{-x.y.z,}.jar $ ls malib.jar </description>
+    </item>
+    
+    <item>
+      <title>bash, écrire sur stderr</title>
+      <link>http://example.org/posts/2012-09-11-bash-ecrire-sur-stderr/</link>
+      <pubDate>Tue, 11 Sep 2012 13:11:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-11-bash-ecrire-sur-stderr/</guid>
+      <description>Pour écrire sur stderr
+$ cat stderr.txt echo &amp;#34;Mon texte sur stderr&amp;#34; &amp;gt;&amp;amp;2 cat &amp;gt;&amp;amp;2 &amp;lt;&amp;lt;-EOF et pourquoi pas encore du texte sur stderr EOF $ bash stderr.txt &amp;gt; /dev/null Mon texte sur stderr et pourquoi pas encore du texte $ bash stderr.txt 2&amp;gt; /dev/null $ </description>
+    </item>
+    
+    <item>
+      <title>bash, cas conditionel suivant la présence ou non d&#39;un texte dans un fichier</title>
+      <link>http://example.org/posts/2012-09-06-bash-cas-conditionel-suivant-la-presence-ou-non-d-un-texte-dans-un-fichier/</link>
+      <pubDate>Thu, 06 Sep 2012 10:43:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-06-bash-cas-conditionel-suivant-la-presence-ou-non-d-un-texte-dans-un-fichier/</guid>
+      <description>Cela se fait simplement avec un grep&amp;hellip;
+$ if grep -Fq $mot $fichier; then echo &amp;#34;Le mot est dans le fichier&amp;#34; else echo &amp;#34;Le mot n&amp;#39;est pas dans le fichier&amp;#34; fi Bien que le test semble inversé, il est correct car la sortie du grep avec un status à 0 est un succès.
+Le paragraphe Conditional Shell Control Structures de la page http://teaching.idallen.com/dat2330/04f/notes/exit_status.txt l&amp;rsquo;explique très bien.</description>
+    </item>
+    
+    <item>
+      <title>bash, récupérer le code de retour d&#39;une commande au travers d&#39;un pipe</title>
+      <link>http://example.org/posts/2012-09-05-bash-recuperer-le-code-de-retour-d-une-commande-au-travers-d-un-pipe/</link>
+      <pubDate>Wed, 05 Sep 2012 17:20:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-05-bash-recuperer-le-code-de-retour-d-une-commande-au-travers-d-un-pipe/</guid>
+      <description>L&amp;rsquo;exemple se passe de commentaires !
+$ ls toto | head -n 1 ls: impossible d&amp;#39;accéder à toto: Aucun fichier ou dossier de ce type $ echo $? 0 $ set -o pipefail 1 $ ls toto | head -n 1 ls: impossible d&amp;#39;accéder à toto: Aucun fichier ou dossier de ce type $ echo $? 2 Pratique dans le cas d&amp;rsquo;un curl $url | sed ... &amp;gt; $output pour savoir si une erreur est remontée.</description>
+    </item>
+    
+    <item>
+      <title>Bash, pattern substitution</title>
+      <link>http://example.org/posts/2012-08-08-bash-pattern-substitution/</link>
+      <pubDate>Wed, 08 Aug 2012 16:21:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-08-08-bash-pattern-substitution/</guid>
+      <description>Le manuel bash présente les syntaxes suivantes (voir)
+${parameter#word} et ${parameter##word} pour supprimer le plus court et le plus long préfix ${parameter%word} et ${parameter%%word} pour supprimer le plus court et le plus long suffixe ${parameter/pattern/string} pour substituer une chaîne à un pattern. Il faut savoir que word peut être une regexp dans les 2 premiers cas. Mais il faut surtout savoir que la syntaxe du pattern diffère de celles que l&amp;rsquo;on connaît généralement&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Bash, templating...</title>
+      <link>http://example.org/posts/2012-08-08-bash-templating/</link>
+      <pubDate>Wed, 08 Aug 2012 14:37:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-08-08-bash-templating/</guid>
+      <description>Pour faire un système de templating en bash (par exemple pour du mailing) on peut faire ainsi si l&amp;rsquo;on souhaite que le modèle soit dans un fichier à part :
+$ cat template.txt &amp;lt;b&amp;gt;Hello &amp;#39;&amp;#34;${firstname}&amp;#34;&amp;lt;/b&amp;gt; Bye &amp;#39;&amp;#34;${firstname}&amp;#34;&amp;#39; $ for firstname in luc jeff gwen &amp;gt; do &amp;gt; while read line &amp;gt; do &amp;gt; eval echo &amp;#34;&amp;#39;$line&amp;#39;&amp;#34; &amp;gt; done &amp;lt; template.txt &amp;gt; done &amp;lt;b&amp;gt;Hello luc&amp;lt;/b&amp;gt; Bye luc &amp;lt;b&amp;gt;Hello jeff&amp;lt;/b&amp;gt; Bye jeff &amp;lt;b&amp;gt;Hello gwen&amp;lt;/b&amp;gt; Bye gwen Avec les Here Documents, cela aurait été plus simple&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>bash, affichage en mode intéractif</title>
+      <link>http://example.org/posts/2012-08-08-bash-affichage-en-mode-interactif/</link>
+      <pubDate>Wed, 08 Aug 2012 13:17:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-08-08-bash-affichage-en-mode-interactif/</guid>
+      <description>Dans un script bash, j&amp;rsquo;ai souhaité afficher un numéro de version lorsque celui-ci est lancé interactivement (ne reçoit pas de données depuis un pipe ou bien une redirection &amp;lt;).
+Cela peut-être fait en utilisant l&amp;rsquo;option -t de la commande test.
+if [ -t 0 ]; then echo &amp;#34;Version: $VERSION&amp;#34; fi </description>
+    </item>
+    
+    <item>
+      <title>bash, récupérer le code de sortie d&#39;un sous-shell</title>
+      <link>http://example.org/posts/2012-07-31-bash-recuperer-le-code-de-sortie-d-un-sous-shell/</link>
+      <pubDate>Tue, 31 Jul 2012 11:18:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-07-31-bash-recuperer-le-code-de-sortie-d-un-sous-shell/</guid>
+      <description>Ci-dessous on récupère le code de sortie d&amp;rsquo;un sous-shell afin d&amp;rsquo;effectuer un traitement particulier avec des pipes.
+MYSQL_CMD=&amp;#34;mysql -P$DB_PORT -u$DB_USER -p$DB_PASSWD -h$DB_HOST $DB --connect-timeout=1&amp;#34; VERSION=$(${MYSQL_CMD} -B -s -e &amp;#39;select value from _cvf_metadatas where name=&amp;#34;version&amp;#34;&amp;#39; 2&amp;gt;/dev/null | tail -n 1 ; exit $PIPESTATUS) if [ $? -ne 0 ]; then VERSION=&amp;#34;*can&amp;#39;t connect*&amp;#34; elif [ -z &amp;#34;$VERSION&amp;#34; ]; then VERSION=&amp;#34;*not found*&amp;#34; fi </description>
+    </item>
+    
+    <item>
+      <title>bash, initialisation des variables</title>
+      <link>http://example.org/posts/2012-07-27-bash-initialisation-des-variables/</link>
+      <pubDate>Fri, 27 Jul 2012 14:42:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-07-27-bash-initialisation-des-variables/</guid>
+      <description>Use a default value
+${PARAMETER:-WORD} ${PARAMETER-WORD} If the parameter PARAMETER is unset (never was defined) or null (empty), this one expands to WORD, otherwise it expands to the value of PARAMETER, as if it just was ${PARAMETER}. If you omit the : (colon), like shown in the second form, the default value is only used when the parameter was unset, not when it was empty.
+Assign a default value
+${PARAMETER:=WORD} ${PARAMETER=WORD} This one works like the using default values, but the default text you give is not only expanded, but also assigned to the parameter, if it was unset or null.</description>
+    </item>
+    
+    <item>
+      <title>bash, fautes sur commande cd...</title>
+      <link>http://example.org/posts/2012-07-02-bash-fautes-sur-commande-cd/</link>
+      <pubDate>Mon, 02 Jul 2012 12:06:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-07-02-bash-fautes-sur-commande-cd/</guid>
+      <description>Si l&amp;rsquo;option cdspell est positionnée, les fautes de frappe dans la commande cd seront corrigées. Les erreurs prises en compte seront les caractères transposés, les caractères manquants et les caractères trop nombreux. Si un correctif est trouvé, le chemin utilisé pour le cd sera affiché et la commande exécutée. L&amp;rsquo;option n&amp;rsquo;est utilisée que dans le cas des shells intéractifs.
+$ shopt -s cdspell $ cd /ec /etc $ shopt -u cdspell </description>
+    </item>
+    
+    <item>
+      <title>bash, lancer une commande à intervalle régulier</title>
+      <link>http://example.org/posts/2012-06-28-bash-lancer-une-commande-a-intervalle-regulier/</link>
+      <pubDate>Thu, 28 Jun 2012 11:13:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-06-28-bash-lancer-une-commande-a-intervalle-regulier/</guid>
+      <description>watch -n 10 date </description>
+    </item>
+    
+  </channel>
+</rss>

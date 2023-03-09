@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pattern on Mezalor</title>
+    <link>http://example.org/tags/pattern/</link>
+    <description>Recent content in pattern on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 08 Aug 2012 16:21:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/pattern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash, pattern substitution</title>
+      <link>http://example.org/posts/2012-08-08-bash-pattern-substitution/</link>
+      <pubDate>Wed, 08 Aug 2012 16:21:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-08-08-bash-pattern-substitution/</guid>
+      <description>Le manuel bash présente les syntaxes suivantes (voir)
+${parameter#word} et ${parameter##word} pour supprimer le plus court et le plus long préfix ${parameter%word} et ${parameter%%word} pour supprimer le plus court et le plus long suffixe ${parameter/pattern/string} pour substituer une chaîne à un pattern. Il faut savoir que word peut être une regexp dans les 2 premiers cas. Mais il faut surtout savoir que la syntaxe du pattern diffère de celles que l&amp;rsquo;on connaît généralement&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

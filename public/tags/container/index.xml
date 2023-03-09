@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>container on Mezalor</title>
+    <link>http://example.org/tags/container/</link>
+    <description>Recent content in container on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 22 Jun 2020 16:13:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/container/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker, tests karma dans un container docker</title>
+      <link>http://example.org/posts/2020-06-22-docker-tests-karma-dans-un-container-docker/</link>
+      <pubDate>Mon, 22 Jun 2020 16:13:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-06-22-docker-tests-karma-dans-un-container-docker/</guid>
+      <description>Je suis novice en docker / gitlab ci/cd mais je m&amp;rsquo;y mets depuis la semaine dernière.
+Mon ancienne machine de dév avait été transformée en jenkins. Elle a son disque qui a &amp;ldquo;cramé&amp;rdquo; et c&amp;rsquo;est donc l&amp;rsquo;occasion de changer de technologie&amp;hellip;
+Le projet supervisé a des tests karma. Lors du portage sur git ci/cd, les tests étaient gelés jusqu&amp;rsquo;au claquage d&amp;rsquo;un timeout (cf traces ci-après). Ca ne se passait que dans gitlab ci/cd.</description>
+    </item>
+    
+  </channel>
+</rss>

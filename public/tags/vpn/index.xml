@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vpn on Mezalor</title>
+    <link>http://example.org/tags/vpn/</link>
+    <description>Recent content in vpn on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 31 Mar 2021 17:16:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ssh, accéder à un site derrière un VPN via une VM</title>
+      <link>http://example.org/posts/2021-03-31-ssh-acceder-a-un-site-derriere-un-vpn-via-une-vm/</link>
+      <pubDate>Wed, 31 Mar 2021 17:16:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-03-31-ssh-acceder-a-un-site-derriere-un-vpn-via-une-vm/</guid>
+      <description>Un petit schéma pour expliquer comment j&amp;rsquo;accède à fitnesse depuis mon poste linux.
+Le VPN est monté dans la VM, un local port forwarding permet d&amp;rsquo;accéder à fitnesse dans la VM.
+Un remote port forwarding permet d&amp;rsquo;écouter et répondre aux interrogations faites depuis le poste linux.</description>
+    </item>
+    
+  </channel>
+</rss>

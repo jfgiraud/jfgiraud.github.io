@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>erreur on Mezalor</title>
+    <link>http://example.org/tags/erreur/</link>
+    <description>Recent content in erreur on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 05 Sep 2012 17:20:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/erreur/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, récupérer le code de retour d&#39;une commande au travers d&#39;un pipe</title>
+      <link>http://example.org/posts/2012-09-05-bash-recuperer-le-code-de-retour-d-une-commande-au-travers-d-un-pipe/</link>
+      <pubDate>Wed, 05 Sep 2012 17:20:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-05-bash-recuperer-le-code-de-retour-d-une-commande-au-travers-d-un-pipe/</guid>
+      <description>L&amp;rsquo;exemple se passe de commentaires !
+$ ls toto | head -n 1 ls: impossible d&amp;#39;accéder à toto: Aucun fichier ou dossier de ce type $ echo $? 0 $ set -o pipefail 1 $ ls toto | head -n 1 ls: impossible d&amp;#39;accéder à toto: Aucun fichier ou dossier de ce type $ echo $? 2 Pratique dans le cas d&amp;rsquo;un curl $url | sed ... &amp;gt; $output pour savoir si une erreur est remontée.</description>
+    </item>
+    
+  </channel>
+</rss>

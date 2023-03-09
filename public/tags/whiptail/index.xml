@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>whiptail on Mezalor</title>
+    <link>http://example.org/tags/whiptail/</link>
+    <description>Recent content in whiptail on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 07 Jan 2015 15:17:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/whiptail/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, créer dynamiquement une liste de paramètres pour appeler une commande</title>
+      <link>http://example.org/posts/2015-01-07-bash-creer-dynamiquement-une-liste-de-parametres-pour-appeler-une-commande/</link>
+      <pubDate>Wed, 07 Jan 2015 15:17:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-01-07-bash-creer-dynamiquement-une-liste-de-parametres-pour-appeler-une-commande/</guid>
+      <description>Voici comment créer dynamiquement une liste de paramètres et l&amp;rsquo;utiliser dans des appels de commande. Le cas des espaces dans les options est bien géré.
+Dans le cas présent, cela sert à afficher une boite de dialogue (utilitaire whiptail livré d&amp;rsquo;office sous debian) pour que l&amp;rsquo;utilisateur puisse choisir les actions à effectuer
+$ opts=(&amp;#34;Redémarrer fitnesse&amp;#34; &amp;#34;&amp;#34; off) $ [[ $available -eq 1 ]] &amp;amp;&amp;amp; opts+=(&amp;#34;Redémarrer tomcat&amp;#34; &amp;#34;&amp;#34; off) $ retour=$(whiptail --title &amp;#34;Fitnesse&amp;#34; --checklist &amp;#34;Sélectionner les options&amp;#34; 15 60 8 &amp;#34;${opts[@]}&amp;#34; 3&amp;gt;&amp;amp;1 1&amp;gt;&amp;amp;2 2&amp;gt;&amp;amp;3) $ echo $retour &amp;#34;Redémarrer fitnesse&amp;#34; &amp;#34;Redémarrer tomcat&amp;#34; </description>
+    </item>
+    
+  </channel>
+</rss>

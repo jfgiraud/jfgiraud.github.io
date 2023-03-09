@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>path on Mezalor</title>
+    <link>http://example.org/tags/path/</link>
+    <description>Recent content in path on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 16 Jan 2015 10:47:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/path/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash, ajout d&#39;un répertoire au PATH</title>
+      <link>http://example.org/posts/2015-01-16-bash-ajout-d-un-repertoire-au-path/</link>
+      <pubDate>Fri, 16 Jan 2015 10:47:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-01-16-bash-ajout-d-un-repertoire-au-path/</guid>
+      <description>Pour tester et ajouter un répertoire au PATH, on peut faire comme ceci dans son ~/.bashrc
+if [[ ! &amp;#34;$PATH&amp;#34; =~ (^|:)&amp;#34;/path/to/the/directory/bin&amp;#34;(:|$) ]]; then export PATH=&amp;#34;$PATH:/path/to/the/directory/bin&amp;#34; fi L&amp;rsquo;utilisation d&amp;rsquo;un test avec regexp permet de garder une variable avec un contenu &amp;ldquo;propre&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

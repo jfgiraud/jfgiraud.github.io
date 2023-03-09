@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html class="home" lang="fr"><head>
+	<meta name="generator" content="Hugo 0.111.2">
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    
+        
+          <link href="http://example.org/index.xml" rel="alternate" type="application/rss+xml" title="Mezalor" />
+          <link href="http://example.org/index.xml" rel="feed" type="application/rss+xml" title="Mezalor" />
+        
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title"
+        content='Mezalor' />
+    
+        <meta property="og:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta property="og:type" content="blog" />
+    <meta property="og:image"
+        content='http://example.org/img/icon.svg' />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/" />
+
+
+    <meta name="twitter:title"
+        content='Mezalor' />
+    
+        <meta name="twitter:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta name="twitter:image"
+        content='http://example.org/img/icon.svg' />
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+    
+    
+    
+
+<body>
+        <div id="baseContainer"><header class="jumbotronContainer">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+
+    
+    
+    
+
+
+
+
+
+    
+
+
+
+<div class="postlist " id="postlist">
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-03-14-mysql-dumper-seulement-les-donnees/">mysql, dumper seulement les données</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-03-14
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        mysqldump -u root dbname --no-create-info --skip-triggers --compact --complete-insert --skip-extended-insert 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-03-14-mysql-dumper-seulement-les-donnees/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-03-11-linux-optimiser-le-poids-des-enregistrements-mp3-en-ligne-de-commande/">Linux, optimiser le poids des enregistrements MP3 en ligne de commande</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-03-11
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Voici comment optimiser le poids de vos enregistrements en ligne de commande.
+Pour cela vous pouvez utiliser le logiciel lame
+$ lame --mp3input -b 128 infile.mp3 outfile.mp3 LAME 3.99.5 64bits (http://lame.sf.net) Using polyphase lowpass filter, transition band: 16538 Hz - 17071 Hz Encoding infile.mp3 to outfile.mp3 Encoding as 44.1 kHz j-stereo MPEG-1 Layer III (11x) 128 kbps qval=3 Frame | CPU time/estim | REAL time/estim | play/CPU | ETA 9492/9492 (100%)| 0:05/ 0:05| 0:05/ 0:05| 42.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-03-11-linux-optimiser-le-poids-des-enregistrements-mp3-en-ligne-de-commande/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-03-10-linux-reduire-le-poids-des-photos-jpg/">Linux, réduire le poids des photos jpg</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-03-10
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Je viens de découvrir un petit logiciel sympa réduire le poids des photos jpg et ce, en ligne de commandes.
+Il s&rsquo;agit du logiciel jpegoptim.
+C&rsquo;est très pratique pour réduire le poids de scans afin de les envoyer par emails :)
+$ sudo apt-get install jpegoptim $ jpegoptim -m70 DemandeRemboursementRadioThorax-* DemandeRemboursementRadioThorax-1.jpg 2552x3508 24bit JFIF [OK] 1021137 --&gt; 363084 bytes (64.44%), optimized. DemandeRemboursementRadioThorax-2.jpg 2552x3508 24bit JFIF [OK] 940214 --&gt; 321868 bytes (65.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-03-10-linux-reduire-le-poids-des-photos-jpg/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-03-06-svn-ignorer-des-fichiers/">SVN, ignorer des fichiers</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-03-06
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Pour ignorer plusieurs fichiers lors des commits SVN
+#!/bin/bash cd $(dirname $(readlink -f $0))/.. svnignorefile=$(mktemp) cat &gt;&gt; $svnignorefile &lt;&lt;EOF .classpath .project bin target *.tgz EOF svn propset svn:ignore -F $svnignorefile . rm -f $svnignorefile svn commit -m &#39;svn ignore&#39; Une page qui explique bien http://www.math-linux.com/spip.php?article111
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-03-06-svn-ignorer-des-fichiers/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-02-27-git-fichier-netrc/">Git, fichier .netrc</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-02-27
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Il y a plusieurs mois, j&rsquo;ai découvert l&rsquo;existence du fichier .netrc et l&rsquo;utilisation que l&rsquo;on peut en faire.
+Dans le cadre de l&rsquo;un de mes projets, j&rsquo;y ai stocké les informations de connexion vers le wiki de l&rsquo;entreprise à des fins de scripting.
+En python, la lecture se fait simplement en utilisant le module netrc.
+Aujourd&rsquo;hui, je viens de découvrir que git peut l&rsquo;utiliser afin d&rsquo;éviter d&rsquo;avoir à retaper son login et mot de passe à chaque push&hellip;
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-02-27-git-fichier-netrc/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-02-27-linux-mint-et-lettres-ligaturees/">Linux Mint et lettres ligaturées</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-02-27
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        J&rsquo;ai eu un petit souci pour utiliser les lettres ligaturées sous linux.
+Sur bien des documentations, AltGr+o est censé donner œ, cependant, sur ma configuration cela donnait ø&hellip;
+Pour accéder à ces lettres, j&rsquo;ai procédé comme suit :
+Ainsi, la touche &ldquo;Pause&rdquo; suivi de o et e donne œ ! &ldquo;Pause&rdquo; suivi de a et e donne æ !
+Merveilleux maintenant ! Je vais pouvoir écrire œuf normalement dans mon blog de recettes :)
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-02-27-linux-mint-et-lettres-ligaturees/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-02-19-awk-afficher-les-5-lignes-apres-un-pattern/">awk, afficher les 5 lignes après un pattern</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-02-19
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Cela peut se faire avec la commande awk
+# Sans la ligne matchée $ awk &#39;/root/{n=5;next}n{print;n--}&#39; /etc/passwd bin:x:1:1:bin:/bin:/bin/false daemon:x:2:2:daemon:/sbin:/bin/false mail:x:8:12:mail:/var/spool/mail:/bin/false ftp:x:14:11:ftp:/srv/ftp:/bin/false http:x:33:33:http:/srv/http:/bin/false $ awk &#39;n--&gt;0;/root/{n=5}&#39; /etc/passwd bin:x:1:1:bin:/bin:/bin/false daemon:x:2:2:daemon:/sbin:/bin/false mail:x:8:12:mail:/var/spool/mail:/bin/false ftp:x:14:11:ftp:/srv/ftp:/bin/false http:x:33:33:http:/srv/http:/bin/false # Avec la ligne matchée $ awk &#39;/root/{n=5;print;next}n{print;n--}&#39; /etc/passwd root:x:0:0:root:/root:/bin/bash bin:x:1:1:bin:/bin:/bin/false daemon:x:2:2:daemon:/sbin:/bin/false mail:x:8:12:mail:/var/spool/mail:/bin/false ftp:x:14:11:ftp:/srv/ftp:/bin/false http:x:33:33:http:/srv/http:/bin/false $ awk &#39;n--&gt;0;/root/{print;n=5}&#39; /etc/passwd root:x:0:0:root:/root:/bin/bash bin:x:1:1:bin:/bin:/bin/false daemon:x:2:2:daemon:/sbin:/bin/false mail:x:8:12:mail:/var/spool/mail:/bin/false ftp:x:14:11:ftp:/srv/ftp:/bin/false http:x:33:33:http:/srv/http:/bin/false 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-02-19-awk-afficher-les-5-lignes-apres-un-pattern/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-02-12-linux-determiner-la-police-utilisee-par-xterm/">Linux, déterminer la police utilisée par xterm</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-02-12
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        On peut utiliser appres qui affiche la liste des ressources utilisées par xterm.
+Dans mon cas :
+$ pacman -S xorg-appres $ appres XTerm | grep -i font | grep -vi label *tek4014*fontLarge: 9x15 *tek4014*font2: 8x13 *tek4014*font3: 6x13 *tek4014*fontSmall: 6x10 *VT100.utf8Fonts.font5: -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1 *VT100.utf8Fonts.font3: -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1 *VT100.utf8Fonts.font: -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1 *VT100.utf8Fonts.font4: -misc-fixed-medium-r-normal--13-120-75-75-c-80-iso10646-1 *VT100.utf8Fonts.font2: -misc-fixed-medium-r-normal--8-80-75-75-c-50-iso10646-1 *VT100.utf8Fonts.font6: -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1 *VT100.font5: 9x15 *VT100.font3: 6x10 *VT100.font1: nil2 *VT100.font4: 7x13 *VT100.font2: 5x7 *VT100.font6: 10x20 *IconFont: nil2 Donc, si je veux utiliser la même police dans un autre terminal, je n&rsquo;ai plus qu&rsquo;à utiliser : -misc-fixed-medium-r-semicondensed&ndash;13-120-75-75-c-60-iso10646-1
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-02-12-linux-determiner-la-police-utilisee-par-xterm/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-02-02-linux-alternatives/">Linux, alternatives</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-02-02
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        A chaque fois, on fait des bidouilles pour utiliser une version d&rsquo;un exécutable (par exemple java) plutôt qu&rsquo;une autre&hellip;
+Pourtant il existe les alternatives sous linux qui permettent de basculer vers une version particulière&hellip;
+$ sudo update-alternatives --install &#34;/usr/bin/java&#34; &#34;java&#34; &#34;/home/me/Logiciels/jre1.7.0_13/bin/java&#34; 1 [sudo] password for me: $ sudo update-alternatives --config java Il existe 2 choix pour l&#39;alternative java (qui fournit /usr/bin/java). Sélection Chemin Priorité État ------------------------------------------------------------ * 0 /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java 1071 mode automatique 1 /home/me/Logiciels/jre1.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-02-02-linux-alternatives/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-02-01-casio-sl-300-et-pourcentages/">Casio SL-300.... et pourcentages</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-02-01
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Voici ma vieille casio que mes parents m&rsquo;ont offerte à Noël en 1984&hellip;
+$ casio sl-300 # déterminer combien fait 5% de 100 100 [×] 5 [%] =&gt; 5 # déterminer combien fait 100€ majoré de 5% 100 [×] 5 [%] [+] 105 # déterminer combien fait 10€ remisé de 20% 10 [×] 20 [%] [-] 8 # déterminer le rapport : 200 × ?% = 166 166 [÷] 200 [%] 83 # déterminer le % d&#39;augmentation pour passer de 10€ à 12€ 12 [-] 10 [%] 20 # déterminer le prix pour qu&#39;une réduction de 25% de ce prix donne 120€ 120 [+] 25 [%] 160 [-] 40 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-02-01-casio-sl-300-et-pourcentages/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+
+</div>
+<div id="getNextBtnContainer"></div>
+
+
+    
+    <div id="pageNavigation" class='
+            
+    '>
+        
+            <a href="/page/16/" title='Page précédente'>
+                
+                    &lt;&lt;&lt;
+                
+            </a>
+        
+        
+        
+            
+                <a href="/">1</a>
+            
+        
+            
+                <a href="/page/2/">2</a>
+            
+        
+            
+                <a href="/page/3/">3</a>
+            
+        
+            
+                <a href="/page/4/">4</a>
+            
+        
+            
+                <a href="/page/5/">5</a>
+            
+        
+            
+                <a href="/page/6/">6</a>
+            
+        
+            
+                <a href="/page/7/">7</a>
+            
+        
+            
+                <a href="/page/8/">8</a>
+            
+        
+            
+                <a href="/page/9/">9</a>
+            
+        
+            
+                <a href="/page/10/">10</a>
+            
+        
+            
+                <a href="/page/11/">11</a>
+            
+        
+            
+                <a href="/page/12/">12</a>
+            
+        
+            
+                <a href="/page/13/">13</a>
+            
+        
+            
+                <a href="/page/14/">14</a>
+            
+        
+            
+                <a href="/page/15/">15</a>
+            
+        
+            
+                <a href="/page/16/">16</a>
+            
+        
+            
+            <span>
+                [17]
+            </span>
+            
+        
+            
+                <a href="/page/18/">18</a>
+            
+        
+            
+                <a href="/page/19/">19</a>
+            
+        
+            
+                <a href="/page/20/">20</a>
+            
+        
+            
+                <a href="/page/21/">21</a>
+            
+        
+            
+                <a href="/page/22/">22</a>
+            
+        
+            
+                <a href="/page/23/">23</a>
+            
+        
+            
+                <a href="/page/24/">24</a>
+            
+        
+            
+                <a href="/page/25/">25</a>
+            
+        
+            
+                <a href="/page/26/">26</a>
+            
+        
+            
+                <a href="/page/27/">27</a>
+            
+        
+            
+                <a href="/page/28/">28</a>
+            
+        
+            
+                <a href="/page/29/">29</a>
+            
+        
+            
+                <a href="/page/30/">30</a>
+            
+        
+            
+                <a href="/page/31/">31</a>
+            
+        
+            
+                <a href="/page/32/">32</a>
+            
+        
+            
+                <a href="/page/33/">33</a>
+            
+        
+        
+            <a href="/page/18/" title='Page suivante'>
+                
+                    &gt;&gt;&gt;
+                
+            </a>
+        
+    </div>
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

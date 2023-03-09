@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>line on Mezalor</title>
+    <link>http://example.org/tags/line/</link>
+    <description>Recent content in line on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 16 Oct 2012 11:36:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/line/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, lire ligne par ligne</title>
+      <link>http://example.org/posts/2012-10-16-bash-lire-ligne-par-ligne/</link>
+      <pubDate>Tue, 16 Oct 2012 11:36:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-16-bash-lire-ligne-par-ligne/</guid>
+      <description>Pour un fichier :
+$ while read line ; do echo $line; done &amp;lt; /etc/shells # /etc/shells: valid login shells /bin/csh /bin/sh /usr/bin/es /usr/bin/ksh /bin/ksh /usr/bin/rc /usr/bin/tcsh /bin/tcsh /usr/bin/esh /bin/dash /bin/bash /bin/rbash /usr/bin/screen Et encore mieux, sur la sortie d&amp;rsquo;une commande :)
+$ while read line ; do echo $line; done &amp;lt; &amp;lt;(head -n 3 /etc/shells) # /etc/shells: valid login shells /bin/csh /bin/sh </description>
+    </item>
+    
+  </channel>
+</rss>

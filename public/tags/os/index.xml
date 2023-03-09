@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>os on Mezalor</title>
+    <link>http://example.org/tags/os/</link>
+    <description>Recent content in os on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 10 Oct 2012 13:34:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/os/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python, faire en sorte que stdin/stdout lisent et écrivent en binaire</title>
+      <link>http://example.org/posts/2012-10-10-python-faire-en-sorte-que-stdin-stdout-lisent-et-ecrivent-en-binaire/</link>
+      <pubDate>Wed, 10 Oct 2012 13:34:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-10-python-faire-en-sorte-que-stdin-stdout-lisent-et-ecrivent-en-binaire/</guid>
+      <description>J&amp;rsquo;ai écrit un petit programme qui s&amp;rsquo;inspire de cut en python.
+La lecture et l&amp;rsquo;écriture pouvant se faire sur l&amp;rsquo;entrée/sortie standard (sources ucut), j&amp;rsquo;avais des problèmes de &amp;ldquo;&amp;lsquo;ascii&amp;rsquo; codec can&amp;rsquo;t decode byte&amp;rdquo;&amp;hellip;
+Pour y remédier, j&amp;rsquo;ai &amp;ldquo;transformé&amp;rdquo; les flux standard (mode texte) en flux binaires de la manière suivante :
+import sys import os sys.stdin = os.fdopen(sys.stdin.fileno(), &amp;#39;rb&amp;#39;, 0) sys.stdout = os.fdopen(sys.stdout.fileno(), &amp;#39;wb&amp;#39;, 0) </description>
+    </item>
+    
+  </channel>
+</rss>

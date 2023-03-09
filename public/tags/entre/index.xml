@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>entre on Mezalor</title>
+    <link>http://example.org/tags/entre/</link>
+    <description>Recent content in entre on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 12 Jul 2016 10:36:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/entre/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sed, supprimer une ou des lignes en fonction de leurs numéros</title>
+      <link>http://example.org/posts/2016-07-12-sed-supprimer-une-ou-des-lignes-en-fonction-de-leurs-numeros/</link>
+      <pubDate>Tue, 12 Jul 2016 10:36:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-07-12-sed-supprimer-une-ou-des-lignes-en-fonction-de-leurs-numeros/</guid>
+      <description>Il est possible d&amp;rsquo;utiliser sed pour supprimer une ligne en fonction de son numéro ou un ensemble de lignes défini par le numéro de ligne de départ et de fin.
+Voici un exemple :
+$ free total used free shared buffers cached Mem: 11997816 4512068 7485748 360084 283812 1716000 -/+ buffers/cache: 2512256 9485560 Swap: 12270588 0 12270588 $ free | sed &amp;#39;2d&amp;#39; total used free shared buffers cached -/+ buffers/cache: 2514236 9483580 Swap: 12270588 0 12270588 $ free | sed &amp;#39;2,3d&amp;#39; total used free shared buffers cached Swap: 12270588 0 12270588 Ceci permet d&amp;rsquo;éviter de jouer avec une succession de head/tail&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

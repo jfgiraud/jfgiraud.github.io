@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sécurité on Mezalor</title>
+    <link>http://example.org/tags/s%C3%A9curit%C3%A9/</link>
+    <description>Recent content in sécurité on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 01 Apr 2021 10:36:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/s%C3%A9curit%C3%A9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pratiques sécurité</title>
+      <link>http://example.org/posts/2021-04-01-pratiques-securite/</link>
+      <pubDate>Thu, 01 Apr 2021 10:36:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-04-01-pratiques-securite/</guid>
+      <description>Headers Http sur toutes les pages délivrées resp.addHeader(&amp;#34;X-Frame-Options&amp;#34;, &amp;#34;DENY&amp;#34;); resp.addHeader(&amp;#34;X-XSS-Protection&amp;#34;, &amp;#34;1; mode=block&amp;#34;); resp.addHeader(&amp;#34;X-Content-Type-Options&amp;#34;, &amp;#34;nosniff&amp;#34;); Header Http positionné lors de la création d&amp;rsquo;un HttpSession response.setHeader(&amp;#34;Set-Cookie&amp;#34;, &amp;#34;JSESSIONID=&amp;#34; + session.getId() + &amp;#34;; Path=/; HttpOnly&amp;#34;); Injection SQL Ne pas créer les requêtes SQL par concaténation / formatage de chaîne (%s)
+=&amp;gt; N&amp;rsquo;utiliser que des PreparedStatement (les paramètres sont échappés automatiquement)
+Sortie page HTML Ne pas renvoyer de code HTML : si une donnée de la BDD contient un code JS injecté, il peut se retrouver exécuté lors de l&amp;rsquo;affichage</description>
+    </item>
+    
+  </channel>
+</rss>

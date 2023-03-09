@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>status on Mezalor</title>
+    <link>http://example.org/tags/status/</link>
+    <description>Recent content in status on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 06 Sep 2012 10:43:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/status/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, cas conditionel suivant la présence ou non d&#39;un texte dans un fichier</title>
+      <link>http://example.org/posts/2012-09-06-bash-cas-conditionel-suivant-la-presence-ou-non-d-un-texte-dans-un-fichier/</link>
+      <pubDate>Thu, 06 Sep 2012 10:43:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-06-bash-cas-conditionel-suivant-la-presence-ou-non-d-un-texte-dans-un-fichier/</guid>
+      <description>Cela se fait simplement avec un grep&amp;hellip;
+$ if grep -Fq $mot $fichier; then echo &amp;#34;Le mot est dans le fichier&amp;#34; else echo &amp;#34;Le mot n&amp;#39;est pas dans le fichier&amp;#34; fi Bien que le test semble inversé, il est correct car la sortie du grep avec un status à 0 est un succès.
+Le paragraphe Conditional Shell Control Structures de la page http://teaching.idallen.com/dat2330/04f/notes/exit_status.txt l&amp;rsquo;explique très bien.</description>
+    </item>
+    
+    <item>
+      <title>bash, récupérer le code de sortie d&#39;un sous-shell</title>
+      <link>http://example.org/posts/2012-07-31-bash-recuperer-le-code-de-sortie-d-un-sous-shell/</link>
+      <pubDate>Tue, 31 Jul 2012 11:18:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-07-31-bash-recuperer-le-code-de-sortie-d-un-sous-shell/</guid>
+      <description>Ci-dessous on récupère le code de sortie d&amp;rsquo;un sous-shell afin d&amp;rsquo;effectuer un traitement particulier avec des pipes.
+MYSQL_CMD=&amp;#34;mysql -P$DB_PORT -u$DB_USER -p$DB_PASSWD -h$DB_HOST $DB --connect-timeout=1&amp;#34; VERSION=$(${MYSQL_CMD} -B -s -e &amp;#39;select value from _cvf_metadatas where name=&amp;#34;version&amp;#34;&amp;#39; 2&amp;gt;/dev/null | tail -n 1 ; exit $PIPESTATUS) if [ $? -ne 0 ]; then VERSION=&amp;#34;*can&amp;#39;t connect*&amp;#34; elif [ -z &amp;#34;$VERSION&amp;#34; ]; then VERSION=&amp;#34;*not found*&amp;#34; fi </description>
+    </item>
+    
+  </channel>
+</rss>

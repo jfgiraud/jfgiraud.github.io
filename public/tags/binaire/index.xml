@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>binaire on Mezalor</title>
+    <link>http://example.org/tags/binaire/</link>
+    <description>Recent content in binaire on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 12 Nov 2020 15:47:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/binaire/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql, données binaires</title>
+      <link>http://example.org/posts/2020-11-12-mysql-donnees-binaires/</link>
+      <pubDate>Thu, 12 Nov 2020 15:47:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-11-12-mysql-donnees-binaires/</guid>
+      <description>Dans certains cas, la commande LOAD_FILE n&amp;rsquo;est pas utilisable (problèmes de droits, etc..) pour alimenter un blob.
+Dans ce cas, il peut être intéressant de convertir un fichier binaire (ici un fichier texte) en séquence hexadécimale&amp;hellip;
+$ cat lorem.txt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at lorem pharetra, pulvinar quam nec, efficitur ligula. Donec imperdiet aliquam rutrum. Aenean metus est, cursus eget auctor sit amet, vehicula id lorem.</description>
+    </item>
+    
+  </channel>
+</rss>

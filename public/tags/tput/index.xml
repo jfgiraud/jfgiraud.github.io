@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tput on Mezalor</title>
+    <link>http://example.org/tags/tput/</link>
+    <description>Recent content in tput on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 10 Oct 2012 17:58:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/tput/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, récupérer le nombre de colonnes du terminal</title>
+      <link>http://example.org/posts/2012-10-10-bash-recuperer-le-nombre-de-colonnes-du-terminal/</link>
+      <pubDate>Wed, 10 Oct 2012 17:58:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-10-bash-recuperer-le-nombre-de-colonnes-du-terminal/</guid>
+      <description>Pour centrer :
+$ COLUMNS=$(tput cols) $ title=&amp;#34;Hello mister&amp;#34; $ printf &amp;#34;%*s\n&amp;#34; $(((${#title}+$COLUMNS)/2)) &amp;#34;$title&amp;#34; Hello mister Ou afficher un séparateur :
+printf -v separator &amp;#34;%*s &amp;#34; $(( $(tput cols) - ${#file} - 5 )) echo &amp;#34;-- $file ${separator// /-}&amp;#34; </description>
+    </item>
+    
+  </channel>
+</rss>

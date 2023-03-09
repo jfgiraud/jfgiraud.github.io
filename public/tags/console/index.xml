@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>console on Mezalor</title>
+    <link>http://example.org/tags/console/</link>
+    <description>Recent content in console on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 20 Jan 2016 11:23:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/console/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>terminal, raccourcis effacement</title>
+      <link>http://example.org/posts/2016-01-20-terminal-raccourcis-effacement/</link>
+      <pubDate>Wed, 20 Jan 2016 11:23:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-20-terminal-raccourcis-effacement/</guid>
+      <description>Dans le terminal :
+ctrl-w : efface le texte avant le curseur jusqu&amp;rsquo;au premier blanc
+alt-backspace : efface le texte avant le curseur jusqu&amp;rsquo;au premier point, deux points, slash ou blanc</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,4114 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    
+        
+          <link href="http://example.org/posts/index.xml" rel="alternate" type="application/rss+xml" title="Mezalor" />
+          <link href="http://example.org/posts/index.xml" rel="feed" type="application/rss+xml" title="Mezalor" />
+        
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            Posts  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title"
+        content='Mezalor' />
+    
+        <meta property="og:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta property="og:type" content="blog" />
+    <meta property="og:image"
+        content='http://example.org/img/icon.svg' />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/" />
+
+
+    <meta name="twitter:title"
+        content='Mezalor' />
+    
+        <meta name="twitter:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta name="twitter:image"
+        content='http://example.org/img/icon.svg' />
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+    <h2>
+    
+    
+    
+    
+        Posts
+    
+</h2>
+<ul class="list">
+    
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-09-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-09-16-miller-traiter-les-fichiers-csv-et-autres-en-ligne-de-commande/">miller, traiter les fichiers CSV (et autres) en ligne de commande</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-09-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-09-01-q4os-konsole-activer-les-emoji/">q4os, konsole, activer les emoji</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-08-30
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-08-30-linux-passage-macmini-2009-sous-linux/">Linux, passage macmini 2009 sous linux</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-08-30
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-08-30-elementaryos-transparence-terminal/">elementaryos, transparence terminal</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-08-30
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-08-30-q4os-distribution-linux/">q4os, distribution linux</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-08-30
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-08-30-scanner-brother-ads1600w-probleme-linux-lors-de-l-envoi-en-ftp/">Scanner Brother ADS1600W, problème linux lors de l&#39;envoi en FTP</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-08-30
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-08-30-linux-rebooter-lorsque-l-interface-graphique-est-figee/">Linux, rebooter lorsque l&#39;interface graphique est  figée</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-07-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-07-07-linux-clavier-et-souris-bluetooth/">linux, clavier et souris bluetooth</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-05-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-05-21-virtualbox-connaitre-l-ip-de-la-machine-hote/">VirtualBox, connaitre l&#39;IP de la machine hôte</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-05-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-05-21-virtualbox-activer-le-copier-coller-depuis-vers-la-machine-hote/">VirtualBox, activer le copier/coller depuis/vers la machine hôte</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-05-04
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-05-04-bash-copier-les-fichiers-d-une-sortie-standard-vers-un-repertoire-en-utilisant-xargs-et-cp/">bash, copier les fichiers d&#39;une sortie standard vers un répertoire en utilisant xargs et cp</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-04-13
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-04-13-intellij-ctrl&#43;shift-u-toogle-case-ne-fonctionne-pas/">intellij, ctrl&#43;shift u (toogle case) ne fonctionne pas</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-04-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-04-01-pratiques-securite/">pratiques sécurité</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-03-31
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-03-31-ssh-acceder-a-un-site-derriere-un-vpn-via-une-vm/">ssh, accéder à un site derrière un VPN via une VM</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-03-04
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-03-04-grep-extraire-des-donnees/">grep, extraire des données</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-02-10
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-02-10-docker-pull-certificate-signed-by-unknown-authority/">“docker pull” certificate signed by unknown authority</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-01-08
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-01-08-convertir-fichier-binaire-en-fichier-texte-contenant-une-trame-hexa/">convertir fichier binaire en fichier texte contenant une trame hexa</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2021-01-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2021-01-06-ftpd-ouvrir-le-port-21/">ftpd, ouvrir le port 21</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-12-02
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-12-02-docker-alpine-python-mariadb-modifications-pour-faire-tourner-les-tests-avec-python-mariadb-en-utilisant-mysql-python/">docker, alpine, python, mariadb : Modifications pour faire tourner les tests avec python / mariadb en utilisant MySQL-python</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-12-02
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-12-02-docker-alpine-mariadb-ce-que-j-en-pense/">docker / alpine / mariadb : ce que j&#39;en pense....</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-12-02
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-12-02-docker-alpine-mariadb-ce-qui-m-a-ete-necessaire/">docker, alpine, mariadb: ce qui m&#39;a été nécessaire...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-12-02
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-12-02-docker-alpine-mariadb-specified-key-was-too-long-max-key-length-is-767-bytes/">docker, alpine, mariadb: Specified key was too long; max key length is 767 bytes</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-12-02
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-12-02-docker-alpine-mariadb-com-mysql-jdbc-exceptions-jdbc4-communicationsexception-communications-link-failure/">docker, alpine, mariadb: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-12-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-12-01-sed-remplacer-une-ligne-qui-matche/">sed, remplacer une ligne qui matche</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-12-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-12-01-sed-inserer-avant-ou-apres-matchage-de-ligne/">sed, insérer avant ou après matchage de ligne</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-12-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-12-01-docker-alpine-service-hwdrivers-needs-non-existent-service-dev/">docker, alpine, Service hwdrivers needs non existent service dev</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-11-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-11-20-bash-appel-callback-a-la-sortie/">bash, appel callback à la sortie...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-11-18
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-11-18-tmux-copier-coller-a-la-vi-&#43;-dans-le-presse-papier/">tmux, copier/coller à la vi &#43; dans le presse-papier</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-11-13
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-11-13-python-distance-de-levenshtein/">python, distance de levenshtein</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-11-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-11-12-mysql-donnees-binaires/">mysql, données binaires</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-11-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-11-12-java-lambda-et-jointure-de-chaines/">java, lambda et jointure de chaines</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-11-03
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-11-03-ricoh-retour-des-toners-usages/">ricoh, retour des toners usagés</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-11-03
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-11-03-mysql-entiers-et-plages-de-valeurs/">mysql, entiers et plages de valeurs</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-10-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-10-16-virtualbox-probleme-d-affichage-d-ecran/">VirtualBox, problème d&#39;affichage d&#39;écran </a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-10-14
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-10-14-intellij-makefile-tabulations/">Intellij, Makefile &amp; tabulations</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-10-14
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-10-14-mysql-error-1215-hy000-cannot-add-foreign-key-constraint/">MySQL : ERROR 1215 (HY000): Cannot add foreign key constraint</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-10-08
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-10-08-ssh-local-forwarding/">ssh, local forwarding</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-10-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-10-07-simuler-un-lien-wan-sous-linux/">Simuler un lien WAN sous Linux</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-10-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-10-07-linux-date-installation-initiale/">linux, date installation initiale</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-10-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-10-07-java-regexp-nommees/">java, regexp nommées</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-09-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-09-17-solutions-partage-ecran/">solutions partage écran</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-06-22
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-06-22-docker-tests-karma-dans-un-container-docker/">docker, tests karma dans un container docker</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-06-13
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-06-13-jar-github-repo-transfert-des-anciens-jars-vers-le-repo-definitif/">jar, github, repo : transfert des anciens jars vers le repo définitif</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-06-13
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-06-13-jar-repository-sur-github/">jar: repository sur github</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-06-04
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-06-04-html-liste-des-balises-html/">html, liste des balises html</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-05-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-05-20-mysql-load-file-renvoie-null/">mysql, LOAD_FILE renvoie NULL</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-05-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-05-15-intellij-page-vide-sans-menu-au-demarrage/">intellij, page vide sans menu au démarrage</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-04-30
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-04-30-commande-comparer-des-ensembles-avec-comm/">commande, comparer des ensembles avec comm</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-04-25
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-04-25-mysql-supprimer-les-mysql-warning-using-a-password-on-the-command-line-interface-can-be-insecure/">mysql, supprimer les mysql: [Warning] Using a password on the command line interface can be insecure.</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-04-23
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-04-23-bash-uniformisation-de-numeros-de-version/">bash, uniformisation de numéros de version</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-04-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-04-21-bash-creer-des-requetes-sql-depuis-un-csv/">bash, créer des requêtes sql depuis un csv</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2020-02-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2020-02-15-csv-visualiser-en-ligne-de-commande/">csv, visualiser en ligne de commande</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2019-07-09
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2019-07-09-bash-lignes-dupliquees/">bash, lignes dupliquées</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2019-07-09
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2019-07-09-awk/">awk</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2019-07-04
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2019-07-04-socat-lien-exemples/">socat, lien exemples</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2019-05-29
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2019-05-29-virtualbox-et-erreurs-a-l-installation/">VirtualBox et erreurs à l&#39;installation</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2019-02-22
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2019-02-22-htmlunit-upgrade-et-bouton-de-formulaire-vu-comme-disabled/">htmlunit, upgrade et bouton de formulaire vu comme disabled</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2019-01-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2019-01-15-sed-garder-les-lignes-qui-matchent-un-pattern-tout-en-faisant-un-remplacement/">sed, garder les lignes qui matchent un pattern tout en faisant un remplacement</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2018-12-18
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2018-12-18-java-forcer-l-ordre-d-execution-des-tests-unitaires/">java, forcer l&#39;ordre d&#39;exécution des tests unitaires</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2018-12-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2018-12-17-java-tests-unitaires-en-ligne-de-commande/">java, tests unitaires en ligne de commande</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2018-10-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2018-10-17-bash-script-seqdate/">bash, script seqdate</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2018-10-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2018-10-16-bash-generer-des-dates-avec-les-commandes-seq-et-date/">bash, générer des dates avec les commandes seq et date</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2018-07-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2018-07-27-bash-select/">bash, select</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2018-07-26
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2018-07-26-http-headers-sur-la-gestion-du-cache-et-de-la-securite/">http, headers sur la gestion du cache et de la sécurité</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2018-04-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2018-04-20-commande-history/">commande, history</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2017-11-24
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2017-11-24-java-convertir-un-fichier-alaw-en-pcm/">Java, convertir un fichier alaw en pcm</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2017-09-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2017-09-27-java-convertir-des-wav-en-mp3/">Java, convertir des wav en mp3</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2017-09-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2017-09-27-html5-player-audio-dans-une-popup/">html5, player audio dans une popup</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2017-08-04
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2017-08-04-article-cle-usb-encryptee-avec-ubuntu-utilisation-simplifiee-de-luks/">article, Clé USB encryptée avec Ubuntu: utilisation simplifiée de LUKS</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2017-05-23
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2017-05-23-ssh-scripts-automatises-the-authenticity-of-host-can-t-be-established/">ssh &amp; scripts automatisés, The authenticity of host can&#39;t be established</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-12-28
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-12-28-sed-prefixer-sur-la-premiere-ligne-et-suffixer-sur-la-derniere-ligne-sans-modifier-les-lignes-entre/">sed, prefixer sur la première ligne et suffixer sur la dernière ligne sans modifier les lignes entre</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-12-13
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-12-13-linux-connexion-bluetooth-d-une-magic-mouse/">linux, connexion bluetooth d&#39;une magic mouse </a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-11-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-11-15-git-object-file-is-empty-loose-object-is-corrupt/">git, object file is empty, loose object is corrupt</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-10-13
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-10-13-bash-gerer-des-archives-de-maniere-uniforme-quelque-soit-le-format-de-celles-ci/">bash, gérer des archives de manière uniforme quelque soit le format de celles-ci</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-09-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-09-21-bash-composer-une-url-depuis-une-url-de-reference-avec-sed/">bash, composer une url depuis une url de référence avec sed</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-09-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-09-16-mysql-afficher-les-colonnes-d-une-table-matchant-un-pattern/">mysql, afficher les colonnes d&#39;une table matchant un pattern</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-09-09
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-09-09-sed-evaluer-une-commande-bash-lors-du-remplacement/">sed, évaluer une commande bash lors du remplacement</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-09-09
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-09-09-base64-encoder-decoder-sous-bash/">base64, encoder/décoder sous bash</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-09-09
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-09-09-sed-mettre-sur-une-ligne-apres-avoir-matche-un-pattern/">sed, mettre sur une ligne après avoir matché un pattern</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-09-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-09-07-linux-mint-17-3-scanner-canon-lide-110/">Linux Mint 17.3, Scanner Canon LIDE 110</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-09-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-09-06-reseau-simuler-un-wan-sous-linux/">Réseau, simuler un wan sous linux</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-08-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-08-27-java-acceder-a-une-methode-de-meme-nom-dans-la-classe-encapsulande-depuis-une-classe-anonyme/">java, accéder à une méthode de même nom dans la classe encapsulande depuis une classe anonyme</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-08-22
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-08-22-git-alias-pour-historique/">git alias pour historique</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-07-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-07-12-ssh-tester-l-etat-d-une-connexion/">ssh, tester l&#39;état d&#39;une connexion</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-07-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-07-12-sed-supprimer-une-ou-des-lignes-en-fonction-de-leurs-numeros/">sed, supprimer une ou des lignes en fonction de leurs numéros</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-07-11
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-07-11-recode-outil-de-conversion-de-jeux-de-caracteres/">recode, outil de conversion de jeux de caractères</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-07-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-07-06-linux-connaitre-le-modele-et-numero-de-serie-du-pc-sous-linux/">linux, connaître le modèle et numéro de série du PC sous linux</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-06-29
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-06-29-firefox-supprimer-les-saisies-individuelles-de-formulaire/">firefox, supprimer les saisies individuelles de formulaire</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-06-29
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-06-29-firefox-sauvegarder-restaurer-les-signets/">firefox, sauvegarder/restaurer les signets</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-06-23
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-06-23-virtualbox-augmenter-la-taille-d-un-disque/">virtualbox, augmenter la taille d&#39;un disque</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-05-11
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-05-11-patch-en-creer-un-et-l-appliquer/">patch, en créer un et l&#39;appliquer</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-03-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-03-16-java-retirer-les-accents-d-une-chaine/">Java, retirer les accents d&#39;une chaîne</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-03-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-03-01-sed-awk-remplacer-plusieurs-occurences-entre-deux-balises-html/">sed/awk, remplacer plusieurs occurences entre deux balises html</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-02-19
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-02-19-java-iso-8859-1-utf-8/">java, iso-8859-1 &amp; utf-8</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-02-18
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-02-18-java-mockito-espionner-le-retour-d-une-fonction/">java, mockito espionner le retour d&#39;une fonction</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-02-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-02-12-ssh-executer-un-sudo-par-ssh-sans-saisir-son-mot-de-passe-pour-sudo/">ssh, exécuter un sudo par ssh sans saisir son mot de passe (pour sudo)...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-02-11
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-02-11-bash-utilisation-des-commandes-bang/">bash, utilisation des commandes bang !</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-02-11
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-02-11-ssh-oubli-d-ajout/">ssh, oubli d&#39;ajout...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-02-10
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-02-10-automatisation-creer-un-document-pdf-a-partir-d-une-page-web/">automatisation, créer un document pdf à partir d&#39;une page web</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-01-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-01-27-bash-type-mime/">bash, type mime</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-01-25
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-01-25-wget-recuperer-un-site/">wget, récupérer un site </a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-01-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-01-20-sed-garder-ou-retirer-des-lignes-matchant-un-pattern-specifie/">sed, garder ou retirer des lignes matchant un pattern spécifié</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2016-01-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2016-01-20-terminal-raccourcis-effacement/">terminal, raccourcis effacement</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-12-03
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-12-03-bash-verifier-que-le-fichier-est-source/">bash, vérifier que le fichier est sourcé</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-11-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-11-20-git-joli-historique/">git, joli historique </a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-10-24
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-10-24-archlinux-probleme-de-cle-sur-mise-a-jour-beautiful-soup4/">archlinux, problème de clé sur mise à jour beautiful-soup4</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-03-05
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-03-05-python-connaitre-le-dernier-jour-d-un-mois/">python, connaitre le dernier jour d&#39;un mois...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-02-19
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-02-19-java-gestion-des-messages-au-singulier-et-pluriel/">java, gestion des messages au singulier et pluriel</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-02-19
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-02-19-python-envoyer-des-pieces-attachees-par-mail/">Python, envoyer des pièces attachées par mail</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-02-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-02-06-bash-heredocuments/">bash, heredocuments</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-02-04
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-02-04-spam-vocal-spam-sms-comment-lutter/">Spam vocal, Spam SMS comment lutter !!!</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-01-29
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-01-29-github-script-de-remplacement-de-chaines-de-caracteres/">Github, script de remplacement de chaines de caractères</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-01-29
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-01-29-github-script-de-connexion-centralise/">Github, script de connexion centralisé</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-01-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-01-16-bash-ajout-d-un-repertoire-au-path/">Bash, ajout d&#39;un répertoire au PATH</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-01-14
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-01-14-bash-comment-faire-pour-executer-du-code-en-fonction-de-la-presence-de-fichier-s/">Bash, comment faire pour exécuter du code en fonction de la présence de fichier*s*</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2015-01-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2015-01-07-bash-creer-dynamiquement-une-liste-de-parametres-pour-appeler-une-commande/">bash, créer dynamiquement une liste de paramètres pour appeler une commande</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-12-19
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-12-19-bash-md5sum/">bash, md5sum</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-11-19
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-11-19-maven-jar-en-repo-local/">maven, jar en repo local</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-10-24
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-10-24-bash-raccourcis-clavier-connus-et-meconnus/">Bash, raccourcis clavier connus et méconnus...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-10-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-10-07-linux-copier-un-fichier-dans-plusieurs-repertoires-sans-utiliser-de-boucle/">linux, copier un fichier dans plusieurs répertoires sans utiliser de boucle</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-09-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-09-20-python-liens-pour-asyncio/">python, liens pour asyncio</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-09-18
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-09-18-bash-ajouter-du-contenu-en-debut-de-fichier/">bash, ajouter du contenu en début de fichier</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-09-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-09-16-bash-variables-modifiees-au-sein-d-une-boucle/">bash, variables modifiées au sein d&#39;une boucle</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-09-14
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-09-14-fichiers-ajout-retrait-bom-dans-un-fichier/">Fichiers, ajout/retrait BOM dans un fichier</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-09-09
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-09-09-windows-vers-linux/">Windows vers linux</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-09-03
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-09-03-bash-recuperer-les-derniers-caracteres-d-une-chaine/">Bash, récupérer les derniers caractères d&#39;une chaine</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-08-23
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-08-23-git-cache-du-mot-de-passe-pendant-1h/">Git cache du mot de passe pendant 1h</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-07-10
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-07-10-graver-une-image-iso-et-verifier-le-md5sum/">Graver une image iso et vérifier le md5sum</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-07-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-07-01-perl-retirer-les-accents-d-une-chaine/">Perl, retirer les accents d&#39;une chaine</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-07-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-07-01-python-retirer-les-accents-d-une-chaine/">Python, retirer les accents d&#39;une chaine</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-05-08
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-05-08-bash-initialiser-un-tableau-avec-le-retour-d-une-commande-et-iterer-dessus/">bash, initialiser un tableau avec le retour d&#39;une commande et itérer dessus</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-04-28
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-04-28-bash-convertir-un-fichier-iso-8859-en-utf-8/">bash, convertir un fichier iso-8859 en utf-8</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-04-11
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-04-11-java-xpath-getnfirstxpath/">java &amp; xpath : getNFirstXpath</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-03-25
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-03-25-maven-connaitre-la-version-du-pom-xml/">Maven, connaître la version du pom.xml</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-03-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-03-12-comment-modifier-rapidement-une-palanquee-de-fichiers-de-conf/">Comment modifier rapidement une palanquée de fichiers de conf...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-02-11
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-02-11-socat-simuler-un-serveur-http-qui-renvoie-toujours-le-meme-fichier/">socat, simuler un serveur http qui renvoie toujours le même fichier</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-02-08
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-02-08-google-et-la-cnil/">Google et la CNIL</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-02-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-02-01-awk-extraire-des-paragraphes/">awk, extraire des paragraphes</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-01-28
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-01-28-html-java-input-file-sympa-avec-bootstrap/">html/java, input file sympa avec bootstrap</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2014-01-23
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2014-01-23-archlinux-problemes-de-cle-sur-mise-a-jour-pacman/">archlinux, problèmes de clé sur mise à jour pacman</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-12-26
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-12-26-socat-sert-de-proxy-et-passe-le-plat/">socat, sert de proxy et passe le plat...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-12-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-12-07-bash-renverser-un-flux-ligne-a-ligne/">bash, renverser un flux ligne à ligne</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-12-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-12-07-bash-la-fonction-qui-tue/">bash, la fonction qui tue...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-12-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-12-07-bash-eviter-l-interpretation-en-octal-en-utilisant-printf/">bash, éviter l&#39;interprétation en octal en utilisant printf</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-12-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-12-06-mysql-supprimer-une-base-table-meme-lorsque-des-cles-etrangeres-sont-positionnees/">mysql, supprimer une base/table même lorsque des clés étrangères sont positionnées</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-11-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-11-15-bash-expansion-de-parametres-et-indirection/">bash, expansion de paramètres et indirection </a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-11-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-11-12-bash-initialisation-de-variables-depuis-une-chaine-de-caracteres/">bash, initialisation de variables depuis une chaine de caractères</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-09-28
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-09-28-bash-fonction-de-filtre-et-d-extraction-de-donnees-d-un-csv-en-bash/">bash, fonction de filtre et d&#39;extraction de données d&#39;un csv en bash</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-08-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-08-27-bash-chemin-et-nom-de-fichier-sans-dirname-basename-et-sans-sous-processus/">bash, chemin et nom de fichier sans dirname/basename (et sans sous-processus)</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-08-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-08-16-algorithme-pour-afficher-un-arbre/">Algorithme pour afficher un arbre</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-08-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-08-15-ranger-un-file-manager/">ranger, un file manager</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-05-29
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-05-29-word-tirets/">word, tirets</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-05-03
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-05-03-awk-trimer-des-colonnes/">awk, trimer des colonnes</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-04-23
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-04-23-bash-augmenter-sa-productivite/">bash, augmenter sa productivité</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-04-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-04-21-archlinux-imprimante-samung-ml-1865/">Archlinux, imprimante samung ML-1865</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-04-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-04-20-archlinux-problemes-aleatoires-de-chargement-de-pages-internet/">Archlinux, problèmes aléatoires de chargement de pages internet</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-04-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-04-20-archlinux-slim-en-qwerty/">Archlinux, slim en qwerty</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-04-19
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-04-19-jetty-demarrer-sur-un-port-determine/">Jetty, démarrer sur un port déterminé</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-03-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-03-21-xterm-copier-coller-simplement/">xterm, copier/coller simplement</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-03-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-03-15-changement-d-heure/">Changement d&#39;heure</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-03-14
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-03-14-mysql-dumper-seulement-les-donnees/">mysql, dumper seulement les données</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-03-11
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-03-11-linux-optimiser-le-poids-des-enregistrements-mp3-en-ligne-de-commande/">Linux, optimiser le poids des enregistrements MP3 en ligne de commande</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-03-10
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-03-10-linux-reduire-le-poids-des-photos-jpg/">Linux, réduire le poids des photos jpg</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-03-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-03-06-svn-ignorer-des-fichiers/">SVN, ignorer des fichiers</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-02-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-02-27-git-fichier-netrc/">Git, fichier .netrc</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-02-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-02-27-linux-mint-et-lettres-ligaturees/">Linux Mint et lettres ligaturées</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-02-19
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-02-19-awk-afficher-les-5-lignes-apres-un-pattern/">awk, afficher les 5 lignes après un pattern</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-02-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-02-12-linux-determiner-la-police-utilisee-par-xterm/">Linux, déterminer la police utilisée par xterm</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-02-02
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-02-02-linux-alternatives/">Linux, alternatives</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-02-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-02-01-casio-sl-300-et-pourcentages/">Casio SL-300.... et pourcentages</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-01-31
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-01-31-stat-difference-entre-modify-et-change/">stat, différence entre modify et change</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2013-01-08
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2013-01-08-java-renvoyer-un-fichier-binaire-via-une-servlet/">Java, renvoyer un fichier binaire via une servlet</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-12-05
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-12-05-levee-de-la-travee-centrale-du-pont-bacalan-bastide/">Levée de la travée centrale du pont Bacalan-Bastide</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-11-30
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-11-30-bash-afficher-en-gras/">bash, afficher en gras</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-11-22
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-11-22-mysql-regexp/">mysql, regexp</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-11-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-11-15-java-initialiser-une-liste-en-une-ligne/">java, initialiser une liste en une ligne</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-11-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-11-12-rxvt-unicode-probleme-de-compilation/">rxvt-unicode, problème de compilation</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-11-09
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-11-09-awk-utiliser-les-intervalles-x-y/">awk, utiliser les intervalles {x,y}</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-11-09
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-11-09-svn-ajouter-la-propriete-executable/">SVN, ajouter la propriété exécutable</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-11-08
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-11-08-tar-detarrer-un-bz2/">Tar, détarrer un bz2</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-11-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-11-07-vi-rechercher-une-regexp/">Vi, rechercher une regexp</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-11-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-11-07-c-compiler-un-projet-avec-autoconf-automake-consors/">C, compiler un projet avec autoconf, automake &amp; consors</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-11-05
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-11-05-bash-et-les-tableaux/">bash et les tableaux...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-11-02
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-11-02-bash-lancer-une-commande-distante-via-screen-mais-rester-connecter-apres-sa-terminaison/">bash, lancer une commande distante via screen mais rester connecter après sa terminaison</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-29
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-29-mac-disque-ntfs-en-ecriture/">mac, disque ntfs en écriture</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-18
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-18-python-print-sur-stderr/">python, print sur stderr</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-17-bash-recuperer-la-n-ieme-ligne-ou-les-lignes-x-a-y-d-un-fichier/">bash, récupérer la n-ième ligne ou les lignes x à y d&#39;un fichier</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-17-bash-supprimer-les-lignes-vides-d-un-fichier/">bash, supprimer les lignes vides d&#39;un fichier</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-16-bash-lire-ligne-par-ligne/">bash, lire ligne par ligne</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-15-awk-un-exemple-pour-bien-debuter-et-comprendre/">awk, un exemple pour bien débuter et comprendre...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-15-python-lire-et-ecrire-des-fichiers-xls/">python, lire et écrire des fichiers xls</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-12-bash-savoir-si-stdout-fait-reference-a-un-terminal/">bash, savoir si stdout fait référence à un terminal</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-12-sql-gerer-les-conflits-lors-des-inserts/">sql, gérer les conflits lors des inserts</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-12-bash-voir-autour-des-occurences-avec-grep/">bash, voir autour des occurences avec grep...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-11
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-11-awk-creer-des-requetes-sql-depuis-un-fichier-csv/">awk, créer des requêtes SQL depuis un fichier csv</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-10
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-10-bash-recuperer-le-nombre-de-colonnes-du-terminal/">bash, récupérer le nombre de colonnes du terminal</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-10
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-10-python-faire-en-sorte-que-stdin-stdout-lisent-et-ecrivent-en-binaire/">python, faire en sorte que stdin/stdout lisent et écrivent en binaire</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-10-10
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-10-10-bash-verifier-si-une-variable-matche-une-regexp/">bash, vérifier si une variable matche une regexp</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-27-vi-et-les-macros/">vi et les macros</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-25
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-25-bash-swap-de-2-fichiers/">bash, swap de 2 fichiers</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-25
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-25-bash-mv-en-masse/">bash, mv en masse</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-25
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-25-vi/">vi</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-25
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-25-java-deboires-d-encoding/">java, déboires d&#39;encoding...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-23
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-23-linux-niveau-de-la-baterie/">Linux, niveau de la baterie</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-21-bash-tester-si-un-programme-est-installe/">bash, tester si un programme est installé</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-20-linux-mint-cinamon-touchpad-et-defilement-a-2-doigts/">Linux Mint Cinamon, touchpad et défilement à 2 doigts</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-20-petit-logiciel-pour-copier-puis-modifier-une-partie-de-l-ecran/">Petit logiciel pour copier puis modifier une partie de l&#39;écran</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-18
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-18-fitnesse-testing-was-interupted-and-results-are-incomplete/">fitnesse, Testing was interupted and results are incomplete</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-17-bash-stdin-et-stdout/">bash, stdin et stdout</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-14
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-14-web-changer-le-style-css-du-code-pastebin-affiche-dans-votre-blog/">web, changer le style css du code pastebin affiché dans votre blog</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-13
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-13-bash-mv-bluffant/">bash, mv bluffant...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-12-web-utiliser-pastebin-et-permettre-une-recherche-sur-son-blog/">web, utiliser pastebin et permettre une recherche sur son blog</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-11
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-11-bash-sequences/">bash, séquences</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-11
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-11-bash-ecrire-sur-stderr/">bash, écrire sur stderr</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-07-linux-mint-cinnamon-positionner-la-luminosite-en-ligne-de-commande/">Linux Mint Cinnamon, positionner la luminosité en ligne de commande</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-06-bash-cas-conditionel-suivant-la-presence-ou-non-d-un-texte-dans-un-fichier/">bash, cas conditionel suivant la présence ou non d&#39;un texte dans un fichier</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-06-bash-supprimer-les-espaces-en-debut-de-ligne/">bash, supprimer les espaces en début de ligne</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-06-bash-supprimer-les-tags-html-avec-sed/">bash, supprimer les tags html avec sed...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-05
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-05-bash-recuperer-le-code-de-retour-d-une-commande-au-travers-d-un-pipe/">bash, récupérer le code de retour d&#39;une commande au travers d&#39;un pipe</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-05
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-05-suid-bit/">SUID bit</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-09-04
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-09-04-linux-mint-cinnamon-samsung-ml-1865-2/">Linux Mint Cinnamon &amp; Samsung ML-1865 (2)</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-08-28
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-08-28-linux-mint-cinnamon-wifi/">Linux Mint Cinnamon &amp; wifi</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-08-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-08-27-linux-mint-cinnamon-samsung-ml-1865/">Linux Mint Cinnamon &amp; Samsung ML-1865</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-08-08
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-08-08-bash-pattern-substitution/">Bash, pattern substitution</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-08-08
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-08-08-bash-templating/">Bash, templating...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-08-08
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-08-08-bash-affichage-en-mode-interactif/">bash, affichage en mode intéractif</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-08-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-08-07-bash-lecture-ligne-a-ligne-et-initialisation-variables/">bash, lecture ligne à ligne et initialisation variables...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-08-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-08-07-bash-boucles-for/">bash, boucles for</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-08-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-08-07-mysql-n-afficher-que-les-vraies-tables/">mysql, n&#39;afficher que les vraies tables</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-08-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-08-06-changer-d-ordinateur-calculer-son-amortissement/">changer d&#39;ordinateur, calculer son amortissement...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-08-03
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-08-03-bash-lister-les-commandes-disponibles/">bash, lister les commandes disponibles</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-31
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-31-bash-timeout/">bash, timeout</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-31
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-31-bash-recuperer-le-code-de-sortie-d-un-sous-shell/">bash, récupérer le code de sortie d&#39;un sous-shell</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-30
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-30-bash-sort/">bash, sort</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-27-bash-initialisation-des-variables/">bash, initialisation des variables</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-26
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-26-bash-generer-des-mots-de-passe/">bash, génerer des mots de passe</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-25
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-25-bash-convertir-la-casse-d-un-flux/">bash, convertir la casse d&#39;un flux</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-23
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-23-python-obtenir-la-liste-des-fichiers-java/">python, obtenir la liste des fichiers .java</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-20-python-ouvrir-un-fichier-en-utf8/">python, ouvrir un fichier en utf8</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-20-bash-nombres-en-hexadecimal/">bash, nombres en hexadécimal</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-20-bash-tri-par-longueur-de-ligne/">bash, tri par longueur de ligne</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-17-jetty-8-et-parametres-d-initialisation/">Jetty 8 et paramètres d&#39;initialisation</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-17-servlets-et-encoding/">Servlets et encoding...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-16-mysql-importer-un-fichier-csv/">mysql, importer un fichier csv</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-16-bash-recuperer-les-noms-de-fichiers-renvoyes-par-diff-rb-brief/">bash, récupérer les noms de fichiers renvoyés par diff -rb --brief</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-16-python-unicode/">python, unicode...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-16-python-bash-et-encoding/">python, bash et encoding...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-13
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-13-bash-moreutils/">bash, moreutils</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-03
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-03-url-et-mot-de-passe/">url et mot de passe</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-07-02
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-07-02-bash-fautes-sur-commande-cd/">bash, fautes sur commande cd...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-06-28
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-06-28-bash-lancer-une-commande-a-intervalle-regulier/">bash, lancer une commande à intervalle régulier</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-06-26
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-06-26-mysql-export-d-une-table-au-format-csv/">mysql, export d&#39;une table au format csv</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-06-22
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-06-22-bash-appel-callback-a-la-sortie/">bash, appel callback à la sortie...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-06-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-06-15-emacs-afficher-le-nom-de-fichier-complet-dans-la-modeline/">emacs, afficher le nom de fichier complet dans la modeline</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-06-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-06-06-graphiques-en-ligne/">Graphiques en ligne</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-05-24
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-05-24-bash-sommer-une-colonne/">bash, sommer une colonne....</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-05-24
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-05-24-bash-presse-papier/">bash, presse-papier</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-05-24
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-05-24-python-marre-des-accents-en-java-remplacez-les-par-de-l-unicode/">python, marre des accents en java : remplacez les par de l&#39;unicode !</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-05-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-05-15-svn-revert-d-un-commit/">svn, revert d&#39;un commit</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-05-04
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-05-04-mysqlimport/">mysqlimport</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-05-04
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-05-04-python-conversion-d-un-fichier-d-iso8859-en-utf8/">python, conversion d&#39;un fichier d&#39;iso8859 en utf8</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-04-24
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-04-24-python-envoi-d-un-mail-avec-un-fichier-en-attachement/">python, envoi d&#39;un mail avec un fichier en attachement</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-04-24
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-04-24-python-envoi-d-un-mail-texte/">python, envoi d&#39;un mail texte</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-04-10
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-04-10-quelle-est-la-plus-longue/">Quelle est la plus longue...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-04-03
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-04-03-python-parseur-xml/">Python, parseur XML</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-03-29
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-03-29-xpath-et-dernier-element-d-une-liste/">Xpath et dernier élément d&#39;une liste...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-03-29
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-03-29-xpath-et-recherche-vide/">XPath et recherche vide...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-03-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-03-21-listes-de-mots/">Listes de mots...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-03-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-03-15-mysqldump-un-insert-par-tuple/">Mysqldump : un insert par tuple...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-02-27
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-02-27-ascii/">ascii</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-02-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-02-17-bareme/">Barême</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-02-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-02-17-placements/">Placements</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-01-18
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-01-18-script-python-qui-affiche-les-couleurs-dans-un-terminal/">Script python qui affiche les couleurs dans un terminal</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2012-01-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2012-01-16-copie-de-fichier-en-concervant-l-arborescence/">Copie de fichier en concervant l&#39;arborescence</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-12-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-12-17-mise-en-colonnes-en-shell/">Mise en colonnes en shell</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-12-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-12-01-droits-sql/">Droits sql...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-11-29
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-11-29-moteur-de-recherche-dans-navigateur/">Moteur de recherche dans navigateur</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-11-29
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-11-29-petit-serveur-de-pages-statiques-sur-sa-machine-perso/">Petit serveur de pages statiques sur sa machine perso...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-11-25
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-11-25-tri-de-numeros-de-version/">Tri de numéros de version</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-11-23
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-11-23-entites-html/">Entités html</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-11-22
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-11-22-encoding/">encoding</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-11-18
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-11-18-tail/">tail</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-11-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-11-15-recompile-with-xlint-unchecked/">Recompile with -Xlint:unchecked</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-11-03
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-11-03-emacs/">emacs</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-10-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-10-17-reprise-de-son-mobile/">Reprise de son mobile</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-08-31
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-08-31-mysql-afficher-requete-en-ligne/">Mysql: afficher requête en ligne</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-08-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-08-17-iterm2/">iterm2</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-08-16
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-08-16-couleurs/">Couleurs...</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-08-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-08-12-sniffage-reseau/">sniffage réseau</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-06-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-06-17-jquery/">JQuery</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-06-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-06-17-json-en-java/">Json en java</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-06-03
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-06-03-chemin-absolu/">Chemin absolu</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-05-30
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-05-30-svn-executable-property/">svn executable property</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-05-30
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-05-30-tables-de-hachage-en-bash/">tables de hachage en bash</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-04-07
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-04-07-proprietes-css-et-compatibilites/">Propriétés CSS et compatibilités</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-03-31
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-03-31-compression-url-flashcode/">Compression URL &amp; flashcode</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2011-02-22
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2011-02-22-apple-patch-pour-utiliser-telecommande-avec-vlc/">Apple: Patch pour utiliser télécommande avec VLC</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2010-12-23
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2010-12-23-convertir-mp3-pour-philips-voicetracer-0622/">Convertir Mp3 pour philips voicetracer 0622</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2010-10-30
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2010-10-30-iphone-et-google-calendar/">iphone et google calendar</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2010-10-15
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2010-10-15-regexp/">regexp</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2010-09-14
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2010-09-14-test-a-python-regular-expression-on-text-and-get-results/">Test a Python regular expression on text and get results</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2010-07-13
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2010-07-13-envoi-mail-avec-attachement-en-python/">Envoi mail avec attachement en python</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2010-07-06
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2010-07-06-lancer-un-serveur-qui-ecoute-sur-un-port-et-affiche-ce-qui-arrive/">lancer un serveur qui écoute sur un port et affiche ce qui arrive</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2010-06-18
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2010-06-18-calendrier/">Calendrier</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2010-06-09
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2010-06-09-python-urlparse/">Python - urlparse</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2010-04-13
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2010-04-13-alternatives-java/">Alternatives java</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2009-10-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2009-10-21-mysql/">Mysql</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2009-08-14
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2009-08-14-creation-base-sql-et-user/">Creation base sql et user</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2009-05-05
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2009-05-05-unicode/">unicode</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-08-20
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-08-20-distance-de-levenshtein/">Distance de Levenshtein</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-08-19
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-08-19-accepts-returns-en-python/">@accepts @returns en python</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-04-03
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-04-03-emacs-query-replace-avec-retour-chariot/">emacs : query replace avec retour chariot !</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-25
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-25-afficher-la-robustesse-d-un-mot-de-passe/">Afficher la robustesse d&#39;un mot de passe</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-21-svn-ignorer-un-fichier-lors-du-commit/">SVN: ignorer un fichier lors du commit</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-21-archivage-tar-et-exclusions-svn/">Archivage tar et exclusions .svn</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-21
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-21-rendre-attrayant-des-formulaires-et-tableaux-html/">Rendre attrayant des formulaires et tableaux html</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-17-utiliser-sort-pour-trier-un-tableau/">Utiliser sort pour trier un tableau</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-17-comparaisons-numeriques-avec-sort/">Comparaisons numériques avec sort</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-17
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-17-manipulation-de-dates/">Manipulation de dates</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-13
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-13-xpath/">XPath</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-12-raccourcis-claviers-bien-pratiques/">Raccourcis claviers bien pratiques</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-12-comptabiliser-le-nombre-d-occurences/">Comptabiliser le nombre d&#39;occurences</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-12-recuperer-les-informations-concernant-une-image/">Récupérer les informations concernant une image</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-12-depannage-serveur-qui-affiche-ce-qu-il-recoit/">Dépannage: serveur qui affiche ce qu&#39;il reçoit</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    2008-03-12
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-03-12-cvs-suppression-d-une-branche/">CVS: suppression d&#39;une branche</a>
+                    </span>
+                </div>
+            </li>
+        
+            <li>
+                <div>
+                    <span class="date">
+    0001-01-01
+
+</span>
+                    <span>
+                        <a href="http://example.org/posts/2008-12-31-jekyll-md/"></a>
+                    </span>
+                </div>
+            </li>
+        
+    
+</ul>
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

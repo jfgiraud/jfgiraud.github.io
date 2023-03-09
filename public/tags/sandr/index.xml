@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sandr on Mezalor</title>
+    <link>http://example.org/tags/sandr/</link>
+    <description>Recent content in sandr on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 29 Jan 2015 21:39:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/sandr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github, script de remplacement de chaines de caractères</title>
+      <link>http://example.org/posts/2015-01-29-github-script-de-remplacement-de-chaines-de-caracteres/</link>
+      <pubDate>Thu, 29 Jan 2015 21:39:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-01-29-github-script-de-remplacement-de-chaines-de-caracteres/</guid>
+      <description>sed et awk sont très bien pour remplacer des chaines par d&amp;rsquo;autres.
+Toutefois, le fait que ce soit des regexp qu&amp;rsquo;ils attendent complique l&amp;rsquo;utilisation lorsque la chaine fixe recherchée contient des caractères pouvant être interprétés comme des &amp;ldquo;opérateurs&amp;rdquo; de rexexp (? par exemple)
+sandr est un outil qui permet de faire des recherches de chaines fixes ou non. Des options permettent d&amp;rsquo;extraire les chaines matchées/remplacées dans un fichier et d&amp;rsquo;appliquer des remplacements de masse (via une table de hachage).</description>
+    </item>
+    
+  </channel>
+</rss>

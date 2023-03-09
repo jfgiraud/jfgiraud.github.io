@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            Moteur de recherche dans navigateur  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="keywords" content='description, moteur, navigateur, open, recherche, search' />
+    
+    
+        <meta name="description" content="simple de permettre à un site web de proposer un moteur de recherche dans le navigateur d&amp;rsquo;un client&amp;hellip;
+Pour cela il faut proposer un fichier mysearch.xml
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34;?&amp;gt; &amp;lt;OpenSearchDescription xmlns=&amp;#34;http://a9.com/-/spec/opensearch/1.1/&amp;#34;&amp;gt; &amp;lt;ShortName&amp;gt;mysearch&amp;lt;/ShortName&amp;gt; &amp;lt;Description&amp;gt;Ma petite description&amp;lt;/Description&amp;gt; &amp;lt;Image height=&amp;#34;16&amp;#34; width=&amp;#34;16&amp;#34; type=&amp;#34;image/x-icon&amp;#34;&amp;gt;http://yoursite.example.com/favicon.ico&amp;lt;/Image&amp;gt; &amp;lt;Url type=&amp;#34;text/html&amp;#34; method=&amp;#34;get&amp;#34; template=&amp;#34;http://yoursite.example.com/search?q={searchTerms}&amp;#34;/&amp;gt; &amp;lt;/OpenSearchDescription&amp;gt; Et le proposer dans votre page html via la balise link
+&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Example - Moteur de recherche OpenSearch&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;#34;search&amp;#34; type=&amp;#34;application/opensearchdescription&#43;xml&amp;#34; href=&amp;#34;mysearch.xml&amp;#34; title=&amp;#34;mysearch&amp;#34; /&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; Votre page." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="Moteur de recherche dans navigateur" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2011-11-29T11:22:00Z&#43;0100' />
+    
+        
+            <meta property="article:tag" content="description" />
+        
+            <meta property="article:tag" content="moteur" />
+        
+            <meta property="article:tag" content="navigateur" />
+        
+            <meta property="article:tag" content="open" />
+        
+            <meta property="article:tag" content="recherche" />
+        
+            <meta property="article:tag" content="search" />
+        
+    
+    <meta property="og:url" content="http://example.org/posts/2011-11-29-moteur-de-recherche-dans-navigateur/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="Il est relativement simple de permettre à un site web de proposer un moteur de recherche dans le navigateur d&amp;rsquo;un client&amp;hellip;
+Pour cela il faut proposer" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2011-11-29-moteur-de-recherche-dans-navigateur/" />
+
+
+    <meta name="twitter:title" content="Moteur de recherche dans navigateur" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="Il est relativement simple de permettre à un site web de proposer un moteur de recherche dans le navigateur d&amp;rsquo;un client&amp;hellip;
+Pour cela il faut proposer" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>Moteur de recherche dans navigateur</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2011-11-29
+
+</p>
+    
+    
+    
+    
+    <div><p>Il est relativement simple de permettre à un site web de proposer un moteur de recherche dans le navigateur d&rsquo;un client&hellip;</p>
+<p>Pour cela il faut proposer un fichier mysearch.xml</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;OpenSearchDescription</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://a9.com/-/spec/opensearch/1.1/&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;ShortName&gt;</span>mysearch<span style="color:#f92672">&lt;/ShortName&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;Description&gt;</span>Ma petite description<span style="color:#f92672">&lt;/Description&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;Image</span> <span style="color:#a6e22e">height=</span><span style="color:#e6db74">&#34;16&#34;</span> <span style="color:#a6e22e">width=</span><span style="color:#e6db74">&#34;16&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;image/x-icon&#34;</span><span style="color:#f92672">&gt;</span>http://yoursite.example.com/favicon.ico<span style="color:#f92672">&lt;/Image&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;Url</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;text/html&#34;</span> <span style="color:#a6e22e">method=</span><span style="color:#e6db74">&#34;get&#34;</span> <span style="color:#a6e22e">template=</span><span style="color:#e6db74">&#34;http://yoursite.example.com/search?q={searchTerms}&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/OpenSearchDescription&gt;</span>
+</span></span></code></pre></div><p>Et le proposer dans votre page html via la balise link</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">title</span>&gt;Example - Moteur de recherche OpenSearch&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;search&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;application/opensearchdescription+xml&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mysearch.xml&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mysearch&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>Votre page...
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div></div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/description">#description</a>
+        
+            <a
+                
+                href="/tags/moteur">#moteur</a>
+        
+            <a
+                
+                href="/tags/navigateur">#navigateur</a>
+        
+            <a
+                
+                href="/tags/open">#open</a>
+        
+            <a
+                
+                href="/tags/recherche">#recherche</a>
+        
+            <a
+                
+                href="/tags/search">#search</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

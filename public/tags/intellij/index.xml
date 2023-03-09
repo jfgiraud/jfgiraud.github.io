@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>intellij on Mezalor</title>
+    <link>http://example.org/tags/intellij/</link>
+    <description>Recent content in intellij on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 13 Apr 2021 17:18:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/intellij/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>intellij, ctrl&#43;shift u (toogle case) ne fonctionne pas</title>
+      <link>http://example.org/posts/2021-04-13-intellij-ctrl&#43;shift-u-toogle-case-ne-fonctionne-pas/</link>
+      <pubDate>Tue, 13 Apr 2021 17:18:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-04-13-intellij-ctrl&#43;shift-u-toogle-case-ne-fonctionne-pas/</guid>
+      <description>Le raccourci ctrl shift u (toogle case) ne fonctionne pas, il propose de saisir un code unicode (Linux Ubuntu : Unity).
+Ajouter après le shebang du fichier bin/idea.sh :
+export XMODIFIERS=&amp;#34;&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>Intellij, Makefile &amp; tabulations</title>
+      <link>http://example.org/posts/2020-10-14-intellij-makefile-tabulations/</link>
+      <pubDate>Wed, 14 Oct 2020 13:04:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-10-14-intellij-makefile-tabulations/</guid>
+      <description>Le fichier .editorconfig permet de centraliser au sein d&amp;rsquo;un même fichier la configuration à utiliser pour tel ou tel type de fichier.
+Ainsi, si on change d&amp;rsquo;éditeur et que cet éditeur utilise ce fichier, on aura la même configuration.
+Source: https://editorconfig.org/</description>
+    </item>
+    
+    <item>
+      <title>intellij, page vide sans menu au démarrage</title>
+      <link>http://example.org/posts/2020-05-15-intellij-page-vide-sans-menu-au-demarrage/</link>
+      <pubDate>Fri, 15 May 2020 14:26:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-05-15-intellij-page-vide-sans-menu-au-demarrage/</guid>
+      <description>Suite à la mise à jour d&amp;rsquo;un plugin (python), mon intellij 2020.1 ne démarrait plus correctement. Les versions antérieures oui, mais j&amp;rsquo;ai eu des difficultés pour rétablir un démarrage correct.
+Voici les commandes que j&amp;rsquo;ai effectuées pour nettoyer et permettre le redémarrage correct avec ouverture des projets.
+Attention, vous pouvez perdre d&amp;rsquo;autres configurations mais pour moi c&amp;rsquo;était acceptable.
+457 | 14/05 16:38 | rm -rf .config/JetBrains/ .java/ .local/share/JetBrains/ .cache/JetBrains/ </description>
+    </item>
+    
+  </channel>
+</rss>

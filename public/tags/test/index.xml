@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test on Mezalor</title>
+    <link>http://example.org/tags/test/</link>
+    <description>Recent content in test on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 18 Dec 2018 11:59:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>java, forcer l&#39;ordre d&#39;exécution des tests unitaires</title>
+      <link>http://example.org/posts/2018-12-18-java-forcer-l-ordre-d-execution-des-tests-unitaires/</link>
+      <pubDate>Tue, 18 Dec 2018 11:59:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2018-12-18-java-forcer-l-ordre-d-execution-des-tests-unitaires/</guid>
+      <description>Parfois, des tests unitaires plantent lorsqu&amp;rsquo;ils sont exécutés dans un certain ordre.
+Aujourd&amp;rsquo;hui, c&amp;rsquo;est le cas et pour reproduire le problème, j&amp;rsquo;ai utilisé cette annotation qui permet de spécifier l&amp;rsquo;ordre que l&amp;rsquo;on souhaite utiliser lors de l&amp;rsquo;exécution de tous les tests de la classe.
+import org.junit.FixMethodOrder; import org.junit.Test; import org.junit.runners.MethodSorters; @FixMethodOrder(MethodSorters.NAME_ASCENDING) public class TestMethodOrder { @Test public void testA() { System.out.println(&amp;#34;first&amp;#34;); } @Test public void testB() { System.out.println(&amp;#34;second&amp;#34;); } @Test public void testC() { System.</description>
+    </item>
+    
+    <item>
+      <title>java, tests unitaires en ligne de commande</title>
+      <link>http://example.org/posts/2018-12-17-java-tests-unitaires-en-ligne-de-commande/</link>
+      <pubDate>Mon, 17 Dec 2018 12:13:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2018-12-17-java-tests-unitaires-en-ligne-de-commande/</guid>
+      <description>Rappel:
+$ mvn test $ mvn -Dtest=TestClass test $ mvn -Dtest=TestClass1,TestClass2 test $ mvn -Dtest=TestClass#methodName test $ mvn -Dtest=TestClass#methodPattern* test $ mvn -Dtest=TestClass#methodPattern1*+methodPattern2* test </description>
+    </item>
+    
+    <item>
+      <title>ssh, tester l&#39;état d&#39;une connexion</title>
+      <link>http://example.org/posts/2016-07-12-ssh-tester-l-etat-d-une-connexion/</link>
+      <pubDate>Tue, 12 Jul 2016 14:18:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-07-12-ssh-tester-l-etat-d-une-connexion/</guid>
+      <description>Voici un petit code qui permet de tester l&amp;rsquo;état d&amp;rsquo;une connexion ssh (avec un timeout de 10s) :
+ssh -q -o BatchMode=yes -o ConnectTimeout=10 user@example.com exit # ou: # timeout -k 10 10 ssh user@example.com exit res=$? if [ $res -ne 0 ]; then echo Accès KO else echo Accès OK fi </description>
+    </item>
+    
+    <item>
+      <title>java, mockito espionner le retour d&#39;une fonction</title>
+      <link>http://example.org/posts/2016-02-18-java-mockito-espionner-le-retour-d-une-fonction/</link>
+      <pubDate>Thu, 18 Feb 2016 09:42:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-02-18-java-mockito-espionner-le-retour-d-une-fonction/</guid>
+      <description>Le code n&amp;rsquo;est pas beau, mais au moins il est copiable directement en test unitaire pour manipuler et tester !
+@Test public void testFoo() throws Exception { class ResultCaptor implements Answer&amp;lt;String&amp;gt; { private String result; String getResult() { return result; } @Override public String answer(InvocationOnMock invocationOnMock) throws Throwable { result = (String) invocationOnMock.callRealMethod(); return result; } } class MyClazz { public String f(String param) { return &amp;#34;out=&amp;#34; + param; } } MyClazz a = new MyClazz(); MyClazz spy = spy(a); ResultCaptor answer = new ResultCaptor(); when(spy.</description>
+    </item>
+    
+  </channel>
+</rss>

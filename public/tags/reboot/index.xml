@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reboot on Mezalor</title>
+    <link>http://example.org/tags/reboot/</link>
+    <description>Recent content in reboot on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 30 Aug 2021 09:03:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/reboot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux, rebooter lorsque l&#39;interface graphique est  figée</title>
+      <link>http://example.org/posts/2021-08-30-linux-rebooter-lorsque-l-interface-graphique-est-figee/</link>
+      <pubDate>Mon, 30 Aug 2021 09:03:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-08-30-linux-rebooter-lorsque-l-interface-graphique-est-figee/</guid>
+      <description>Si les ctrl alt F1 (etc&amp;hellip;) ne permettent pas de basculer sur une console texte pour tuer les processus récalcitrants, il est possible de rebooter en utilisant une commande magique
+alt Impr (syst) r e i s u b
+Source : https://fr.wikipedia.org/wiki/Magic_SysRq_key</description>
+    </item>
+    
+  </channel>
+</rss>

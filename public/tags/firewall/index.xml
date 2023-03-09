@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firewall on Mezalor</title>
+    <link>http://example.org/tags/firewall/</link>
+    <description>Recent content in firewall on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 06 Jan 2021 10:56:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/firewall/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ftpd, ouvrir le port 21</title>
+      <link>http://example.org/posts/2021-01-06-ftpd-ouvrir-le-port-21/</link>
+      <pubDate>Wed, 06 Jan 2021 10:56:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-01-06-ftpd-ouvrir-le-port-21/</guid>
+      <description>En installant mon nouveau poste, j&amp;rsquo;ai eu un souci lors de la reconfiguration de mon scanner.
+La résolution de nom se faisait mais le scanner n&amp;rsquo;arrivait pas à se connecter au serveur ftp fraichement installé.
+Le telnet sur le port 21 bloquait&amp;hellip;
+La solution était d&amp;rsquo;ouvrir le port 21 avec la commande suivante :
+$ sudo ufw allow in ftp La règle a été ajoutée La règle a été ajoutée (v6) </description>
+    </item>
+    
+  </channel>
+</rss>

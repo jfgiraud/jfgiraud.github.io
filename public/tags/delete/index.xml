@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>delete on Mezalor</title>
+    <link>http://example.org/tags/delete/</link>
+    <description>Recent content in delete on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 20 Jan 2016 11:36:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/delete/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sed, garder ou retirer des lignes matchant un pattern spécifié</title>
+      <link>http://example.org/posts/2016-01-20-sed-garder-ou-retirer-des-lignes-matchant-un-pattern-specifie/</link>
+      <pubDate>Wed, 20 Jan 2016 11:36:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-01-20-sed-garder-ou-retirer-des-lignes-matchant-un-pattern-specifie/</guid>
+      <description>Il est possible d&amp;rsquo;utiliser sed pour filter des lignes et garder/ne pas garder celles qui matchent un pattern spécifié
+Dans l&amp;rsquo;exemple suivant, on garde ou ne garde pas les lignes contenant le terme ou
+$ cat content.txt Ceci est un texte avec une tabulation avant ou bien deux espaces ou encore un mix des deux $ cat content.txt | sed &amp;#39;/ou/d&amp;#39; Ceci est un texte avec une tabulation avant $ cat content.</description>
+    </item>
+    
+  </channel>
+</rss>

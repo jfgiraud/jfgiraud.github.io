@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interactif on Mezalor</title>
+    <link>http://example.org/tags/interactif/</link>
+    <description>Recent content in interactif on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 08 Aug 2012 13:17:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/interactif/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, affichage en mode intéractif</title>
+      <link>http://example.org/posts/2012-08-08-bash-affichage-en-mode-interactif/</link>
+      <pubDate>Wed, 08 Aug 2012 13:17:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-08-08-bash-affichage-en-mode-interactif/</guid>
+      <description>Dans un script bash, j&amp;rsquo;ai souhaité afficher un numéro de version lorsque celui-ci est lancé interactivement (ne reçoit pas de données depuis un pipe ou bien une redirection &amp;lt;).
+Cela peut-être fait en utilisant l&amp;rsquo;option -t de la commande test.
+if [ -t 0 ]; then echo &amp;#34;Version: $VERSION&amp;#34; fi </description>
+    </item>
+    
+  </channel>
+</rss>

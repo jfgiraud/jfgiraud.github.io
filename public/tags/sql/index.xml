@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sql on Mezalor</title>
+    <link>http://example.org/tags/sql/</link>
+    <description>Recent content in sql on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 21 Apr 2020 18:39:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, créer des requêtes sql depuis un csv</title>
+      <link>http://example.org/posts/2020-04-21-bash-creer-des-requetes-sql-depuis-un-csv/</link>
+      <pubDate>Tue, 21 Apr 2020 18:39:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-04-21-bash-creer-des-requetes-sql-depuis-un-csv/</guid>
+      <description>Il y a quelques temps, j&amp;rsquo;avais utilisé la commande awk pour générer des requêtes sql depuis un fichier CSV.
+Dans le cas présent, j&amp;rsquo;utilise simplement un script bash.
+Au final, la solution bash -bien que plus verbeuse- me semble plus lisible à lire et modifier.
+#!/bin/bash fichier=~/Téléchargements/groupmotifs.csv tail -n +2 $fichier | tr -d $&amp;#39;\r&amp;#39; | while IFS=$&amp;#39;\n&amp;#39; read line || [[ $line ]] do IFS=&amp;#39;;&amp;#39; read id name type_group nas &amp;lt;&amp;lt;&amp;lt; &amp;#34;$line&amp;#34; cat &amp;lt;&amp;lt;EOF insert into group_motifs (id, name, type_group, nas) values ($id, &amp;#34;$name&amp;#34;, &amp;#34;$type_group&amp;#34;, &amp;#34;$nas&amp;#34;) on duplicate key update nas=&amp;#34;$nas&amp;#34;, type_group=&amp;#34;$type_group&amp;#34;, name=&amp;#34;$name&amp;#34;; EOF done &amp;gt; requetes.</description>
+    </item>
+    
+  </channel>
+</rss>

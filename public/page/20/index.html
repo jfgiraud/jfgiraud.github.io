@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html class="home" lang="fr"><head>
+	<meta name="generator" content="Hugo 0.111.2">
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    
+        
+          <link href="http://example.org/index.xml" rel="alternate" type="application/rss+xml" title="Mezalor" />
+          <link href="http://example.org/index.xml" rel="feed" type="application/rss+xml" title="Mezalor" />
+        
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title"
+        content='Mezalor' />
+    
+        <meta property="og:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta property="og:type" content="blog" />
+    <meta property="og:image"
+        content='http://example.org/img/icon.svg' />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/" />
+
+
+    <meta name="twitter:title"
+        content='Mezalor' />
+    
+        <meta name="twitter:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta name="twitter:image"
+        content='http://example.org/img/icon.svg' />
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+    
+    
+    
+
+<body>
+        <div id="baseContainer"><header class="jumbotronContainer">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+
+    
+    
+    
+
+
+
+
+
+    
+
+
+
+<div class="postlist " id="postlist">
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-10-15-python-lire-et-ecrire-des-fichiers-xls/">python, lire et écrire des fichiers xls</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-10-15
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/excel">#excel</a>
+                
+                    <a href="/tags/python">#python</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Si l&rsquo;on a des fichiers Excel que l&rsquo;on souhaite lire ou écrire, on peut utiliser les paquets xlrd (reader) et xlwt (writer).
+Voici un petit exemple de ce que l&rsquo;on peut faire :
+#!/usr/bin/env python # -*- coding: utf-8 -*- import sys import xlrd import codecs import os files = [u&#34;FormatBDD_XXX_backend.xls&#34;, u&#34;FormatBDD_XXXdata.xls&#34;, u&#34;FormatBDD_XXX_desc.xls&#34;, u&#34;FormatBDD_XXX_dm.xls&#34;, u&#34;FormatBDD_dimension.xls&#34;] for f in files: book = xlrd.open_workbook(f) for sheet_name in book.sheet_names(): base = f.replace(&#39;FormatBDD_&#39;, &#39;&#39;) base = base.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-10-15-python-lire-et-ecrire-des-fichiers-xls/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-10-12-bash-savoir-si-stdout-fait-reference-a-un-terminal/">bash, savoir si stdout fait référence à un terminal</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-10-12
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/colordiff">#colordiff</a>
+                
+                    <a href="/tags/diff">#diff</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Pour savoir si la sortie standard pointe sur un terminal, on peut utiliser l&rsquo;opérateur &ldquo;-t&rdquo; en bash.
+diffutil=diff if [ -t 1 ]; then if which colordiff &gt; /dev/null; then diffutil=colordiff fi fi Dans le cas présenté, on utilisera colordiff pour le rendu sinon diff.
+En effet, un pipe avec less (sans l&rsquo;option -R ou la variable LESS définie à -R) afficherait les caractères d’échappement servant à la colorisation des lignes
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-10-12-bash-savoir-si-stdout-fait-reference-a-un-terminal/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-10-12-sql-gerer-les-conflits-lors-des-inserts/">sql, gérer les conflits lors des inserts</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-10-12
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/if">#if</a>
+                
+                    <a href="/tags/insert-into">#insert into</a>
+                
+                    <a href="/tags/mysql">#mysql</a>
+                
+                    <a href="/tags/on-duplicate-key">#on duplicate key</a>
+                
+                    <a href="/tags/select">#select</a>
+                
+                    <a href="/tags/tts">#tts</a>
+                
+                    <a href="/tags/values">#values</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Lors d&rsquo;un insert, si la clé primaire existe déjà, il est possible de faire un traitement comme dans l&rsquo;exemple ci-dessous.
+insert into enveloppesTTS (enveloppe, tts) select enveloppe, &#39;&#39; as tts from enveloppes on duplicate key update enveloppesTTS.tts=if(enveloppesTTS.tts&lt;&gt;&#39;&#39;,enveloppesTTS.tts,values(tts)); Ici, on tente de peupler la table enveloppesTTS avec des valeurs.
+Si l&rsquo;entrée n&rsquo;existe pas, on la crée.
+Sinon on met à jour un champ de cette table uniquement si sa valeur n&rsquo;est pas déjà renseigné.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-10-12-sql-gerer-les-conflits-lors-des-inserts/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-10-12-bash-voir-autour-des-occurences-avec-grep/">bash, voir autour des occurences avec grep...</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-10-12
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/grep">#grep</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Voici comment on peut voir les lignes proches des occurences matchées par grep
+$ grep -C 5 Msg_Motif_Reit etc/centralisation.yml ref_db: desc ref_table: motif select_column: motifId where_column: motifName - name: Msg_Motif_Reit comment: &#34;nom de l&#39;enveloppe associée au micro motif utilisé pour la reiteration&#34; value_regex: &#39;[\w/]+&#39; - name: reit_ACC comment: &#34;détermine si le client est en reiteration&#34; Avec l&rsquo;option :
+A : affiche les lignes après l&rsquo;occurence trouvée (after) B : affiche les lignes avant l&rsquo;occurence trouvée (before) C : affiche les lignes avant et après l&rsquo;occurence trouvée 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-10-12-bash-voir-autour-des-occurences-avec-grep/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-10-11-awk-creer-des-requetes-sql-depuis-un-fichier-csv/">awk, créer des requêtes SQL depuis un fichier csv</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-10-11
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/awk">#awk</a>
+                
+                    <a href="/tags/fs">#fs</a>
+                
+                    <a href="/tags/insert-into-table">#insert into table</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Par exemple :
+$ cat masscomment.csv | tail -n +2 | awk &#39;BEGIN {FS=&#34;;&#34; } ; { print &#34;insert into descriptions (\&#34;&#34;$1&#34;\&#34;, \&#34;&#34;$2&#34;\&#34;, \&#34;&#34;$3&#34;\&#34;, \&#34;&#34;$4&#34;\&#34;);&#34;}&#39; | head insert into descriptions (&#34;3900configb&#34;, &#34;Parametres&#34;, &#34;description&#34;, &#34;Descriptif du paramètre&#34;); insert into descriptions (&#34;3900configb&#34;, &#34;Parametres&#34;, &#34;valeur&#34;, &#34;Valeur du paramètre&#34;); 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-10-11-awk-creer-des-requetes-sql-depuis-un-fichier-csv/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-10-10-bash-recuperer-le-nombre-de-colonnes-du-terminal/">bash, récupérer le nombre de colonnes du terminal</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-10-10
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/printf">#printf</a>
+                
+                    <a href="/tags/tput">#tput</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Pour centrer :
+$ COLUMNS=$(tput cols) $ title=&#34;Hello mister&#34; $ printf &#34;%*s\n&#34; $(((${#title}+$COLUMNS)/2)) &#34;$title&#34; Hello mister Ou afficher un séparateur :
+printf -v separator &#34;%*s &#34; $(( $(tput cols) - ${#file} - 5 )) echo &#34;-- $file ${separator// /-}&#34; 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-10-10-bash-recuperer-le-nombre-de-colonnes-du-terminal/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-10-10-python-faire-en-sorte-que-stdin-stdout-lisent-et-ecrivent-en-binaire/">python, faire en sorte que stdin/stdout lisent et écrivent en binaire</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-10-10
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/binary">#binary</a>
+                
+                    <a href="/tags/fileno">#fileno</a>
+                
+                    <a href="/tags/os">#os</a>
+                
+                    <a href="/tags/python">#python</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        J&rsquo;ai écrit un petit programme qui s&rsquo;inspire de cut en python.
+La lecture et l&rsquo;écriture pouvant se faire sur l&rsquo;entrée/sortie standard (sources ucut), j&rsquo;avais des problèmes de &ldquo;&lsquo;ascii&rsquo; codec can&rsquo;t decode byte&rdquo;&hellip;
+Pour y remédier, j&rsquo;ai &ldquo;transformé&rdquo; les flux standard (mode texte) en flux binaires de la manière suivante :
+import sys import os sys.stdin = os.fdopen(sys.stdin.fileno(), &#39;rb&#39;, 0) sys.stdout = os.fdopen(sys.stdout.fileno(), &#39;wb&#39;, 0) 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-10-10-python-faire-en-sorte-que-stdin-stdout-lisent-et-ecrivent-en-binaire/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-10-10-bash-verifier-si-une-variable-matche-une-regexp/">bash, vérifier si une variable matche une regexp</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-10-10
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/bash">#bash</a>
+                
+                    <a href="/tags/re">#re</a>
+                
+                    <a href="/tags/regexp">#regexp</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        On peut facilement vérifier si une donnée contenue dans une variable est au bon format.
+Dans l&rsquo;exemple ci-dessous, on vérifie si le numéro de version fourni est correct.
+if [[ ! &#34;$version&#34; =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then echo &#34;Le numéro de version donné &#39;$version&#39; n&#39;a pas le bon format.&#34; exit 1 fi Dans celui-ci si la valeur contient localhost ou itg
+[[ $environnement =~ localhost|itg ]] &amp;&amp; echo 1 Attention, la regexp n&rsquo;est pas entre quote ni double-quote.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-10-10-bash-verifier-si-une-variable-matche-une-regexp/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-09-27-vi-et-les-macros/">vi et les macros</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-09-27
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Via un petit exemple&hellip;
+Permet de supprimer le premier mot de chaque ligne du buffer.
+gg permet d&rsquo;aller en début de fichier qq démarre l&rsquo;enregistrement de la macro de nom q (la 2e lettre) dwj supprime le premier mot et descend de ligne @q appelle la macro q pour revenir au mode de vi &ldquo;normal&rdquo; q pour terminer l&rsquo;enregistrement de la macro @q pour appeler la macro 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-09-27-vi-et-les-macros/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-09-25-bash-swap-de-2-fichiers/">bash, swap de 2 fichiers</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-09-25
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/bash">#bash</a>
+                
+                    <a href="/tags/commande">#commande</a>
+                
+                    <a href="/tags/mv">#mv</a>
+                
+                    <a href="/tags/tempfile">#tempfile</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Le code suivant à ajouter au bashrc permet de swapper ou plutôt échanger 2 fichiers rapidement.
+function swap() { if [[ -e &#34;$1&#34; &amp;&amp; -e &#34;$2&#34; ]] # if files exist then local TMPFILE=$(tempfile) mv &#34;$1&#34; $TMPFILE mv &#34;$2&#34; &#34;$1&#34; mv $TMPFILE &#34;$2&#34; else echo &#34;Error: Make sure the files exist.&#34; fi } Et son exemple :
+$ echo x&gt;x $ echo y&gt;y $ swap x e Error: Make sure the files exist.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-09-25-bash-swap-de-2-fichiers/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+
+</div>
+<div id="getNextBtnContainer"></div>
+
+
+    
+    <div id="pageNavigation" class='
+            
+    '>
+        
+            <a href="/page/19/" title='Page précédente'>
+                
+                    &lt;&lt;&lt;
+                
+            </a>
+        
+        
+        
+            
+                <a href="/">1</a>
+            
+        
+            
+                <a href="/page/2/">2</a>
+            
+        
+            
+                <a href="/page/3/">3</a>
+            
+        
+            
+                <a href="/page/4/">4</a>
+            
+        
+            
+                <a href="/page/5/">5</a>
+            
+        
+            
+                <a href="/page/6/">6</a>
+            
+        
+            
+                <a href="/page/7/">7</a>
+            
+        
+            
+                <a href="/page/8/">8</a>
+            
+        
+            
+                <a href="/page/9/">9</a>
+            
+        
+            
+                <a href="/page/10/">10</a>
+            
+        
+            
+                <a href="/page/11/">11</a>
+            
+        
+            
+                <a href="/page/12/">12</a>
+            
+        
+            
+                <a href="/page/13/">13</a>
+            
+        
+            
+                <a href="/page/14/">14</a>
+            
+        
+            
+                <a href="/page/15/">15</a>
+            
+        
+            
+                <a href="/page/16/">16</a>
+            
+        
+            
+                <a href="/page/17/">17</a>
+            
+        
+            
+                <a href="/page/18/">18</a>
+            
+        
+            
+                <a href="/page/19/">19</a>
+            
+        
+            
+            <span>
+                [20]
+            </span>
+            
+        
+            
+                <a href="/page/21/">21</a>
+            
+        
+            
+                <a href="/page/22/">22</a>
+            
+        
+            
+                <a href="/page/23/">23</a>
+            
+        
+            
+                <a href="/page/24/">24</a>
+            
+        
+            
+                <a href="/page/25/">25</a>
+            
+        
+            
+                <a href="/page/26/">26</a>
+            
+        
+            
+                <a href="/page/27/">27</a>
+            
+        
+            
+                <a href="/page/28/">28</a>
+            
+        
+            
+                <a href="/page/29/">29</a>
+            
+        
+            
+                <a href="/page/30/">30</a>
+            
+        
+            
+                <a href="/page/31/">31</a>
+            
+        
+            
+                <a href="/page/32/">32</a>
+            
+        
+            
+                <a href="/page/33/">33</a>
+            
+        
+        
+            <a href="/page/21/" title='Page suivante'>
+                
+                    &gt;&gt;&gt;
+                
+            </a>
+        
+    </div>
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

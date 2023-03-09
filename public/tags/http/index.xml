@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>http on Mezalor</title>
+    <link>http://example.org/tags/http/</link>
+    <description>Recent content in http on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 26 Jul 2018 11:41:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/http/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>http, headers sur la gestion du cache et de la sécurité</title>
+      <link>http://example.org/posts/2018-07-26-http-headers-sur-la-gestion-du-cache-et-de-la-securite/</link>
+      <pubDate>Thu, 26 Jul 2018 11:41:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2018-07-26-http-headers-sur-la-gestion-du-cache-et-de-la-securite/</guid>
+      <description>public static void addNoCacheHeaders(HttpServletResponse resp) { resp.addHeader(HttpHeaders.CACHE_CONTROL, &amp;#34;max-age=0, no-store, no-cache, must-revalidate, proxy-revalidate, private&amp;#34;); resp.addHeader(HttpHeaders.PRAGMA, &amp;#34;no-cache&amp;#34;); resp.addHeader(HttpHeaders.EXPIRES, &amp;#34;-1&amp;#34;); } public static void addSecurityHeaders(HttpServletResponse resp) { resp.addHeader(HttpHeaders.X_FRAME_OPTIONS, &amp;#34;DENY&amp;#34;); resp.addHeader(HttpHeaders.X_XSS_PROTECTION, &amp;#34;1; mode=block&amp;#34;); resp.addHeader(HttpHeaders.X_CONTENT_TYPE_OPTIONS, &amp;#34;nosniff&amp;#34;); } </description>
+    </item>
+    
+  </channel>
+</rss>

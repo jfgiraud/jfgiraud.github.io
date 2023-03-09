@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            docker / alpine / mariadb : ce que j&#39;en pense....  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="keywords" content='alpine, docker, mariadb' />
+    
+    
+        <meta name="description" content="ser à alpine à cause de la taille de l&amp;rsquo;image produite et parce qu&amp;rsquo;elle boote vite.
+Je voulais améliorer les performances du pipeline de mon projet.
+J&amp;rsquo;ai eu beaucoup de déboires pour :
+comprendre et réussir à faire tourner le service MariaDB dans docker (je voulais une image généraliste qui ne fasse pas que MariaDB mais aussi du java/maven &amp;amp; du python2.7) contourner des problèmes pour réussir à configurer mariadb convenablement (actuellement les postes de dévs et le gitlab sont en mysql alors que nos serveurs d&amp;rsquo;intégration/préproduction/production sont passés en MariaDB)." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="docker / alpine / mariadb : ce que j&#39;en pense...." />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2020-12-02T11:02:00Z&#43;0100' />
+    
+        
+            <meta property="article:tag" content="alpine" />
+        
+            <meta property="article:tag" content="docker" />
+        
+            <meta property="article:tag" content="mariadb" />
+        
+    
+    <meta property="og:url" content="http://example.org/posts/2020-12-02-docker-alpine-mariadb-ce-que-j-en-pense/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="J&amp;rsquo;ai voulu passer à alpine à cause de la taille de l&amp;rsquo;image produite et parce qu&amp;rsquo;elle boote vite.
+Je voulais améliorer les performances du pipe" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2020-12-02-docker-alpine-mariadb-ce-que-j-en-pense/" />
+
+
+    <meta name="twitter:title" content="docker / alpine / mariadb : ce que j&#39;en pense...." />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="J&amp;rsquo;ai voulu passer à alpine à cause de la taille de l&amp;rsquo;image produite et parce qu&amp;rsquo;elle boote vite.
+Je voulais améliorer les performances du pipe" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>docker / alpine / mariadb : ce que j&#39;en pense....</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2020-12-02
+
+</p>
+    
+    
+    
+    
+    <div><p>J&rsquo;ai voulu passer à alpine à cause de la taille de l&rsquo;image produite et parce qu&rsquo;elle boote vite.</p>
+<p>Je voulais améliorer les performances du pipeline de mon projet.</p>
+<p>J&rsquo;ai eu beaucoup de déboires pour :</p>
+<ul>
+<li>comprendre et réussir à faire tourner le service MariaDB dans docker (je voulais une image généraliste qui ne fasse pas que MariaDB mais aussi du java/maven &amp; du python2.7)</li>
+<li>contourner des problèmes pour réussir à configurer mariadb convenablement (actuellement les postes de dévs et le gitlab sont en mysql alors que nos serveurs d&rsquo;intégration/préproduction/production sont passés en MariaDB). Les sysadmins m&rsquo;ont aiguillé.</li>
+<li>corriger des pbs d&rsquo;appels depuis les tests java ou python</li>
+</ul>
+<p>Hier, soir, j&rsquo;arrive enfin à faire tourner les tests&hellip; et désenchantement !</p>
+<p>Les tests sont extrèmement lents sous alpine ! Trop c&rsquo;est trop&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>(alpine)
+</span></span><span style="display:flex;"><span>Ran 110 tests in 379.308s
+</span></span><span style="display:flex;"><span>OK
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> __    _____
+</span></span><span style="display:flex;"><span>\\ \\ / /__|
+</span></span><span style="display:flex;"><span> \\ V /\\__\\
+</span></span><span style="display:flex;"><span>  \\_/ |___/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(ubuntu)
+</span></span><span style="display:flex;"><span>Ran 110 tests in 178.103s
+</span></span><span style="display:flex;"><span>OK
+</span></span></code></pre></div><p>Apparemment c&rsquo;est connu&hellip; Je vais en rester là, peut-être aller voir du côté de <code>debian:buster-slim</code></p>
+<p>Références additionnelles</p>
+<ul>
+<li><a href="https://andygrove.io/2020/05/why-musl-extremely-slow/">https://andygrove.io/2020/05/why-musl-extremely-slow/</a></li>
+<li><a href="https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d">https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d</a></li>
+</ul>
+</div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/alpine">#alpine</a>
+        
+            <a
+                
+                href="/tags/docker">#docker</a>
+        
+            <a
+                
+                href="/tags/mariadb">#mariadb</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

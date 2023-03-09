@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open on Mezalor</title>
+    <link>http://example.org/tags/open/</link>
+    <description>Recent content in open on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 29 Nov 2011 11:22:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/open/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moteur de recherche dans navigateur</title>
+      <link>http://example.org/posts/2011-11-29-moteur-de-recherche-dans-navigateur/</link>
+      <pubDate>Tue, 29 Nov 2011 11:22:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2011-11-29-moteur-de-recherche-dans-navigateur/</guid>
+      <description>Il est relativement simple de permettre à un site web de proposer un moteur de recherche dans le navigateur d&amp;rsquo;un client&amp;hellip;
+Pour cela il faut proposer un fichier mysearch.xml
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34;?&amp;gt; &amp;lt;OpenSearchDescription xmlns=&amp;#34;http://a9.com/-/spec/opensearch/1.1/&amp;#34;&amp;gt; &amp;lt;ShortName&amp;gt;mysearch&amp;lt;/ShortName&amp;gt; &amp;lt;Description&amp;gt;Ma petite description&amp;lt;/Description&amp;gt; &amp;lt;Image height=&amp;#34;16&amp;#34; width=&amp;#34;16&amp;#34; type=&amp;#34;image/x-icon&amp;#34;&amp;gt;http://yoursite.example.com/favicon.ico&amp;lt;/Image&amp;gt; &amp;lt;Url type=&amp;#34;text/html&amp;#34; method=&amp;#34;get&amp;#34; template=&amp;#34;http://yoursite.example.com/search?q={searchTerms}&amp;#34;/&amp;gt; &amp;lt;/OpenSearchDescription&amp;gt; Et le proposer dans votre page html via la balise link
+&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Example - Moteur de recherche OpenSearch&amp;lt;/title&amp;gt; &amp;lt;link rel=&amp;#34;search&amp;#34; type=&amp;#34;application/opensearchdescription+xml&amp;#34; href=&amp;#34;mysearch.xml&amp;#34; title=&amp;#34;mysearch&amp;#34; /&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; Votre page.</description>
+    </item>
+    
+  </channel>
+</rss>

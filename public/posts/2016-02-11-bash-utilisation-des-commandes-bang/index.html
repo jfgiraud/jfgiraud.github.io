@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            bash, utilisation des commandes bang !  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="keywords" content='shebang' />
+    
+    
+        <meta name="description" content="oncernant les commandes bang de bash.
+Je connaissais &amp;ldquo;!!&amp;rdquo;, &amp;ldquo;!ligne&amp;rdquo; et &amp;ldquo;!commande&amp;rdquo; ce qui est déjà pas mal. Mais il y en a bien d&amp;rsquo;autres !!!
+En les connaissant et les utilisant, il doit être possible de minimiser les contacts avec la souris ;)
+Les commandes :
+Syntaxe !! Exécute la dernière commande !509 Exécute la commande 509 de l&amp;#39;historique !-2 Exécute l&amp;#39;avant dernière commande !foo Exécute la dernière commande qui commance par &amp;#39;foo&amp;#39; (cad." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="bash, utilisation des commandes bang !" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2016-02-11T16:44:00Z&#43;0100' />
+    
+        
+            <meta property="article:tag" content="shebang" />
+        
+    
+    <meta property="og:url" content="http://example.org/posts/2016-02-11-bash-utilisation-des-commandes-bang/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="Voici un gros post concernant les commandes bang de bash.
+Je connaissais &amp;ldquo;!!&amp;rdquo;, &amp;ldquo;!ligne&amp;rdquo; et &amp;ldquo;!commande&amp;rdquo; ce qui est déjà pas m" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2016-02-11-bash-utilisation-des-commandes-bang/" />
+
+
+    <meta name="twitter:title" content="bash, utilisation des commandes bang !" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="Voici un gros post concernant les commandes bang de bash.
+Je connaissais &amp;ldquo;!!&amp;rdquo;, &amp;ldquo;!ligne&amp;rdquo; et &amp;ldquo;!commande&amp;rdquo; ce qui est déjà pas m" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>bash, utilisation des commandes bang !</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2016-02-11
+
+</p>
+    
+    
+    
+    
+    <div><p>Voici un gros post concernant les commandes bang de bash.</p>
+<p>Je connaissais &ldquo;!!&rdquo;, &ldquo;!ligne&rdquo; et &ldquo;!commande&rdquo; ce qui est déjà pas mal. Mais il y en a bien d&rsquo;autres !!!</p>
+<p>En les connaissant et les utilisant, il doit être possible de minimiser les contacts avec la souris ;)</p>
+<p>Les commandes :</p>
+<pre tabindex="0"><code>Syntaxe
+      
+      !!              Exécute la dernière commande
+      !509            Exécute la commande 509 de l&#39;historique
+      !-2             Exécute l&#39;avant dernière commande 
+      !foo            Exécute la dernière commande qui commance par 
+                      &#39;foo&#39; (cad. !ls)
+      !foo:p          Affiche la commande que !foo exécuterait et 
+                      l&#39;ajoute à l&#39;historique
+      !$              Exécute le dernier mot de la dernière commande 
+                      (identique à Alt + .)
+      !$:p            Affiche la commande que !$ exécuterait
+      !*              Exécute la commande précédente sans le premier 
+                      mot (cad la commande)
+      !*:p            Affiche la commande que !* exécuterait
+      ^foo^bar        Exécute la commande précédente en remplaçant 
+                      &#39;foo&#39; par &#39;bar&#39; dans le premier mot
+
+Modificateurs de mots
+
+      !509:2:h        Supprime le nom du fichier à la fin du chemin dans 
+                      le 2e argument de la commande 509 de l&#39;historique
+      !509:2:t        Supprime le début du chemin jusqu&#39;au nom du fichier 
+                      dans le 2e argument de la commande 509 de l&#39;historique
+      !509:2:r        Supprime l&#39;extension dans le 2e argument de la 
+                      commande 509 de l&#39;historique
+      !509:2:e        Ne garde que l&#39;extension du le 2e argument de la 
+                      commande 509 de l&#39;historique
+      !509:2:gs/a/x/  Remplace les &#39;a&#39; par des &#39;x&#39; dans le 2e argument 
+                      de la commande 509 de l&#39;historique
+</code></pre><p>Quelques cas d&rsquo;usage simples :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ touch a b c d e
+</span></span><span style="display:flex;"><span>$ !!
+</span></span><span style="display:flex;"><span>touch a b c d e
+</span></span><span style="display:flex;"><span>$ ls !:3
+</span></span><span style="display:flex;"><span>ls c
+</span></span><span style="display:flex;"><span>c
+</span></span><span style="display:flex;"><span>$ history | tail -n <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">515</span>  touch a b c d e
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">516</span>  ls c
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">517</span>  history | tail -n <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>$ ls !515:$ !516:^:p
+</span></span><span style="display:flex;"><span>ls e c
+</span></span><span style="display:flex;"><span>$ <span style="color:#66d9ef">for</span> a in !515:*; <span style="color:#66d9ef">do</span> echo $a; <span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> a in a b c d e; <span style="color:#66d9ef">do</span> echo $a; <span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>a
+</span></span><span style="display:flex;"><span>b
+</span></span><span style="display:flex;"><span>c
+</span></span><span style="display:flex;"><span>d
+</span></span><span style="display:flex;"><span>e
+</span></span><span style="display:flex;"><span>$ history | tail -n <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">518</span>  ls e c
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">519</span>  <span style="color:#66d9ef">for</span> a in a b c d e; <span style="color:#66d9ef">do</span> echo $a; <span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">520</span>  history | tail -n <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>$ !ls
+</span></span><span style="display:flex;"><span>ls e c
+</span></span><span style="display:flex;"><span>c  e
+</span></span><span style="display:flex;"><span>$ ^ls^rm
+</span></span><span style="display:flex;"><span>rm e c
+</span></span><span style="display:flex;"><span>$ history | tail -n <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">518</span>  ls e c
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">519</span>  <span style="color:#66d9ef">for</span> a in a b c d e; <span style="color:#66d9ef">do</span> echo $a; <span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">520</span>  history | tail -n <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">521</span>  ls e c
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">522</span>  rm e c
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">523</span>  history | tail -n <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>$ !-3
+</span></span><span style="display:flex;"><span>ls e c
+</span></span><span style="display:flex;"><span>ls: impossible d<span style="color:#e6db74">&#39;accéder à e: Aucun fichier ou dossier de ce type
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ls: impossible d&#39;</span>accéder à c: Aucun fichier ou dossier de ce type
+</span></span><span style="display:flex;"><span>$ !-3:$:p
+</span></span><span style="display:flex;"><span>c
+</span></span><span style="display:flex;"><span>$ !523
+</span></span><span style="display:flex;"><span>history | tail -n <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">521</span>  ls e c
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">522</span>  rm e c
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">523</span>  history | tail -n <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">524</span>  ls e c
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">525</span>  c
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">526</span>  history | tail -n <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>$
+</span></span></code></pre></div><p>D&rsquo;autres cas d&rsquo;usage avec modification des paramètres</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ls /usr/local/lib/python3.4/dist-packages/aiohttp/client.py
+</span></span><span style="display:flex;"><span>/usr/local/lib/python3.4/dist-packages/aiohttp/client.py
+</span></span><span style="display:flex;"><span>$ !$:h:p
+</span></span><span style="display:flex;"><span>/usr/local/lib/python3.4/dist-packages/aiohttp
+</span></span><span style="display:flex;"><span>$ ls /usr/local/lib/python3.4/dist-packages/aiohttp/client.py
+</span></span><span style="display:flex;"><span>/usr/local/lib/python3.4/dist-packages/aiohttp/client.py
+</span></span><span style="display:flex;"><span>$ !$:t:p
+</span></span><span style="display:flex;"><span>client.py
+</span></span><span style="display:flex;"><span>$ ls /usr/local/lib/python3.4/dist-packages/aiohttp/client.py
+</span></span><span style="display:flex;"><span>/usr/local/lib/python3.4/dist-packages/aiohttp/client.py
+</span></span><span style="display:flex;"><span>$ !$:r:p
+</span></span><span style="display:flex;"><span>/usr/local/lib/python3.4/dist-packages/aiohttp/client
+</span></span><span style="display:flex;"><span>$ ls /usr/local/lib/python3.4/dist-packages/aiohttp/client.py
+</span></span><span style="display:flex;"><span>/usr/local/lib/python3.4/dist-packages/aiohttp/client.py
+</span></span><span style="display:flex;"><span>$ !$:e:p
+</span></span><span style="display:flex;"><span>.py
+</span></span><span style="display:flex;"><span>$ !-2:s/.py/.old/:p
+</span></span><span style="display:flex;"><span>ls /usr/local/lib/python3.4/dist-packages/aiohttp/client.old
+</span></span></code></pre></div><p>Sources :</p>
+<ul>
+<li><a href="http://ss64.com/bash/bang.html">http://ss64.com/bash/bang.html</a></li>
+<li><a href="http://samrowe.com/wordpress/advancing-in-the-bash-shell/">http://samrowe.com/wordpress/advancing-in-the-bash-shell/</a></li>
+<li><a href="http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/">http://www.skorks.com/2009/09/bash-shortcuts-for-maximum-productivity/</a></li>
+</ul>
+</div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/shebang">#shebang</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

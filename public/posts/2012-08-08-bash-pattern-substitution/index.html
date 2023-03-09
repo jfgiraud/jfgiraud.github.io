@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            Bash, pattern substitution  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="keywords" content='bash, pattern, regexp' />
+    
+    
+        <meta name="description" content="nte les syntaxes suivantes (voir)
+${parameter#word} et ${parameter##word} pour supprimer le plus court et le plus long préfix ${parameter%word} et ${parameter%%word} pour supprimer le plus court et le plus long suffixe ${parameter/pattern/string} pour substituer une chaîne à un pattern. Il faut savoir que word peut être une regexp dans les 2 premiers cas. Mais il faut surtout savoir que la syntaxe du pattern diffère de celles que l&amp;rsquo;on connaît généralement&amp;hellip;" />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="Bash, pattern substitution" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2012-08-08T16:21:00Z&#43;0100' />
+    
+        
+            <meta property="article:tag" content="bash" />
+        
+            <meta property="article:tag" content="pattern" />
+        
+            <meta property="article:tag" content="regexp" />
+        
+    
+    <meta property="og:url" content="http://example.org/posts/2012-08-08-bash-pattern-substitution/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="Le manuel bash présente les syntaxes suivantes (voir)
+${parameter#word} et ${parameter##word} pour supprimer le plus court et le plus long préfix ${parameter%wo" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2012-08-08-bash-pattern-substitution/" />
+
+
+    <meta name="twitter:title" content="Bash, pattern substitution" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="Le manuel bash présente les syntaxes suivantes (voir)
+${parameter#word} et ${parameter##word} pour supprimer le plus court et le plus long préfix ${parameter%wo" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>Bash, pattern substitution</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2012-08-08
+
+</p>
+    
+    
+    
+    
+    <div><p>Le manuel bash présente les syntaxes suivantes (<a href="http://tldp.org/LDP/abs/html/string-manipulation.html">voir</a>)</p>
+<ul>
+<li><code>${parameter#word}</code> et <code>${parameter##word}</code> pour supprimer le plus court et le plus long préfix</li>
+<li><code>${parameter%word}</code> et <code>${parameter%%word}</code> pour supprimer le plus court et le plus long suffixe</li>
+<li><code>${parameter/pattern/string}</code> pour substituer une chaîne à un pattern.</li>
+</ul>
+<p>Il faut savoir que word peut être une regexp dans les 2 premiers cas.  Mais il faut surtout savoir que la syntaxe du pattern diffère de celles que l&rsquo;on connaît généralement&hellip;</p>
+<p>Sur <a href="http://wiki.bash-hackers.org/syntax/pattern">wiki.bash-hackers.org</a> :</p>
+<pre tabindex="0"><code>?(&lt;PATTERN-LIST&gt;) Matches zero or one occurrence of the given patterns
+*(&lt;PATTERN-LIST&gt;) Matches zero or more occurrences of the given patterns
++(&lt;PATTERN-LIST&gt;) Matches one or more occurrences of the given patterns
+@(&lt;PATTERN-LIST&gt;) Matches one of the given patterns
+!(&lt;PATTERN-LIST&gt;) Matches anything except one of the given patterns
+</code></pre><p>D&rsquo;où des choses zarbies du genre :</p>
+<pre tabindex="0"><code>$ shopt -s extglob
+$ v=&#34;LE temps PASSE vite&#34;
+$ echo ${v//+([[:upper:]])} 
+temps vite
+$ echo ${v%%+([[:lower:]])} 
+LE temps PASSE
+</code></pre><pre tabindex="0"><code>$ for b in configb configb1 configb2 configb_test; 
+do 
+  echo $b $(DB_NAME=$b; echo &#39;%%configcommon&#39; | sed -e &#34;s/%%configcommon/${DB_NAME/configb@(1|2|)/configcommon}/g&#34; )
+done
+configb configcommon
+configb1 configcommon
+configb2 configcommon
+configb_test configcommon_test
+</code></pre></div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/bash">#bash</a>
+        
+            <a
+                
+                href="/tags/pattern">#pattern</a>
+        
+            <a
+                
+                href="/tags/regexp">#regexp</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

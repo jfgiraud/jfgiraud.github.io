@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html class="home" lang="fr"><head>
+	<meta name="generator" content="Hugo 0.111.2">
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    
+        
+          <link href="http://example.org/index.xml" rel="alternate" type="application/rss+xml" title="Mezalor" />
+          <link href="http://example.org/index.xml" rel="feed" type="application/rss+xml" title="Mezalor" />
+        
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title"
+        content='Mezalor' />
+    
+        <meta property="og:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta property="og:type" content="blog" />
+    <meta property="og:image"
+        content='http://example.org/img/icon.svg' />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/" />
+
+
+    <meta name="twitter:title"
+        content='Mezalor' />
+    
+        <meta name="twitter:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta name="twitter:image"
+        content='http://example.org/img/icon.svg' />
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+    
+    
+    
+
+<body>
+        <div id="baseContainer"><header class="jumbotronContainer">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+
+    
+    
+    
+
+
+
+
+
+    
+
+
+
+<div class="postlist " id="postlist">
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-12-26-socat-sert-de-proxy-et-passe-le-plat/">socat, sert de proxy et passe le plat...</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-12-26
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Sur un de mes projets, un flux a été interrompu&hellip; en attendant sa réouverture j&rsquo;utilise un proxy qui sert de passe plat depuis une machine où le flux en question est ouvert&hellip;
+# le serveur écoute sur le port 1231 et passe le plat à somewhere.example.com:80 socat TCP-LISTEN:1231,reuseaddr,fork TCP:somewhere.example.com:80 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-12-26-socat-sert-de-proxy-et-passe-le-plat/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-12-07-bash-renverser-un-flux-ligne-a-ligne/">bash, renverser un flux ligne à ligne</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-12-07
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Voici une commande que je ne connaissais pas avant le petit déjeuner&hellip;
+$ for i in $(seq 1 10); do echo $i; done 1 2 3 4 5 6 7 8 9 10 $ for i in $(seq 1 10); do echo $i; done | tac 10 9 8 7 6 5 4 3 2 1 Fallait la découvrir celle-là ;) tac, la soeur de cat à l&rsquo;envers&hellip;
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-12-07-bash-renverser-un-flux-ligne-a-ligne/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-12-07-bash-la-fonction-qui-tue/">bash, la fonction qui tue...</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-12-07
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Voici une fonction qui tue&hellip; et simplifie la vie en ligne de commandes !
+function ..() { ## .. &lt;nombre&gt; remonte de &lt;nombre&gt; repertoires ## .. /&lt;chaine&gt; remonte jusqu&#39;a ce qu&#39;un repertoire contient &lt;chaine&gt; dans son nom local level=$1 if [[ ! &#34;$level&#34; =~ / ]]; then while [ $level -gt 0 ]; do cd .. || break level=$(($level-1)) done else level=${level:1} local curdir=$(pwd) IFS=&#39;/&#39; read -ra ADDR &lt;&lt;&lt; &#34;$curdir&#34; for (( i = ${#ADDR[@]}-1; i&gt;0; i-- )); do if [[ &#34;${ADDR[$i]}&#34; =~ &#34;$level&#34; ]]; then break fi cd .
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-12-07-bash-la-fonction-qui-tue/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-12-07-bash-eviter-l-interpretation-en-octal-en-utilisant-printf/">bash, éviter l&#39;interprétation en octal en utilisant printf</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-12-07
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        J&rsquo;ai eu un petit soucis dans un script de renommage qui tentait d&rsquo;interprêter les valeurs commençant par 08 et 09 en octal lors d&rsquo;un printf.
+La solution consiste à spécifier que la valeur est en base 10 comme dans l&rsquo;exemple ci-dessous :
+s=&#34;09&#34; $ printf &#34;%.02d&#34; $s bash: printf: 09: Nombre octal non valable 00 $ printf &#34;%.02d&#34; $(( 10#$s)) 09 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-12-07-bash-eviter-l-interpretation-en-octal-en-utilisant-printf/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-12-06-mysql-supprimer-une-base-table-meme-lorsque-des-cles-etrangeres-sont-positionnees/">mysql, supprimer une base/table même lorsque des clés étrangères sont positionnées</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-12-06
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Pour ignorer la vérification de la présence de clés étrangères lors de la suppression d&rsquo;une table ou base, on peut utiliser &ldquo;SET foreign_key_checks = 0&rdquo; avec mysql comme dans l&rsquo;exemple ci-dessous :
+echo &#34;SET foreign_key_checks = 0; drop database if exists $dbname;&#34; | $ADMIN_SQL_CMD 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-12-06-mysql-supprimer-une-base-table-meme-lorsque-des-cles-etrangeres-sont-positionnees/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-11-15-bash-expansion-de-parametres-et-indirection/">bash, expansion de paramètres et indirection </a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-11-15
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Aujourd&rsquo;hui, je viens de découvrir l&rsquo;indirection de paramètres en bash.
+La syntaxe est la suivante : ${!PARAMETER}
+L&rsquo;expansion ne donne pas la valeur du paramètre lui même mais la valeur du paramètre dont le nom est contenu dans PARAMETER.
+$ TEMP=&#34;hello world&#34; $ TEXT=TEMP $ echo ${!TEXT} hello world Cela permet de faire de jolies choses comme ceci en s&rsquo;abstrayant d&rsquo;eval&hellip;
+XXX_user=rootX XXX_password=rootX123 XXX_host=sqlserver01.example.com YYY_user=rootY YYY_password=rootY123 YYY_host=sqlserver02.example.com ZZZ_user=rootZ ZZZ_password=rootZ123 ZZZ_host=sqlserver03.example.com connect_to() { local database=&#34;$1&#34; user_key=&#34;${database}_user&#34; password_key=&#34;${database}_password&#34; host_key=&#34;${database}_host&#34; mysql -h &#34;${!
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-11-15-bash-expansion-de-parametres-et-indirection/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-11-12-bash-initialisation-de-variables-depuis-une-chaine-de-caracteres/">bash, initialisation de variables depuis une chaine de caractères</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-11-12
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Il est possible d&rsquo;initialiser des variables depuis une chaine de caractères et en redéfinissant le séparateur si nécessaire (ici la redéfinition est locale au read)
+$ line=abc:def:567 $ IFS=: read c1 c2 c3 &lt;&lt;&lt; &#34;$line&#34; $ echo $c1 abc $ echo $c2 def $ echo $c3 567 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-11-12-bash-initialisation-de-variables-depuis-une-chaine-de-caracteres/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-09-28-bash-fonction-de-filtre-et-d-extraction-de-donnees-d-un-csv-en-bash/">bash, fonction de filtre et d&#39;extraction de données d&#39;un csv en bash</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-09-28
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        J&rsquo;ai mis à disposition sur mon repository git un utilitaire csv-functions.sh pour filtrer et extraire des données d&rsquo;un fichier csv en bash.
+Voici un exemple d&rsquo;utilisation :
+csvexample() { (cat &lt;&lt;-EOF lastname;firstname;birth;number_of_child doe;john;1975;2 doe;foo;1990;1 doe;jane;1985;2 EOF ) &gt; example.csv declare -A persons csvindexes persons example.csv for tuple in $(csvvalues example.csv | csvfilter persons &#34;lastname=doe&#34; &#34;birth=1985&#34; &#34;number_of_child=2&#34;) do eval $(csvextract persons $tuple &#34;vara=lastname&#34; &#34;varb=firstname&#34; &#34;varc=birth&#34; &#34;vard=number_of_child&#34;) echo &#34;vara=$vara&#34; echo &#34;varb=$varb&#34; echo &#34;varc=$varc&#34; echo &#34;vard=$vard&#34; done rm -f example.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-09-28-bash-fonction-de-filtre-et-d-extraction-de-donnees-d-un-csv-en-bash/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-08-27-bash-chemin-et-nom-de-fichier-sans-dirname-basename-et-sans-sous-processus/">bash, chemin et nom de fichier sans dirname/basename (et sans sous-processus)</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-08-27
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Voici une astuce pour récupérer le chemin et le nom d&rsquo;un fichier sans utiliser les commandes dirname/basename (et sans la création de sous-processus lors de l&rsquo;appel à ces commandes)
+$ s=&#39;abc/def/ghi/klmnop.ext&#39; $ echo ${s##*/} klmnop.ext $ echo ${s%/*} abc/def/ghi Cela permet d&rsquo;optimiser la récupération de ces informations lors de traitements sur un grand nombre de fichiers par exemple.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-08-27-bash-chemin-et-nom-de-fichier-sans-dirname-basename-et-sans-sous-processus/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2013-08-16-algorithme-pour-afficher-un-arbre/">Algorithme pour afficher un arbre</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2013-08-16
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Voici un algorithme pour afficher un joli arbre à la manière de la commande tree.
+private void print(Writer out, String prefix, List&lt;Object&gt; items) throws IOException { int j; for (j=items.size()-1; j&gt;=0; j--) { Object o = items.get(j); if (! (o instanceof List)) break; } for (int i=0; i&lt;items.size(); i++) { Object o = items.get(i); boolean isTail = (i &gt;= j) || (i == items.size() - 1); if (! (o instanceof List)) { out.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2013-08-16-algorithme-pour-afficher-un-arbre/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+
+</div>
+<div id="getNextBtnContainer"></div>
+
+
+    
+    <div id="pageNavigation" class='
+            
+    '>
+        
+            <a href="/page/14/" title='Page précédente'>
+                
+                    &lt;&lt;&lt;
+                
+            </a>
+        
+        
+        
+            
+                <a href="/">1</a>
+            
+        
+            
+                <a href="/page/2/">2</a>
+            
+        
+            
+                <a href="/page/3/">3</a>
+            
+        
+            
+                <a href="/page/4/">4</a>
+            
+        
+            
+                <a href="/page/5/">5</a>
+            
+        
+            
+                <a href="/page/6/">6</a>
+            
+        
+            
+                <a href="/page/7/">7</a>
+            
+        
+            
+                <a href="/page/8/">8</a>
+            
+        
+            
+                <a href="/page/9/">9</a>
+            
+        
+            
+                <a href="/page/10/">10</a>
+            
+        
+            
+                <a href="/page/11/">11</a>
+            
+        
+            
+                <a href="/page/12/">12</a>
+            
+        
+            
+                <a href="/page/13/">13</a>
+            
+        
+            
+                <a href="/page/14/">14</a>
+            
+        
+            
+            <span>
+                [15]
+            </span>
+            
+        
+            
+                <a href="/page/16/">16</a>
+            
+        
+            
+                <a href="/page/17/">17</a>
+            
+        
+            
+                <a href="/page/18/">18</a>
+            
+        
+            
+                <a href="/page/19/">19</a>
+            
+        
+            
+                <a href="/page/20/">20</a>
+            
+        
+            
+                <a href="/page/21/">21</a>
+            
+        
+            
+                <a href="/page/22/">22</a>
+            
+        
+            
+                <a href="/page/23/">23</a>
+            
+        
+            
+                <a href="/page/24/">24</a>
+            
+        
+            
+                <a href="/page/25/">25</a>
+            
+        
+            
+                <a href="/page/26/">26</a>
+            
+        
+            
+                <a href="/page/27/">27</a>
+            
+        
+            
+                <a href="/page/28/">28</a>
+            
+        
+            
+                <a href="/page/29/">29</a>
+            
+        
+            
+                <a href="/page/30/">30</a>
+            
+        
+            
+                <a href="/page/31/">31</a>
+            
+        
+            
+                <a href="/page/32/">32</a>
+            
+        
+            
+                <a href="/page/33/">33</a>
+            
+        
+        
+            <a href="/page/16/" title='Page suivante'>
+                
+                    &gt;&gt;&gt;
+                
+            </a>
+        
+    </div>
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

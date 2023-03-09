@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on Mezalor</title>
+    <link>http://example.org/tags/ssh/</link>
+    <description>Recent content in ssh on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 31 Mar 2021 17:16:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ssh, accéder à un site derrière un VPN via une VM</title>
+      <link>http://example.org/posts/2021-03-31-ssh-acceder-a-un-site-derriere-un-vpn-via-une-vm/</link>
+      <pubDate>Wed, 31 Mar 2021 17:16:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-03-31-ssh-acceder-a-un-site-derriere-un-vpn-via-une-vm/</guid>
+      <description>Un petit schéma pour expliquer comment j&amp;rsquo;accède à fitnesse depuis mon poste linux.
+Le VPN est monté dans la VM, un local port forwarding permet d&amp;rsquo;accéder à fitnesse dans la VM.
+Un remote port forwarding permet d&amp;rsquo;écouter et répondre aux interrogations faites depuis le poste linux.</description>
+    </item>
+    
+    <item>
+      <title>ssh, local forwarding</title>
+      <link>http://example.org/posts/2020-10-08-ssh-local-forwarding/</link>
+      <pubDate>Thu, 08 Oct 2020 09:24:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-10-08-ssh-local-forwarding/</guid>
+      <description>Exemple :
+depuis le poste local, lancer firefox et aller sur http://127.0.0.1:7533 les requêtes transitent dans le tunnel SSH (user@example.com) à la sortie, elles partent sur le host 127.0.0.1 port 7575 où tourne le fitnesse ssh user@example.com -N -L 7533:127.0.0.1:7575 </description>
+    </item>
+    
+    <item>
+      <title>ssh &amp; scripts automatisés, The authenticity of host can&#39;t be established</title>
+      <link>http://example.org/posts/2017-05-23-ssh-scripts-automatises-the-authenticity-of-host-can-t-be-established/</link>
+      <pubDate>Tue, 23 May 2017 10:15:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2017-05-23-ssh-scripts-automatises-the-authenticity-of-host-can-t-be-established/</guid>
+      <description>Lors d&amp;rsquo;appels de scripts automatisés pour &amp;ldquo;calculer&amp;rdquo; ce qui est à mettre en préproduction, j&amp;rsquo;ai souvent des &amp;ldquo;The authenticity of host can&amp;rsquo;t be established&amp;rdquo;. Peut-être parce que la machine est puppétisée&amp;hellip;
+Soit il faut répondre manuellement, soit il faut éviter d&amp;rsquo;avoir le prompt&amp;hellip;
+Pour éviter d&amp;rsquo;avoir à répondre, on peut ajouter l&amp;rsquo;option &amp;ldquo;-o StrictHostKeyChecking=no&amp;rdquo; à ses commandes SSH.
+$ ssh user@host.example.com Pseudo-terminal will not be allocated because stdin is not a terminal.</description>
+    </item>
+    
+    <item>
+      <title>ssh, tester l&#39;état d&#39;une connexion</title>
+      <link>http://example.org/posts/2016-07-12-ssh-tester-l-etat-d-une-connexion/</link>
+      <pubDate>Tue, 12 Jul 2016 14:18:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-07-12-ssh-tester-l-etat-d-une-connexion/</guid>
+      <description>Voici un petit code qui permet de tester l&amp;rsquo;état d&amp;rsquo;une connexion ssh (avec un timeout de 10s) :
+ssh -q -o BatchMode=yes -o ConnectTimeout=10 user@example.com exit # ou: # timeout -k 10 10 ssh user@example.com exit res=$? if [ $res -ne 0 ]; then echo Accès KO else echo Accès OK fi </description>
+    </item>
+    
+    <item>
+      <title>ssh, exécuter un sudo par ssh sans saisir son mot de passe (pour sudo)...</title>
+      <link>http://example.org/posts/2016-02-12-ssh-executer-un-sudo-par-ssh-sans-saisir-son-mot-de-passe-pour-sudo/</link>
+      <pubDate>Fri, 12 Feb 2016 10:57:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-02-12-ssh-executer-un-sudo-par-ssh-sans-saisir-son-mot-de-passe-pour-sudo/</guid>
+      <description>Dans le cadre de mon projet, on souhaitait pouvoir exécuter des redémarrages de services depuis son poste local sur des machines accessibles par ssh mais dont on n&amp;rsquo;avait pas accès au compte root.
+Le service est cependant redémmarrable via sudo mais un mot de passe était demandé.
+Nous avons mis en place un script qui lit dans un fichier de conf le mot de passe et exécute le sudo (et remplis le mot de passe du sudo) par ssh.</description>
+    </item>
+    
+    <item>
+      <title>ssh, oubli d&#39;ajout...</title>
+      <link>http://example.org/posts/2016-02-11-ssh-oubli-d-ajout/</link>
+      <pubDate>Thu, 11 Feb 2016 16:08:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-02-11-ssh-oubli-d-ajout/</guid>
+      <description>Ca fait longtemps que j&amp;rsquo;utilise ssh mais je n&amp;rsquo;avais rien ajouté au blog le concernant&amp;hellip;
+* ssh-keygen permet de générer sa clé publique et sa clé privée * ssh-copy-id permet de copier sa clé publique sur la machine distante dans le compte spécifié (si non spécifié utilise votre login) SYNOPSIS ssh-copy-id [-n] [-i [identity_file]] [-p port] [-o ssh_option] [user@]hostname * ssh permet de se connecter à la machine distante ssh [user@]hostname </description>
+    </item>
+    
+  </channel>
+</rss>

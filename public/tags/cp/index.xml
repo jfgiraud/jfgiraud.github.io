@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cp on Mezalor</title>
+    <link>http://example.org/tags/cp/</link>
+    <description>Recent content in cp on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 04 May 2021 17:29:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/cp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, copier les fichiers d&#39;une sortie standard vers un répertoire en utilisant xargs et cp</title>
+      <link>http://example.org/posts/2021-05-04-bash-copier-les-fichiers-d-une-sortie-standard-vers-un-repertoire-en-utilisant-xargs-et-cp/</link>
+      <pubDate>Tue, 04 May 2021 17:29:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-05-04-bash-copier-les-fichiers-d-une-sortie-standard-vers-un-repertoire-en-utilisant-xargs-et-cp/</guid>
+      <description>find . -name *.tgz | xargs cp -t ~/OLD/ </description>
+    </item>
+    
+  </channel>
+</rss>

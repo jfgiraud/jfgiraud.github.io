@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>uniq on Mezalor</title>
+    <link>http://example.org/tags/uniq/</link>
+    <description>Recent content in uniq on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Tue, 09 Jul 2019 15:52:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/uniq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, lignes dupliquées</title>
+      <link>http://example.org/posts/2019-07-09-bash-lignes-dupliquees/</link>
+      <pubDate>Tue, 09 Jul 2019 15:52:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2019-07-09-bash-lignes-dupliquees/</guid>
+      <description>Dans d&amp;rsquo;anciens post, j&amp;rsquo;avais parlé de la commande uniq
+Il est possible de ne garder que les lignes dupliquées. Il faut utiliser l&amp;rsquo;option -d
+$ for A in 1 3 4 2 3 1 1 1 3; do echo $A; done | sort | uniq -dc 4 1 3 3 </description>
+    </item>
+    
+  </channel>
+</rss>

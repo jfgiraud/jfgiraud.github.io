@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>recode on Mezalor</title>
+    <link>http://example.org/tags/recode/</link>
+    <description>Recent content in recode on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 09 Sep 2016 15:11:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/recode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>base64, encoder/décoder sous bash</title>
+      <link>http://example.org/posts/2016-09-09-base64-encoder-decoder-sous-bash/</link>
+      <pubDate>Fri, 09 Sep 2016 15:11:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-09-09-base64-encoder-decoder-sous-bash/</guid>
+      <description>On peut utiliser les programmes base64 (GNU coreutils) voir recode.
+$ echo &amp;#34;Tralala pouet pouet&amp;#34; Tralala pouet pouet $ echo &amp;#34;Tralala pouet pouet&amp;#34; | base64 VHJhbGFsYSBwb3VldCBwb3VldAo= $ echo VHJhbGFsYSBwb3VldCBwb3VldAo= | base64 -d Tralala pouet pouet $ echo VHJhbGFsYSBwb3VldCBwb3VldAo= | recode /b64 Tralala pouet pouet $ echo &amp;#34;Tralala pouet pouet&amp;#34; | recode ../b64 VHJhbGFsYSBwb3VldCBwb3VldAo= </description>
+    </item>
+    
+    <item>
+      <title>recode, outil de conversion de jeux de caractères</title>
+      <link>http://example.org/posts/2016-07-11-recode-outil-de-conversion-de-jeux-de-caracteres/</link>
+      <pubDate>Mon, 11 Jul 2016 15:00:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-07-11-recode-outil-de-conversion-de-jeux-de-caracteres/</guid>
+      <description>$ echo &amp;#39;a&amp;amp;lt;b&amp;amp;amp;&amp;amp;nbsp;c&amp;amp;eacute;&amp;#39; | recode html a&amp;lt;b&amp;amp; cé </description>
+    </item>
+    
+  </channel>
+</rss>

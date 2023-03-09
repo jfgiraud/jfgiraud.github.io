@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>io on Mezalor</title>
+    <link>http://example.org/tags/io/</link>
+    <description>Recent content in io on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 17 Sep 2012 10:33:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, stdin et stdout</title>
+      <link>http://example.org/posts/2012-09-17-bash-stdin-et-stdout/</link>
+      <pubDate>Mon, 17 Sep 2012 10:33:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-09-17-bash-stdin-et-stdout/</guid>
+      <description>Un petit rappel sur les redirections.
+Le document http://tldp.org/LDP/abs/html/io-redirection.html#IOREDIRREF est très bien aussi.
+$ ( echo quelque chose sur stderr &amp;gt;&amp;amp;2; echo autre chose sur stdout ) &amp;gt; /dev/null quelque chose sur stderr $ ( echo quelque chose sur stderr &amp;gt;&amp;amp;2; echo autre chose sur stdout ) 2&amp;gt; /dev/null autre chose sur stdout $ ( echo quelque chose sur stderr &amp;gt;&amp;amp;2; echo autre chose sur stdout ) &amp;amp;&amp;gt; /dev/null $ </description>
+    </item>
+    
+  </channel>
+</rss>

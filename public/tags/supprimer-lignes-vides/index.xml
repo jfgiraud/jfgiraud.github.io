@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>supprimer lignes vides on Mezalor</title>
+    <link>http://example.org/tags/supprimer-lignes-vides/</link>
+    <description>Recent content in supprimer lignes vides on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 17 Oct 2012 10:06:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/supprimer-lignes-vides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash, supprimer les lignes vides d&#39;un fichier</title>
+      <link>http://example.org/posts/2012-10-17-bash-supprimer-les-lignes-vides-d-un-fichier/</link>
+      <pubDate>Wed, 17 Oct 2012 10:06:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2012-10-17-bash-supprimer-les-lignes-vides-d-un-fichier/</guid>
+      <description>Voici plusieurs solutions
+$ cat ~/fichier | sed -e &amp;#39;s/^[[:space:]]*$//;/^$/d&amp;#39; $ cat ~/fichier | awk NF où NF indique le nombre de champs. Si ce n&amp;rsquo;est pas une ligne vide, le nombre de champs est positif et la commande par défaut de awk est d&amp;rsquo;afficher. Ce qui équivaut à :
+$ cat ~/fichier | awk &amp;#39;NF!=0 { print }&amp;#39; </description>
+    </item>
+    
+  </channel>
+</rss>

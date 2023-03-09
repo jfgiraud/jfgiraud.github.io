@@ -1,4 +1,19 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = "fr"
+defaultContentLanguage = "fr"
+title = 'Mezalor'
 theme = 'hugo-ficurinia'
+
+[params]
+    author = 'Jean-François Giraud'
+    description = 'J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté...'
+    titleFontSizeMultiplier = 1
+    mainFontSizeMultiplier = 1
+    monoFontSizeMultiplier = 1
+
+[menu]
+    [[menu.icons]]
+        identifier = "github"
+        name = "GitHub"
+        url = "https://github.com/jfgiraud"
+        weight = 10

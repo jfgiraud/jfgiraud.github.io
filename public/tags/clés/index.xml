@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>clés on Mezalor</title>
+    <link>http://example.org/tags/cl%C3%A9s/</link>
+    <description>Recent content in clés on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Sat, 24 Oct 2015 11:34:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/cl%C3%A9s/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>archlinux, problème de clé sur mise à jour beautiful-soup4</title>
+      <link>http://example.org/posts/2015-10-24-archlinux-probleme-de-cle-sur-mise-a-jour-beautiful-soup4/</link>
+      <pubDate>Sat, 24 Oct 2015 11:34:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-10-24-archlinux-probleme-de-cle-sur-mise-a-jour-beautiful-soup4/</guid>
+      <description>erreur: python-beautifulsoup4: key &amp;#34;Daniel Wallace &amp;lt;danielwallace@gtmanfred.com&amp;gt;&amp;#34; is disabled :: Le fichier /var/cache/pacman/pkg/python-beautifulsoup4-4.4.1-1-any.pkg.tar.xz est corrompu (paquet invalide ou corrompu (signature PGP)). # pacman-key --edit-key &amp;#39;danielwallace@gtmanfred.com&amp;#39; pub rsa2048/4F010D48 créé: 2012-03-02 expire: jamais utilisation: SC confiance: inconnu validité: totale *** Cette clef a été désactivée sub rsa2048/182ADEA0 créé: 2012-03-02 expire: jamais utilisation: E [ totale ] (1). Daniel Wallace &amp;lt;danielwallace@gtmanfred.com&amp;gt; [ totale ] (2) Daniel Wallace &amp;lt;daniel.wallace12@gmail.com&amp;gt; [ totale ] (3) Daniel Wallace (gtmanfred) &amp;lt;daniel.</description>
+    </item>
+    
+  </channel>
+</rss>

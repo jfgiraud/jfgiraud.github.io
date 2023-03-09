@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>historique on Mezalor</title>
+    <link>http://example.org/tags/historique/</link>
+    <description>Recent content in historique on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 20 Nov 2015 09:45:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/historique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git, joli historique </title>
+      <link>http://example.org/posts/2015-11-20-git-joli-historique/</link>
+      <pubDate>Fri, 20 Nov 2015 09:45:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-11-20-git-joli-historique/</guid>
+      <description>git log --all --graph --color --name-status --format=&amp;#34;%C(yellow)%h%C(reset) %C(auto)%d%C(reset) %s&amp;#34; http://blog.xebia.fr/2015/11/13/git-essentials-1-log/</description>
+    </item>
+    
+  </channel>
+</rss>

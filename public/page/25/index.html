@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html class="home" lang="fr"><head>
+	<meta name="generator" content="Hugo 0.111.2">
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    
+        
+          <link href="http://example.org/index.xml" rel="alternate" type="application/rss+xml" title="Mezalor" />
+          <link href="http://example.org/index.xml" rel="feed" type="application/rss+xml" title="Mezalor" />
+        
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title"
+        content='Mezalor' />
+    
+        <meta property="og:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta property="og:type" content="blog" />
+    <meta property="og:image"
+        content='http://example.org/img/icon.svg' />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/" />
+
+
+    <meta name="twitter:title"
+        content='Mezalor' />
+    
+        <meta name="twitter:description" content="J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté..." />
+    
+    <meta name="twitter:image"
+        content='http://example.org/img/icon.svg' />
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+    
+    
+    
+
+<body>
+        <div id="baseContainer"><header class="jumbotronContainer">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+
+    
+    
+    
+
+
+
+
+
+    
+
+
+
+<div class="postlist " id="postlist">
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-07-20-bash-tri-par-longueur-de-ligne/">bash, tri par longueur de ligne</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-07-20
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        La commande sort ne permet pas de trier en fonction de la longueur des lignes. C&rsquo;est dommage mais on peut utiliser awk, combiné avec sort pour avoir le même résultat. $ cat /usr/share/dict/words | awk &lsquo;{ print length(), $0 | &ldquo;sort -n&rdquo; }&rsquo; | cut -d &rsquo; &rsquo; -f 2- 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-07-20-bash-tri-par-longueur-de-ligne/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-07-17-jetty-8-et-parametres-d-initialisation/">Jetty 8 et paramètres d&#39;initialisation</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-07-17
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        La documentation sur le net est obscure quant à la manière d&rsquo;initialiser les paramètres de contexte avec jetty (hors du web.xml dans le webdefault.xml (équivalent du host.xml de tomcat)).
+J&rsquo;ai cherché, cherché et cherché&hellip;
+Et puis j&rsquo;ai trouvé :) Le nouveau code est le suivant : &lt;?xml version=&ldquo;1.0&rdquo; encoding=&ldquo;ISO-8859-1&rdquo;?&gt; &lt;!DOCTYPE Configure PUBLIC &ldquo;-//Mort Bay Consulting//DTD Configure//EN&rdquo; &ldquo;http://www.eclipse.org/jetty/configure.dtd&quot;&gt;
+&lt;Configure class=&ldquo;org.eclipse.jetty.webapp.WebAppContext&rdquo;&gt;
+&lt;Set name=&ldquo;sessionHandler&rdquo;&gt; &lt;New class=&ldquo;org.eclipse.jetty.server.session.SessionHandler&rdquo;&gt; &lt;Arg&gt; &lt;New class=&ldquo;org.eclipse.jetty.server.session.HashSessionManager&rdquo;&gt; &lt;Set name=&ldquo;storeDirectory&rdquo;&gt;jetty/sessions&lt;/Set&gt; &lt;/New&gt; &lt;/Arg&gt; &lt;/New&gt; &lt;/Set&gt; &lt;Get name=&ldquo;ServletContext&rdquo;&gt; &lt;Call name=&ldquo;setInitParameter&rdquo;&gt; &lt;Arg&gt;driverSQL&lt;/Arg&gt; &lt;Arg&gt;com.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-07-17-jetty-8-et-parametres-d-initialisation/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-07-17-servlets-et-encoding/">Servlets et encoding...</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-07-17
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        J&rsquo;ai eu des petit soucis avec le charset&hellip;
+Un svi envoyait bien &ldquo;text/csv; charset=utf-8&rdquo; (curl) mais pour une raison x ou y, mon ihm qui l&rsquo;appelait voyait &ldquo;text/plain;charset=ISO-8859-1&rdquo; ce qui faisait que le fichier était mal affiché.
+Dans le code ci-dessous, j&rsquo;ouvre une connection et récupère le charset afin d&rsquo;initialiser l&rsquo;InputStreamReader et commencer les lectures&hellip; URL url = new URL(sviUrl); URLConnection conn = url.openConnection();
+conn.connect(); InputStream in = null; try { String charset = &ldquo;ISO-8859-1&rdquo;; String contentType = conn.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-07-17-servlets-et-encoding/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-07-16-mysql-importer-un-fichier-csv/">mysql, importer un fichier csv</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-07-16
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Pour charger un fichier csv dans une table on peut utiliser la commande suivante : mysql&gt; load data infile &lsquo;/path/to/file.csv&rsquo; into table mytable character set &lsquo;utf8&rsquo; fields terminated by &lsquo;;&rsquo; IGNORE 1 lines; Query OK, 786 rows affected (0.13 sec) Records: 786 Deleted: 0 Skipped: 0 Warnings: 0 Ici, le charset est spécifié et la première ligne du fichier CSV est ignorée (titre des colonnes).
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-07-16-mysql-importer-un-fichier-csv/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-07-16-bash-recuperer-les-noms-de-fichiers-renvoyes-par-diff-rb-brief/">bash, récupérer les noms de fichiers renvoyés par diff -rb --brief</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-07-16
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        La commande &ldquo;diff -rb &ndash;brief&rdquo; génère des lignes user-friendly qui sont malheureusement localisées. Pour récupérer le nom des fichiers qui diffèrent, il est possible d&rsquo;utiliser la commande lsdiff du package patchutils. $ sudo apt-get install patchutils $ files_to_transfer=$(diff -x &lsquo;*.zip&rsquo; -x &lsquo;.svn&rsquo; -rb -U 1 fitnesse-install/FitNesseRoot/FrontPage/Project $dist_install/FrontPage/Project | lsdiff) 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-07-16-bash-recuperer-les-noms-de-fichiers-renvoyes-par-diff-rb-brief/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-07-16-python-unicode/">python, unicode...</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-07-16
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        
+unicodedata.name(u&quot;é&quot;) &lsquo;LATIN SMALL LETTER E WITH ACUTE&rsquo; print u&quot;e accent aigu : \N{LATIN SMALL LETTER E WITH ACUTE}&quot; e accent aigu : é 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-07-16-python-unicode/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-07-16-python-bash-et-encoding/">python, bash et encoding...</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-07-16
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        En python, lorsque la sortie n&rsquo;est pas de type tty, l&rsquo;encoding est &ldquo;ascii&rdquo; ce qui provoque des erreurs sur les caractères accentués. La solution est d&rsquo;exporter la variable PYTHONIOENCODING qui définit l&rsquo;encoding à utiliser. $ python a.py é $ python a.py | cat Traceback (most recent call last): File &ldquo;a.py&rdquo;, line 3, in print u&quot;\xe9&quot;; UnicodeEncodeError: &lsquo;ascii&rsquo; codec can&rsquo;t encode character u&rsquo;\xe9&rsquo; in position 0: ordinal not in range(128) $ export PYTHONIOENCODING=utf-8 $ python a.
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-07-16-python-bash-et-encoding/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-07-13-bash-moreutils/">bash, moreutils</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-07-13
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Je viens de découvrir un paquet mettant à disposition des outils bien sympathiques pour faciliter l&rsquo;écriture de scripts bash. Il s&rsquo;agit du paquet moreutils $ sudo apt-get install moreutils Exemples d&rsquo;utilisation : Pour envoyer un mail si des données sont lues sur l&rsquo;entrée standard&hellip; $ find . -name core | ifne mail -s &ldquo;Core files found&rdquo; root
+Pour réécrire dans un même fichier sans avoir à créer un fichier temporaire&hellip; $ sed &lsquo;&hellip;&rsquo; file | grep &lsquo;&hellip;&rsquo; | sponge file 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-07-13-bash-moreutils/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-07-03-url-et-mot-de-passe/">url et mot de passe</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-07-03
+
+
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Pour réduire mes logs, je viens d&rsquo;utiliser la syntaxe suivante : http://user:password@host:port&hellip; Ici, le mot de passe doit être encodé lorsque des caractères non alphanumériques sont utilisés (comprenez 0-9a-zA-Z). Chaque caractère non alphanumérique doit être encodé avec le format &ldquo;%xx&rdquo; où xx sera remplacé par le code hexadécimal du caractère. Exemple:
+def conv(pw): r = &rsquo;' for c in pw: if not c.isalpha(): r += &lsquo;%&rsquo; + &lsquo;%X&rsquo; % ord(c) else: r += c return r
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-07-03-url-et-mot-de-passe/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+<article class="card postlistitem">
+    <div>
+        <h2>
+            <a href="http://example.org/posts/2012-07-02-bash-fautes-sur-commande-cd/">bash, fautes sur commande cd...</a>
+        </h2>
+        <p class="date">
+            <span title='Date'> </span>
+    2012-07-02
+
+
+                | 
+                <span title='Tags'> </span>
+                
+                    <a href="/tags/bash">#bash</a>
+                
+                    <a href="/tags/cdspell">#cdspell</a>
+                
+            
+        </p>
+        
+        
+            <div class="articlePreview">
+                <p>
+                    
+                        Si l&rsquo;option cdspell est positionnée, les fautes de frappe dans la commande cd seront corrigées. Les erreurs prises en compte seront les caractères transposés, les caractères manquants et les caractères trop nombreux. Si un correctif est trouvé, le chemin utilisé pour le cd sera affiché et la commande exécutée. L&rsquo;option n&rsquo;est utilisée que dans le cas des shells intéractifs.
+$ shopt -s cdspell $ cd /ec /etc $ shopt -u cdspell 
+                    
+                </p>
+                <p><a href="http://example.org/posts/2012-07-02-bash-fautes-sur-commande-cd/">Continuer la lecture </a></p>
+            </div>
+        
+    </div>
+    <hr />
+</article>
+
+</div>
+<div id="getNextBtnContainer"></div>
+
+
+    
+    <div id="pageNavigation" class='
+            
+    '>
+        
+            <a href="/page/24/" title='Page précédente'>
+                
+                    &lt;&lt;&lt;
+                
+            </a>
+        
+        
+        
+            
+                <a href="/">1</a>
+            
+        
+            
+                <a href="/page/2/">2</a>
+            
+        
+            
+                <a href="/page/3/">3</a>
+            
+        
+            
+                <a href="/page/4/">4</a>
+            
+        
+            
+                <a href="/page/5/">5</a>
+            
+        
+            
+                <a href="/page/6/">6</a>
+            
+        
+            
+                <a href="/page/7/">7</a>
+            
+        
+            
+                <a href="/page/8/">8</a>
+            
+        
+            
+                <a href="/page/9/">9</a>
+            
+        
+            
+                <a href="/page/10/">10</a>
+            
+        
+            
+                <a href="/page/11/">11</a>
+            
+        
+            
+                <a href="/page/12/">12</a>
+            
+        
+            
+                <a href="/page/13/">13</a>
+            
+        
+            
+                <a href="/page/14/">14</a>
+            
+        
+            
+                <a href="/page/15/">15</a>
+            
+        
+            
+                <a href="/page/16/">16</a>
+            
+        
+            
+                <a href="/page/17/">17</a>
+            
+        
+            
+                <a href="/page/18/">18</a>
+            
+        
+            
+                <a href="/page/19/">19</a>
+            
+        
+            
+                <a href="/page/20/">20</a>
+            
+        
+            
+                <a href="/page/21/">21</a>
+            
+        
+            
+                <a href="/page/22/">22</a>
+            
+        
+            
+                <a href="/page/23/">23</a>
+            
+        
+            
+                <a href="/page/24/">24</a>
+            
+        
+            
+            <span>
+                [25]
+            </span>
+            
+        
+            
+                <a href="/page/26/">26</a>
+            
+        
+            
+                <a href="/page/27/">27</a>
+            
+        
+            
+                <a href="/page/28/">28</a>
+            
+        
+            
+                <a href="/page/29/">29</a>
+            
+        
+            
+                <a href="/page/30/">30</a>
+            
+        
+            
+                <a href="/page/31/">31</a>
+            
+        
+            
+                <a href="/page/32/">32</a>
+            
+        
+            
+                <a href="/page/33/">33</a>
+            
+        
+        
+            <a href="/page/26/" title='Page suivante'>
+                
+                    &gt;&gt;&gt;
+                
+            </a>
+        
+    </div>
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

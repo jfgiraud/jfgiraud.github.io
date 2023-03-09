@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="" lang="fr"><head>
+    
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.png'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            grep, extraire des données  &ndash;
+        
+        Mezalor
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" integrity="sha512-lydow8GLOLlYNOtHlksNCmGWWCBsbIEtikXpHzfWqx78HLlyQZHOzyLwPpKol4Th6aCwLUXOfODVYgwrd3nwKQ=="/>
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" integrity="sha512-tJxlgL6v1Y7kFf+qB8SloaAMKnOAw6WouknxXtIjkBux9Y/9aX81EUWOJO8c/3l98DmjG8brr4to7zaez606Fg=="/>
+
+    
+    
+    <link type="text/css" rel="stylesheet" href=http://example.org/css/styles.0e1d555204b33a1d39a8669b29e99a46097aa138b00b88d34610fed68eeabdc5fc4bc4b44e53bb13819744fbab67a5c6ff79190a00b2c90fdf40813e52087375.css integrity="sha512-Dh1VUgSzOh05qGabKemaRgl6oTiwC4jTRhD&#43;1o7qvcX8S8S0TlO7E4GXRPurZ6XG/3kZCgCyyQ/fQIE&#43;UghzdQ==" />
+<meta name="author" content="Jean-François Giraud" />
+
+    
+        <meta name="keywords" content='awk, grep, sed' />
+    
+    
+        <meta name="description" content="quo;utiliser grep pour extraire des données.
+Dans l&amp;rsquo;exemple qui suit, on récupère le nom des compagnies dans un fichier json.
+s=&amp;#39;[{&amp;#34;_id&amp;#34;:&amp;#34;6040e2f5ed4a6976ab0e8719&amp;#34;,&amp;#34;index&amp;#34;:0,&amp;#34;guid&amp;#34;:&amp;#34;5b71d966-1df3-4f22-8941-27d83e0181f2&amp;#34;,&amp;#34;isActive&amp;#34;:true,&amp;#34;balance&amp;#34;:&amp;#34;$2,464.05&amp;#34;,&amp;#34;picture&amp;#34;:&amp;#34;http://placehold.it/32x32&amp;#34;,&amp;#34;age&amp;#34;:36,&amp;#34;eyeColor&amp;#34;:&amp;#34;brown&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;House Hays&amp;#34;,&amp;#34;gender&amp;#34;:&amp;#34;male&amp;#34;,&amp;#34;company&amp;#34;:&amp;#34;WEBIOTIC&amp;#34;,&amp;#34;email&amp;#34;:&amp;#34;househays@webiotic.com&amp;#34;,&amp;#34;phone&amp;#34;:&amp;#34;&#43;1 (921) 461-3048&amp;#34;,&amp;#34;address&amp;#34;:&amp;#34;246 Butler Street, Lydia, Federated States Of Micronesia, 8224&amp;#34;,&amp;#34;about&amp;#34;:&amp;#34;Labore proident eu non dolor reprehenderit et qui et pariatur. Consectetur quis incididunt aliqua cupidatat exercitation ex nulla ullamco reprehenderit deserunt. Velit cillum elit esse eu eiusmod cupidatat in fugiat ullamco. Labore labore officia minim sunt do." />
+    
+
+<meta property="og:site_name"
+    content='Mezalor' />
+
+    <meta property="og:title" content="grep, extraire des données" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Jean-François Giraud" />
+    <meta
+        property="article:published_time"
+        content='2021-03-04T14:50:00Z&#43;0100' />
+    
+        
+            <meta property="article:tag" content="awk" />
+        
+            <meta property="article:tag" content="grep" />
+        
+            <meta property="article:tag" content="sed" />
+        
+    
+    <meta property="og:url" content="http://example.org/posts/2021-03-04-grep-extraire-des-donnees/" />
+    
+    
+    <meta property="og:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta property="og:description" content="Il est possible d&amp;rsquo;utiliser grep pour extraire des données.
+Dans l&amp;rsquo;exemple qui suit, on récupère le nom des compagnies dans un fichier json.
+s=&amp;#39;[" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='example.org'
+/>
+<meta property="twitter:url" content="http://example.org/posts/2021-03-04-grep-extraire-des-donnees/" />
+
+
+    <meta name="twitter:title" content="grep, extraire des données" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="http://example.org/img/icon.svg" />
+    
+        <meta name="twitter:description" content="Il est possible d&amp;rsquo;utiliser grep pour extraire des données.
+Dans l&amp;rsquo;exemple qui suit, on récupère le nom des compagnies dans un fichier json.
+s=&amp;#39;[" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Mezalor</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts">Posts</a></li>
+        
+        
+        
+        
+        
+        
+        
+            <li><a href="/tags">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Chercher' />
+    <a class="nerdlink" onclick="newSearch();">&#xf002;</a>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/jfgiraud">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>grep, extraire des données</h1>
+    
+    
+        <p class="date">
+            <span title='Date'> </span>
+    2021-03-04
+
+</p>
+    
+    
+    
+    
+    <div><p>Il est possible d&rsquo;utiliser grep pour extraire des données.</p>
+<p>Dans l&rsquo;exemple qui suit, on récupère le nom des compagnies dans un fichier json.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>s<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;[{&#34;_id&#34;:&#34;6040e2f5ed4a6976ab0e8719&#34;,&#34;index&#34;:0,&#34;guid&#34;:&#34;5b71d966-1df3-4f22-8941-27d83e0181f2&#34;,&#34;isActive&#34;:true,&#34;balance&#34;:&#34;$2,464.05&#34;,&#34;picture&#34;:&#34;http://placehold.it/32x32&#34;,&#34;age&#34;:36,&#34;eyeColor&#34;:&#34;brown&#34;,&#34;name&#34;:&#34;House Hays&#34;,&#34;gender&#34;:&#34;male&#34;,&#34;company&#34;:&#34;WEBIOTIC&#34;,&#34;email&#34;:&#34;househays@webiotic.com&#34;,&#34;phone&#34;:&#34;+1 (921) 461-3048&#34;,&#34;address&#34;:&#34;246 Butler Street, Lydia, Federated States Of Micronesia, 8224&#34;,&#34;about&#34;:&#34;Labore proident eu non dolor reprehenderit et qui et pariatur. Consectetur quis incididunt aliqua cupidatat exercitation ex nulla ullamco reprehenderit deserunt. Velit cillum elit esse eu eiusmod cupidatat in fugiat ullamco. Labore labore officia minim sunt do. Mollit nisi tempor amet in dolor nostrud ipsum. Enim dolore ipsum ad aliquip excepteur in dolore culpa ullamco officia fugiat do sint mollit. Anim et enim nulla laboris irure aute eu excepteur sunt sint.\r\n&#34;,&#34;registered&#34;:&#34;2015-10-22T07:38:03 -02:00&#34;,&#34;latitude&#34;:-79.514578,&#34;longitude&#34;:109.061478,&#34;tags&#34;:[&#34;ad&#34;,&#34;laboris&#34;,&#34;proident&#34;,&#34;exercitation&#34;,&#34;exercitation&#34;,&#34;excepteur&#34;,&#34;consectetur&#34;],&#34;friends&#34;:[{&#34;id&#34;:0,&#34;name&#34;:&#34;Edwards Cooper&#34;},{&#34;id&#34;:1,&#34;name&#34;:&#34;Simpson Walker&#34;},{&#34;id&#34;:2,&#34;name&#34;:&#34;Moore Stone&#34;}],&#34;greeting&#34;:&#34;Hello, House Hays! You have 3 unread messages.&#34;,&#34;favoriteFruit&#34;:&#34;banana&#34;},{&#34;_id&#34;:&#34;6040e2f5385b7b47615c878e&#34;,&#34;index&#34;:1,&#34;guid&#34;:&#34;7533ebb0-4155-497f-a638-86bbc88f2359&#34;,&#34;isActive&#34;:true,&#34;balance&#34;:&#34;$1,895.01&#34;,&#34;picture&#34;:&#34;http://placehold.it/32x32&#34;,&#34;age&#34;:32,&#34;eyeColor&#34;:&#34;blue&#34;,&#34;name&#34;:&#34;Whitley Petersen&#34;,&#34;gender&#34;:&#34;male&#34;,&#34;company&#34;:&#34;RUGSTARS&#34;,&#34;email&#34;:&#34;whitleypetersen@rugstars.com&#34;,&#34;phone&#34;:&#34;+1 (898) 523-3046&#34;,&#34;address&#34;:&#34;954 Downing Street, Mulberry, New York, 837&#34;,&#34;about&#34;:&#34;Consequat dolor non enim exercitation. Ipsum nulla aliqua dolor non excepteur eu dolore. Veniam laboris nulla elit exercitation est ut eiusmod amet consequat Lorem. Cupidatat ea aute do ipsum culpa dolor Lorem. Aliqua eiusmod exercitation do aliqua consequat pariatur cillum labore laboris reprehenderit ad nulla velit. Non et nostrud pariatur laborum sint magna et dolor elit. Deserunt nostrud culpa minim velit incididunt excepteur laborum.\r\n&#34;,&#34;registered&#34;:&#34;2020-04-09T11:24:58 -02:00&#34;,&#34;latitude&#34;:-33.683353,&#34;longitude&#34;:-110.189524,&#34;tags&#34;:[&#34;do&#34;,&#34;elit&#34;,&#34;dolore&#34;,&#34;sint&#34;,&#34;ullamco&#34;,&#34;cillum&#34;,&#34;deserunt&#34;],&#34;friends&#34;:[{&#34;id&#34;:0,&#34;name&#34;:&#34;Debbie Wolf&#34;},{&#34;id&#34;:1,&#34;name&#34;:&#34;Agnes Wilcox&#34;},{&#34;id&#34;:2,&#34;name&#34;:&#34;Marie Williams&#34;}],&#34;greeting&#34;:&#34;Hello, Whitley Petersen! You have 6 unread messages.&#34;,&#34;favoriteFruit&#34;:&#34;banana&#34;},{&#34;_id&#34;:&#34;6040e2f5174a92a3e83ffa0b&#34;,&#34;index&#34;:2,&#34;guid&#34;:&#34;3c93e708-98a3-4316-ae31-c34b06e615c3&#34;,&#34;isActive&#34;:true,&#34;balance&#34;:&#34;$3,116.35&#34;,&#34;picture&#34;:&#34;http://placehold.it/32x32&#34;,&#34;age&#34;:34,&#34;eyeColor&#34;:&#34;brown&#34;,&#34;name&#34;:&#34;Maribel Palmer&#34;,&#34;gender&#34;:&#34;female&#34;,&#34;company&#34;:&#34;PYRAMIS&#34;,&#34;email&#34;:&#34;maribelpalmer@pyramis.com&#34;,&#34;phone&#34;:&#34;+1 (981) 596-3081&#34;,&#34;address&#34;:&#34;810 Prince Street, Bethpage, Oregon, 3792&#34;,&#34;about&#34;:&#34;Magna deserunt ex do laborum. Velit magna esse pariatur qui sit fugiat adipisicing est labore veniam adipisicing non velit laboris. Deserunt enim aliquip ad consectetur aliqua non commodo.\r\n&#34;,&#34;registered&#34;:&#34;2019-08-28T09:48:02 -02:00&#34;,&#34;latitude&#34;:-9.35305,&#34;longitude&#34;:-139.197267,&#34;tags&#34;:[&#34;exercitation&#34;,&#34;ad&#34;,&#34;officia&#34;,&#34;qui&#34;,&#34;aliquip&#34;,&#34;quis&#34;,&#34;ea&#34;],&#34;friends&#34;:[{&#34;id&#34;:0,&#34;name&#34;:&#34;Ines Johnson&#34;},{&#34;id&#34;:1,&#34;name&#34;:&#34;Jacquelyn Matthews&#34;},{&#34;id&#34;:2,&#34;name&#34;:&#34;April Hayes&#34;}],&#34;greeting&#34;:&#34;Hello, Maribel Palmer! You have 6 unread messages.&#34;,&#34;favoriteFruit&#34;:&#34;banana&#34;},{&#34;_id&#34;:&#34;6040e2f5e6aa8f70f5d40970&#34;,&#34;index&#34;:3,&#34;guid&#34;:&#34;6b79f9a7-39d5-4076-bc0e-b2c00e88c99a&#34;,&#34;isActive&#34;:false,&#34;balance&#34;:&#34;$3,668.00&#34;,&#34;picture&#34;:&#34;http://placehold.it/32x32&#34;,&#34;age&#34;:23,&#34;eyeColor&#34;:&#34;green&#34;,&#34;name&#34;:&#34;Sheppard Branch&#34;,&#34;gender&#34;:&#34;male&#34;,&#34;company&#34;:&#34;UTARA&#34;,&#34;email&#34;:&#34;sheppardbranch@utara.com&#34;,&#34;phone&#34;:&#34;+1 (848) 436-2200&#34;,&#34;address&#34;:&#34;755 Everett Avenue, Boykin, Nevada, 8790&#34;,&#34;about&#34;:&#34;Excepteur mollit dolor ea nisi commodo. Adipisicing id pariatur dolor ut culpa laborum exercitation ea ex excepteur culpa. Cupidatat eu aute dolore quis deserunt velit enim sint nulla adipisicing Lorem laboris labore. Ut officia ad aute esse cupidatat enim labore tempor mollit Lorem esse amet consectetur.\r\n&#34;,&#34;registered&#34;:&#34;2015-03-11T06:13:39 -01:00&#34;,&#34;latitude&#34;:88.153716,&#34;longitude&#34;:161.643917,&#34;tags&#34;:[&#34;sint&#34;,&#34;culpa&#34;,&#34;elit&#34;,&#34;consectetur&#34;,&#34;qui&#34;,&#34;consectetur&#34;,&#34;quis&#34;],&#34;friends&#34;:[{&#34;id&#34;:0,&#34;name&#34;:&#34;Vicky Terry&#34;},{&#34;id&#34;:1,&#34;name&#34;:&#34;Stevens Lawson&#34;},{&#34;id&#34;:2,&#34;name&#34;:&#34;Manuela Glenn&#34;}],&#34;greeting&#34;:&#34;Hello, Sheppard Branch! You have 10 unread messages.&#34;,&#34;favoriteFruit&#34;:&#34;strawberry&#34;},{&#34;_id&#34;:&#34;6040e2f5e42d8b2deda76c13&#34;,&#34;index&#34;:4,&#34;guid&#34;:&#34;02518c89-9f2c-41ee-92e7-ea83bb9c592e&#34;,&#34;isActive&#34;:false,&#34;balance&#34;:&#34;$1,503.78&#34;,&#34;picture&#34;:&#34;http://placehold.it/32x32&#34;,&#34;age&#34;:26,&#34;eyeColor&#34;:&#34;brown&#34;,&#34;name&#34;:&#34;Winters Robertson&#34;,&#34;gender&#34;:&#34;male&#34;,&#34;company&#34;:&#34;ESSENSIA&#34;,&#34;email&#34;:&#34;wintersrobertson@essensia.com&#34;,&#34;phone&#34;:&#34;+1 (974) 450-3181&#34;,&#34;address&#34;:&#34;722 Dahlgreen Place, Keyport, Indiana, 7084&#34;,&#34;about&#34;:&#34;Mollit enim consectetur tempor nulla duis quis qui consectetur. Veniam cillum minim laboris do quis. Sit labore pariatur nostrud occaecat officia.\r\n&#34;,&#34;registered&#34;:&#34;2021-01-25T01:23:37 -01:00&#34;,&#34;latitude&#34;:60.075124,&#34;longitude&#34;:94.701108,&#34;tags&#34;:[&#34;cupidatat&#34;,&#34;consequat&#34;,&#34;culpa&#34;,&#34;sit&#34;,&#34;commodo&#34;,&#34;nulla&#34;,&#34;consectetur&#34;],&#34;friends&#34;:[{&#34;id&#34;:0,&#34;name&#34;:&#34;Bridgett Hampton&#34;},{&#34;id&#34;:1,&#34;name&#34;:&#34;Macdonald Oneill&#34;},{&#34;id&#34;:2,&#34;name&#34;:&#34;Mills Robinson&#34;}],&#34;greeting&#34;:&#34;Hello, Winters Robertson! You have 10 unread messages.&#34;,&#34;favoriteFruit&#34;:&#34;strawberry&#34;}]&#39;</span>
+</span></span></code></pre></div><p>L&rsquo;option <code>-P</code> active la compatibilité aux regexp PERL, le <code>-o</code> la récupération du terme matché et enfin le <code>\K</code> la suppression de la partie gauche dans le terme matché.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ echo $s | grep -Po <span style="color:#e6db74">&#39;&#34;company&#34;:&#34;\K[^&#34;]+&#39;</span>
+</span></span><span style="display:flex;"><span>WEBIOTIC
+</span></span><span style="display:flex;"><span>RUGSTARS
+</span></span><span style="display:flex;"><span>PYRAMIS
+</span></span><span style="display:flex;"><span>UTARA
+</span></span><span style="display:flex;"><span>ESSENSIA 
+</span></span></code></pre></div><p>C&rsquo;est plus simple que sed ou awk mais apparemment, le <code>-P</code> ne serait pas supporté sur toutes les distributions.</p>
+</div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/awk">#awk</a>
+        
+            <a
+                
+                href="/tags/grep">#grep</a>
+        
+            <a
+                
+                href="/tags/sed">#sed</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2023 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

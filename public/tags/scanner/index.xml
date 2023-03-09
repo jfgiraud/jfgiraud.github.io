@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scanner on Mezalor</title>
+    <link>http://example.org/tags/scanner/</link>
+    <description>Recent content in scanner on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 30 Aug 2021 09:06:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/scanner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scanner Brother ADS1600W, problème linux lors de l&#39;envoi en FTP</title>
+      <link>http://example.org/posts/2021-08-30-scanner-brother-ads1600w-probleme-linux-lors-de-l-envoi-en-ftp/</link>
+      <pubDate>Mon, 30 Aug 2021 09:06:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-08-30-scanner-brother-ads1600w-probleme-linux-lors-de-l-envoi-en-ftp/</guid>
+      <description>L&amp;rsquo;envoi en FTP ne fonctionne pas avec le paquet vsftpd (bien que l&amp;rsquo;envoi d&amp;rsquo;une page de test depuis l&amp;rsquo;interface de gestion du scanner indique OK).
+sudo apt install vsftpd Lors du scan d&amp;rsquo;un document réel, le scanner indique &amp;ldquo;Sending error&amp;rdquo; sans plus d&amp;rsquo;information.
+En changeant le serveur FTP, cela passe.
+Prendre
+sudo apt install pure-ftpd-common </description>
+    </item>
+    
+    <item>
+      <title>Linux Mint 17.3, Scanner Canon LIDE 110</title>
+      <link>http://example.org/posts/2016-09-07-linux-mint-17-3-scanner-canon-lide-110/</link>
+      <pubDate>Wed, 07 Sep 2016 10:44:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-09-07-linux-mint-17-3-scanner-canon-lide-110/</guid>
+      <description>J&amp;rsquo;ai eu un problème avec mon scanner lors de la réinstallation de mon système.
+Il scannait la première page mais impossible de scanner les suivantes&amp;hellip; sans déconnecter et reconnecter le scanner.
+Et bien souvent, même en le reconnectant, cela ne fonctionnait pas.
+Du coup, après quelques recheches google, je suis tombé sur cette page
+https://bugs.launchpad.net/ubuntu/+source/sane-backends/+bug/1184699
+C&amp;rsquo;est le commentaire #27 qui m&amp;rsquo;a permis de trouver la procédure pour résoudre le problème</description>
+    </item>
+    
+  </channel>
+</rss>

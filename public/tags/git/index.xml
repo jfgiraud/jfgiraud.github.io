@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Mezalor</title>
+    <link>http://example.org/tags/git/</link>
+    <description>Recent content in git on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Sat, 13 Jun 2020 11:27:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jar, github, repo : transfert des anciens jars vers le repo définitif</title>
+      <link>http://example.org/posts/2020-06-13-jar-github-repo-transfert-des-anciens-jars-vers-le-repo-definitif/</link>
+      <pubDate>Sat, 13 Jun 2020 11:27:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-06-13-jar-github-repo-transfert-des-anciens-jars-vers-le-repo-definitif/</guid>
+      <description>Manipulations pour les envoyer vers maven.pkg.github.com en ligne de commande
+~/.m2/settings.xml &amp;lt;server&amp;gt; &amp;lt;id&amp;gt;jfgiraud-repo&amp;lt;/id&amp;gt; &amp;lt;username&amp;gt;jfgiraud&amp;lt;/username&amp;gt; &amp;lt;password&amp;gt;{{{votre token : https://github.com/settings/tokens}}}&amp;lt;/password&amp;gt; &amp;lt;/server&amp;gt; Envoi des fichiers récupérés de l&amp;#39;ancien repo vers le nouveau for v in 1.5.3 2.0.0 2.0.1 2.0.2 2.0.3 2.0.4 2.0.5 2.0.6 2.0.7; do mvn deploy:deploy-file -DgroupId=com.github.jfgiraud -DartifactId=temmental -Dpackaging=jar -Durl=https://maven.pkg.github.com/jfgiraud/temmental -Dversion=$v -Dfile=temmental-$v.jar -DrepositoryId=jfgiraud-repo done EDIT: le système nécessite visiblement le paramétrage d&amp;rsquo;un token dans le settings.xml même pour télécharger le war. Ce cas d&amp;rsquo;usage me déçoit :(</description>
+    </item>
+    
+    <item>
+      <title>jar: repository sur github</title>
+      <link>http://example.org/posts/2020-06-13-jar-repository-sur-github/</link>
+      <pubDate>Sat, 13 Jun 2020 10:43:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-06-13-jar-repository-sur-github/</guid>
+      <description>Il y a bien longtemps, j&amp;rsquo;ai mis à disposition des jars sur github, via un repository
+https://github.com/jfgiraud/mvn-repo
+A l&amp;rsquo;époque, l&amp;rsquo;hébergement de jar ne devait pas exister ou bien, je n&amp;rsquo;étais ni tombé sur la documentation ni fais les bonnes recherches google.
+Donc, à savoir, github met à disposition un repo pour les paquets maven.
+Voici le lien vers la documentation : https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-apache-maven-for-use-with-github-packages</description>
+    </item>
+    
+    <item>
+      <title>git, object file is empty, loose object is corrupt</title>
+      <link>http://example.org/posts/2016-11-15-git-object-file-is-empty-loose-object-is-corrupt/</link>
+      <pubDate>Tue, 15 Nov 2016 10:21:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-11-15-git-object-file-is-empty-loose-object-is-corrupt/</guid>
+      <description>Sur des repo git sous jenkins, j&amp;rsquo;avais des problèmes&amp;hellip;
+Caused by: hudson.plugins.git.GitException: Command &amp;#34;git -c core.askpass=true fetch --tags --progress uuuu@xxxx.yyyy.zzz:aaaaa/bbbbb.git +refs/heads/*:refs/remotes/origin/*&amp;#34; returned status code 128: stdout: stderr: error: object file .git/objects/99/9de0c2f62f74a48912a0b407948f0e17fc12d3 is empty error: object file .git/objects/99/9de0c2f62f74a48912a0b407948f0e17fc12d3 is empty fatal: loose object 999de0c2f62f74a48912a0b407948f0e17fc12d3 (stored in .git/objects/99/9de0c2f62f74a48912a0b407948f0e17fc12d3) is corrupt fatal: The remote end hung up unexpectedly git stash cd .git/ &amp;amp;&amp;amp; find . -type f -empty -delete git stash clear Pour les résoudre, j&amp;rsquo;ai appliqué la solution de Nicolas disponible sur http://stackoverflow.</description>
+    </item>
+    
+    <item>
+      <title>git alias pour historique</title>
+      <link>http://example.org/posts/2016-08-22-git-alias-pour-historique/</link>
+      <pubDate>Mon, 22 Aug 2016 11:52:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-08-22-git-alias-pour-historique/</guid>
+      <description>git config --global alias.lg &amp;#34;log --color --graph --pretty=format:&amp;#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&amp;lt;%an&amp;gt;%Creset&amp;#39; --abbrev-commit&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>git, joli historique </title>
+      <link>http://example.org/posts/2015-11-20-git-joli-historique/</link>
+      <pubDate>Fri, 20 Nov 2015 09:45:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2015-11-20-git-joli-historique/</guid>
+      <description>git log --all --graph --color --name-status --format=&amp;#34;%C(yellow)%h%C(reset) %C(auto)%d%C(reset) %s&amp;#34; http://blog.xebia.fr/2015/11/13/git-essentials-1-log/</description>
+    </item>
+    
+  </channel>
+</rss>

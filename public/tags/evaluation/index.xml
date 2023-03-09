@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>evaluation on Mezalor</title>
+    <link>http://example.org/tags/evaluation/</link>
+    <description>Recent content in evaluation on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 09 Sep 2016 16:53:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/evaluation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sed, évaluer une commande bash lors du remplacement</title>
+      <link>http://example.org/posts/2016-09-09-sed-evaluer-une-commande-bash-lors-du-remplacement/</link>
+      <pubDate>Fri, 09 Sep 2016 16:53:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-09-09-sed-evaluer-une-commande-bash-lors-du-remplacement/</guid>
+      <description>Je souhaitai décoder des valeurs encodées en base64 via sed.
+Le paramètre final &amp;ldquo;/e&amp;rdquo; de sed permet d&amp;rsquo;évaluer l&amp;rsquo;expression remplacée.
+Ici c&amp;rsquo;est la commande bash qui affiche l&amp;rsquo;attribut suivi d&amp;rsquo;un &amp;lsquo;:&amp;rsquo; et de la valeur décodée.
+Comme vous le constatez, l&amp;rsquo;utilisation des valeurs capturées est possible.
+$ cat /tmp/example.txt cn: John Doe @ Home displayName:: Sm9obiBEb2UK mail: johndoe@home.com $ cat /tmp/example.txt | sed -re &amp;#34;s/([^:]+):: (.*)$/echo \\1: \$(echo \\2 | base64 -d)/e&amp;#34; cn: John Doe @ Home displayName: John Doe mail: johndoe@home.</description>
+    </item>
+    
+  </channel>
+</rss>

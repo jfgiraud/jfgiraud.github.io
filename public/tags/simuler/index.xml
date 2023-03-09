@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>simuler on Mezalor</title>
+    <link>http://example.org/tags/simuler/</link>
+    <description>Recent content in simuler on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 07 Oct 2020 23:02:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/simuler/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simuler un lien WAN sous Linux</title>
+      <link>http://example.org/posts/2020-10-07-simuler-un-lien-wan-sous-linux/</link>
+      <pubDate>Wed, 07 Oct 2020 23:02:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2020-10-07-simuler-un-lien-wan-sous-linux/</guid>
+      <description>Voici un script qui m&amp;rsquo;a bien été utile il y a 3-4 ans.
+Le déploiement d&amp;rsquo;un livrable échouait lorsque je le lançais depuis chez moi via le VPN de la société.
+En simulant une connexion comme chez moi mais depuis mon bureau, j&amp;rsquo;ai pu détecter qu&amp;rsquo;il y avait un timeout qui se produisait.
+J&amp;rsquo;ai alors pu corriger un plugin maven afin d&amp;rsquo;augmenter ce timeout pour faire en sorte que sur une connexion lente, le déploiement se passe bien.</description>
+    </item>
+    
+    <item>
+      <title>Réseau, simuler un wan sous linux</title>
+      <link>http://example.org/posts/2016-09-06-reseau-simuler-un-wan-sous-linux/</link>
+      <pubDate>Tue, 06 Sep 2016 15:38:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-09-06-reseau-simuler-un-wan-sous-linux/</guid>
+      <description>Il y a deux mois, j&amp;rsquo;ai dû reproduire un bug qui (je soupçonnais) se produisait sur des connexions ADSL avec peu de vitesse d&amp;rsquo;upload.
+Pour cela, je me suis basé sur la page suivante qui propose un script de simulation de wan sous linux.
+http://blog.nicolargo.com/2009/03/simuler-un-lien-wan-sous-linux.html
+Grâce à ce script j&amp;rsquo;ai pu reproduire le problème et le corriger.</description>
+    </item>
+    
+  </channel>
+</rss>

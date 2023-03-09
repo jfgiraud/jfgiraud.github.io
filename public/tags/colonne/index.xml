@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>colonne on Mezalor</title>
+    <link>http://example.org/tags/colonne/</link>
+    <description>Recent content in colonne on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 16 Sep 2016 10:31:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/colonne/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mysql, afficher les colonnes d&#39;une table matchant un pattern</title>
+      <link>http://example.org/posts/2016-09-16-mysql-afficher-les-colonnes-d-une-table-matchant-un-pattern/</link>
+      <pubDate>Fri, 16 Sep 2016 10:31:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2016-09-16-mysql-afficher-les-colonnes-d-une-table-matchant-un-pattern/</guid>
+      <description>mysql&amp;gt; show columns from Sessions where Field like &amp;#39;%date%&amp;#39;; +------------+----------+------+-----+---------+-------+ | Field | Type | Null | Key | Default | Extra | +------------+----------+------+-----+---------+-------+ | date_debut | datetime | NO | MUL | NULL | | | date_fin | datetime | NO | MUL | NULL | | +------------+----------+------+-----+---------+-------+ 2 rows in set (0.01 sec) </description>
+    </item>
+    
+  </channel>
+</rss>

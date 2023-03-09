@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>certificat on Mezalor</title>
+    <link>http://example.org/tags/certificat/</link>
+    <description>Recent content in certificat on Mezalor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 10 Feb 2021 11:31:00 +0100</lastBuildDate><atom:link href="http://example.org/tags/certificat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>“docker pull” certificate signed by unknown authority</title>
+      <link>http://example.org/posts/2021-02-10-docker-pull-certificate-signed-by-unknown-authority/</link>
+      <pubDate>Wed, 10 Feb 2021 11:31:00 +0100</pubDate>
+      
+      <guid>http://example.org/posts/2021-02-10-docker-pull-certificate-signed-by-unknown-authority/</guid>
+      <description>For my case, the error was on &amp;ldquo;docker login&amp;rdquo; command.
+The solution I found for my ubuntu: I downloaded the crt file via firefox (lock icon in the url adress bar) and save it :
+~/mydomain:1234.crt
+After that :
+cp ~/mydomain:1234.crt /usr/local/share/ca-certificates/ update-ca-certificates service docker restart Source: https://stackoverflow.com/a/62404469/3550759</description>
+    </item>
+    
+  </channel>
+</rss>
