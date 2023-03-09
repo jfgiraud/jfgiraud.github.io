@@ -1,7 +1,7 @@
 baseURL = 'http://example.org/'
 languageCode = "fr"
 defaultContentLanguage = "fr"
-title = 'Mezalor'
+title = 'jfgiraud.github.io'
 theme = 'hugo-ficurinia'
 
 [params]
@@ -17,3 +17,14 @@ theme = 'hugo-ficurinia'
         name = "GitHub"
         url = "https://github.com/jfgiraud"
         weight = 10
+    [[menu.icons]]
+        identifier = "gitlab"
+        name = "GitLab"
+        url = "https://gitlab.com/jfgiraud"
+        weight = 10
+    [[menu.icons]]
+        identifier = "linkedin"
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/jean-fran%C3%A7ois-giraud-23815318/"
+        weight = 10
+
