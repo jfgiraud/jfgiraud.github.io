@@ -1,7 +1,7 @@
 ---
 title: "Github, script de remplacement de chaines de caractères"
-date: "2015-01-29 21:39:00"
-tags: commande sed awk sandr
+date: 2015-01-29T21:39:00+01:00
+tags: ["commande", "sed", "awk", "sandr"]
 ---
 `sed` et `awk` sont très bien pour remplacer des chaines par d'autres. 
 

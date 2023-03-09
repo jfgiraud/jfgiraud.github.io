@@ -1,6 +1,6 @@
 ---
 title: "bash, éviter l'interprétation en octal en utilisant printf"
-date: "2013-12-07 08:25:00"
+date: 2013-12-07T08:25:00+01:00
 ---
 J'ai eu un petit soucis dans un script de renommage qui tentait d'interprêter les valeurs commençant par 08 et 09 en octal lors d'un printf.
 

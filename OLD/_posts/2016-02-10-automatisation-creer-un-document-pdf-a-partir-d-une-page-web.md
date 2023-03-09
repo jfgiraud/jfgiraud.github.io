@@ -1,7 +1,7 @@
 ---
 title: "automatisation, créer un document pdf à partir d'une page web"
-date: "2016-02-10 07:41:00"
-tags: wkhtmltopdf phantomjs rasterize.js pdf
+date: 2016-02-10T07:41:00+01:00
+tags: ["wkhtmltopdf", "phantomjs", "rasterize.js", "pdf"]
 ---
 Il est facile de créer un document PDF à partir d'une page web.
 

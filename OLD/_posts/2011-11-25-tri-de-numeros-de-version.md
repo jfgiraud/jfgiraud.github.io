@@ -1,6 +1,6 @@
 ---
 title: "Tri de numéros de version"
-date: "2011-11-25 14:20:00"
+date: 2011-11-25T14:20:00+01:00
 ---
 <pre><code><small>
 $ cat ~/a 

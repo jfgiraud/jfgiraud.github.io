@@ -1,7 +1,7 @@
 ---
 title: "Droits sql..."
-date: "2011-12-01 11:39:00"
-tags: grant insert select on mysql user privileges flush
+date: 2011-12-01T11:39:00+01:00
+tags: ["grant", "insert", "select", "on", "mysql", "user", "privileges", "flush"]
 ---
 Pour générer les commandes SQL adéquates pour 3 types d'utilisateurs de la BD avec les grant mysql qui vont bien.
  

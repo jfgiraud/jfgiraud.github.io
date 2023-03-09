@@ -1,7 +1,7 @@
 ---
 title: "mysql, données binaires"
-date: "2020-11-12 15:47:00"
-tags: hexa binary binaire mysql
+date: 2020-11-12T15:47:00+01:00
+tags: ["hexa", "binary", "binaire", "mysql"]
 ---
 Dans certains cas, la commande `LOAD_FILE` n'est pas utilisable (problèmes de droits, etc..) pour alimenter 
 un blob.

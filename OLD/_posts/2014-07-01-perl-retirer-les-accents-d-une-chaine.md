@@ -1,7 +1,7 @@
 ---
 title: "Perl, retirer les accents d'une chaine"
-date: "2014-07-01 07:43:00"
-tags: perl accent accents retirer supprimer unicode unicodedata
+date: 2014-07-01T07:43:00+01:00
+tags: ["perl", "accent", "accents", "retirer", "supprimer", "unicode", "unicodedata"]
 ---
 
 Code pour retirer les accents d'une chaîne de caractères :

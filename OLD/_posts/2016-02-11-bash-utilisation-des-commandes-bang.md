@@ -1,7 +1,7 @@
 ---
 title: "bash, utilisation des commandes bang !"
-date: "2016-02-11 16:44:00"
-tags: shebang
+date: 2016-02-11T16:44:00+01:00
+tags: ["shebang"]
 ---
 Voici un gros post concernant les commandes bang de bash.
 

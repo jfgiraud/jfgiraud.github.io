@@ -1,6 +1,6 @@
 ---
 title: "bash, fonction de filtre et d'extraction de données d'un csv en bash"
-date: "2013-09-28 09:56:00"
+date: 2013-09-28T09:56:00+01:00
 ---
 J'ai mis à disposition sur mon repository git un utilitaire [csv-functions.sh](https://github.com/jfgiraud/config/tree/master/home/jfgiraud/bin/csv-functions.sh) pour filtrer et extraire des données d'un fichier csv en bash.
 

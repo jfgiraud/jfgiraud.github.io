@@ -1,6 +1,6 @@
 ---
 title: "bash, sommer une colonne...."
-date: "2012-05-24 16:11:00"
+date: 2012-05-24T16:11:00+01:00
 ---
 Comment sommer des valeurs provenant d'un fichier ou de la sortie standard.  Voici plusieurs solutions...
 

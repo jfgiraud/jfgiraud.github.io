@@ -1,6 +1,6 @@
 ---
 title: "Manipulation de dates"
-date: "2008-03-17 10:20:00"
+date: 2008-03-17T10:20:00+01:00
 ---
 Date::Manip n'est pas installé par défaut avec perl. C'est embêtant car il faut installer un paquet sur chaque environnement utilisé.
 

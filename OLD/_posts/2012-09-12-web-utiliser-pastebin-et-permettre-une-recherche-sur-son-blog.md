@@ -1,7 +1,7 @@
 ---
 title: "web, utiliser pastebin et permettre une recherche sur son blog"
-date: "2012-09-12 17:48:00"
-tags: pastebin, mot clé, search engine, moteur de recherche
+date: 2012-09-12T17:48:00+01:00
+tags: ["pastebin", "mot clé", "search engine", "moteur de recherche"]
 ---
 Inclure du code déposé sur pastebin c'est bien... Malheureusement, le moteur de recherche du blog ne recherche pas dans le contenu déposé sur pastebin.
 

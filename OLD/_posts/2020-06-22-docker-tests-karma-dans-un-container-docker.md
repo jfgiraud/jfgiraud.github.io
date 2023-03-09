@@ -1,7 +1,7 @@
 ---
 title: "docker, tests karma dans un container docker"
-date: "2020-06-22 16:13:00"
-tags: docker karma container
+date: 2020-06-22T16:13:00+01:00
+tags: ["docker", "karma", "container"]
 ---
 Je suis novice en docker / gitlab ci/cd mais je m'y mets depuis la semaine dernière. 
 

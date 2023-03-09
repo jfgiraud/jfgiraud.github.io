@@ -1,6 +1,6 @@
 ---
 title: "emacs, afficher le nom de fichier complet dans la modeline"
-date: "2012-06-15 15:48:00"
+date: 2012-06-15T15:48:00+01:00
 ---
 <pre>
 <code>

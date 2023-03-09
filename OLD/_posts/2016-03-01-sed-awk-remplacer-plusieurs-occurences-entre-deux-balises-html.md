@@ -1,7 +1,7 @@
 ---
 title: "sed/awk, remplacer plusieurs occurences entre deux balises html"
-date: "2016-03-01 11:27:00"
-tags: commande sed awk
+date: 2016-03-01T11:27:00+01:00
+tags: ["commande", "sed", "awk"]
 ---
 
 ```bash

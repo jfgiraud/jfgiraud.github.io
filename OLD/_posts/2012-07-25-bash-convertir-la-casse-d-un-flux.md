@@ -1,6 +1,6 @@
 ---
 title: "bash, convertir la casse d'un flux"
-date: "2012-07-25 11:21:00"
+date: 2012-07-25T11:21:00+01:00
 ---
 Pour faire des recherches de noms de fichiers correspondant à un certain pattern, j'ai eu besoin de changer la casse des noms...
 

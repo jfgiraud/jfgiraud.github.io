@@ -1,6 +1,6 @@
 ---
 title: "vi et les macros"
-date: "2012-09-27 10:31:00"
+date: 2012-09-27T10:31:00+01:00
 ---
 Via un petit exemple...
 

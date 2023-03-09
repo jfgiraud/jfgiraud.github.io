@@ -1,7 +1,7 @@
 ---
 title: "patch, en créer un et l'appliquer"
-date: "2016-05-11 11:26:00"
-tags: commande patch
+date: 2016-05-11T11:26:00+01:00
+tags: ["commande", "patch"]
 ---
 Voici un exemple pour utiliser la commande patch :
 

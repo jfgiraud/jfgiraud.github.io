@@ -1,7 +1,7 @@
 ---
 title: "bash, initialiser un tableau avec le retour d'une commande et itérer dessus"
-date: "2014-05-08 03:24:00"
-tags: bash mapfile iterate loop array
+date: 2014-05-08T03:24:00+01:00
+tags: ["bash", "mapfile", "iterate", "loop", "array"]
 ---
 
 Cette méthode est sûre concernant les espaces contenus dans les lignes renvoyées par la commande :)

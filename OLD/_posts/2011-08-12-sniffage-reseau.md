@@ -1,7 +1,7 @@
 ---
 title: "sniffage réseau"
-date: "2011-08-12 11:55:00"
-tags: sniffage réseau network ngrep
+date: 2011-08-12T11:55:00+01:00
+tags: ["sniffage", "réseau", "network", "ngrep"]
 ---
 
 ```

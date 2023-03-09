@@ -1,7 +1,7 @@
 ---
 title: "bash, tester si un programme est installé"
-date: "2012-09-21 10:03:00"
-tags: which, apt-get install, sudo, commande, sponge
+date: 2012-09-21T10:03:00+01:00
+tags: ["which", "apt-get install", "sudo", "commande", "sponge"]
 ---
 Pour tester si un programme est installé, on peut utiliser la commande `which`
 de différentes manières.

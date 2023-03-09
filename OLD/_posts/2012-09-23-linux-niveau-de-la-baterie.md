@@ -1,7 +1,7 @@
 ---
 title: "Linux, niveau de la baterie"
-date: "2012-09-23 15:46:00"
-tags: acpi
+date: 2012-09-23T15:46:00+01:00
+tags: ["acpi"]
 ---
 Une petite commande pour connaitre le niveau de la baterie...
 

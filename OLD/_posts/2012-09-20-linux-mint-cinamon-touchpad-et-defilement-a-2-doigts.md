@@ -1,6 +1,6 @@
 ---
 title: "Linux Mint Cinamon, touchpad et défilement à 2 doigts"
-date: "2012-09-20 23:09:00"
+date: 2012-09-20T23:09:00+01:00
 ---
 Le défilement à 2 doigts sur le touchpad ne fonctionnait pas.
 

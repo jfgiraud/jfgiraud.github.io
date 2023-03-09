@@ -1,7 +1,7 @@
 ---
 title: "docker, alpine, Service hwdrivers needs non existent service dev"
-date: "2020-12-01 09:44:00"
-tags: docker alpine mariadb
+date: 2020-12-01T09:44:00+01:00
+tags: ["docker", "alpine", "mariadb"]
 ---
 
 Voici comment résoudre `Avoid Service hwdrivers needs non existent service dev`

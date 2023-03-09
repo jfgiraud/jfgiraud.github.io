@@ -1,6 +1,6 @@
 ---
 title: "Script python qui affiche les couleurs dans un terminal"
-date: "2012-01-18 10:28:00"
+date: 2012-01-18T10:28:00+01:00
 ---
 <pre>class bcolors:
     HEADER = '\033[95m'

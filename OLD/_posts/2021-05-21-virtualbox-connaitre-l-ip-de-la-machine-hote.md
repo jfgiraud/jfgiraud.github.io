@@ -1,7 +1,7 @@
 ---
 title: "VirtualBox, connaitre l'IP de la machine hôte"
-date: "2021-05-21 12:12:00"
-tags: virtualbox ipconfig commandes
+date: 2021-05-21T12:12:00+01:00
+tags: ["virtualbox", "ipconfig", "commandes"]
 ---
 
 Dans le terminal de la VM, `ipconfig` donne l'information dans 

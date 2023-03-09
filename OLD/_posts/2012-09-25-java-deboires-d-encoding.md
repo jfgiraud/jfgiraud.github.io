@@ -1,7 +1,7 @@
 ---
 title: "java, déboires d'encoding..."
-date: "2012-09-25 12:47:00"
-tags: java, encoding, charset, utf-8, iso-8859
+date: 2012-09-25T12:47:00+01:00
+tags: ["java", "encoding", "charset", "utf-8", "iso-8859"]
 ---
 Il y a quelques temps, j'ai eu de petits problèmes d'affichage d'accents sur une IHM d'un fichier qui était fourni par une autre appplication.
 

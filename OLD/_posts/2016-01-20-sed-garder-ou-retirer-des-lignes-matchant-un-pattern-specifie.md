@@ -1,7 +1,7 @@
 ---
 title: "sed, garder ou retirer des lignes matchant un pattern spécifié"
-date: "2016-01-20 11:36:00"
-tags: commande sed delete
+date: 2016-01-20T11:36:00+01:00
+tags: ["commande", "sed", "delete"]
 ---
 Il est possible d'utiliser sed pour filter des lignes et garder/ne pas garder celles qui matchent un pattern spécifié
 

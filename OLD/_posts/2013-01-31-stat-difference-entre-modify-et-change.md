@@ -1,6 +1,6 @@
 ---
 title: "stat, différence entre modify et change"
-date: "2013-01-31 12:11:00"
+date: 2013-01-31T12:11:00+01:00
 ---
 Quelle est la différence entre modify et change dans le retour de la commande stat ?
 

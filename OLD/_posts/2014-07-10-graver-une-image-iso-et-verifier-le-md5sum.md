@@ -1,6 +1,6 @@
 ---
 title: "Graver une image iso et vérifier le md5sum"
-date: "2014-07-10 20:39:00"
+date: 2014-07-10T20:39:00+01:00
 ---
 
 ```

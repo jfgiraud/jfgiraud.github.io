@@ -1,7 +1,7 @@
 ---
 title: "Linux Mint 17.3, Scanner Canon LIDE 110"
-date: "2016-09-07 10:44:00"
-tags: linux scanner
+date: 2016-09-07T10:44:00+01:00
+tags: ["linux", "scanner"]
 ---
 J'ai eu un problème avec mon scanner lors de la réinstallation de mon système.
 

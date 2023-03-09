@@ -1,6 +1,6 @@
 ---
 title: "maven, jar en repo local"
-date: "2014-11-19 13:50:00"
+date: 2014-11-19T13:50:00+01:00
 ---
 
 ```

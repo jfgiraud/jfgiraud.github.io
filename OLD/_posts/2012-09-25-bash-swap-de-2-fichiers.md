@@ -1,7 +1,7 @@
 ---
 title: "bash, swap de 2 fichiers"
-date: "2012-09-25 13:50:00"
-tags: bash, commande, mv, tempfile
+date: 2012-09-25T13:50:00+01:00
+tags: ["bash", "commande", "mv", "tempfile"]
 ---
 Le code suivant à ajouter au bashrc permet de swapper ou plutôt échanger 2 fichiers rapidement.
 

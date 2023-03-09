@@ -1,7 +1,7 @@
 ---
 title: "bash, récupérer le code de sortie d'un sous-shell"
-date: "2012-07-31 11:18:00"
-tags: bash pipe status
+date: 2012-07-31T11:18:00+01:00
+tags: ["bash", "pipe", "status"]
 ---
 Ci-dessous on récupère le code de sortie d'un sous-shell afin d'effectuer un traitement particulier avec des pipes. 
 

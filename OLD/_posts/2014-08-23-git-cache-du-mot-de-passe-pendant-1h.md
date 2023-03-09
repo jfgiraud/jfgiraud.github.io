@@ -1,6 +1,6 @@
 ---
 title: "Git cache du mot de passe pendant 1h"
-date: "2014-08-23 14:23:00"
+date: 2014-08-23T14:23:00+01:00
 ---
 
 ```

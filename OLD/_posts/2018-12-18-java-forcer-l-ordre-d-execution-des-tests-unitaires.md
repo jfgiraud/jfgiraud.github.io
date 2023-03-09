@@ -1,7 +1,7 @@
 ---
 title: "java, forcer l'ordre d'exécution des tests unitaires"
-date: "2018-12-18 11:59:00"
-tags: java test tu
+date: 2018-12-18T11:59:00+01:00
+tags: ["java", "test", "tu"]
 ---
 Parfois, des tests unitaires plantent lorsqu'ils sont exécutés dans un certain ordre.
 

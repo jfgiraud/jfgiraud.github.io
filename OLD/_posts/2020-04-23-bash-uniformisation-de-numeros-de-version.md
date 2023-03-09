@@ -1,7 +1,7 @@
 ---
 title: "bash, uniformisation de numéros de version"
-date: "2020-04-23 19:21:00"
-tags: linux bash numéros versions version numéro
+date: 2020-04-23T19:21:00+01:00
+tags: ["linux", "bash", "numéros", "versions", "version", "numéro"]
 ---
 Sur notre projet, les numéros de version des lots s'appellent des GOROCO. 
 

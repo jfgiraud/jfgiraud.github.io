@@ -1,6 +1,6 @@
 ---
 title: "Placements"
-date: "2012-02-17 14:50:00"
+date: 2012-02-17T14:50:00+01:00
 ---
 Tu as de l'argent et tu comptes le placer à un meilleur taux... Combien de temps faudra-t-il bloquer cet argent à ce meilleur taux pour qu'il rapporte à nouveau (c'est à dire que la quinzaine perdue soit amortie...)
 

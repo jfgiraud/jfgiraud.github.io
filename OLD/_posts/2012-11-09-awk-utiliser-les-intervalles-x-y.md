@@ -1,6 +1,6 @@
 ---
 title: "awk, utiliser les intervalles {x,y}"
-date: "2012-11-09 11:46:00"
+date: 2012-11-09T11:46:00+01:00
 ---
 Pour utiliser les intervalles avec awk, il suffit de rajouter l'option --re-interval
 

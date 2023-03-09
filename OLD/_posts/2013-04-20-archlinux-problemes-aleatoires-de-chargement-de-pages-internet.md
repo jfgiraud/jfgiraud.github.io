@@ -1,6 +1,6 @@
 ---
 title: "Archlinux, problèmes aléatoires de chargement de pages internet"
-date: "2013-04-20 09:47:00"
+date: 2013-04-20T09:47:00+01:00
 ---
 En installant archlinux il y a quelques temps, j'avais constaté que j'avais des problèmes de connexion internet de manière aléatoire. Un rafraichissement de la page la faisait apparaître :) mais j'ai galéré à comprendre que cela venait des DNS déclarés.
 La machine utilisait le DNS de ma livebox et comme par hasard, celui-ci résout aléatoirement les adresses :/

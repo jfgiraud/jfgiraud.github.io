@@ -1,7 +1,7 @@
 ---
 title: "commande, history"
-date: "2018-04-20 15:26:00"
-tags: commande history
+date: 2018-04-20T15:26:00+01:00
+tags: ["commande", "history"]
 ---
 Parfois, on ne sait plus si on a relancé une commande dans le terminal...
 

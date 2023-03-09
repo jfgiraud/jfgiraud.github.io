@@ -1,6 +1,6 @@
 ---
 title: "python, bash et encoding..."
-date: "2012-07-16 12:31:00"
+date: 2012-07-16T12:31:00+01:00
 ---
 En python, lorsque la sortie n'est pas de type tty, l'encoding est "ascii" ce qui provoque des erreurs sur les caractères accentués. La solution est d'exporter la variable PYTHONIOENCODING qui définit l'encoding à utiliser.  <code><pre>
 $ python a.py 

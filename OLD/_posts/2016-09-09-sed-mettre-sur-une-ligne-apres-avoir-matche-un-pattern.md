@@ -1,7 +1,7 @@
 ---
 title: "sed, mettre sur une ligne après avoir matché un pattern"
-date: "2016-09-09 14:57:00"
-tags: commande sed
+date: 2016-09-09T14:57:00+01:00
+tags: ["commande", "sed"]
 ---
 
 ```

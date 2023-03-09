@@ -1,6 +1,6 @@
 ---
 title: "url et mot de passe"
-date: "2012-07-03 18:24:00"
+date: 2012-07-03T18:24:00+01:00
 ---
 Pour réduire mes logs, je viens d'utiliser la syntaxe suivante :  <code><pre>
 http://user:password@host:port...

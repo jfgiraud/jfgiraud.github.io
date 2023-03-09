@@ -1,7 +1,7 @@
 ---
 title: "bash, type mime"
-date: "2016-01-27 11:55:00"
-tags: type mime
+date: 2016-01-27T11:55:00+01:00
+tags: ["type", "mime"]
 ---
 On peut déterminer le type mime d'un fichier en bash en utilisant la commande file
 

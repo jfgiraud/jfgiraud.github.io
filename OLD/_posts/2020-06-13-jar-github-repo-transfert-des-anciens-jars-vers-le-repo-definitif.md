@@ -1,7 +1,7 @@
 ---
 title: "jar, github, repo : transfert des anciens jars vers le repo définitif"
-date: "2020-06-13 11:27:00"
-tags: git repo jar
+date: 2020-06-13T11:27:00+01:00
+tags: ["git", "repo", "jar"]
 ---
 Manipulations pour les envoyer vers maven.pkg.github.com en ligne de commande
 

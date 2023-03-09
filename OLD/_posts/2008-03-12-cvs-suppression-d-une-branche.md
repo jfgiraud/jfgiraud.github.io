@@ -1,6 +1,6 @@
 ---
 title: "CVS: suppression d'une branche"
-date: "2008-03-12 11:07:00"
+date: 2008-03-12T11:07:00+01:00
 ---
 Ce matin, j'ai crée une branche à la place d'un tag. La correction n'est pas évidente pour nettoyer :
 

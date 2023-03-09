@@ -1,7 +1,7 @@
 ---
 title: "Bash, templating..."
-date: "2012-08-08 14:37:00"
-tags: bash templating
+date: 2012-08-08T14:37:00+01:00
+tags: ["bash", "templating"]
 ---
 
 Pour faire un système de templating en bash (par exemple pour du mailing) on peut faire ainsi si l'on souhaite que le modèle soit dans un fichier à part :

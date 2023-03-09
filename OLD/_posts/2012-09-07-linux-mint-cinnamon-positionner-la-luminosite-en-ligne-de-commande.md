@@ -1,6 +1,6 @@
 ---
 title: "Linux Mint Cinnamon, positionner la luminosité en ligne de commande"
-date: "2012-09-07 12:26:00"
+date: 2012-09-07T12:26:00+01:00
 ---
 Il est possible d'utiliser les fichiers : 
 - `/sys/class/backlight/acpi_video0/max_brightness`

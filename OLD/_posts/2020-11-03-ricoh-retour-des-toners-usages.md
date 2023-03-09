@@ -1,7 +1,7 @@
 ---
 title: "ricoh, retour des toners usagés"
-date: "2020-11-03 14:39:00"
-tags: ricoh toner laser colis
+date: 2020-11-03T14:39:00+01:00
+tags: ["ricoh", "toner", "laser", "colis"]
 ---
 
 Ricoh fournit un service pratique pour le recyclage des toners. UPS passe les chercher !

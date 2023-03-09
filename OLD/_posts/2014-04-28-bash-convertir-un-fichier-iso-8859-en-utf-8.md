@@ -1,6 +1,6 @@
 ---
 title: "bash, convertir un fichier iso-8859 en utf-8"
-date: "2014-04-28 09:15:00"
+date: 2014-04-28T09:15:00+01:00
 ---
 
 ```

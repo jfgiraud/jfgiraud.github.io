@@ -1,7 +1,7 @@
 ---
 title: "linux, connexion bluetooth d'une magic mouse "
-date: "2016-12-13 09:31:00"
-tags: bluetooth linux mac souris
+date: 2016-12-13T09:31:00+01:00
+tags: ["bluetooth", "linux", "mac", "souris"]
 ---
 J'ai beaucoup galéré pour faire fonctionner la souris MagicMouse d'appel sur Linux Mint.
 

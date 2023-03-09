@@ -1,7 +1,7 @@
 ---
 title: "bash, vérifier si une variable matche une regexp"
-date: "2012-10-10 10:09:00"
-tags: bash, regexp, re
+date: 2012-10-10T10:09:00+01:00
+tags: ["bash", "regexp", "re"]
 ---
 On peut facilement vérifier si une donnée contenue dans une variable est au bon format.
 

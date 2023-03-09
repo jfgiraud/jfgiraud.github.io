@@ -1,7 +1,7 @@
 ---
 title: "git, object file is empty, loose object is corrupt"
-date: "2016-11-15 10:21:00"
-tags: git
+date: 2016-11-15T10:21:00+01:00
+tags: ["git"]
 ---
 Sur des repo git sous jenkins, j'avais des problèmes... 
 

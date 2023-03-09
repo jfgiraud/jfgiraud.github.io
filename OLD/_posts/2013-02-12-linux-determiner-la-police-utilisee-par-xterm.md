@@ -1,6 +1,6 @@
 ---
 title: "Linux, déterminer la police utilisée par xterm"
-date: "2013-02-12 15:23:00"
+date: 2013-02-12T15:23:00+01:00
 ---
 On peut utiliser appres qui affiche la liste des ressources utilisées par xterm.
 

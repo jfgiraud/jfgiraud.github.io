@@ -1,6 +1,6 @@
 ---
 title: "Envoi mail avec attachement en python"
-date: "2010-07-13 14:28:00"
+date: 2010-07-13T14:28:00+01:00
 ---
 <pre>
 #!/usr/bin/env python

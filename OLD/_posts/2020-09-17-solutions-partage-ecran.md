@@ -1,7 +1,7 @@
 ---
 title: "solutions partage écran"
-date: "2020-09-17 11:06:00"
-tags: partage écran team équipe outil
+date: 2020-09-17T11:06:00+01:00
+tags: ["partage", "écran", "team", "équipe", "outil"]
 ---
 
 Solutions de partage d'écran simples qui fonctionnent sans spécifier l'ip / utilisateur du poste distant.  

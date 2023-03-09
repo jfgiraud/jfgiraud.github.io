@@ -1,7 +1,7 @@
 ---
 title: "mysql, afficher les colonnes d'une table matchant un pattern"
-date: "2016-09-16 10:31:00"
-tags: mysql colonne
+date: 2016-09-16T10:31:00+01:00
+tags: ["mysql", "colonne"]
 ---
 
 ```

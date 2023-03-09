@@ -1,7 +1,7 @@
 ---
 title: "sql, gérer les conflits lors des inserts"
-date: "2012-10-12 13:28:00"
-tags: mysql, on duplicate key, insert into, values, select, if, tts
+date: 2012-10-12T13:28:00+01:00
+tags: ["mysql", "on duplicate key", "insert into", "values", "select", "if", "tts"]
 ---
 Lors d'un insert, si la clé primaire existe déjà, il est possible de faire un traitement comme dans l'exemple ci-dessous.
 

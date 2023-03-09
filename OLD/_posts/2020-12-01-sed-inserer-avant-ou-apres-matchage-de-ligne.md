@@ -1,7 +1,7 @@
 ---
 title: "sed, insérer avant ou après matchage de ligne"
-date: "2020-12-01 11:15:00"
-tags: sed
+date: 2020-12-01T11:15:00+01:00
+tags: ["sed"]
 ---
 
 Peut-être pratique pour modifier un fichier de configuration par exemple

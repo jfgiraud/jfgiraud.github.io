@@ -1,6 +1,6 @@
 ---
 title: "bash, ajouter du contenu en début de fichier"
-date: "2014-09-18 15:06:00"
+date: 2014-09-18T15:06:00+01:00
 ---
 Voici deux techniques pour ajouter du contenu en début de fichier.
 

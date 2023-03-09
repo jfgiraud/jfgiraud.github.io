@@ -1,6 +1,6 @@
 ---
 title: "SVN, ignorer des fichiers"
-date: "2013-03-06 12:38:00"
+date: 2013-03-06T12:38:00+01:00
 ---
 Pour ignorer plusieurs fichiers lors des commits SVN
 

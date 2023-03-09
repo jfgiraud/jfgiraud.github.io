@@ -1,6 +1,6 @@
 ---
 title: "bash, expansion de paramètres et indirection "
-date: "2013-11-15 09:40:00"
+date: 2013-11-15T09:40:00+01:00
 ---
 Aujourd'hui, je viens de découvrir l'indirection de paramètres en bash.
 

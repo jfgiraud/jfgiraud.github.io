@@ -1,7 +1,7 @@
 ---
 title: "Moteur de recherche dans navigateur"
-date: "2011-11-29 11:22:00"
-tags: open search description moteur recherche navigateur
+date: 2011-11-29T11:22:00+01:00
+tags: ["open", "search", "description", "moteur", "recherche", "navigateur"]
 ---
 Il est relativement simple de permettre à un site web de proposer un moteur de recherche dans le navigateur d'un client...
 

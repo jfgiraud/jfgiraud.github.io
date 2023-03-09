@@ -1,6 +1,6 @@
 ---
 title: "bash, moreutils"
-date: "2012-07-13 11:18:00"
+date: 2012-07-13T11:18:00+01:00
 ---
 Je viens de découvrir un paquet mettant à disposition des outils bien sympathiques pour faciliter l'écriture de scripts bash.  Il s'agit du paquet moreutils  <code><pre>
 $ sudo apt-get install moreutils

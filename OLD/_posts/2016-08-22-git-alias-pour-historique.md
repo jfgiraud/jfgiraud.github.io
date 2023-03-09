@@ -1,7 +1,7 @@
 ---
 title: "git alias pour historique"
-date: "2016-08-22 11:52:00"
-tags: git history
+date: 2016-08-22T11:52:00+01:00
+tags: ["git", "history"]
 ---
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "SVN, ajouter la propriété exécutable"
-date: "2012-11-09 10:49:00"
+date: 2012-11-09T10:49:00+01:00
 ---
 
 ```

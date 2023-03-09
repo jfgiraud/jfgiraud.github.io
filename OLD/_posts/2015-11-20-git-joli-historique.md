@@ -1,7 +1,7 @@
 ---
 title: "git, joli historique "
-date: "2015-11-20 09:45:00"
-tags: git historique
+date: 2015-11-20T09:45:00+01:00
+tags: ["git", "historique"]
 ---
 
 ```

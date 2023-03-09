@@ -1,7 +1,7 @@
 ---
 title: "csv, visualiser en ligne de commande"
-date: "2020-02-15 10:19:00"
-tags: linux bash csv visualiser
+date: 2020-02-15T10:19:00+01:00
+tags: ["linux", "bash", "csv", "visualiser"]
 ---
 Voici une commande à ajouter dans son .bashrc afin de visualiser le contenu d'un fichier CSV sans avoir à ouvrir une application spécifique.
 

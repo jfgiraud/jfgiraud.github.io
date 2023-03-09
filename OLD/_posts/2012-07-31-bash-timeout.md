@@ -1,6 +1,6 @@
 ---
 title: "bash, timeout"
-date: "2012-07-31 12:30:00"
+date: 2012-07-31T12:30:00+01:00
 ---
 L'astuce du jour !
 

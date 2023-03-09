@@ -1,6 +1,6 @@
 ---
 title: "mysql, importer un fichier csv"
-date: "2012-07-16 17:30:00"
+date: 2012-07-16T17:30:00+01:00
 ---
 Pour charger un fichier csv dans une table on peut utiliser la commande suivante :  <pre><code>
 mysql> load data infile '/path/to/file.csv' into table mytable character 

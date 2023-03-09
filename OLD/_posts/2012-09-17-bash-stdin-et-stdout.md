@@ -1,7 +1,7 @@
 ---
 title: "bash, stdin et stdout"
-date: "2012-09-17 10:33:00"
-tags: bash, stdout, stderr, write, io, redirections
+date: 2012-09-17T10:33:00+01:00
+tags: ["bash", "stdout", "stderr", "write", "io", "redirections"]
 ---
 Un petit rappel sur les redirections.
 

@@ -1,7 +1,7 @@
 ---
 title: "python, distance de levenshtein"
-date: "2020-11-13 12:24:00"
-tags: distance levenshtein
+date: 2020-11-13T12:24:00+01:00
+tags: ["distance", "levenshtein"]
 ---
 
 La distance de Levenshtein est une distance, au sens mathématique du terme, donnant une mesure de la différence 

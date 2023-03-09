@@ -1,7 +1,7 @@
 ---
 title: "base64, encoder/décoder sous bash"
-date: "2016-09-09 15:11:00"
-tags: commande base64 recode
+date: 2016-09-09T15:11:00+01:00
+tags: ["commande", "base64", "recode"]
 ---
 
 On peut utiliser les programmes base64 (GNU coreutils) voir recode.

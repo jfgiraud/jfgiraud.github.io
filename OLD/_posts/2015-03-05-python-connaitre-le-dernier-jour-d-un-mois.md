@@ -1,7 +1,7 @@
 ---
 title: "python, connaitre le dernier jour d'un mois..."
-date: "2015-03-05 22:09:00"
-tags: python calendrier jour day agenda dernier
+date: 2015-03-05T22:09:00+01:00
+tags: ["python", "calendrier", "jour", "day", "agenda", "dernier"]
 ---
 Il est possible de déterminer facilement le dernier jour d'un mois.
 

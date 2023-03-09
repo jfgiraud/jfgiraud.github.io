@@ -1,7 +1,7 @@
 ---
 title: "ssh & scripts automatisés, The authenticity of host can't be established"
-date: "2017-05-23 10:15:00"
-tags: ssh
+date: 2017-05-23T10:15:00+01:00
+tags: ["ssh"]
 ---
 Lors d'appels de scripts automatisés pour "calculer" ce qui est à mettre en préproduction, j'ai souvent des "The authenticity of host can't be established".
 Peut-être parce que la machine est puppétisée...

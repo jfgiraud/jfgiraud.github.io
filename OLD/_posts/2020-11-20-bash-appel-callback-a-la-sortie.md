@@ -1,7 +1,7 @@
 ---
 title: "bash, appel callback à la sortie..."
-date: "2020-11-20 17:20:00"
-tags: bash commande trap
+date: 2020-11-20T17:20:00+01:00
+tags: ["bash", "commande", "trap"]
 ---
 Il est possible en bash d'appeler des méthodes lorsque de la fin du script est atteinte et ce même s'il y a une erreur. 
 

@@ -1,6 +1,6 @@
 ---
 title: "Google et la CNIL"
-date: "2014-02-08 08:00:00"
+date: 2014-02-08T08:00:00+01:00
 ---
 Suffisament rare pour être capturé en souvenir...
 

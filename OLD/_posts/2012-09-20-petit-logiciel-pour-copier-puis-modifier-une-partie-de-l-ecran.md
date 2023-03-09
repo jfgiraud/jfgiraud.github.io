@@ -1,6 +1,6 @@
 ---
 title: "Petit logiciel pour copier puis modifier une partie de l'écran"
-date: "2012-09-20 22:46:00"
+date: 2012-09-20T22:46:00+01:00
 ---
 Le logiciel `shutter` permet de sélectionner une partie de l'écran pour créer une image. On peut alors l'éditer afin de rajouter du texte, des flèches, flouter...
 

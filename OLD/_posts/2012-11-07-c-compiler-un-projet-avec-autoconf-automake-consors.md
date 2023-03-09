@@ -1,6 +1,6 @@
 ---
 title: "C, compiler un projet avec autoconf, automake & consors"
-date: "2012-11-07 22:49:00"
+date: 2012-11-07T22:49:00+01:00
 ---
 Si le projet met à disposition un fichier autogen.sh, utilisez-le.
 

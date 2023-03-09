@@ -1,7 +1,7 @@
 ---
 title: "convertir fichier binaire en fichier texte contenant une trame hexa"
-date: "2021-01-08 09:45:00"
-tags: hexdump wav hexa
+date: 2021-01-08T09:45:00+01:00
+tags: ["hexdump", "wav", "hexa"]
 ---
 
 Voici comment convertir un fichier binaire en un simple fichier texte contenant une trame hexa :  

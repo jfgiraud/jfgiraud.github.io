@@ -1,7 +1,7 @@
 ---
 title: "q4os, distribution linux"
-date: "2021-08-30 09:12:00"
-tags: q4os distribution linux elementaryOS
+date: 2021-08-30T09:12:00+01:00
+tags: ["q4os", "distribution", "linux", "elementaryOS"]
 ---
 Sur un macmini de 2009 que j'ai upgradé en mémoire + disque dur (8G, SSD), j'ai eu des petits soucis pour trouver *LA* bonne distribution.
 

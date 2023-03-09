@@ -1,6 +1,6 @@
 ---
 title: "Linux Mint et lettres ligaturées"
-date: "2013-02-27 07:40:00"
+date: 2013-02-27T07:40:00+01:00
 ---
 &nbsp;J'ai eu un petit souci pour utiliser les lettres ligaturées sous linux.
 

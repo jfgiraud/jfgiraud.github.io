@@ -1,6 +1,6 @@
 ---
 title: "bash, génerer des mots de passe"
-date: "2012-07-26 17:23:00"
+date: 2012-07-26T17:23:00+01:00
 ---
 Vous n'avez pas envie de réfléchir pour générer un mot de passe ?  Voici une petite méthode à mettre dans votre bashrc qui vous facilitera le choix ;)  <code><pre>
 function genpass() {

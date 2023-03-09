@@ -1,6 +1,6 @@
 ---
 title: "Servlets et encoding..."
-date: "2012-07-17 12:42:00"
+date: 2012-07-17T12:42:00+01:00
 ---
 J'ai eu des petit soucis avec le charset...
 

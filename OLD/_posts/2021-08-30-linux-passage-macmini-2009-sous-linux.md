@@ -1,7 +1,7 @@
 ---
 title: "Linux, passage macmini 2009 sous linux"
-date: "2021-08-30 09:18:00"
-tags: macmini linux
+date: 2021-08-30T09:18:00+01:00
+tags: ["macmini", "linux"]
 ---
 Rappel des liens visionnés :
 

@@ -1,6 +1,6 @@
 ---
 title: "python, conversion d'un fichier d'iso8859 en utf8"
-date: "2012-05-04 14:44:00"
+date: 2012-05-04T14:44:00+01:00
 ---
 <code><pre>
 #!/bin/python

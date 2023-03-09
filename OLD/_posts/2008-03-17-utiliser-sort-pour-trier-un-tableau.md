@@ -1,6 +1,6 @@
 ---
 title: "Utiliser sort pour trier un tableau"
-date: "2008-03-17 10:53:00"
+date: 2008-03-17T10:53:00+01:00
 ---
 Trie les données sur les colonnes 2 et 3.
 

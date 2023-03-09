@@ -1,7 +1,7 @@
 ---
 title: "bash, récupérer la n-ième ligne ou les lignes x à y d'un fichier"
-date: "2012-10-17 11:05:00"
-tags: awk, sed
+date: 2012-10-17T11:05:00+01:00
+tags: ["awk", "sed"]
 ---
 On peut utiliser `awk` avec `NR` (numéro de ligne tout fichier confondus) ou `FNR` (numéro de ligne du fichier) :
 

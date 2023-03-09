@@ -1,7 +1,7 @@
 ---
 title: "VirtualBox, problème d'affichage d'écran "
-date: "2020-10-16 17:36:00"
-tags: virtualbox
+date: 2020-10-16T17:36:00+01:00
+tags: ["virtualbox"]
 ---
 ```
 VBoxManage controlvm "Windows7" setvideomodehint 1920 1080 32

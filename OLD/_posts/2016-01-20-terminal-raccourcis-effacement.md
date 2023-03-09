@@ -1,7 +1,7 @@
 ---
 title: "terminal, raccourcis effacement"
-date: "2016-01-20 11:23:00"
-tags: terminal console
+date: 2016-01-20T11:23:00+01:00
+tags: ["terminal", "console"]
 ---
 Dans le terminal :
 

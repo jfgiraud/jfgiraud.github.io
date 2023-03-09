@@ -1,7 +1,7 @@
 ---
 title: "sed, remplacer une ligne qui matche"
-date: "2020-12-01 11:16:00"
-tags: sed 
+date: 2020-12-01T11:16:00+01:00
+tags: ["sed"]
 ---
 
 Voici comment remplacer une ligne qui matche avec la commande `sed`

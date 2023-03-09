@@ -1,7 +1,7 @@
 ---
 title: "elementaryos, transparence terminal"
-date: "2021-08-30 09:15:00"
-tags: gnome
+date: 2021-08-30T09:15:00+01:00
+tags: ["gnome"]
 ---
 
 ```text

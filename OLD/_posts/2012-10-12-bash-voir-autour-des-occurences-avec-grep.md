@@ -1,7 +1,7 @@
 ---
 title: "bash, voir autour des occurences avec grep..."
-date: "2012-10-12 12:18:00"
-tags: grep
+date: 2012-10-12T12:18:00+01:00
+tags: ["grep"]
 ---
 
 Voici comment on peut voir les lignes proches des occurences matchées par `grep`

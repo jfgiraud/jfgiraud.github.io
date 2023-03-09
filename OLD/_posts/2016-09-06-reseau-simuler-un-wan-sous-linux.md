@@ -1,7 +1,7 @@
 ---
 title: "Réseau, simuler un wan sous linux"
-date: "2016-09-06 15:38:00"
-tags: linux réseau simuler wan
+date: 2016-09-06T15:38:00+01:00
+tags: ["linux", "réseau", "simuler", "wan"]
 ---
 Il y a deux mois, j'ai dû reproduire un bug qui (je soupçonnais) se produisait sur des connexions ADSL avec peu de vitesse d'upload.
 

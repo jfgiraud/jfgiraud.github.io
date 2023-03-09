@@ -1,7 +1,7 @@
 ---
 title: "Simuler un lien WAN sous Linux"
-date: "2020-10-07 23:02:00"
-tags: simuler wan
+date: 2020-10-07T23:02:00+01:00
+tags: ["simuler", "wan"]
 ---
 Voici un script qui m'a bien été utile il y a 3-4 ans.
 

@@ -1,6 +1,6 @@
 ---
 title: "changer d'ordinateur, calculer son amortissement..."
-date: "2012-08-06 14:38:00"
+date: 2012-08-06T14:38:00+01:00
 ---
 Dernièrement, je voulais acheter un ordinateur portable mais je n'arrivais pas à passer le cap...
 

@@ -1,7 +1,7 @@
 ---
 title: "bash, générer des dates avec les commandes seq et date"
-date: "2018-10-16 11:28:00"
-tags: commande seq date
+date: 2018-10-16T11:28:00+01:00
+tags: ["commande", "seq", "date"]
 ---
 Parfois il peut être utile d'avoir une liste de dates pour appeler un script particulier.
 

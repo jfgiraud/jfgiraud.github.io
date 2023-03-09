@@ -1,6 +1,6 @@
 ---
 title: "Comptabiliser le nombre d'occurences"
-date: "2008-03-12 11:52:00"
+date: 2008-03-12T11:52:00+01:00
 ---
 Utiliser la commande <span style="font-style: italic;">uniq </span>pour afficher ou omettre des lignes récupérées de l'entrée standard. L'option -c permet de comptabiliser les lignes (qui doivent être ordonnées)
 

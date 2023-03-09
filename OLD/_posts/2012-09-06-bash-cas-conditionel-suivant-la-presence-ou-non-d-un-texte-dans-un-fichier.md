@@ -1,7 +1,7 @@
 ---
 title: "bash, cas conditionel suivant la présence ou non d'un texte dans un fichier"
-date: "2012-09-06 10:43:00"
-tags: if grep exit status bash
+date: 2012-09-06T10:43:00+01:00
+tags: ["if", "grep", "exit", "status", "bash"]
 ---
 Cela se fait simplement avec un grep...  
 

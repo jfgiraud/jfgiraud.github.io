@@ -1,7 +1,7 @@
 ---
 title: "bash, mv en masse"
-date: "2012-09-25 13:36:00"
-tags: commande, mmv, renommage en masse
+date: 2012-09-25T13:36:00+01:00
+tags: ["commande", "mmv", "renommage en masse"]
 ---
 Il y a quelques années, j'avais écris un petit programme qui permettait de changer l'extension de fichiers.
 

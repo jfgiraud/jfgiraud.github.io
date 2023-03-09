@@ -1,7 +1,7 @@
 ---
 title: "bash, savoir si stdout fait référence à un terminal"
-date: "2012-10-12 15:53:00"
-tags: diff, colordiff
+date: 2012-10-12T15:53:00+01:00
+tags: ["diff", "colordiff"]
 ---
 Pour savoir si la sortie standard pointe sur un terminal, on peut utiliser l'opérateur "-t" en bash.
 

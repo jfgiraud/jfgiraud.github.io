@@ -1,6 +1,6 @@
 ---
 title: "bash, récupérer les noms de fichiers renvoyés par diff -rb --brief"
-date: "2012-07-16 14:05:00"
+date: 2012-07-16T14:05:00+01:00
 ---
 La commande "diff -rb --brief" génère des lignes user-friendly qui sont malheureusement localisées. 
 Pour récupérer le nom des fichiers qui diffèrent, il est possible d'utiliser la commande lsdiff du package patchutils.

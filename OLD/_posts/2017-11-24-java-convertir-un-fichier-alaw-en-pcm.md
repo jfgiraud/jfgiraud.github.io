@@ -1,7 +1,7 @@
 ---
 title: "Java, convertir un fichier alaw en pcm"
-date: "2017-11-24 15:09:00"
-tags: java conversion wav
+date: 2017-11-24T15:09:00+01:00
+tags: ["java", "conversion", "wav"]
 ---
 Dans un billet précédent, je parlais d'un petit player en html5 qui devait jouer des wav. Je convertissais les wav en mp3 pour la compatibilité des navigateurs.
 

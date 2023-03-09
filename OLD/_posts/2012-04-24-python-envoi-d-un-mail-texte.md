@@ -1,6 +1,6 @@
 ---
 title: "python, envoi d'un mail texte"
-date: "2012-04-24 11:18:00"
+date: 2012-04-24T11:18:00+01:00
 ---
 <pre><code><span style="font-family: &quot;Courier New&quot;,Courier,monospace;font-size: small;">
 import smtplib

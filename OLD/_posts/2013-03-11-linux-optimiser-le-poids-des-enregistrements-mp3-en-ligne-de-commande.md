@@ -1,6 +1,6 @@
 ---
 title: "Linux, optimiser le poids des enregistrements MP3 en ligne de commande"
-date: "2013-03-11 08:48:00"
+date: 2013-03-11T08:48:00+01:00
 ---
 Voici comment optimiser le poids de vos enregistrements en ligne de commande.
 

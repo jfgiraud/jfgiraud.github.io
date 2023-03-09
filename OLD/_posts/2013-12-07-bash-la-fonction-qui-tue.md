@@ -1,6 +1,6 @@
 ---
 title: "bash, la fonction qui tue..."
-date: "2013-12-07 10:01:00"
+date: 2013-12-07T10:01:00+01:00
 ---
 Voici une fonction qui tue... et simplifie la vie en ligne de commandes !
 

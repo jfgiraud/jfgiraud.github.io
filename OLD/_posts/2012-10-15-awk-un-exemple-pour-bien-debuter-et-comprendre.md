@@ -1,7 +1,7 @@
 ---
 title: "awk, un exemple pour bien débuter et comprendre..."
-date: "2012-10-15 17:05:00"
-tags: awk, base, for
+date: 2012-10-15T17:05:00+01:00
+tags: ["awk", "base", "for"]
 ---
 
 ```bash

@@ -1,7 +1,7 @@
 ---
 title: "python, faire en sorte que stdin/stdout lisent et écrivent en binaire"
-date: "2012-10-10 13:34:00"
-tags: python, binary, os, fileno
+date: 2012-10-10T13:34:00+01:00
+tags: ["python", "binary", "os", "fileno"]
 ---
 J'ai écrit un petit programme qui s'inspire de cut en python.
 

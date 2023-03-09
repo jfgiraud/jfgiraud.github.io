@@ -1,6 +1,6 @@
 ---
 title: "bash et les tableaux..."
-date: "2012-11-05 22:35:00"
+date: 2012-11-05T22:35:00+01:00
 ---
 Voici comment faire des tableaux et les utiliser en bash.
 

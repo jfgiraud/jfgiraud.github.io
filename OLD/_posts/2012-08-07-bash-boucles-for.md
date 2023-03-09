@@ -1,6 +1,6 @@
 ---
 title: "bash, boucles for"
-date: "2012-08-07 12:24:00"
+date: 2012-08-07T12:24:00+01:00
 ---
 En bash, on aurait tendance à penser que "for line in $(cat fichier)" renvoie les lignes mais c'est faux car les séparateurs par défaut sont les espaces, tabulations... On itère donc sur la liste des mots...
 

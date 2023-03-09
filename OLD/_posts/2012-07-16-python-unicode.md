@@ -1,6 +1,6 @@
 ---
 title: "python, unicode..."
-date: "2012-07-16 12:56:00"
+date: 2012-07-16T12:56:00+01:00
 ---
 <code><pre>
 >>> unicodedata.name(u"é")

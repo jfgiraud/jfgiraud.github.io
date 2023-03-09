@@ -1,7 +1,7 @@
 ---
 title: "commande, comparer des ensembles avec comm"
-date: "2020-04-30 15:54:00"
-tags: linux commande comparer ensemble
+date: 2020-04-30T15:54:00+01:00
+tags: ["linux", "commande", "comparer", "ensemble"]
 ---
 Parfois, on a besoin de comparer des ensembles. La commande `comm` permet de faire ressortir :
 

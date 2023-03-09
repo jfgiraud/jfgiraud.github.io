@@ -1,6 +1,6 @@
 ---
 title: "Casio SL-300.... et pourcentages"
-date: "2013-02-01 17:46:00"
+date: 2013-02-01T17:46:00+01:00
 ---
 Voici ma vieille casio que mes parents m'ont offerte à Noël en 1984...
 

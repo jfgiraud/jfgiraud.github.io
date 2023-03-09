@@ -1,6 +1,6 @@
 ---
 title: "awk, trimer des colonnes"
-date: "2013-05-03 03:20:00"
+date: 2013-05-03T03:20:00+01:00
 ---
 
 ```

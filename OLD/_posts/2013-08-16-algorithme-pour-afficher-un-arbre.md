@@ -1,6 +1,6 @@
 ---
 title: "Algorithme pour afficher un arbre"
-date: "2013-08-16 08:58:00"
+date: 2013-08-16T08:58:00+01:00
 ---
 Voici un algorithme pour afficher un joli arbre à la manière de la commande tree.
 

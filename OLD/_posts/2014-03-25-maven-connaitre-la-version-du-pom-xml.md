@@ -1,6 +1,6 @@
 ---
 title: "Maven, connaître la version du pom.xml"
-date: "2014-03-25 13:42:00"
+date: 2014-03-25T13:42:00+01:00
 ---
 
 ```

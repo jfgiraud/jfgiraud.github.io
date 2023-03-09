@@ -1,6 +1,6 @@
 ---
 title: "Archlinux, slim en qwerty"
-date: "2013-04-20 09:17:00"
+date: 2013-04-20T09:17:00+01:00
 ---
 En installant archlinux, mon terminal en mode console était bien en mode azerty.
 

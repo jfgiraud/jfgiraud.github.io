@@ -1,7 +1,7 @@
 ---
 title: "java, regexp nommées"
-date: "2020-10-07 22:50:00"
-tags: java regexp
+date: 2020-10-07T22:50:00+01:00
+tags: ["java", "regexp"]
 ---
 
 Nommer un groupe et l'utiliser :

@@ -1,6 +1,6 @@
 ---
 title: "Jetty 8 et paramètres d'initialisation"
-date: "2012-07-17 17:14:00"
+date: 2012-07-17T17:14:00+01:00
 ---
 La documentation sur le net est obscure quant à la manière d'initialiser les paramètres de contexte avec jetty (hors du web.xml dans le webdefault.xml (équivalent du host.xml de tomcat)). 
 

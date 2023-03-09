@@ -1,7 +1,7 @@
 ---
 title: "Java, retirer les accents d'une chaîne"
-date: "2016-03-16 11:10:00"
-tags: java accents
+date: 2016-03-16T11:10:00+01:00
+tags: ["java", "accents"]
 ---
 Voici le code qui permet de supprimer les accents d'une chaîne de caractères. 
 

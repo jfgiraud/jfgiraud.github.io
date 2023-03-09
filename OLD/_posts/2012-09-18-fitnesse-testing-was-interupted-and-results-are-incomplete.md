@@ -1,6 +1,6 @@
 ---
 title: "fitnesse, Testing was interupted and results are incomplete"
-date: "2012-09-18 10:20:00"
+date: 2012-09-18T10:20:00+01:00
 ---
 Sur un de mes projets, la suite fitnesse s'interrompt en plein milieu et affiche un encart "Testing was interupted and results are incomplete".
 

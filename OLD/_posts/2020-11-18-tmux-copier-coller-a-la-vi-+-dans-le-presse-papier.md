@@ -1,7 +1,7 @@
 ---
 title: "tmux, copier/coller à la vi + dans le presse-papier"
-date: "2020-11-18 17:56:00"
-tags: presse-papier tmux xclip commande bash
+date: 2020-11-18T17:56:00+01:00
+tags: ["presse-papier", "tmux", "xclip", "commande", "bash"]
 ---
 Commandes à ajouter au `~/.tmux.conf`
 

@@ -1,6 +1,6 @@
 ---
 title: "awk, extraire des paragraphes"
-date: "2014-02-01 08:07:00"
+date: 2014-02-01T08:07:00+01:00
 ---
 Avec awk, il est possible d'extraire des paragraphes spécifiques par leur ordre d'apparence.
 

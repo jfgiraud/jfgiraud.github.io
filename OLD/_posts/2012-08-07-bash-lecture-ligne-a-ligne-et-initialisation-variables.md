@@ -1,6 +1,6 @@
 ---
 title: "bash, lecture ligne à ligne et initialisation variables..."
-date: "2012-08-07 14:55:00"
+date: 2012-08-07T14:55:00+01:00
 ---
 Dans la lignée du post précédent, il est possible de lire ligne à ligne et d'initialiser des variables directement pour des fichiers bien structurés.
 

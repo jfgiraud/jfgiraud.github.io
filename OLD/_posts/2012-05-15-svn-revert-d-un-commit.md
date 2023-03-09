@@ -1,6 +1,6 @@
 ---
 title: "svn, revert d'un commit"
-date: "2012-05-15 12:32:00"
+date: 2012-05-15T12:32:00+01:00
 ---
 Un mauvais commit sur un fichier ? Pas de problème, il peut être inversé :)
 <code><pre>

@@ -1,6 +1,6 @@
 ---
 title: "XPath et recherche vide..."
-date: "2012-03-29 09:48:00"
+date: 2012-03-29T09:48:00+01:00
 ---
 Recherche des lignes d'un tableau ayant dans la 3e colonne une valeur à XXX :
 

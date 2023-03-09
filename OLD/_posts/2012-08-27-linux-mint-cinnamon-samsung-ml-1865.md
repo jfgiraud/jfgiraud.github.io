@@ -1,6 +1,6 @@
 ---
 title: "Linux Mint Cinnamon & Samsung ML-1865"
-date: "2012-08-27 23:13:00"
+date: 2012-08-27T23:13:00+01:00
 ---
 Impossible de faire fonctionner mon imprimante (une Samsung ML-1865) sur mon Sony SVS-1311 où j'ai installé un Linux Mint 13 Cinnamon.
 

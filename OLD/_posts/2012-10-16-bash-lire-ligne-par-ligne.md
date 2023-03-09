@@ -1,7 +1,7 @@
 ---
 title: "bash, lire ligne par ligne"
-date: "2012-10-16 11:36:00"
-tags: bash, read, line 
+date: 2012-10-16T11:36:00+01:00
+tags: ["bash", "read", "line"]
 ---
 Pour un fichier :
 

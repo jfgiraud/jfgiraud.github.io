@@ -1,7 +1,7 @@
 ---
 title: "docker, alpine, python, mariadb : Modifications pour faire tourner les tests avec python / mariadb en utilisant MySQL-python"
-date: "2020-12-02 11:11:00"
-tags: docker alpine mariadb
+date: 2020-12-02T11:11:00+01:00
+tags: ["docker", "alpine", "mariadb"]
 ---
 
 Erreurs vues et paquets installés : 

@@ -1,6 +1,6 @@
 ---
 title: "Rendre attrayant des formulaires et tableaux html"
-date: "2008-03-21 11:24:00"
+date: 2008-03-21T11:24:00+01:00
 ---
 Voici un lien vers des tutoriaux [http://www.fredcavazza.net/mes-ressources/mes-tutoriels/](http://www.fredcavazza.net/mes-ressources/mes-tutoriels/) sympas.
 

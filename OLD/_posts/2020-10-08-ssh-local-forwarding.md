@@ -1,7 +1,7 @@
 ---
 title: "ssh, local forwarding"
-date: "2020-10-08 09:24:00"
-tags: ssh forwarding
+date: 2020-10-08T09:24:00+01:00
+tags: ["ssh", "forwarding"]
 ---
 Exemple :  
 - depuis le poste local, lancer firefox et aller sur http://127.0.0.1:7533

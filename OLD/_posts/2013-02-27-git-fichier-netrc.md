@@ -1,6 +1,6 @@
 ---
 title: "Git, fichier .netrc"
-date: "2013-02-27 23:45:00"
+date: 2013-02-27T23:45:00+01:00
 ---
 Il y a plusieurs mois, j'ai découvert l'existence du fichier .netrc et l'utilisation que l'on peut en faire.
 

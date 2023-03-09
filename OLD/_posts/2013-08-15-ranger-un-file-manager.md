@@ -1,6 +1,6 @@
 ---
 title: "ranger, un file manager"
-date: "2013-08-15 07:45:00"
+date: 2013-08-15T07:45:00+01:00
 ---
 Il y a quelques mois, j'avais commencé à utiliser vifm comme file manager en ligne de commande.
 J'avais vite abandonné car il fallait retenir tous les raccourcis clavier.

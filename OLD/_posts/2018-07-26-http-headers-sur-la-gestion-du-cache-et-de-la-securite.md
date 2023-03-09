@@ -1,7 +1,7 @@
 ---
 title: "http, headers sur la gestion du cache et de la sécurité"
-date: "2018-07-26 11:41:00"
-tags: http html cache securité
+date: 2018-07-26T11:41:00+01:00
+tags: ["http", "html", "cache", "securité"]
 ---
 
 ```java

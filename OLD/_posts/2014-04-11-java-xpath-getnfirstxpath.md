@@ -1,6 +1,6 @@
 ---
 title: "java & xpath : getNFirstXpath"
-date: "2014-04-11 06:24:00"
+date: 2014-04-11T06:24:00+01:00
 ---
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "awk, afficher les 5 lignes après un pattern"
-date: "2013-02-19 16:18:00"
+date: 2013-02-19T16:18:00+01:00
 ---
 Cela peut se faire avec la commande awk 
 

@@ -1,7 +1,7 @@
 ---
 title: "sed, supprimer une ou des lignes en fonction de leurs numéros"
-date: "2016-07-12 10:36:00"
-tags: sed ligne lignes supprimer entre
+date: 2016-07-12T10:36:00+01:00
+tags: ["sed", "ligne", "lignes", "supprimer", "entre"]
 ---
 Il est possible d'utiliser sed pour supprimer une ligne en fonction de son numéro ou un ensemble de lignes défini par le numéro de ligne de départ et de fin.
 

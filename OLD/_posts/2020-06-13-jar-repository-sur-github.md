@@ -1,7 +1,7 @@
 ---
 title: "jar: repository sur github"
-date: "2020-06-13 10:43:00"
-tags: git repo jar
+date: 2020-06-13T10:43:00+01:00
+tags: ["git", "repo", "jar"]
 ---
 Il y a bien longtemps, j'ai mis à disposition des jars sur github, via un repository
 

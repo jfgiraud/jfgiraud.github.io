@@ -1,7 +1,7 @@
 ---
 title: "java, tests unitaires en ligne de commande"
-date: "2018-12-17 12:13:00"
-tags: maven test
+date: 2018-12-17T12:13:00+01:00
+tags: ["maven", "test"]
 ---
 Rappel:
 

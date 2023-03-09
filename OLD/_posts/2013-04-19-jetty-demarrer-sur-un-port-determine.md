@@ -1,6 +1,6 @@
 ---
 title: "Jetty, démarrer sur un port déterminé"
-date: "2013-04-19 11:42:00"
+date: 2013-04-19T11:42:00+01:00
 ---
 Cela se passe dans le build.xml
 

@@ -1,7 +1,7 @@
 ---
 title: "bash, supprimer les lignes vides d'un fichier"
-date: "2012-10-17 10:06:00"
-tags: bash, supprimer lignes vides, sed, awk, remove empty lines
+date: 2012-10-17T10:06:00+01:00
+tags: ["bash", "supprimer lignes vides", "sed", "awk", "remove empty lines"]
 ---
 
 Voici plusieurs solutions

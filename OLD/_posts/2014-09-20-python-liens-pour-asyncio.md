@@ -1,6 +1,6 @@
 ---
 title: "python, liens pour asyncio"
-date: "2014-09-20 07:43:00"
+date: 2014-09-20T07:43:00+01:00
 ---
 
 ```

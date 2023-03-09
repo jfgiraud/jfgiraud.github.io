@@ -1,7 +1,7 @@
 ---
 title: "docker / alpine / mariadb : ce que j'en pense...."
-date: "2020-12-02 11:02:00"
-tags: docker alpine mariadb
+date: 2020-12-02T11:02:00+01:00
+tags: ["docker", "alpine", "mariadb"]
 ---
 J'ai voulu passer à alpine à cause de la taille de l'image produite et parce qu'elle boote vite.
 

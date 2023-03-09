@@ -1,7 +1,7 @@
 ---
 title: "bash, créer dynamiquement une liste de paramètres pour appeler une commande"
-date: "2015-01-07 15:17:00"
-tags: bash whiptail
+date: 2015-01-07T15:17:00+01:00
+tags: ["bash", "whiptail"]
 ---
 Voici comment créer dynamiquement une liste de paramètres et l'utiliser dans des appels de commande.
 Le cas des espaces dans les options est bien géré.

@@ -1,7 +1,7 @@
 ---
 title: "html5, player audio dans une popup"
-date: "2017-09-27 16:23:00"
-tags: html player
+date: 2017-09-27T16:23:00+01:00
+tags: ["html", "player"]
 ---
 Pour mon projet, je devais afficher un player audio HTML5 dans une popup lors d'un clic sur un span (fichier son)...
 

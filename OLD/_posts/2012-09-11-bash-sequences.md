@@ -1,6 +1,6 @@
 ---
 title: "bash, séquences"
-date: "2012-09-11 13:13:00"
+date: 2012-09-11T13:13:00+01:00
 ---
 
 Pour obtenir une suite de nombre qui font partie d'une séquence, il y a la commande `seq`. Il existe aussi une manière de le faire directement en bash en utilisant une expression du genre {x..y[..inc]}.  <code><pre>

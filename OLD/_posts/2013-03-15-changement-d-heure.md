@@ -1,6 +1,6 @@
 ---
 title: "Changement d'heure"
-date: "2013-03-15 11:35:00"
+date: 2013-03-15T11:35:00+01:00
 ---
 Le changement d'heure se passe le dernier week-end de Mars et d'Octobre, quand les samedi <b>et</b> dimanche sont tous les deux en Mars et Octobre...
 

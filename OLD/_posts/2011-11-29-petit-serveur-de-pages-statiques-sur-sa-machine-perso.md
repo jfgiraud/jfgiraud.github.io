@@ -1,6 +1,6 @@
 ---
 title: "Petit serveur de pages statiques sur sa machine perso..."
-date: "2011-11-29 11:04:00"
+date: 2011-11-29T11:04:00+01:00
 ---
 Installation d'apache :
 

@@ -1,6 +1,6 @@
 ---
 title: "Mysql: afficher requête en ligne"
-date: "2011-08-31 16:21:00"
+date: 2011-08-31T16:21:00+01:00
 ---
 select * from flashes\G
 

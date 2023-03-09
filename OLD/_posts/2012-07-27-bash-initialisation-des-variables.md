@@ -1,7 +1,7 @@
 ---
 title: "bash, initialisation des variables"
-date: "2012-07-27 14:42:00"
-tags: bash expansion parameter
+date: 2012-07-27T14:42:00+01:00
+tags: ["bash", "expansion", "parameter"]
 ---
 
 **Use a default value**

@@ -1,6 +1,6 @@
 ---
 title: "Recompile with -Xlint:unchecked"
-date: "2011-11-15 10:31:00"
+date: 2011-11-15T10:31:00+01:00
 ---
 <pre><code><small>
    [javac] Note: src/main/java/com/orange/mbs/aiguilleur/ws/WsConfiguration.java 

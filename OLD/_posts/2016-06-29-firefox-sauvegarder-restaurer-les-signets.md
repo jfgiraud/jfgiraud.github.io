@@ -1,7 +1,7 @@
 ---
 title: "firefox, sauvegarder/restaurer les signets"
-date: "2016-06-29 06:33:00"
-tags: firefox signets
+date: 2016-06-29T06:33:00+01:00
+tags: ["firefox", "signets"]
 ---
 par exemple lors du changement de PC professionnel :
 

@@ -1,6 +1,6 @@
 ---
 title: "Fichiers, ajout/retrait BOM dans un fichier"
-date: "2014-09-14 07:55:00"
+date: 2014-09-14T07:55:00+01:00
 ---
 Il est possible d'ajouter/retirer le caractère bom en début de fichier en utilisant la commande uconv.
 

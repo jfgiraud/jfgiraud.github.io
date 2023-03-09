@@ -1,6 +1,6 @@
 ---
 title: "Linux, réduire le poids des photos jpg"
-date: "2013-03-10 18:59:00"
+date: 2013-03-10T18:59:00+01:00
 ---
 Je viens de découvrir un petit logiciel sympa réduire le poids des photos jpg et ce, en ligne de commandes.
 

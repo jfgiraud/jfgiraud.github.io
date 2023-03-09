@@ -1,6 +1,6 @@
 ---
 title: "Levée de la travée centrale du pont Bacalan-Bastide"
-date: "2012-12-05 13:47:00"
+date: 2012-12-05T13:47:00+01:00
 ---
 Prise ce jour, Mercredi 5 Décembre 2012
 

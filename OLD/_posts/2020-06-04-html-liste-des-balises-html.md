@@ -1,7 +1,7 @@
 ---
 title: "html, liste des balises html"
-date: "2020-06-04 10:47:00"
-tags: html balises
+date: 2020-06-04T10:47:00+01:00
+tags: ["html", "balises"]
 ---
 Liste des balises HTML pouvant être utilisées pour vérifier que des entrées de formulaires ne contiennent pas de code HTML.
 

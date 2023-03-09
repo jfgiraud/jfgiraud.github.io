@@ -1,7 +1,7 @@
 ---
 title: "tables de hachage en bash"
-date: "2011-05-30 14:27:00"
-tags: hash declare animals key value hachage iterate
+date: 2011-05-30T14:27:00+01:00
+tags: ["hash", "declare", "animals", "key", "value", "hachage", "iterate"]
 ---
 Voici comment déclarer une table de hachage en bash et itérer sur ses clés pour récupérer les valeurs :
 

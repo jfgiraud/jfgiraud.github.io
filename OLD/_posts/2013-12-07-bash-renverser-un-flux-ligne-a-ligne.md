@@ -1,6 +1,6 @@
 ---
 title: "bash, renverser un flux ligne à ligne"
-date: "2013-12-07 10:07:00"
+date: 2013-12-07T10:07:00+01:00
 ---
 Voici une commande que je ne connaissais pas avant le petit déjeuner...
 

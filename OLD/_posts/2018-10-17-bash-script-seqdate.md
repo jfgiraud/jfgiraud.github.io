@@ -1,7 +1,7 @@
 ---
 title: "bash, script seqdate"
-date: "2018-10-17 10:07:00"
-tags: commande date seq
+date: 2018-10-17T10:07:00+01:00
+tags: ["commande", "date", "seq"]
 ---
 Script réutilisable pour générer des dates avec `date` et `seq`
 

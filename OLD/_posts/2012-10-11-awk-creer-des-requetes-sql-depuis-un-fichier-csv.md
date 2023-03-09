@@ -1,7 +1,7 @@
 ---
 title: "awk, créer des requêtes SQL depuis un fichier csv"
-date: "2012-10-11 16:31:00"
-tags: awk, fs, insert into table
+date: 2012-10-11T16:31:00+01:00
+tags: ["awk", "fs", "insert into table"]
 ---
 Par exemple :
 

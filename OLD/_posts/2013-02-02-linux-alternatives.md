@@ -1,6 +1,6 @@
 ---
 title: "Linux, alternatives"
-date: "2013-02-02 11:09:00"
+date: 2013-02-02T11:09:00+01:00
 ---
 A chaque fois, on fait des bidouilles pour utiliser une version d'un exécutable (par exemple java) plutôt qu'une autre...
 

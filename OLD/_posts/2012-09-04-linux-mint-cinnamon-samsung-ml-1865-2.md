@@ -1,6 +1,6 @@
 ---
 title: "Linux Mint Cinnamon & Samsung ML-1865 (2)"
-date: "2012-09-04 22:26:00"
+date: 2012-09-04T22:26:00+01:00
 ---
 En installant l'imprimante, le daemon smfpd se met en place et démarre automatiquement à chaque allumage.
 

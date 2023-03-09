@@ -1,6 +1,6 @@
 ---
 title: "Python - urlparse"
-date: "2010-06-09 14:27:00"
+date: 2010-06-09T14:27:00+01:00
 ---
 <pre>
 >>> from urlparse import urlparse

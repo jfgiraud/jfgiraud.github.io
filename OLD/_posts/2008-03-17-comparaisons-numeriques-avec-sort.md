@@ -1,6 +1,6 @@
 ---
 title: "Comparaisons numériques avec sort"
-date: "2008-03-17 10:35:00"
+date: 2008-03-17T10:35:00+01:00
 ---
 jfgiraud@jfgiraud1:~$ printf "1 21 5.0 2e1" | tr " " "\n" | sort -g
 1

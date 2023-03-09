@@ -1,6 +1,6 @@
 ---
 title: "Récupérer les informations concernant une image"
-date: "2008-03-12 11:47:00"
+date: 2008-03-12T11:47:00+01:00
 ---
 sudo apt-get install imagemagick
 

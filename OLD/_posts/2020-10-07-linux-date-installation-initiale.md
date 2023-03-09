@@ -1,7 +1,7 @@
 ---
 title: "linux, date installation initiale"
-date: "2020-10-07 22:52:00"
-tags: linux installation
+date: 2020-10-07T22:52:00+01:00
+tags: ["linux", "installation"]
 ---
 
 Afficher de première installation de son poste :

@@ -1,7 +1,7 @@
 ---
 title: "bash, heredocuments"
-date: "2015-02-06 11:01:00"
-tags: bash heredocuments
+date: 2015-02-06T11:01:00+01:00
+tags: ["bash", "heredocuments"]
 ---
 Il est possible de désactiver les substitutions dans les heredocuments en bash.
 

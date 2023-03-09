@@ -1,6 +1,6 @@
 ---
 title: "bash, afficher en gras"
-date: "2012-11-30 11:35:00"
+date: 2012-11-30T11:35:00+01:00
 ---
 On peut utiliser la commande tput de la manière suivante :
 

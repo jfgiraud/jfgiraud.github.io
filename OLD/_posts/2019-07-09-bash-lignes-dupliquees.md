@@ -1,7 +1,7 @@
 ---
 title: "bash, lignes dupliquées"
-date: "2019-07-09 15:52:00"
-tags: bash commande uniq lignes dupliquées
+date: 2019-07-09T15:52:00+01:00
+tags: ["bash", "commande", "uniq", "lignes", "dupliquées"]
 ---
 Dans d'anciens post, j'avais parlé de la commande `uniq`
 

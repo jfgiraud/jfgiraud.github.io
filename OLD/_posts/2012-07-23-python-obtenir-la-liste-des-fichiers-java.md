@@ -1,6 +1,6 @@
 ---
 title: "python, obtenir la liste des fichiers .java"
-date: "2012-07-23 11:56:00"
+date: 2012-07-23T11:56:00+01:00
 ---
 Pour récupérer la liste des .java dans une arborescence et sa sous-arborescence, on peut utiliser le code suivant :  <code><pre>
 import fnmatch

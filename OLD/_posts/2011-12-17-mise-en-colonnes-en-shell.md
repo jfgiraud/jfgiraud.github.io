@@ -1,6 +1,6 @@
 ---
 title: "Mise en colonnes en shell"
-date: "2011-12-17 08:16:00"
+date: 2011-12-17T08:16:00+01:00
 ---
 Une petite commande plutot sympa pour afficher des résultats en colonnes et tout voir sur l'écran du terminal !
 

@@ -1,6 +1,6 @@
 ---
 title: "mysql, dumper seulement les données"
-date: "2013-03-14 16:15:00"
+date: 2013-03-14T16:15:00+01:00
 ---
 
 ```

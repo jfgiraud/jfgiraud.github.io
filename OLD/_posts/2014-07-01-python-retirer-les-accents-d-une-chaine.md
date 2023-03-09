@@ -1,7 +1,7 @@
 ---
 title: "Python, retirer les accents d'une chaine"
-date: "2014-07-01 07:03:00"
-tags: python accent accents retirer supprimer unicode unicodedata
+date: 2014-07-01T07:03:00+01:00
+tags: ["python", "accent", "accents", "retirer", "supprimer", "unicode", "unicodedata"]
 ---
 
 ```python

@@ -1,7 +1,7 @@
 ---
 title: "Scanner Brother ADS1600W, problème linux lors de l'envoi en FTP"
-date: "2021-08-30 09:06:00"
-tags: scanner ftp
+date: 2021-08-30T09:06:00+01:00
+tags: ["scanner", "ftp"]
 ---
 
 L'envoi en FTP ne fonctionne pas avec le paquet `vsftpd` (bien que l'envoi d'une page de test depuis l'interface 

@@ -1,6 +1,6 @@
 ---
 title: "mysql, regexp"
-date: "2012-11-22 12:21:00"
+date: 2012-11-22T12:21:00+01:00
 ---
 Pour comptabiliser avec une regexp les numéros appelant valides (non masqués) 
 

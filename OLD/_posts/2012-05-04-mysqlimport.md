@@ -1,6 +1,6 @@
 ---
 title: "mysqlimport"
-date: "2012-05-04 15:41:00"
+date: 2012-05-04T15:41:00+01:00
 ---
 Le fichier doit porter le nom de la table à l'extension près.  Ici les options utilisées sont : 
 

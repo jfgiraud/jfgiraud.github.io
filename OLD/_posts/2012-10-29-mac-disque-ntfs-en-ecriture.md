@@ -1,6 +1,6 @@
 ---
 title: "mac, disque ntfs en écriture"
-date: "2012-10-29 22:42:00"
+date: 2012-10-29T22:42:00+01:00
 ---
 Grrr, apple bloque tout. Le disque Western Digital que je viens d'acheter se monte directement mais n'est visible du finder qu'en lecture seulement !
 

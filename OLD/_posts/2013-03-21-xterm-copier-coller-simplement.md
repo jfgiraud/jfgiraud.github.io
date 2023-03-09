@@ -1,6 +1,6 @@
 ---
 title: "xterm, copier/coller simplement"
-date: "2013-03-21 12:33:00"
+date: 2013-03-21T12:33:00+01:00
 ---
 Par défaut, la sélection avec xterm se fait de la manière suivante
 

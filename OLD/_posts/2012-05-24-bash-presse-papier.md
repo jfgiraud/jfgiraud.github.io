@@ -1,6 +1,6 @@
 ---
 title: "bash, presse-papier"
-date: "2012-05-24 11:17:00"
+date: 2012-05-24T11:17:00+01:00
 ---
 Il est possible de copier un fichier ou la sortie standard dans le presse papier...  Il suffit d'utiliser la commande <pre>xsel</pre>Exemple : 
 <pre><code>

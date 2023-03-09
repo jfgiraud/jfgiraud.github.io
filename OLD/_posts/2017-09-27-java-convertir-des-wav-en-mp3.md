@@ -1,7 +1,7 @@
 ---
 title: "Java, convertir des wav en mp3"
-date: "2017-09-27 16:49:00"
-tags: java conversion wav mp3
+date: 2017-09-27T16:49:00+01:00
+tags: ["java", "conversion", "wav", "mp3"]
 ---
 Je maintiens une IHM d'administration dans laquelle un petit player flash permet d'écouter des fichiers wav.
 

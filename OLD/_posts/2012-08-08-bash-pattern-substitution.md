@@ -1,7 +1,7 @@
 ---
 title: "Bash, pattern substitution"
-date: "2012-08-08 16:21:00"
-tags: bash regexp pattern
+date: 2012-08-08T16:21:00+01:00
+tags: ["bash", "regexp", "pattern"]
 ---
 
 Le manuel bash présente les syntaxes suivantes ([voir](http://tldp.org/LDP/abs/html/string-manipulation.html))  

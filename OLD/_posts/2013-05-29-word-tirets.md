@@ -1,6 +1,6 @@
 ---
 title: "word, tirets"
-date: "2013-05-29 15:09:00"
+date: 2013-05-29T15:09:00+01:00
 ---
 Pour insérer un tiret demi-cadratin (tiret moyen), tapez le raccouri Ctrl + – (touche – du pavé numérique).
 

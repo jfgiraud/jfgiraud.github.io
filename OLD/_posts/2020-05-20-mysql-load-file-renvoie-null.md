@@ -1,7 +1,7 @@
 ---
 title: "mysql, LOAD_FILE renvoie NULL"
-date: "2020-05-20 10:47:00"
-tags: mysql load_file
+date: 2020-05-20T10:47:00+01:00
+tags: ["mysql", "load_file"]
 ---
 La méthode LOAD_FILE renvoie toujours NULL
 

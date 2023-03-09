@@ -1,7 +1,7 @@
 ---
 title: "python, lire et écrire des fichiers xls"
-date: "2012-10-15 11:36:00"
-tags: python, excel
+date: 2012-10-15T11:36:00+01:00
+tags: ["python", "excel"]
 ---
 Si l'on a des fichiers Excel que l'on souhaite lire ou écrire, on peut utiliser les paquets xlrd (reader) et xlwt (writer).
 

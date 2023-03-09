@@ -1,6 +1,6 @@
 ---
 title: "mysql, n'afficher que les vraies tables"
-date: "2012-08-07 11:49:00"
+date: 2012-08-07T11:49:00+01:00
 ---
 [//]: # (TODO: virer les code pre)
 
