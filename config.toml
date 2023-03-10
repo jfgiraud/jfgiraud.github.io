@@ -4,6 +4,9 @@ defaultContentLanguage = "fr"
 title = 'jfgiraud.github.io'
 theme = 'hugo-ficurinia'
 
+author = "Jean-François Giraud"
+copyright = "Jean-François Giraud - All text CC-BY-SA & code AGPL"
+
 [params]
     author = 'Jean-François Giraud'
     description = 'J’entrepose ici mes découvertes linux, bash, python et java que je souhaite partager et mettre de côté...'
