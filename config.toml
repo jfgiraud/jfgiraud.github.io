@@ -13,6 +13,13 @@ copyright = "Jean-François Giraud - All text CC-BY-SA & code AGPL"
     titleFontSizeMultiplier = 1
     mainFontSizeMultiplier = 1
     monoFontSizeMultiplier = 1
+    articleSummary = true
+
+    logo = "/logo.svg"
+    favicon = "/favicon.png"  # 32x32
+    faviconIco = "/favicon.ico"  # 32x32
+    appletouch = "/apple-touch-icon.png"  # 180x180
+    svgicon = "/logo.svg"
 
 [menu]
     [[menu.icons]]
