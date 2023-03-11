@@ -13,9 +13,9 @@ Sur la page [https://www.ricoh-return.com/fr/eu](https://www.ricoh-return.com/fr
 - Imprimer l'étiquette
 - Programmer le passage UPS
 
-![2020-11-03-ricoh-retour-des-toners-usages__3.png](assets/images/2020-11-03-ricoh-retour-des-toners-usages__3.png)
-![2020-11-03-ricoh-retour-des-toners-usages__5.png](assets/images/2020-11-03-ricoh-retour-des-toners-usages__5.png)
-![2020-11-03-ricoh-retour-des-toners-usages__7.png](assets/images/2020-11-03-ricoh-retour-des-toners-usages__7.png)
+![2020-11-03-ricoh-retour-des-toners-usages__3.png](/images/posts/2020-11-03-ricoh-retour-des-toners-usages__3.png)
+![2020-11-03-ricoh-retour-des-toners-usages__5.png](/images/posts/2020-11-03-ricoh-retour-des-toners-usages__5.png)
+![2020-11-03-ricoh-retour-des-toners-usages__7.png](/images/posts/2020-11-03-ricoh-retour-des-toners-usages__7.png)
 
 
 Ricoh envoie un mail avec 2 identifiants (un ID d'enlèvement et un ID de suivi de colis).

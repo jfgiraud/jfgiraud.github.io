@@ -1,6 +1,8 @@
 ---
 title: "Mysql: afficher requête en ligne"
 date: 2011-08-31T16:21:00+01:00
+tags: [ "mysql" ]
+description: "Lisez mieux les résultats d'une requête en ligne de commande !"
 ---
 select * from flashes\G
 

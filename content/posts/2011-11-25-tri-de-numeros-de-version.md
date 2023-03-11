@@ -1,8 +1,11 @@
 ---
 title: "Tri de numéros de version"
 date: 2011-11-25T14:20:00+01:00
+tags: [ "commande", "shell", "sort" ]
+description: "Trier des numéros de version"
 ---
-<pre><code><small>
+
+```
 $ cat ~/a 
 9.1.1
 9.4.14
@@ -22,10 +25,10 @@ $ export LC_ALL=C ; cat ~/a | sort -t. -k1,1n -k2,2n -k3,3n
 9.4.6
 9.4.14
 => bon
-</small></code></pre>
+```
 
 Sinon si l'option est disponible (version récente de la commande)
 
-<pre><code><small>
+```
 cat ~a | sort --version
-</small></code></pre>
+```

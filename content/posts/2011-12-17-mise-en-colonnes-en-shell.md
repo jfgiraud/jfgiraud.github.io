@@ -1,10 +1,14 @@
 ---
 title: "Mise en colonnes en shell"
 date: 2011-12-17T08:16:00+01:00
+tags: [ "commande", "column", "shell" ]
+description: "Voici un utilitaire pour formater son entrée sur plusieurs colonnes"
 ---
+
 Une petite commande plutot sympa pour afficher des résultats en colonnes et tout voir sur l'écran du terminal !
 
-<code><pre><small>$ python notes.py --de 25 --vers 20 --pas 0.25 | column -c 80
+```
+$ python notes.py --de 25 --vers 20 --pas 0.25 | column -c 80
 0.00 => 0.00 5.25 => 4.20 10.50 => 8.40 15.75 => 12.60 21.00 => 16.80
 0.25 => 0.20 5.50 => 4.40 10.75 => 8.60 16.00 => 12.80 21.25 => 17.00
 0.50 => 0.40 5.75 => 4.60 11.00 => 8.80 16.25 => 13.00 21.50 => 17.20
@@ -26,5 +30,6 @@ Une petite commande plutot sympa pour afficher des résultats en colonnes et tou
 4.50 => 3.60 9.75 => 7.80 15.00 => 12.00 20.25 => 16.20
 4.75 => 3.80 10.00 => 8.00 15.25 => 12.20 20.50 => 16.40
 5.00 => 4.00 10.25 => 8.20 15.50 => 12.40 20.75 => 16.60
+```
 
-</small></pre></code>
+Page de manuel : [https://man7.org/linux/man-pages/man1/column.1.html](https://man7.org/linux/man-pages/man1/column.1.html)
