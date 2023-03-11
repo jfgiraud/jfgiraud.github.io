@@ -1,8 +1,11 @@
 ---
 title: "Envoi mail avec attachement en python"
 date: 2010-07-13T14:28:00+01:00
+tags: [ "python", "mail" ]
+description: "Envoi mail avec attachement en python"
 ---
-<pre>
+
+```python
 #!/usr/bin/env python
 
 import smtplib
@@ -37,4 +40,4 @@ def send_mail(send_from, send_to, subject, text, files=[], server="localhost"):
   smtp.close()
 
 send_mail('me@example.com', ['me@example.com'], 'envoi mail avec attachements', 'bises a toi', [ '/the/path/to/the/file' ], 'smtp.example.com')
-</pre>
+```
