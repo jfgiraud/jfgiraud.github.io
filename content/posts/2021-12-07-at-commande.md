@@ -2,7 +2,7 @@
 title: "at, commande"
 date: 2021-12-07T10:07:00+01:00
 tags: [ "at", "commande" ]
-description: "Exécutez une commande dans sed"
+description: "Exécutez une commande dans le futur"
 ---
 
 La commande `at` permet de lancer une commande dans le futur sans passer par une crontab.
@@ -23,3 +23,5 @@ Hello
 ```
 
 Ne gère pas les secondes, utiliser sleep
+
+Page de manuel : [https://man7.org/linux/man-pages/man1/at.1p.html](https://man7.org/linux/man-pages/man1/at.1p.html)
