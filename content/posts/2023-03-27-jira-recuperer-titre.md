@@ -1,6 +1,6 @@
 ---
 title: "jira, récupérer le titre d'une fiche"
-date: 2023-03-27T21:10:00+01:00
+date: 2023-03-27T07:10:00+01:00
 tags: [ "jira", "api" ]
 description: "Voici comment je récupère le titre d'une fiche Jira pour le copier/coller dans mes changelogs"
 ---
