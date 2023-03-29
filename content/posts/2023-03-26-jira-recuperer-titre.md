@@ -26,7 +26,7 @@ function cl() {
 
 ```
 
-Dans mon `~/.netrc` (seuls machine/token sont utilisés dans la fonction `cl`) :
+Dans mon `~/.netrc` (seules les entrées `machine`/`account` sont utilisés dans la fonction `cl`) :
 
 ```
 machine portail.example.com
