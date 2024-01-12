@@ -1,6 +1,7 @@
 ---
 title: "Comment modifier rapidement une palanquée de fichiers de conf..."
 date: 2014-03-12T17:42:00+01:00
+tags: ["bash"]
 ---
 
 ```

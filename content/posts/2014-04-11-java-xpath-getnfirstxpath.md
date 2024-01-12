@@ -1,6 +1,7 @@
 ---
 title: "java & xpath : getNFirstXpath"
 date: 2014-04-11T06:24:00+01:00
+tags: ["xpath", "java"]
 ---
 
 ```

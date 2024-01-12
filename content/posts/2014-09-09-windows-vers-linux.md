@@ -1,6 +1,7 @@
 ---
 title: "Windows vers linux"
 date: 2014-09-09T12:11:00+01:00
+tags: ["office"]
 ---
 Lors de récupération de données créées depuis office$, et exportées en CSV, texte brute, l'apostrophe se retrouve parfois "incurvée".
 

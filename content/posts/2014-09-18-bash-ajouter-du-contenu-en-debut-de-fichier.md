@@ -1,6 +1,7 @@
 ---
 title: "bash, ajouter du contenu en début de fichier"
 date: 2014-09-18T15:06:00+01:00
+tags: ["bash"]
 ---
 Voici deux techniques pour ajouter du contenu en début de fichier.
 

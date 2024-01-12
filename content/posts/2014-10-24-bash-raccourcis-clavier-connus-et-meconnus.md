@@ -1,6 +1,7 @@
 ---
 title: "Bash, raccourcis clavier connus et méconnus..."
 date: 2014-10-24T11:57:00+01:00
+tags: ["bash", "shortcut"]
 ---
 Un petit post pour rappeler les raccourcis clavier dans les terminaux.
 

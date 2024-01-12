@@ -1,6 +1,7 @@
 ---
 title: "html/java, input file sympa avec bootstrap"
 date: 2014-01-28T13:50:00+01:00
+tags: ["html", "bootstrap"]
 ---
 Dans le cadre d'un projet, j'ai redesigné un formulaire qui permet d'importer un fichier csv (utilise bootstrap).
 

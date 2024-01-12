@@ -1,6 +1,7 @@
 ---
 title: "archlinux, problèmes de clé sur mise à jour pacman"
 date: 2014-01-23T08:56:00+01:00
+tags: ["archlinux", "pacman"]
 ---
 Parfois, lors d'une mise à jour ou tentative d'installation d'un paquet, une erreur de clé corrompue survient.
 

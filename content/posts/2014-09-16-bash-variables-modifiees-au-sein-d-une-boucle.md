@@ -1,6 +1,7 @@
 ---
 title: "bash, variables modifiées au sein d'une boucle"
 date: 2014-09-16T06:07:00+01:00
+tags: ["bash", "while"]
 ---
 Il y a quelques temps déjà, je m'étais cassé la tête sur des variables que je modifiais dans une boucle et dont les modifications avaient disparues une fois sorti de celle-ci.
 

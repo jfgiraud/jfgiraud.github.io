@@ -1,6 +1,7 @@
 ---
 title: "python, liens pour asyncio"
 date: 2014-09-20T07:43:00+01:00
+tags: ["python", "asyncio"]
 ---
 
 ```

@@ -1,6 +1,7 @@
 ---
 title: "awk, extraire des paragraphes"
 date: 2014-02-01T08:07:00+01:00
+tags: ["bash", "commande", "awk"]
 ---
 Avec awk, il est possible d'extraire des paragraphes spécifiques par leur ordre d'apparence.
 
