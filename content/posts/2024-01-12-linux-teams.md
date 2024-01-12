@@ -27,3 +27,6 @@ Source:
 
 Fix MS Teams / zoom meeting sharing problem in Ubuntu (Linux)
 https://youtu.be/4oaQYTwSD3k?si=w2MYIAkn7O8WrUgK
+
+Autre source, trouvée par le collègue en français :
+https://wiki.lebiklab.fr/doku.php?id=tutos:hacking:ubuntu_partage_d_ecran_avec_zoom_ms_team:start
