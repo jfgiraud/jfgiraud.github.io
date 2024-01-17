@@ -1,8 +1,10 @@
 ---
 title: "python, conversion d'un fichier d'iso8859 en utf8"
 date: 2012-05-04T14:44:00+01:00
+tags: ["python", "encodage", "iso-8859", "utf-8"]
 ---
-<code><pre>
+
+```
 #!/bin/python
 
 import sys
@@ -17,4 +19,4 @@ with open(sys.argv[2], 'w') as fout:
         while data:
             fout.write(data.encode('utf8'))
             data = fin.read().decode('iso8859')
-</pre></code>
+```

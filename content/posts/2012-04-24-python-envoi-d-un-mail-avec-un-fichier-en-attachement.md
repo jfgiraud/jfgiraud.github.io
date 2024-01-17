@@ -1,8 +1,11 @@
 ---
 title: "python, envoi d'un mail avec un fichier en attachement"
 date: 2012-04-24T12:53:00+01:00
+tags: ["python", "mail"]
+description: "code pour envoyer un mail via python"
 ---
-<pre><code><span style="font-family: &quot;Courier New&quot;,Courier,monospace;font-size: small;">
+
+```
 import smtplib
 from email.MIMEText import MIMEText
 from email.MIMEMultipart import MIMEMultipart
@@ -26,4 +29,4 @@ smtp = smtplib.SMTP(mailhost)
 smtp.sendmail('crontab-do-not-reply@example.com', ['destinataire1@example.com', 
                 'destinataire2@example.com'], msg.as_string())
 smtp.quit()
-</code></span></pre>
+```

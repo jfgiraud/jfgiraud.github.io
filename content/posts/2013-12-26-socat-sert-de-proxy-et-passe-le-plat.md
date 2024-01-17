@@ -1,6 +1,7 @@
 ---
 title: "socat, sert de proxy et passe le plat..."
 date: 2013-12-26T14:59:00+01:00
+tags: ["commande", "socat"]
 ---
 Sur un de mes projets, un flux a été interrompu... en attendant sa réouverture j'utilise un proxy qui sert de passe plat
 depuis une machine où le flux en question est ouvert...

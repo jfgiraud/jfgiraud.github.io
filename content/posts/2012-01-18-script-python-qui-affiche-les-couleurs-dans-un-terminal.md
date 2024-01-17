@@ -1,8 +1,11 @@
 ---
 title: "Script python qui affiche les couleurs dans un terminal"
 date: 2012-01-18T10:28:00+01:00
+tags: ["colors"]
 ---
-<pre>class bcolors:
+
+```
+class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
     OKGREEN = '\033[92m'
@@ -19,4 +22,4 @@ date: 2012-01-18T10:28:00+01:00
         self.ENDC = ''
 
 print '===> ' +  bcolors.OKGREEN + where + bcolors.ENDC + " " + href
-</pre>
+```
