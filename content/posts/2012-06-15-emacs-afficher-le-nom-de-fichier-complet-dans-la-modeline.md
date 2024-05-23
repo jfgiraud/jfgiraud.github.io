@@ -1,9 +1,9 @@
 ---
 title: "emacs, afficher le nom de fichier complet dans la modeline"
 date: 2012-06-15T15:48:00+01:00
+tags: ["emacs"]
 ---
-<pre>
-<code>
+```
 ; show the full path and filename in the message area
 
 (defun path ()
@@ -27,5 +27,4 @@ date: 2012-06-15T15:48:00+01:00
   )
 
 (long-file-name)
-</code>
-</pre>
+```

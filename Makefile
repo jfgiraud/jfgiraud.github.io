@@ -61,3 +61,7 @@ term:
 	tmux send-keys -t ghp:1 "docker-compose exec python_app bash" C-m
 	tmux select-window -t 1
 	tmux attach -t ghp
+
+.PHONY: not-done
+not-done:
+	grep -rL 'tags:' content/posts | sort -r
