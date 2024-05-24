@@ -1,6 +1,7 @@
 ---
 title: "url et mot de passe"
 date: 2012-07-03T18:24:00+01:00
+tags: ["encodage", "url"]
 ---
 Pour réduire mes logs, je viens d'utiliser la syntaxe suivante :  
 ```

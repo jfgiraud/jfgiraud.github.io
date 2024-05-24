@@ -1,57 +1,66 @@
 ---
 title: "Jetty 8 et paramètres d'initialisation"
 date: 2012-07-17T17:14:00+01:00
+tags: ["bash", "python", "encoding"]
 ---
 La documentation sur le net est obscure quant à la manière d'initialiser les paramètres de contexte avec jetty (hors du web.xml dans le webdefault.xml (équivalent du host.xml de tomcat)). 
 
 J'ai cherché, cherché et cherché...  
 
-Et puis j'ai trouvé :)  Le nouveau code est le suivant :  <pre><code>
-&lt;?xml version="1.0"  encoding="ISO-8859-1"?&gt;
-&lt;!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" 
-"http://www.eclipse.org/jetty/configure.dtd"&gt;
+Et puis j'ai trouvé :)  Le nouveau code est le suivant :  
 
-&lt;Configure class="org.eclipse.jetty.webapp.WebAppContext"&gt;
+```
+<?xml version="1.0"  encoding="ISO-8859-1"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" 
+"http://www.eclipse.org/jetty/configure.dtd">
 
-  &lt;Set name="sessionHandler"&gt;
-    &lt;New class="org.eclipse.jetty.server.session.SessionHandler"&gt;
-      &lt;Arg&gt;
-        &lt;New class="org.eclipse.jetty.server.session.HashSessionManager"&gt;
-          &lt;Set name="storeDirectory"&gt;jetty/sessions&lt;/Set&gt;
-        &lt;/New&gt;
-      &lt;/Arg&gt;
-    &lt;/New&gt;
-  &lt;/Set&gt;
-  &lt;Get name="ServletContext"&gt;
-    &lt;Call name="setInitParameter"&gt;
-      &lt;Arg&gt;driverSQL&lt;/Arg&gt;
-      &lt;Arg&gt;com.mysql.jdbc.Driver&lt;/Arg&gt;
-    &lt;/Call&gt;
-  &lt;/Get&gt;
-&lt;/Configure&gt;
-</code></pre> L'ancien code était le suivant :  <pre><code>
-&lt;?xml version="1.0"  encoding="ISO-8859-1"?&gt;
-&lt;!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" 
-"http://www.eclipse.org/jetty/configure.dtd"&gt;
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
 
-&lt;Configure class="org.eclipse.jetty.webapp.WebAppContext"&gt;
-  &lt;Set name="sessionHandler"&gt;
-    &lt;New class="org.eclipse.jetty.server.session.SessionHandler"&gt;
-      &lt;Arg&gt;
- &lt;New class="org.eclipse.jetty.server.session.HashSessionManager"&gt;
-   &lt;Set name="storeDirectory"&gt;jetty-sessions&lt;/Set&gt;
- &lt;/New&gt;
-      &lt;/Arg&gt;
-    &lt;/New&gt;
-  &lt;/Set&gt;
-  &lt;Set name="initParams"&gt;
-    &lt;Map&gt;
+  <Set name="sessionHandler">
+    <New class="org.eclipse.jetty.server.session.SessionHandler">
+      <Arg>
+        <New class="org.eclipse.jetty.server.session.HashSessionManager">
+          <Set name="storeDirectory">jetty/sessions</Set>
+        </New>
+      </Arg>
+    </New>
+  </Set>
+  <Get name="ServletContext">
+    <Call name="setInitParameter">
+      <Arg>driverSQL</Arg>
+      <Arg>com.mysql.jdbc.Driver</Arg>
+    </Call>
+  </Get>
+</Configure>
+```
 
-      &lt;Entry&gt;
- &lt;Item&gt;driverSQL&lt;/Item&gt;
- &lt;Item&gt;com.mysql.jdbc.Driver&lt;/Item&gt;
-      &lt;/Entry&gt;
-&lt;/Map&gt;
-  &lt;/Set&gt;
-&lt;/Configure&gt;
-</code></pre> Ce n'est pas très différent mais il fallait trouver, la documentation en ligne n'en parlant pas !  En espérant que ça vous fasse économiser de précieuses heures...  A vos servletContext.getInitParameter !!!
+L'ancien code était le suivant : 
+
+```
+<?xml version="1.0"  encoding="ISO-8859-1"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" 
+"http://www.eclipse.org/jetty/configure.dtd">
+
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+  <Set name="sessionHandler">
+    <New class="org.eclipse.jetty.server.session.SessionHandler">
+      <Arg>
+ <New class="org.eclipse.jetty.server.session.HashSessionManager">
+   <Set name="storeDirectory">jetty-sessions</Set>
+ </New>
+      </Arg>
+    </New>
+  </Set>
+  <Set name="initParams">
+    <Map>
+
+      <Entry>
+ <Item>driverSQL</Item>
+ <Item>com.mysql.jdbc.Driver</Item>
+      </Entry>
+</Map>
+  </Set>
+</Configure>
+``` 
+
+Ce n'est pas très différent mais il fallait trouver, la documentation en ligne n'en parlant pas !  En espérant que ça vous fasse économiser de précieuses heures...  A vos servletContext.getInitParameter !!!

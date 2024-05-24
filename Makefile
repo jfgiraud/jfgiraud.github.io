@@ -65,3 +65,4 @@ term:
 .PHONY: not-done
 not-done:
 	grep -rL 'tags:' content/posts | sort -r
+	grep -rL 'tags:' content/posts | sort -r | wc -l
