@@ -6,13 +6,17 @@ description: "Voici un utilitaire bien utile pour afficher ce qu'il reçoit"
 ---
 Le serveur affiche ce qu'il reçoit, c'est tout ce qu'il fait.
 
-```text
-# installation
+### installation
+```shell
 sudo apt-get install socat
+```
 
-# lancement du serveur
+### lancement du serveur
+```shell
 socat tcp4-listen:1234,reuseaddr,fork stdio
+```
 
-# lancement du client où l'on envoie des données
+### lancement du client où l'on envoie des données
+```shell
 telnet 127.0.0.1 1234
 ```

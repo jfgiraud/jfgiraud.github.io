@@ -1,8 +1,12 @@
 ---
 title: "bash, génerer des mots de passe"
 date: 2012-07-26T17:23:00+01:00
+tags: ["bash", "password", "generate"]
 ---
-Vous n'avez pas envie de réfléchir pour générer un mot de passe ?  Voici une petite méthode à mettre dans votre bashrc qui vous facilitera le choix ;)  <code><pre>
+
+Vous n'avez pas envie de réfléchir pour générer un mot de passe ?  Voici une petite méthode à mettre dans votre bashrc qui vous facilitera le choix ;)  
+
+```
 function genpass() {
     LENGTH=${1:-10}
     if [ "$2" == "0" ]; then
@@ -30,4 +34,4 @@ $ genpass 10 1
 $ # génère un mot de passe de 10 caractères avec ce que vous spécifiez après le +
 $ genpass 10 "+abc[:digit:]"
 b5836a29a2
-</pre></code>
+```

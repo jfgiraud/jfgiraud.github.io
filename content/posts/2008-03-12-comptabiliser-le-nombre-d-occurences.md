@@ -8,10 +8,12 @@ Utiliser la commande <span style="font-style: italic;">uniq </span>pour afficher
 
 Associer avec sort.
 
-```text
-$ for A in 1 3 4 2 3 1 1 1 3; do 
+```shell
+for A in 1 3 4 2 3 1 1 1 3; do 
     echo $A; 
 done | sort | uniq -c
+```
+```
       4 1
       1 2
       3 3

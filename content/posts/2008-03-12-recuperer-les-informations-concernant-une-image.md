@@ -7,12 +7,19 @@ description: "Gagnez en productivité !"
 
 La commande est `imagemagick`. 
 
-```text
+```shell
 $ sudo apt-get install imagemagick
-
+```
+```shell
 $ identify original.jpg
+```
+```console
 original.jpg JPEG 460x460 460x460+0+0 8-bit sRGB 33596B 0.000u 0:00.000
+```
+```shell
 $ identify -verbose original.jpg
+```
+```console
 Image:
   Filename: original.jpg
   Format: JPEG (Joint Photographic Experts Group JFIF format)
@@ -100,5 +107,4 @@ Image:
   User time: 0.010u
   Elapsed time: 0:01.006
   Version: ImageMagick 6.9.11-60 Q16 x86_64 2021-01-25 https://imagemagick.org
-
 ```
