@@ -1,6 +1,6 @@
 ---
 title: "Driver imprimante Ricoh SP 277 snwx"
-date: 2021-12-21T07:10:00+01:00
+date: 2022-10-08T07:10:00+01:00
 tags: [ "imprimante", "ricoh" ]
 description: "Installer les drivers de l'imprimante Ricoh SP 277 snwx"
 ---
