@@ -19,7 +19,9 @@ Dans le `~/.gitconfig`
         helper = "!f() { test \"$1\" = get && echo \"password=$(cat $HOME/.secret)\"; }; f"
 ```
 
-Dans le `~/.secret` (en rw-------),
+Dans le `~/.secret` (permission 0600),
 ```
-Copier le token en clair
+Copier le personal access token en clair
 ```
+
+Source: [https://git-scm.com/docs/gitcredentials](https://git-scm.com/docs/gitcredentials)
